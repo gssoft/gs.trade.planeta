@@ -1,0 +1,10 @@
+﻿Connect
+[DllImport(Trans2QuikDllName, EntryPoint = "TRANS2QUIK_CONNECT", CallingConvention = CallingConvention.StdCall)]
+
+Disconnect
+
+TeadeReply from Qty Int32 -> Int64
+
+Delete
+// work until 2018.05.16
+        public void TradeProcess()

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SyncPositionsInit>
+  <SyncPositions_XmlFileName>D:\Mts\Mts1\Sps.xml</SyncPositions_XmlFileName>
+  <Quotes_XmlFileName>D:\Mts\Mts1\Quotes.xml</Quotes_XmlFileName>
+  <Tickers_XmlFileName>Repozitary\Xml\Tickers.xml</Tickers_XmlFileName>
+  <TimePlans_XmlFileName>Repozitary\Xml\TimePlans3.xml</TimePlans_XmlFileName>
+  <Accounts_XmlFileName>Repozitary\Xml\Accounts.xml</Accounts_XmlFileName>
+  <Positions_XmlFileName>D:\Mts\Mts1\Positions.xml</Positions_XmlFileName>
+  <Strategies_XmlFileName>Strategies\StratFiles3.xml</Strategies_XmlFileName>
+  <EventLogs_XmlFileName>Init\EventLog.xml</EventLogs_XmlFileName>
+</SyncPositionsInit>
+

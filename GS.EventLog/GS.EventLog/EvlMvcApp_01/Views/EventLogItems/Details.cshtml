@@ -1,0 +1,85 @@
+﻿@model GS.EventLog.DataBase.Model.DbEventLogItem
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<fieldset>
+    <legend>DbEventLogItem</legend>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.DT)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.DT)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Source)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Source)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Entity)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Entity)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Operation)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Operation)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Description)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Description)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Object)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Object)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Index)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Index)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.EventLogID)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.EventLogID)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.DateTimeString)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.DateTimeString)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.TimeDateString)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.TimeDateString)
+    </div>
+</fieldset>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id=Model.EventLogItemID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

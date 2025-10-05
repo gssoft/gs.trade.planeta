@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document>
+<data id="securities">
+<metadata>
+<columns>
+<column name="SECID" type="string" bytes="36" max_size="0" />
+<column name="BOARDID" type="string" bytes="12" max_size="0" />
+<column name="SHORTNAME" type="string" bytes="75" max_size="0" />
+<column name="SECNAME" type="string" bytes="225" max_size="0" />
+<column name="PREVSETTLEPRICE" type="double" />
+<column name="STATUS" type="string" bytes="3" max_size="0" />
+<column name="DECIMALS" type="int32" />
+<column name="MINSTEP" type="double" />
+<column name="LASTTRADEDATE" type="date" bytes="10" max_size="0" />
+<column name="LASTDELDATE" type="date" bytes="10" max_size="0" />
+<column name="LATNAME" type="string" bytes="90" max_size="0" />
+<column name="ASSETCODE" type="string" bytes="75" max_size="0" />
+<column name="PREVOPENPOSITION" type="int64" />
+<column name="PREVPRICE" type="double" />
+<column name="FIRSTTRADEDATE" type="date" bytes="10" max_size="0" />
+</columns>
+</metadata>
+<rows>
+<row SECID="Si64500BI9D" BOARDID="ROPD" SHORTNAME="Si-12.19M260919CA64500" SECNAME="Нед. марж. амер. Call 64500 с исп. 26 сент. на фьюч. контр. Si-12.19" PREVSETTLEPRICE="420" STATUS="" DECIMALS="0" MINSTEP="1" LASTTRADEDATE="2019-09-26" LASTDELDATE="2019-09-26" LATNAME="Si64500BI9D" ASSETCODE="Si" PREVOPENPOSITION="3128" PREVPRICE="422" FIRSTTRADEDATE="2017-09-11" />
+</rows>
+</data>
+<data id="marketdata">
+<metadata>
+<columns>
+<column name="SECID" type="string" bytes="36" max_size="0" />
+<column name="BOARDID" type="string" bytes="12" max_size="0" />
+<column name="BID" type="undefined" bytes="0" max_size="0" />
+<column name="OFFER" type="undefined" bytes="0" max_size="0" />
+<column name="SPREAD" type="double" />
+<column name="OPEN" type="double" />
+<column name="HIGH" type="double" />
+<column name="LOW" type="double" />
+<column name="LAST" type="double" />
+<column name="QUANTITY" type="int32" />
+<column name="LASTCHANGE" type="double" />
+<column name="SETTLEPRICE" type="double" />
+<column name="SETTLETOPREVSETTLE" type="double" />
+<column name="NUMTRADES" type="int32" />
+<column name="VOLTODAY" type="int64" />
+<column name="VALTODAY" type="int64" />
+<column name="VALTODAY_USD" type="int64" />
+<column name="UPDATETIME" type="time" bytes="10" max_size="0" />
+<column name="LASTCHANGEPRCNT" type="double" />
+<column name="BIDDEPTH" type="undefined" bytes="0" max_size="0" />
+<column name="BIDDEPTHT" type="undefined" bytes="0" max_size="0" />
+<column name="NUMBIDS" type="undefined" bytes="0" max_size="0" />
+<column name="OFFERDEPTH" type="undefined" bytes="0" max_size="0" />
+<column name="OFFERDEPTHT" type="undefined" bytes="0" max_size="0" />
+<column name="NUMOFFERS" type="undefined" bytes="0" max_size="0" />
+<column name="TIME" type="time" bytes="10" max_size="0" />
+<column name="SETTLETOPREVSETTLEPRC" type="double" />
+<column name="SEQNUM" type="int64" />
+<column name="SYSTIME" type="datetime" bytes="19" max_size="0" />
+<column name="OICHANGE" type="int64" />
+</columns>
+</metadata>
+<rows>
+<row SECID="Si64500BI9D" BOARDID="ROPD" BID="" OFFER="" SPREAD="217" OPEN="351" HIGH="503" LOW="351" LAST="456" QUANTITY="6" LASTCHANGE="-3" SETTLEPRICE="0" SETTLETOPREVSETTLE="0" NUMTRADES="40" VOLTODAY="412" VALTODAY="26574000" VALTODAY_USD="413797" UPDATETIME="06:00:03" LASTCHANGEPRCNT="-0.65" BIDDEPTH="" BIDDEPTHT="" NUMBIDS="" OFFERDEPTH="" OFFERDEPTHT="" NUMOFFERS="" TIME="23:42:52" SETTLETOPREVSETTLEPRC="0" SEQNUM="1569035704912" SYSTIME="2019-09-21 06:15:04" OICHANGE="-116" />
+</rows>
+</data>
+<data id="dataversion">
+<metadata>
+<columns>
+<column name="data_version" type="int64" />
+<column name="seqnum" type="int64" />
+</columns>
+</metadata>
+<rows>
+<row data_version="5879" seqnum="1569035705076" />
+</rows>
+</data>
+</document>

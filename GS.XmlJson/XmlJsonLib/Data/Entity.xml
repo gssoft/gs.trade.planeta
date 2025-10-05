@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<root>
+  <Entity id="1">
+    <Name>Moex.Trade</Name>
+    <a>txt</a>
+    <b>csv</b>
+    <Pack>winrar</Pack>
+  </Entity>
+  <Entity id="2">
+    <Name>Moex.Trade</Name>
+    <a>txt</a>
+    <b>csv</b>
+    <Pack>None</Pack>
+  </Entity>
+  <Trade id="7">
+    <Name>Moex.Trade</Name>
+    <Description>Trade Moex</Description>
+    <a>txt</a>
+    <b>csv</b>
+    <Pack>winrar</Pack>
+    <Crypt>Dsa</Crypt>
+  </Trade>
+<Trade id="3">
+    <Name>Moex.Trade</Name>
+    <Description>Trade Moex</Description>  
+    <format side="1">csv</format> // class, xml, json, csv, raw txt, bson, protobuf
+    <Binary>BinarySerialization</Binary> // Binary
+    <Compress>winrar</Compress> // Binary + Compress
+    <Crypt>Dsa</Crypt> // Binary + Compress + Шифрование
+  </Trade>
+  
+  <Trade id="2">
+    <Name>Moex.Trade</Name>
+    <Description>Trade Moex</Description>  
+    <a>txt</a>
+    <b>csv</b>
+    <Pack>winrar</Pack>
+  </Trade>
+</root>
+

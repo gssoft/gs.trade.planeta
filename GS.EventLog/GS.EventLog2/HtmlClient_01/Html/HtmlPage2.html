@@ -1,0 +1,82 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+
+    <title>EventLogItems</title>
+
+    <script src="Scripts/jquery-1.9.1.min.js"></script>
+    <script src="Scr/jsrender.min.js"></script>
+
+    <link href="Css/demos.css" rel="stylesheet" />
+    <link href="Css/movielist.css" rel="stylesheet" />
+    
+    <script  type="text/javascript">
+        $(function () {
+            $.ajax({
+                type: 'GET',
+                url: "http://localhost/ODataEventLog/odata/EventLogItems?$top=25",
+                dataType: 'json',
+                success: function (data) {
+                    //  alert('ghghg');
+                    //console.log(JSON.stringify(data.value));
+                    /* --- 1 ____
+                    $("#eventLogList").html(
+                        $("#eventLogTemplate").render(eventLogs)
+                            );
+                    */
+                    var arr = data.value;
+                   // console.log(arr);
+                    $("#eventLogItemList").html($.render.detailEvlItemTemplate(arr));
+                    //$("#eventLogList").html($.render.detailTemplate(eventLogs));
+                },
+                error: function () {
+                    alert("Error in Ajax Data Receving");
+                }
+            });
+        });
+    </script>
+
+</head>
+<body>
+        
+    <table>
+        <thead><tr>
+                   <th>ID</th>
+                   <th>DateTime</th>
+                   <th>Result</th>
+                   <th>Subject</th>
+                   <th>Source</th>
+                   <th>Entity</th>
+                   <th>Operation</th>
+                   <th>Description</th>
+                   <th>Object</th>
+                   <th>EventLogID</th>
+               </tr></thead>
+
+        <tbody id="eventLogItemList"></tbody>
+
+    </table>
+    
+    <script type="text/javascript">
+        
+        $.templates({
+            titleTemplate: "<tr><td colspan=3>{{>Name}}</td></tr>",
+            detailTemplate: "<tr><td>{{>EventLogItemID}}</td><td>{{>Name}}</td><td>Alias: {{>Alias}}</td><td>Description: {{>Description}}</td></tr>",
+            detailEvlItemTemplate: "<tr>" +
+                "<td>{{>EventLogItemID}}</td>" +
+                "<td>{{>DT}}</td>" +
+                "<td>{{>ResultCode}}</td>" +
+                "<td>{{>Subject}}</td>" +
+                "<td>{{>Source}}</td>" +
+                "<td>{{>Entity}}</td>" +
+                "<td>{{>Operation}}</td>" +
+                "<td>Description: {{>Description}}</td>" +
+                "<td>{{>Object}}</td>" +
+                "<td>{{>EventLogID}}</td>" +
+                "</tr>"
+        });
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,91 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>EventLogItems with Bootstrap</title>
+    
+    <link href="Content/bootstrap.css" rel="stylesheet" />
+    <link href="Content/bootstrap-responsive.css" rel="stylesheet" />
+    <link href="Css/mybody.css" rel="stylesheet" />
+    
+
+    <script src="Scripts/jquery-1.9.1.min.js"></script>
+    <script src="Scripts/bootstrap.js"></script>
+    <script src="Scr/jsrender.js"></script>
+    
+    <script  type="text/javascript">
+        $(function () {
+            $.ajax({
+                type: 'GET',
+                url: "http://localhost/ODataEventLog/odata/EventLogItems?$top=25",
+                dataType: 'json',
+                success: function (data) {
+                    var arr = data.value;
+                    $("#eventLogItemList").html($.render.detailEvlItemTemplate(arr));
+                },
+                error: function () {
+                    alert("Error in Ajax Data Receving");
+                }
+            });
+        });
+    </script>
+
+</head>
+    <body>
+        <div class="row-fluid ">
+            <table class="table table-bordered table-condensed">
+                <thead>
+                    <tr class="label-warning"><th>ID</th>
+                        <th>DateTime</th>
+                        <th>Result</th>
+                        <th>Subject</th>
+                        <th>Source</th>
+                        <th>Entity</th>
+                        <th>Operation</th>
+                        <th>Description</th>
+                        <th>Object</th>
+                        <th>EventLogID</th>
+                    </tr>
+                </thead>
+
+                <tbody id="eventLogItemList"></tbody>
+
+            </table>
+        </div>
+
+        <script type="text/javascript">
+
+            $.templates({
+                titleTemplate: "<tr><td colspan=3>{{>Name}}</td></tr>",
+                detailTemplate: "<tr><td>{{>EventLogItemID}}</td><td>{{>Name}}</td><td>Alias: {{>Alias}}</td><td>Description: {{>Description}}</td></tr>",
+                detailEvlItemTemplate:
+                    /*
+                    "{{if ResultCode === 'FATAL'}}" + 
+                    "<tr class='label-warning'>" +
+                     "{{else}}" +
+                    "<tr class='label-info'>" +
+                     "{{/if}}"   +
+                     */
+                    "<tr>" +
+                    "<td>{{:EventLogItemID}}</td>" +
+                    "<td>{{:DT}}</td>" +
+                    "{{if ResultCode === 'FATAL'}}" +
+                    "<td class='label-warning'>{{:ResultCode}}</td>" +
+                     "{{else}}" +
+                    "<td class='label-info'>{{:ResultCode}}</td>" +
+                     "{{/if}}" +
+                  //  "<td>{{:ResultCode}}</td>" +
+                    "<td>{{:Subject}}</td>" +
+                    "<td>{{:Source}}</td>" +
+                    "<td>{{:Entity}}</td>" +
+                    "<td>{{:Operation}}</td>" +
+                    "<td>{{:Description}}</td>" +
+                    "<td>{{:Object}}</td>" +
+                    "<td>{{:EventLogID}}</td>" +
+                    "</tr>"
+            });
+        </script>
+
+    </body>
+</html>
+

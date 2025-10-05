@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SyncPositionsInit>
+  <SyncPositions_XmlFileName>D:\Mts\Mts1\Sps.xml</SyncPositions_XmlFileName>
+  <Quotes_XmlFileName>D:\Mts\Mts1\Quotes.xml</Quotes_XmlFileName>
+  <Tickers_XmlFileName>Tickers.xml</Tickers_XmlFileName>
+  <Positions_XmlFileName>D:\Mts\Mts1\Positions.xml</Positions_XmlFileName>
+  <Strategies_XmlFileName>StratCollection2.xml</Strategies_XmlFileName>
+</SyncPositionsInit>

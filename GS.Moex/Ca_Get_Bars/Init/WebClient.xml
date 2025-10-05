@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Root>
+  <StreamWebClient enabled="true" ns="WebClient02s" as="WebClient02s">
+      <BaseAddress>https://iss.moex.com/</BaseAddress>
+      <ApiPrefix>iss/engines/futures/markets/</ApiPrefix>
+      <MediaTypeHeader>application/xml</MediaTypeHeader>
+      <ErrorCountToStop>30</ErrorCountToStop>
+      <IsUserPost>true</IsUserPost>
+      <WorkTask>
+        <Code>WebClient.WorkTask</Code>
+        <TimeInterval>60</TimeInterval>
+        <ErrorCountToStop>30</ErrorCountToStop>
+      </WorkTask>
+    </StreamWebClient>
+</Root>
+

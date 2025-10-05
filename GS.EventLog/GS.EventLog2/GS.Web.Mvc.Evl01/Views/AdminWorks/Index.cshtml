@@ -1,0 +1,21 @@
+﻿@{
+    Layout = "~/Views/Shared/_LayoutEventLog.cshtml";
+}
+
+<h4>@ViewBag.Title</h4>
+
+<div>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            DataBase Clear 2 Days
+        </dt>
+        <dd>
+            @using (Html.BeginForm("ClearDataBase", "AdminWorks", FormMethod.Get))
+            {
+                <input class="btn-primary" type="submit" value="Clear 2 Days" />
+            }
+        </dd>
+    </dl>
+</div>
+

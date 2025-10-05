@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ArrayOfString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <!--<string>Z7358\120\220\Test_Z7358_RIU5_PE_01.xml</string>
+  <string>Z7358\120\220\Test_Z7358_RIU5_FE_01.xml</string>
+  <string>Z7358\120\220\Test_Z7358_RIZ5_PE_01.xml</string>
+  <string>Z7358\120\220\Test_Z7358_RIZ5_FE_01.xml</string>-->
+
+  <string>Z7358\120\230\Test_Z7358_RIU5_PE_01.xml</string>
+  <string>Z7358\120\230\Test_Z7358_RIU5_FE_01.xml</string>
+  <string>Z7358\120\230\Test_Z7358_RIZ5_PE_01.xml</string>
+  <string>Z7358\120\230\Test_Z7358_RIZ5_FE_01.xml</string>
+
+
+</ArrayOfString>

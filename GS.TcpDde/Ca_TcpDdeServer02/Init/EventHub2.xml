@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<EventHub xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Name>Event Hub</Name>
+  <Code>EventHub</Code>
+  <IsEnabled>true</IsEnabled>
+  <IsEvlEnabled>false</IsEvlEnabled>
+  <IsQueueEnabled>true</IsQueueEnabled>
+  <IsProcessTaskInUse>true</IsProcessTaskInUse>
+  <Description>Event Hub with Queue</Description>
+  <EventHubItems>
+    <EventHubItem>
+      <Entity>Transaction</Entity>
+      <Category>Transactions</Category>
+    </EventHubItem>
+  </EventHubItems>
+</EventHub>

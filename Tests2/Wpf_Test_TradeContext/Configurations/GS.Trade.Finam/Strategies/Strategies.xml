@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ArrayOfString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <!-- 20.04.2018 -->
+  <!--<string>Z73521_M5_RIM8_15_45_150.xml</string>-->
+  <!-- 24.04.2018 -->
+  <!-- Atr(100,500 added-->
+  <!--<string>Z73521_M5_RIM8_15_150_180424.xml</string>-->
+  <!--<string>Z73523_M5_RIM8_150_5-15_(3,5-5,0)_01.xml</string>-->
+  <!--<string>Z73523_M5_SRM8_150_Test_180504.xml</string>-->
+<!-- very bad strats Wau-->
+  <!--<string>Z73523_M5_SiM8_150_Test_180507.xml</string>-->
+  <!-- 18.05.10--><!--
+  <string>Z73523_M5_RIM8_150_5-15_180510_Real.xml</string>-->
+  <!-- 18.05.24-->
+  <!--<string>Z73523_M5_RIM8_150_5-15_180524_Real.xml</string>-->
+  <!--<string>Z73523_M5_RIM8_150_5-15_180531_Real.xml</string>-->
+    <!--<string>Z73523_M5_RIM8_150_5-15_180601.xml</string>-->
+  <!--<string>Z73523_M5_RIM8_150_5-15_180603.xml</string>-->
+  <!--<string>Z73523_M5_RIM8_150_5-15_180608.xml</string>-->
+  <!--<string>Z73523_M5_RIM8_150_5-15_180609.xml</string>-->
+  <!--<string>Z736C_M5_RIM8_150_5-15_180618.xml</string>-->
+  <!--<string>Z73523_M5_RIM8_150_5-15_180618.xml</string>-->
+
+  <!--<string>Z73523_M5_RIU8_150_5-15_180703.xml</string>-->
+  <!--<string>Z73523_M5_RIU8_150_5-15_180806.xml</string>-->
+  <!--<string>Z73523_M5_RIU8_150_5-15_180823.xml</string>-->
+  <!--<string>Z73523A52_TPT_M5_RIU8_150_5-15_(3,5-5,0)_4(519)_8(519)_5(519)_01.xml</string>-->
+
+  <!--<string>Z73523A72_TPT_M5_RI_150_4(19)_8(519)_5(519)_01.xml</string>-->
+  <!--<string>Z73523A72_Contest_181003_01.xml</string>-->
+
+  <!--<string>Z73523A72_TPT_M58_RIZ8_P_181025.xml</string>-->
+  <!--<string>Z73523A72_TPT_M58_RIZ8_P_181101.xml</string>-->
+  <!--<string>Z73523A72_TPT_M58_RIZ8_P_181130.xml</string>-->
+  <!--<string>Z73523A72_TPT_M58_RIH9_P_181221.xml</string>-->
+
+  <!--<string>Z73523A76_TPT_M58_RIH9_P_4(225)_190107.xml</string>-->
+  <!--<string>Z73523A76_TPT_M58_RIH9_P_4(225)_190122.xml</string>-->
+  <!--<string>Z73523A76_TPT_M58_RIH9_P_4(225)_190123.xml</string>-->
+  <!--<string>Z73523A76_TPT_M58_RIH9_S_4(225)_190206.xml</string>-->
+  <!--<string>Z736_73521_M9_190320.xml</string>-->
+  <!--<string>73521_M9_190327.xml</string>-->
+  <!--<string>73521_M9_190829.xml</string>-->
+  <!--<string>73521_M5_190903.xml</string>-->
+  <!--<string>73521_M5_190919.xml</string>-->
+  <!--<string>736_M5_190930.xml</string>-->
+  <string>736_M5_191003.xml</string>
+</ArrayOfString>

@@ -1,0 +1,3940 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{936F35EC-13B7-44C1-8BF8-836B675CFA2D}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>BackTest01</RootNamespace>
+    <AssemblyName>BackTest01</AssemblyName>
+    <TargetFrameworkVersion>v4.5.1</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="GS, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\GS\GS\bin\Debug\GS.dll</HintPath>
+    </Reference>
+    <Reference Include="GS.EventLog, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\GS.EventLog\GS.EventLog2\GS.EventLog\bin\Debug\GS.EventLog.dll</HintPath>
+    </Reference>
+    <Reference Include="GS.Trade, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\GS.Trade\GS.Trade\bin\Debug\GS.Trade.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Xaml">
+      <RequiredTargetFramework>4.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="WindowsBase" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+    <Compile Include="Strategies\Z0073523A80.cs" />
+    <Page Include="MainWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="EventHandlers.cs" />
+    <Compile Include="MainWindow.xaml.cs">
+      <DependentUpon>MainWindow.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="app.config" />
+    <None Include="Files\Compare.xlsx" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <AppDesigner Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Configurations\Test\Strategies\Z73523\RI\Z73523A80_TPT_M58_RIH9_MA2%280,2,3,4,5%29_%28100-250%29_05-15_02.xml">
+      <SubType>Designer</SubType>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z736A\Z737\Test_Z7373_FE.M5_SiU5_01.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z7357\120\230\Test_Z7357_SIU5_FE.M5_01.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z7357\120\230\Test_Z7357_SIZ5_FE.M5_01.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z7357\120\230\Test_Z7357_SIU5_FE_01.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z7357\120\230\Test_Z7357_SIZ5_FE_01.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z7357\120\230\Test_Z7357_SIU5_PE.M5_01.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z7357\120\230\Test_Z7357_SIZ5_PE.M5_01.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z7357\120\230\Test_Z7357_SIU5_PE_01.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z7357\120\230\Test_Z7357_SIZ5_PE_01.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z7357\Strats_120.230_01.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Init\TradeStorages21.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Init\EventLog.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\P\BC.Standard\R_BkStandard_Fin_SIZ5_Z735P_151113.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\P\Strats_P1_151113_01.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\P\BC.Standard\R_BkStandard_Fin_SIU5_Z735P_151113.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Init\Strategies.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Init\AssemblyInfoList.xml" />
+    <Resource Include="Configurations\Test\Strategies\Z718\Test_Z718_01.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z738\Test_Z738T_RI_15_PE_01.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z736A\Z736A_RIU7_PE_401_1_05.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\P\BC.Standard\Z735P_RIZ8_01.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Content Include="Configurations\Test\Strategies\Strategies.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Resource Include="Configurations\Test\Strategies\Z736\Test_Z736_SIU5_02.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z736\Test_Z736_SIZ5_02.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z735\120\230\Test_Z735_FE.M5_SIU5_01.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z735\120\230\Test_Z735_FE.M5_SIZ5_01.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z735\120\230\Test_Z735_FE_SIU5_01.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z735\120\230\Test_Z735_FE_SIZ5_01.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z735\120\230\Test_Z735_PE.M5_SIU5_01.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z735\120\230\Test_Z735_PE.M5_SIZ5_01.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z735\120\230\Test_Z735_PE_SIU5_01.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z735\120\230\Test_Z735_PE_SIZ5_01.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z735\110\210\Test_Z735_FE.M5_SIU5_01.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z735\110\210\Test_Z735_FE.M5_SIZ5_01.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z735\110\210\Test_Z735_FE_SIU5_01.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z735\110\210\Test_Z735_FE_SIZ5_01.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z735\110\210\Test_Z735_PE.M5_SIU5_01.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z735\110\210\Test_Z735_PE.M5_SIZ5_01.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z735\110\210\Test_Z735_PE_SIU5_01.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z735\110\210\Test_Z735_PE_SIZ5_01.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z735\120\210\Test_Z735_FE.M5_SIU5_01.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z735\120\210\Test_Z735_FE.M5_SIZ5_01.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z735\120\210\Test_Z735_FE_SIU5_01.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z735\120\210\Test_Z735_FE_SIZ5_01.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z735\120\210\Test_Z735_PE.M5_SIU5_01.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z735\120\210\Test_Z735_PE.M5_SIZ5_01.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z735\120\210\Test_Z735_PE_SIU5_01.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z735\120\210\Test_Z735_PE_SIZ5_01.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z735\Strats_110.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z735\Strats_120.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z735\120\220\Test_Z735_FE.M5_SIU5_01.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z735\120\220\Test_Z735_FE.M5_SIZ5_01.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z735\120\220\Test_Z735_FE_SIU5_01.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z735\120\220\Test_Z735_FE_SIZ5_01.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z735\120\220\Test_Z735_PE.M5_SIU5_01.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z735\120\220\Test_Z735_PE.M5_SIZ5_01.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z735\120\220\Test_Z735_PE_SIU5_01.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z735\120\220\Test_Z735_PE_SIZ5_01.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z735\120\Strats_120.220_01.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z736\110\230\Test_Z736_FE.M5_SIU5_01.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z736\110\230\Test_Z736_FE.M5_SIZ5_01.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z736\110\230\Test_Z736_FE_SIU5_01.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z736\110\230\Test_Z736_PE.M5_SIU5_01.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z736\110\230\Test_Z736_PE.M5_SIZ5_01.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z736\110\230\Test_Z736_PE_SIU5_01.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z736\110\230\Test_Z736_PE_SIZ5_01.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z7357\120\220\Test_Z7357_FE.M5_SIU5_01.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z7357\120\220\Test_Z7357_FE.M5_SIZ5_01.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z7357\120\220\Test_Z7357_FE_SIU5_01.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z7357\120\220\Test_Z7357_FE_SIZ5_01.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z7357\120\220\Test_Z7357_PE.M5_SIU5_01.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z7357\120\220\Test_Z7357_PE.M5_SIZ5_01.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z7357\120\220\Test_Z7357_PE_SIU5_01.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z7357\120\220\Test_Z7357_PE_SIZ5_01.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z7357\Strats_120.220_01.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z7357\120\230\Test_Z7357_RIU5_FE.M5_01.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z7357\120\230\Test_Z7357_RIZ5_FE.M5_01.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z7357\120\230\Test_Z7357_RIU5_FE_01.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z7357\120\230\Test_Z7357_RIZ5_FE_01.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z7357\120\230\Test_Z7357_RIU5_PE.M5_01.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z7357\120\230\Test_Z7357_RIZ5_PE.M5_01.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z7357\120\230\Test_Z7357_RIU5_PE_01.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z7357\120\230\Test_Z7357_RIZ5_PE_01.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z7357\Strats_RI_120.230_01.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z735\110\230\Test_Z735_SIU5_FE.M5_01.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z735\110\230\Test_Z735_SIZ5_FE.M5_01.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z735\110\230\Test_Z735_SIU5_FE_01.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z735\110\230\Test_Z735_SIZ5_FE_01.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z735\110\230\Test_Z735_SIU5_PE.M5_01.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z735\110\230\Test_Z735_SIZ5_PE.M5_01.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z735\110\230\Test_Z735_SIU5_PE_01.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z735\110\230\Test_Z735_SIZ5_PE_01.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z735\110\230\Test_Z735_RIU5_FE.M5_01.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z735\110\230\Test_Z735_RIU5_FE_01.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z735\110\230\Test_Z735_RIU5_PE.M5_01.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z735\110\230\Test_Z735_RIU5_PE_01.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z735\110\230\Test_Z735_RIZ5_FE.M5_01.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z735\110\230\Test_Z735_RIZ5_FE_01.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z735\110\230\Test_Z735_RIZ5_PE.M5_01.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z735\110\230\Test_Z735_RIZ5_PE_01.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z7357\110\230\Test_Z7357_RIU5_FE.M5_01.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z7357\110\230\Test_Z7357_RIZ5_FE.M5_01.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z7357\110\230\Test_Z7357_SIU5_FE.M5_01.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z7357\110\230\Test_Z7357_SIZ5_FE.M5_01.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z7357\110\230\Test_Z7357_RIU5_FE_01.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z7357\110\230\Test_Z7357_RIZ5_FE_01.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z7357\110\230\Test_Z7357_SIU5_FE_01.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z7357\110\230\Test_Z7357_SIZ5_FE_01.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z7357\110\230\Test_Z7357_RIU5_PE.M5_01.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z7357\110\230\Test_Z7357_RIZ5_PE.M5_01.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z7357\110\230\Test_Z7357_SIU5_PE.M5_01.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z7357\110\230\Test_Z7357_SIZ5_PE.M5_01.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z7357\110\230\Test_Z7357_RIU5_PE_01.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z7357\110\230\Test_Z7357_RIZ5_PE_01.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z7357\110\230\Test_Z7357_SIU5_PE_01.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z7357\110\230\Test_Z7357_SIZ5_PE_01.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z7357\Strats_RI_110.230_01.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z7357\Strats_RIZ5_120.230_01.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z7357\Strats_RIU5_110.230_01.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z7357\Strats_RIZ5_110.230_01.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z7357\Strats_RIU5_120.230_01.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z7358\Strats_RI_120.230_01.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z7358\120\230\Test_Z7358_RIU5_FE_01.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z7358\120\230\Test_Z7358_RIU5_PE_01.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z7358\120\230\Test_Z7358_RIZ5_FE_01.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z7358\120\230\Test_Z7358_RIZ5_PE_01.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z7358\120\220\Test_Z7358_RIU5_FE_01.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z7358\120\220\Test_Z7358_RIU5_PE_01.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z7358\120\220\Test_Z7358_RIZ5_FE_01.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z7358\120\220\Test_Z7358_RIZ5_PE_01.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z7358\110\230\Test_Z7358_RIU5_FE_01.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z7358\110\230\Test_Z7358_RIU5_PE_01.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z7358\110\230\Test_Z7358_RIZ5_FE_01.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z7358\110\230\Test_Z7358_RIZ5_PE_01.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z7358\Strats_RI_110.230_01.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z7357\120\230\Test_Z7357_RIH6_FE.M5_01.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z7357\120\230\Test_Z7357_RIH6_FE_01.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z7357\120\230\Test_Z7357_RIH6_PE.M5_01.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z7357\120\230\Test_Z7357_RIH6_PE_01.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z7357\Strats_RIH6_120.230_01.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z7357\110\230\Test_Z7357_RIH6_FE.M5_01.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z7357\110\230\Test_Z7357_RIH6_FE_01.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z7357\110\230\Test_Z7357_RIH6_PE.M5_01.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z7357\110\230\Test_Z7357_RIH6_PE_01.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z7357\Strats_RIH6_110.230_01.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z7357\110\230\Test_Z7357_RI_FE_01.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z7357\120\230\Test_Z7357_RI_FE_01.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z7357\Strats_RI_05_FE_01.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z7357\120\210\Test_Z7357_RIH6_FE.M5_01.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z7357\120\210\Test_Z7357_RIH6_FE_01.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z7357\120\210\Test_Z7357_RIH6_PE.M5_01.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z7357\120\210\Test_Z7357_RIH6_PE_01.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z7357\120\210\Test_Z7357_RIU5_FE.M5_01.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z7357\120\210\Test_Z7357_RIU5_FE_01.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z7357\120\210\Test_Z7357_RIU5_PE.M5_01.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z7357\120\210\Test_Z7357_RIU5_PE_01.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z7357\120\210\Test_Z7357_RIZ5_FE.M5_01.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z7357\120\210\Test_Z7357_RIZ5_FE_01.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z7357\120\210\Test_Z7357_RIZ5_PE.M5_01.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z7357\120\210\Test_Z7357_RIZ5_PE_01.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z7357\120\210\Test_Z7357_RI_FE_01.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z7357\110\210\Test_Z7357_RI_FE_01.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z735\110\210\Test_Z735_RI_05_FE_01.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z735\110\230\Test_Z735_RI_05_FE_01.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z735\120\210\Test_Z735_RI_05_FE_01.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z735\120\230\Test_Z735_RI_05_FE_01.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z735\110\210\Test_Z735_RIH6_05_01.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z735\110\230\Test_Z735_RIH6_05_01.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z735\120\210\Test_Z735_RIH6_05_01.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z735\120\230\Test_Z735_RIH6_05_01.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z735\110\210\RFin_05_RIU5_161004.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z735\110\210\RFin_05_SiH6_161004.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z735\110\210\RFin_05_SiU5_161004.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z735\110\210\RFin_05_SiZ5_161004.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z735\110\210\RFin_05_SRH6_161004.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z735\110\210\RFin_05_SRU5_161004.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z735\110\210\RFin_05_SRZ5_161004.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z73521\RI\RFin_RI_73521_171011.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z73521\RI\Z73521_RIM8_5-15.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z73521\RI\Z73521_RIH8_5-60.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z73521\RI\Z73521_RIM8_5-300.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z73521\RI\Z73521_RI_15_221.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z73521\RI\Z73521_RI_15_212_01.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z73521\RI\Z73521_RIH8_5_30_01.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z73521\RI\Z73521_RIZ7_15_01.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z73521\RI\Z73521_RIU7_15_60_01.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z73521\RI\Z73521_RIM7_15_120_01.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z73521\RI\Z73521_RIH7_15_120_01.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z73521\RI\Z73521_RIM8_10-60.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z73521\RI\Z73521_RIM8_5_60_01.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z73521\RI\Z73521_RIZ7_5_30_01.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z73521\RI\Z73521_RIU7_5_30_01.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z73521\RI\Z73521_RIM7_5_30_01.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z73521\RI\Z73521_RIH7_5_30_01.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z73521\RI\Z73521_RIZ6_5_30_01.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z73521\RI\Z73521_RIH6_5_30_01.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z73521\RI\Z73521_RIZ5_5_30_01.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z73521\RI\Z73521_RIU5_5_30_01.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z73521\RI\Z73521_RIM8_5_30_150.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z73521\RI\Z73521_RIM8_5_30_175.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z73521\RI\Z73521_RIH8_5_30_175.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z73521\RI\Z73521_RIH8_5_30_125.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z73521\RI\Z73521_RIZ7_5_30_125.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z73521\RI\Z73521_RIZ7_5_30_175.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z73521\RI\Z73521_RIU7_5_30_125.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z73521\RI\Z73521_RIU7_5_30_175.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z73521\RI\Z73521_RIM7_5_30_125.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z73521\RI\Z73521_RIM7_5_30_175.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z73521\RI\Z73521_RIH7_5_30_175.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z73521\RI\Z73521_RIH7_5_30_125.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z73521\RI\Z73521_RIZ6_5_30_125.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z73521\RI\Z73521_RIZ6_5_30_175.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z73521\RI\Z73521_RIH6_5_30_125.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z73521\RI\Z73521_RIH6_5_30_175.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z73521\RI\Z73521_RIZ5_5_30_125.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z73521\RI\Z73521_RIZ5_5_30_175.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z73521\RI\Z73521_RIU5_5_30_125.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z73521\RI\Z73521_RIU5_5_30_175.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z73521\SR\Z73521_SRM8_5_30_150.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z73521\RI\Z73521_RIM8_5_30_125.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z73521\SR\Z73521_SRH8_5_30_175.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z73521\SR\Z73521_SRH8_15_60_100.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z73521\SR\Z73521_SRH8_15_60_125.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z73521\SR\Z73521_SRH8_15_60_150.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z73521\SR\Z73521_SRH8_15_60_175.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z73521\SR\Z73521_SRM8_15_60_100.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z73521\SR\Z73521_SRM8_15_60_125.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z73521\SR\Z73521_SRM8_15_60_150.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z73521\SR\Z73521_SRM8_15_60_175.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z73521\SR\Z73521_SRZ7_15_60_100.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z73521\SR\Z73521_SRZ7_15_60_125.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z73521\SR\Z73521_SRZ7_15_60_150.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z73521\SR\Z73521_SRZ7_15_60_175.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z73521\RI\Z73521_M5_RIM8_5_30_150.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z73521\RI\Z73523_M5_RIM8_5_30_150.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z73521\RI\Z73521_M5_RIH8_5_30_150.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z73521\RI\Z73521_M5_RIZ7_5_30_150.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z73521\RI\Z73521_M5_RIM7_5_30_150.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z73521\RI\Z73521_R_M5_RIM8_15_45_150.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z73521\RI\Z73521_R_M5_RIM8_15_150_01.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z73521\RI\Z73521_R_M5_RIH8_15_150_01.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z73521\RI\Z73521_R_M5_RIZ7_15_150_01.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z73521\RI\Z73521_R_M5_RIH7_15_150_01.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z73521\RI\Z73521_R_M5_RIU7_15_150_01.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z73521\RI\Z73521_R_M5_RIM7_15_150_01.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z73521\RI\Z73521_R_M5_RIH6_15_150_01.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z73521\RI\Z73521_R_M5_RIU5_15_150_01.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z73521\RI\Z73521_R_M5_RIZ6_15_150_01.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z73521\RI\Z73521_R_M5_RIZ5_15_150_01.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z73521\RI\Z73521_R_M5_RIH8_15_45_150.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z73521\RI\Z73521_R_M5_RIM8_10_30_150.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z73521\RI\Z73521_R_M5_RIH8_10_30_150.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z73521\RI\Z73521_M5_RIH9_5_30_150.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z73521\Si\Z73521_M5_SiH9_5_30_150.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z73521\RI\RIH9_73521_02.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z73521\Si\SiM9_73521_02.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Content Include="Configurations\Test\Strategies\Z73521\Si\SiH9_73521_190225.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Resource Include="Configurations\Test\Strategies\Z73521\SR\SRH9_73521_190225.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z73521\Si\SiH9_73521_02.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z73521\SR\SRM9_73521_01.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z73521\SR\SRH9_73521_01.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z73521\Si\SiM9_73521_01.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z73521\Si\SiH9_73521_01.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z73521\Si\SiH9_73521_03.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z73521\Si\SiM9_73521_03.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z73521\SR\SRM9_73521.150.2124_01.xml" />
+    <Resource Include="Configurations\Test\Strategies\Z73521\SR\SRH9_73521.150.2124_01.xml" />
+    <Resource Include="Configurations\Test\Strategies\Z73521\Si\SiM9_73521.150.2124_01.xml" />
+    <Resource Include="Configurations\Test\Strategies\Z73521\Si\SiH9_73521.150.2124_01.xml">
+      <SubType>Designer</SubType>
+    </Resource>
+    <Content Include="Configurations\Test\Strategies\Z73521\SR\Z73521_SRM8_5_30_125.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Resource Include="Configurations\Test\Strategies\Z73521\SR\Z73521_SRM8_5_30_100.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z73521\SR\Z73521_SRH8_5_30_100.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z73521\SR\Z73521_SRH8_5_30_125.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z73521\SR\Z73521_SRH8_5_30_150.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z73521\SR\Z73521_SRU7_15_60_100.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z73521\SR\Z73521_SRU7_15_60_125.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z73521\SR\Z73521_SRU7_15_60_150.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z73521\SR\Z73521_SRU7_15_60_175.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z73523\RI\Z73523_M5_RIM8_15_150_01.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z73523\RI\Z73523_M5_RIM8_5_30_150.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z73523\RI\Z73523_M5_RIH8_15_150_01.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z73523\RI\Z73523_M5_RIZ7_15_150_01.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z73523\RI\Z73523_M5_RIM8_15_150_19_01.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z73523\RI\Z73523_M5_RIZ7_15_150_19_01.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z73523\RI\Z73523_M5_RIU7_15_150_01.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z73523\RI\Z73523_M5_RIM7_15_150_01.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z73523\RI\Z73523_M5_RIH7_15_150_01.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z73523\RI\Z73523_M5_RIH6_15_150_01.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z73523\RI\Z73523_M5_RIU5_15_150_01.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z73523\RI\Z73523_M5_RIZ6_15_150_01.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z73523\RI\Z73523_M5_RIZ5_15_150_01.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z73523\RI\Z73523_M5_RIM8_15_150_M212_01.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z73523\RI\Z73523_M5_RIM8_150_5-15_%28382-500%29_01.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z73523\RI\Z73523_M5_RIM8_150_5-15_%283,5-5,0%29_01.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z73523\RI\Z73523_M5_RIM8_150_5-15_%283,5-5,0%29_Atr%2850,500%29_02.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z73523\SR\Z73523_M5_SRM8_150_5-15_%283,5-5,0%29_01.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z73523\SR\Z73523_M5_SRH8_150_5-15_%283,5-5,0%29_01.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z73523\SR\Z73523_M5_SiH8_150_5-15_%283,5-5,0%29_01.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z73523\SR\Z73523_M5_SiM8_150_5-15_%283,5-5,0%29_01.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z73523\SR\Z73523_M5_SRZ7_150_5-15_%283,5-5,0%29_01.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z73523\SR\Z73523_M5_SiZ7_150_5-15_%283,5-5,0%29_01.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z73523\SR\Z73523_M5_SiU7_150_5-15_%283,5-5,0%29_01.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z73523\SR\Z73523_M5_SRU7_150_5-15_%283,5-5,0%29_01.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z73523\SR\Z73523_M5_SiM8_175_5-15_%283,5-5,0%29_01.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z73523\SR\Z73523_M5_SiM8_125_5-15_%283,5-5,0%29_01.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z73523\RI\Z73523A1_M5_RIM8_150_5-15_%283,5-5,0%29_01.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z73523\RI\Z73523A2_TPF_M5_RIM8_150_5-15_%283,5-5,0%29_01.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z73523\RI\Z73523A4_M5_RIM8_150_5-15_%283,5-5,0%29_01.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z73523\RI\Z73523A3_M5_RIM8_150_5-15_%283,5-5,0%29_01.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z73523\RI\Z73523A2_TPT_M5_RIM8_150_5-15_%283,5-5,0%29_01.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z73523\RI\Z73524A2_TPT_M5_RIM8_150_5-15_%283,5-5,0%29_01.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z73523\RI\Z73523A5_TPT_M5_RIM8_150_5-15_%283,5-5,0%29_01.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z73523\RI\Z73524A2_TPT_M5_RIM8_150_5%283,5-5,0%29_01.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z73523\RI\Z73523A2_TPF_M5_RIM8_150_05%283,5-5,0%29_01.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z73523\RI\Z73523A2_TPF_M5_RIU8_150_5%283,5-5,0%29_01.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z73523\RI\Z73523A2_TPF_M5_RIU8_150_10%283,5-5,0%29_01.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z73523\BR\Z73523A2_TPF_M5_BRU8_150_5%283,5-5,0%29_01.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z73523\BR\Z73523A2_TPF_M5_BRU8_150_10%283,5-5,0%29_01.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z73523\BR\Z73523A2_TPF_M5_BRU8_150_15%283,5-5,0%29_01.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z73523\RI\Z73523A2_TPF_M5_RIM8_150_10%283,5-5,0%29_01.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z73523\RI\Z73523A2_TPT_M5_RIM8_150_05%283,5-5,0%29_01.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z73523\RI\Z73523A2_TPT_M5_RIM8_150_10%283,5-5,0%29_01.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z73523\RI\Z73523A2_TPT_M5_RIU8_150_05%283,5-5,0%29_01.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z73523\RI\Z73523A2_TPT_M5_RIU8_150_10%283,5-5,0%29_01.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z73523\RI\Z73523A5_TPT_M5_RIU8_150_5-15_%283,5-5,0%29_01.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z73523\RI\Z73523A5_TPT_M5_RIM8_150_5-15_4%281010%29%283,5-5,0%29_01.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z73523\RI\Z73523A5_TPT_M5_RIU8_150_5-15_4%281010%29%283,5-5,0%29_01.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z73523\RI\Z73523A51_TPT_M5_RIU8_150_5-15_%283,5-5,0%29_01.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z73523\RI\Z73523A51_TPT_M5_RIM8_150_5-15_%283,5-5,0%29_01.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z73523\RI\Z73523A5_TPT_M5_RIU8_150_5-15_4%281011%29%283,5-5,0%29_01.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z73523\RI\Z73523A52_TPT_M5_RIU8_150_5-15_%283,5-5,0%29_01.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z73523\RI\Z73523A52_TPT_M5_RIM8_150_5-15_%283,5-5,0%29_01.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z73523\RI\Z73523A53_TPT_M5_RIU8_150_5-15_%283,5-5,0%29_01.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z73523\RI\Z73523A52_TPT_M5_RIU8_150_019_10_%283,5-10%29_01.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z73523\RI\Z73523A51_TPT_M5_RIU8_150_5-15_4%28019%29%283,5-5,0%29_01.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z73523\RI\Z73523A55_TPT_M5_RIU8_150_019_10_%283,5-10%29_01.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z73523\RI\Z73523A54_TPT_M5_RIU8_150_019_10_%283,5-10%29_01.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z73523\RI\Z73523A51_TPT_M5_RIU8_150_5-15_%283,5-5,0%29_02.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z73523\RI\Z73523A5_TPT_M5_RIU8_150_5-15_%283,5-5,0%29_02.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z73523\RI\Z73523A52_TPT_M5_RIU8_150_5-15_%283,5-5,0%29_02.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z73523\RI\Z73523A54_TPT_M5_RIU8_150_5-15_%283,5-5,0%29_02.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z73523\RI\Z73523A55_TPT_M5_RIU8_150_5-15_%283,5-5,0%29_02.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z73523\RI\Z73523A5_TPT_M5_RIU8_150_5-15_%283,5-5,0%29_19_02.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z73523\RI\Z73523A51_TPT_M5_RIU8_150_5-15_%283,5-5,0%29_19_02.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z73523\RI\Z73523A52_TPT_M5_RIU8_150_5-15_%283,5-5,0%29_19_02.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z73523\RI\Z73523A54_TPT_M5_RIU8_150_5-15_%283,5-5,0%29_19_02.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z73523\RI\Z73523A55_TPT_M5_RIU8_150_5-15_%283,5-5,0%29_19_02.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z73523\RI\Z73523A51_TPT_M5_RIU8_150_5-15_%283,5-5,0%29_519_02.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z73523\RI\Z73523A52_TPT_M5_RIU8_150_5-15_%283,5-5,0%29_519_02.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z73523\RI\Z73523_M5_RIU8_150_5-15_SL%28750%29180806.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z73523\RI\Z73523A52_TPT_M5_RIM8_150_5-15_%283,5-5,0%29_519_02.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z73523\RI\Z73523A52_TPT_M5_RIU8_150_5-15_%283,5-5,0%29_519_02_8%28519%29.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z73523\RI\Z73523A52_TPT_M5_RIU8_150_5_519_01.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z73523\RI\Z73523A52_TPT_M5_RIM8_150_5_519_01.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z73523\RI\Z73523A52_TPT_M5_RIU8_150_5_519_012.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z73523\RI\Z73523A52L_TPT_M5_RIU8_150_5-15_%283,5-5,0%29_19_02.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z73523\RI\Z73523A52S_TPT_M5_RIU8_150_5-15_%283,5-5,0%29_19_02.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z73523\RI\Z73523A52_TPT_M5_RIU8_150_5_519_02.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z73523\RI\Z73523A52_TPT_M5_RIU8_150_5-15_%283,5-5,0%29_4%2819%29_5%28019%29_01.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z73523\RI\Z73523A52_TPT_M5_RIU8_150_5-15_%283,5-5,0%29_4%2819%29_5%28519%29_01.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z73523\RI\Z73523A72_TPT_M5_RIU8_150_5-15_%283,5-5,0%29_4%2819%29_5%28019%29_01.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z73523\RI\Z73523A72_TPT_M5_RIU8_150_5-15_%283,5-5,0%29_4%2819%29_5%28519%29_8%28019%29_01.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z73523\RI\Z73523A52_TPT_M5_RIU8_125_5_519_02.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z73523\RI\Z73523A52_TPT_M5_RIU8_100_5_519_02.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z73523\RI\Z73523A52_TPT_M5_RIU8_100_10_519_02.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z73523\RI\Z73523A52_TPT_M5_RIU8_125_10_519_02.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z73523\RI\Z73523A52_TPT_M5_RIU8_150_10_519_02.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z73523\RI\Z73523A72_TPT_M5_RIU8_150_5-15_%283,5-5,0%29_4%2819%29_5%28519%29_8%28519%29_01.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z73523\RI\Z73523A72_TPT_M5_RIU8_150_5-15_%283,5-5,0%29_4%28519%29_5%28519%29_8%28519%29_01.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z73523\RI\Z73523A72_TPT_M5_RIU8_150_5-15_01.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z73523\RI\Z73523A72_TPT_M5_RIU8_150_5-15_%283,5-5,0%29_4%28519%29_5%28519%29_8%28019%29_01.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z73523\RI\Z73523A72_TPT_M5_RIU8_150_5_%283,5-5,0%29_4%2819%29_5%28519%29_8%28519%29_01.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z73523\RI\Z73523A72_TPT_M5_RIU8_150_10_%283,5-5,0%29_4%2819%29_5%28519%29_8%28019%29_01.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z73523\RI\Z73523A72_TPT_M5_RIU8_150_10_%283,5-5,0%29_4%2819%29_5%28519%29_8%28519%29_01.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z73523\RI\Z73523A73_TPT_M5_RIU8_150_5_%283,5-5,0%29_4%2819%29_5%28519%29_8%28519%29_01.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z73523\RI\Z73523A72_TPT_M5_RIZ8_150_5_%283,5-5,0%29_4%2819%29_5%28519%29_8%28519%29_01.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z73523\RI\Z73523A72_TPT_M5_RIZ8_150_10_%283,5-5,0%29_4%2819%29_5%28519%29_8%28019%29_01.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z73523\RI\Z73523A72_TPT_M5_RIZ8_150_5_%283,5-5,0%29_4%2819%29_5%28519%29_8%28519%29_02.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z73523\RI\Z73523A72_TPT_M5_RIZ8_150_5_%283,5-5,0%29_SL%280%29_4%2819%29_5%28519%29_8%28019%29_02.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z73523\RI\Z73523A72_TPT_M5_RIZ8_150_5_%283,5-5,0%29_SL%280%29_4%2819%29_5%28519%29_8%28519%29_02.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z73523\RI\Z73523A72_TPT_M5_RIU8_150_5_%283,5-5,0%29_SL%280%29_4%2819%29_5%28519%29_8%28019%29_02.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z73523\RI\Z73523A72_TPT_M5_RIU8_150_5_%283,5-5,0%29_SL%280%29_4%2819%29_5%28519%29_8%28519%29_02.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z73523\RI\Z73523A72_TPT_M5_RIM8_150_5_%283,5-5,0%29_SL%280%29_4%2819%29_5%28519%29_8%28019%29_02.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z73523\RI\Z73523A72_TPT_M5_RIM8_150_5_%283,5-5,0%29_SL%280%29_4%2819%29_5%28519%29_8%28519%29_02.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z73523\RI\Z73523A72_TPT_M5_RIH8_150_5_%283,5-5,0%29_SL%280%29_4%2819%29_5%28519%29_8%28019%29_02.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z73523\RI\Z73523A72_TPT_M5_RIH8_150_5_%283,5-5,0%29_SL%280%29_4%2819%29_5%28519%29_8%28519%29_02.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z73523\RI\Z73523A72_TPT_M5_RIU8_150_10_%283,5-5,0%29_SL%280%29_4%2819%29_5%28519%29_8%28019%29_02.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z73523\RI\Z73523A72_TPT_M5_RIM8_150_10_%283,5-5,0%29_SL%280%29_4%2819%29_5%28519%29_8%28019%29_02.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z73523\RI\Z73523A72_TPT_M5_RIH8_150_10_%283,5-5,0%29_SL%280%29_4%2819%29_5%28519%29_8%28019%29_02.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z73523\RI\Z73523A72_TPT_M5_RIZ7_150_10_%283,5-5,0%29_SL%280%29_4%2819%29_5%28519%29_8%28019%29_02.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z73523\RI\Z73523A72_TPT_M5_RIZ7_150_5_%283,5-5,0%29_SL%280%29_4%2819%29_5%28519%29_8%28019%29_02.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z73523\RI\Z73523A72_TPT_M5_RIU7_150_5_%283,5-5,0%29_SL%280%29_4%2819%29_5%28519%29_8%28019%29_02.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z73523\RI\Z73523A72_TPT_M5_RIZ8_150_10_%283,5-5,0%29_4%2819%29_5%28519%29_8%28019%29_02.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z73523\RI\Z73523A72_TPT_M58_RIZ8_150_10_%283,5-5,0%29_4%2819%29_5%28519%29_8%28019%29_01.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z73523\RI\Z73523A72_TPT_M58_RIZ8_150_15_%283,5-5,0%29_4%2819%29_5%28519%29_8%28019%29_01.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z73523\RI\Z73523A72_TPT_M58_RIZ8_150_05_%283,5-5,0%29_4%2819%29_5%28519%29_8%28019%29_01.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z73523\RI\Z73523A72_TPT_M58_RIZ8_150_05_%283,5-5,0%29_4%2819%29_5%28519%29_8%28519%29_01.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z73523\RI\Z73523A72_TPT_M58_RIZ8_150_10_%283,5-5,0%29_4%2819%29_5%28519%29_8%28519%29_01.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z73523\RI\Z73523A72_TPT_M58_RIZ8_150_15_%283,5-5,0%29_4%2819%29_5%28519%29_8%28519%29_01.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z73523\RI\Z73523A72_TPT_M58_RIZ8_150_05_%283,5-5,0%29_4%28519%29_5%28519%29_8%28519%29_01.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z73523\RI\Z73523A72_TPT_M5_RIZ8_150_5_%283,5-5,0%29_4%2819%29_5%28519%29_8%28019%29_02.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z73523\RI\Z73523A72_TPT_M58_RIZ8_150_10_%283,5-5,0%29_4%28519%29_5%28519%29_8%28519%29_01.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z73523\RI\Z73523A72_TPT_M58_RIZ8_150_15_%283,5-5,0%29_4%28519%29_5%28519%29_8%28519%29_01.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z73523\RI\Z73523A72_TPT_M58_RIZ8_MA2%280%29_150_05-15_01.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z73523\RI\Z73523A72_TPT_M58_RIZ8_P_MA2%280%29_150_05-15_01.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z73523\RI\Z73523A72_TPT_M58_RIZ8_P_1%2819%29_MA2%280%29_150_05-15_01.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z73523\RI\Z73523A72_TPT_M58_RIZ8_P_MA2%28N%29_150_05-15_01.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z73523\RI\Z73523A74_TPT_M58_RIZ8_MA2%280%29_150_05-15_01.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z73523\RI\Z73523A75_TPT_M58_RIZ8_MA2%280%29_150_05-15_01.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z73523\RI\Z73523A75_TPT_M58_RIZ8_P_MA2%280%29_150_05-15_01.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z73523\RI\Z73523A77_TPT_M58_RIZ8_MA2%28N%29_150_05-15_01.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z73523\RI\Z73523A75_TPT_M58_RIH9_P_MA2%280%29_150_05-15_01.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z73523\RI\Z73523A75_TPT_M58_RIZ8_P_MA2%280%29_4%28225%29_150_05-15_01.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z73523\RI\Z73523A78_TPT_M58_RIH9_P_MA2%280%29_150_05-15_01.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z73523\RI\Z73523A75_TPT_M58_RIZ8_P_MA2%280,2,3,4%29_4%28225%29_150_05-15_01.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z73523\RI\Z73523A75_TPT_M58_RIZ8_P_MA2%280,2,3,4%29_4%28019%29_150_05-15_01.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z73523\RI\Z73523A75_TPT_M58_RIH9_P_MA2%280,2,3,4%29_4%28019%29_150_05-15_01.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z73523\RI\Z73523A75_TPT_M58_RIH9_P_MA2%280,2,3,4%29_4%28225%29_150_05-15_01.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z73523\RI\Z73523A80_TPT_M58_RIH9_P_MA2%280,2,3,4%29_4%28225%29_150_05-15_02.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z73523\SR\Z73523A80_TPT_M58_SRH9_P_MA2%280,2,3,4%29_4%28225%29_150_05-15_02.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z73523\RI\Z73523A81_TPT_M58_RIH9_MA2%280,2,3,4,5%29_%28100-250%29_05-15_03.xml">
+      <SubType>Designer</SubType>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z73523\SR\Z73523A80_TPT_M58_SRH9_MA2%280,2,3,4%29_%28100-250%29_05-15_02.xml" />
+    <Content Include="Configurations\Test\Strategies\Z735\110\210\RFin_05_RIZ5_161004.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Configurations\Test\Strategies\Z735\110\210\RFin_05_RIH6_161004.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Resource Include="Configurations\Test\Strategies\Z735\110\230\RFin_05_RIH6_161004.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z735\110\230\RFin_05_RIU5_161004.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z735\110\230\RFin_05_RIZ5_161004.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z735\110\230\RFin_05_RIZ6_161004.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z735\110\230\RFin_05_RIH6_161026.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z735\110\230\RFin_05_RIZ5_161026.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z735\110\230\RFin_05_RIU5_161026.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z735\110\230\RFin_RI_73521_161113.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z735\110\230\RFin_RI_73521_171011.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Content Include="Configurations\Test\Strategies\Z735\110\230\RFin_RI_73521_170513.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Configurations\Test\Strategies\Z735\110\230\RFin_Si_73521_161113.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Configurations\Test\Strategies\Z735\120\Strats_SI_120.230_01.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Resource Include="Configurations\Test\Strategies\Z735\Strats_SI_110.230_01.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z735\Strats_SI_120.230_01.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z735\Strats_RI_110.230_01.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z735\Strats_SIU5_120.230_01.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z735\Strats_SIZ5_120.230_01.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z736\110\210\Test_Z736_RIU5_FE.M5_01.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z736\110\210\Test_Z736_RIZ5_FE.M5_01.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z735\Strats_RI_05_FE_01.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z735\Strats_RIH6_05_01.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z735\Strats_RI_UZ5H6_05_01.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z735\Strats_Si_73521_161113.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z736\110\210\Test_Z736M_RI_05_FE_01.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z736\110\210\Test_Z736M_RI_05_FE_M5_01.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z735\Strats_RI_73521_161113.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z736\110\210\Test_Z836_RI_05_FE_01.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z736\110\210\Test_Z736MP_RI_05_FE_01.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z736\110\210\Test_Z736MP_RI_05_FE_01_170415.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z736\110\210\Test_Z736T_RI_05_PE_01.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z736\110\210\Test_Z736T_RIU7_05_PE_01.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z736\110\210\Test_Z736T_RI_05_PE_01_15.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z736\110\210\Test_Z736T_RI_05_PE_01_30.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z736\110\210\Test_Z736T_RI_05_PE_01_45.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z736\110\210\Test_Z736M_RIU7_PE_01.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z736A\Z736A_RIM8_PE_401_1_05.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z736A\Z736A_RIU7_PE_401_1_300.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z736A\Z736B_RIU7_PE_401_1_300.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z736A\Z736B_RIU7_PE_401_1_05.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z736A\Z736A_RIM8_PE_401_1_05-15.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z736A\Z736A_RIH8_PE_401_1_05-15.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z736A\Z736B_RIM8_PE_401_1_05-15.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z736A\Z736C_RIM8_PE_401_801_1_05-15.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z736A\Z736C_RIM8_PE_401_800_1_05-15.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z736A\Z736D_RIM8_PE_401_801_1_05-15.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z736A\Z736C_RIH8_PE_401_801_1_05-15.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z736A\Z736C_RIM8_PE_401_801_2_05-15.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z736A\Z736C_RIM8_PE_401_801_3_05-15.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z736A\Z736CT_RIM8_PE_401_801_1_05-15.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z736A\Z736CT_RIM8_PE_401_1_15.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z736A\Z736CT_RIM8_PE_401_1_10.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z736A\Z736CT_RIM8_PE_401_1_10%281,5%29.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z736A\Z736CT_RIM8_PE_401_1_05%281,5%29.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z736A\Z736CT_RIM8_PE_401_1_15%281,5%29.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z736A\Z736CT_RIM8_PE_401_1_05.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z736A\Z736C_RIU8_PE_401_801_2_05-15.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z736A\Z736C_RIU8_PE_401_801_3_05-15.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z736A\Z736B_RIU8_PE_401_801_1_05-15.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z736A\Z736B_RIM8_PE_401_801_1_05-15.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Content Include="Configurations\Test\Strategies\Z736\110\210\Test_Z736_FE.M5_SIZ5_01.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Configurations\Test\Strategies\Z736\110\210\Test_Z736_FE.M5_SIU5_01.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Resource Include="Configurations\Test\Strategies\Z736\110\210\Test_Z736_RIU5_FE_01.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z736\110\210\Test_Z736_RIZ5_FE_01.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Content Include="Configurations\Test\Strategies\Z736\110\210\Test_Z736_FE_SIZ5_01.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Configurations\Test\Strategies\Z736\110\210\Test_Z736_FE_SIU5_01.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Resource Include="Configurations\Test\Strategies\Z736\110\210\Test_Z736_RIU5_PE.M5_01.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z736\110\210\Test_Z736_RIZ5_PE.M5_01.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Content Include="Configurations\Test\Strategies\Z736\110\210\Test_Z736_PE.M5_SIZ5_01.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Configurations\Test\Strategies\Z736\110\210\Test_Z736_PE.M5_SIU5_01.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Resource Include="Configurations\Test\Strategies\Z736\110\210\Test_Z736_RIU5_PE_01.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z736\110\210\Test_Z736_RIZ5_PE_01.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Content Include="Configurations\Test\Strategies\Z736\110\210\Test_Z736_PE_SIZ5_01.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Configurations\Test\Strategies\Z736\110\210\Test_Z736_PE_SIU5_01.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Resource Include="Configurations\Test\Strategies\Z736\Strats_SI_110.230_01.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z736\Strats_SI_110.210_01.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z736\110\230\Test_Z736_FE_SIZ5_01.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z736\110\230\Test_Z736_RIU5_FE.M5_01.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z736\110\230\Test_Z736_RIZ5_FE.M5_01.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z736\110\230\Test_Z736_RIU5_FE_01.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z736\110\230\Test_Z736_RIZ5_FE_01.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z736\110\230\Test_Z736_RIU5_PE.M5_01.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z736\110\230\Test_Z736_RIZ5_PE.M5_01.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z736\110\230\Test_Z736_RIU5_PE_01.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z736\110\230\Test_Z736_RIZ5_PE_01.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z736\Strats_RI_110.230_01.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z736\120\230\Test_Z736_SIU5_FE.M5_01.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z736\120\230\Test_Z736_SIZ5_FE.M5_01.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z736\120\230\Test_Z736_SIU5_FE_01.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z736\120\230\Test_Z736_SIZ5_FE_01.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z736\120\230\Test_Z736_SIU5_PE.M5_01.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z736\120\230\Test_Z736_SIZ5_PE.M5_01.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z736\120\230\Test_Z736_SIU5_PE_01.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z736\120\230\Test_Z736_SIZ5_PE_01.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z736\Strats_SI_120.230_01.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z736\120\230\Test_Z736_RIU5_FE.M5_01.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z736\120\230\Test_Z736_RIU5_FE_01.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z736\120\230\Test_Z736_RIU5_PE.M5_01.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z736\120\230\Test_Z736_RIU5_PE_01.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z736\120\230\Test_Z736_RIZ5_FE.M5_01.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z736\120\230\Test_Z736_RIZ5_FE_01.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z736\120\230\Test_Z736_RIZ5_PE.M5_01.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z736\120\230\Test_Z736_RIZ5_PE_01.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z736\Strats_SIU5_120.230_01.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z736\Strats_SIZ5_120.230_01.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z736\Strats_RIU5_110.230_01.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z736\Strats_RIZ5_110.230_01.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z736\Strats_RI_120.230_01.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z736\Strats_RIU5_120.230_01.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z736\Strats_RIZ5_120.230_01.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z736\Strats_RIU5_110.210_01.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z736\Strats_RIZ5_110.210_01.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z736\110\210\Test_Z736_RIH6_FE.M5_01.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z736\110\210\Test_Z736_RIH6_FE_01.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z736\110\210\Test_Z736_RIH6_PE.M5_01.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z736\110\210\Test_Z736_RIH6_PE_01.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z736\110\210\Test_Z736_RI_05_FE_01.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z736\110\210\Test_Z736_RI_05_FE.M5_01.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z736\110\230\Test_Z736_RI_05_FE.M5_01.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z736\110\230\Test_Z736_RIH6_05_01.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z736\110\210\Test_Z736_RIH6_05_01.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z736\110\230\Test_Z736M_RI_05_FE_M5_01.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z736\110\210\Test_Z736_RIM8_PE_403.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z736\110\210\Test_Z736_RIM8_PE_401_1.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z736\110\210\Test_Z736_RIZ7_PE_403_1_5-60_01.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z736\110\210\Test_Z736_RIU7_PE_403_1_5-60_01.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z736\110\210\Test_Z736_RIM7_PE_403_1_5-60_01.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z736\110\210\Test_Z736_RIH7_PE_403_1_5-60_01.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z736\110\210\Test_Z736_RIH6_PE_403_1_5-60_01.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z736\110\210\Test_Z736_RIZ6_PE_403_1_5-60_01.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z736\110\210\Test_Z736_RIU6_PE_403_1_5-60_01.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z736\110\210\Test_Z736_RIM6_PE_403_1_5-60_01.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z736\110\210\Test_Z736_RIH5_PE_403_1_5-60_01.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z736\110\210\Test_Z736_RIM5_PE_403_1_5-60_01.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z736\110\210\Test_Z736_RIM8_05-15_01.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z736\110\210\Test_Z736_RIH8_05-15_01.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Content Include="Configurations\Test\Strategies\Z736\110\210\Test_Z736_RIM8_PE_401.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Resource Include="Configurations\Test\Strategies\Z736\110\210\Test_Z736_RIM8_PE_403_1.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z736\110\210\Test_Z736_RIM8_PE_403_1_5-60_01.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z736\110\210\Test_Z736_RIH8_PE_403_1_5-60_01.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z736\110\210\Test_Z736_RIZ5_PE_403_1_5-60_01.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z736\110\210\Test_Z736_RIU5_PE_403_1_5-60_01.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z736\110\210\Z736_RIM8_PE_401_1_5-60_01.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z736\110\210\Z736_RIM8_PE_403_1_5-60_01.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z736\110\210\Z736_RIH8_PE_401_1_5-60_01.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z736\110\210\Z736_RIZ7_PE_401_1_5-60_01.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z736\110\210\Z736_RIU7_PE_401_1_5-60_01.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z736\110\210\Z736_RIM7_PE_401_1_5-60_01.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z736\110\210\Z736_RIH7_PE_401_1_5-60_01.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z736\110\210\Z736_RIZ6_PE_401_1_5-60_01.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z736\110\210\Z736_RIZ8_PE_401_1_5-60_01.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z736\110\210\Z736_RIZ8_PE_401_1_60_900_01.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z736\110\210\Z736_RIH9_PE_401_1_60_900_01.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z736\110\210\Z736_SiH9_PE_401_1_60_900_01.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z736\110\210\Z736_SRH9_PE_401_1_60_900_01.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Content Include="Configurations\Test\Strategies\Z736\110\230\Test_Z736_RIH6_FE.M5_01.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Resource Include="Configurations\Test\Strategies\Z736\110\230\Test_Z736_RIH6_FE_01.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z736\110\230\Test_Z736_RIH6_PE.M5_01.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z736\110\230\Test_Z736_RIH6_PE_01.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z736\120\230\Test_Z736_SIZ5_FE.M5_01 - Копировать.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z736\120\230\Test_Z736_SIZ5_FE_01 - Копировать.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z736\120\230\Test_Z736_SIZ5_PE.M5_01 - Копировать.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z736\120\230\Test_Z736_SIZ5_PE_01 - Копировать.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z736\120\230\Test_Z736_RIH6_FE.M5_01.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z736\120\230\Test_Z736_RIH6_FE_01.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z736\120\230\Test_Z736_RIH6_PE.M5_01.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z736\120\230\Test_Z736_RIH6_PE_01.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z736\120\210\Test_Z736_RIH6_FE.M5_01.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z736\120\210\Test_Z736_RIH6_FE_01.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z736\120\210\Test_Z736_RIH6_PE.M5_01.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z736\120\210\Test_Z736_RIH6_PE_01.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z736\120\210\Test_Z736_RIZ5_FE.M5_01.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z736\120\210\Test_Z736_RIZ5_FE_01.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z736\120\210\Test_Z736_RIZ5_PE.M5_01.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z736\120\210\Test_Z736_RIZ5_PE_01.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z736\120\210\Test_Z736_RIU5_FE.M5_01.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z736\120\210\Test_Z736_RIU5_FE_01.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z736\120\210\Test_Z736_RIU5_PE.M5_01.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z736\120\210\Test_Z736_RIU5_PE_01.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z736\110\230\Test_Z736_RI_05_FE_01.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z736\120\210\Test_Z736_RI_05_FE_01.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z736\120\210\Test_Z736_RI_05_FE.M5_01.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z736\120\210\Test_Z736_RIH6_05_01.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z736\110\230\Test_Z736M_RI_05_FE_01.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z736\120\210\Test_Z736M_RI_05_FE_01.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z736\120\230\Test_Z736M_RI_05_FE_01.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z736\120\210\Test_Z736M_RI_05_FE_M5_01.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z736\120\230\Test_Z736M_RI_05_FE_M5_01.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Content Include="Configurations\Test\Strategies\Z736\120\230\Test_Z736_7_RI_05_FE_01.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Resource Include="Configurations\Test\Strategies\Z736\120\230\Test_Z736_RI_05_FE_01.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z736\120\230\Test_Z736_RI_05_FE.M5_01.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z736\120\Strats_RI_05_FE.M5_01.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Content Include="Configurations\Test\Strategies\Z736\120\230\Test_Z736_RIH6_05_01.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Resource Include="Configurations\Test\Strategies\Z736\Strats_RIH6_05_01.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Content Include="Configurations\Test\Strategies\Z736\Strats_RIH6_110.210_01.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Resource Include="Configurations\Test\Strategies\Z736\Strats_RIH6_120.210_01.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z736\Strats_RIZ5_120.210_01.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Content Include="Configurations\Test\Strategies\Z736\Strats_RIH6_120.230_01.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Configurations\Test\Strategies\Z736\Strats_RIH6_110.230_01.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Resource Include="Configurations\Test\Strategies\Z736\Strats_RIU5_120.210_01.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z736\Strats_RI_05_FE.M5_01.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Content Include="Configurations\Test\Strategies\Z736\Strats_RI_05_FE_01.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Configurations\Test\Strategies\Z736\Test_Z736_P_SIU5_01.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Resource Include="Configurations\Test\Strategies\Z736\Test_Z736_P_RIZ8_01.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Content Include="Configurations\Test\Strategies\Z736\Test_Z736_P_SiZ5_01.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Configurations\Test\Strategies\Z736\Test_Z736_SIZ5_01.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Configurations\Test\Strategies\Z736\Test_Z736_SIU5_01.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Resource Include="Configurations\Test\Strategies\Z736A\Z737\Test_Z7373_FE.M5_SiZ5_01.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z736A\Z737\Test_Z7373_PE.M5_SiU5_01.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z736A\Z737\Test_Z7373_PE.M5_SiZ5_01.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z736A\Z737\Strats_220.301.601.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z738\Test_Z738A_RI_01.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z738\Test_Z738T_RIU7_15_01.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z738\Test_Z738T_RIM7_15_01.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z738\Test_Z738T_RI_15_PE_02.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z738\Test_Z738T_RI_15_310_01.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z738\Test_Z738T_RI_15_311_01.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z738\Test_Z738C_RIZ7_15_311_01.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z738\Test_Z738C_RI_15_311_801.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z738\Test_Z738B_RI_15_01.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z738\Test_Z738D_RIU7_15_01.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z738\Test_Z738D_RIH8_15_01.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z738\Test_Z738C_RI_15_300_311_801.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z738\Z738_RIM8_PE_401_1_5-60_01.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z738\Z738_RIM8_PE_401_1_05.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z738\Z738_RIM8_PE_401_1_10.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z738\Z738_RIM8_PE_401_1_15.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z738F\Z738F_SRM8_PE_401_1_15.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z738F\Z738F_SRM8_PE_401_1_10.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z738F\Z738F_SRM8_PE_401_1_05.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z738F\Z738F_RIM8_PE_401_1_05.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z738F\Z738F_RIM8_PE_401_1_10.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z738F\Z738F_RIM8_PE_401_1_15.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z738F\Z738F_RIH8_PE_401_1_05.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z738F\Z738F_RIH8_PE_401_1_10.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z738F\Z738F_RIH8_PE_401_1_15.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z738F\Z738F_RIZ7_PE_401_1_05.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z738F\Z738F_RIZ7_PE_401_1_10.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z738F\Z738F_RIZ7_PE_401_1_15.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z738F\Z738F_RIU7_PE_401_1_05.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z738F\Z738F_RIU7_PE_401_1_10.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z738F\Z738F_RIU7_PE_401_1_15.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z738F\Z738F_RIM7_PE_401_1_05.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z738F\Z738F_RIM7_PE_401_1_10.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z738F\Z738F_RIM7_PE_401_1_15.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z738F\Z738F_RIH7_PE_401_1_05.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z738F\Z738F_RIH7_PE_401_1_10.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z738F\Z738F_RIH7_PE_401_1_15.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z738F\Z738F_RIZ6_PE_401_1_05.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z738F\Z738F_RIZ6_PE_401_1_10.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z738F\Z738F_RIZ6_PE_401_1_15.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z738F\Z738G_RIM8_PE_401_1_05.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z738F\Z738G_RIU7_PE_401_1_05.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z738F\Z738F_RIH6_PE_401_1_05.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z738F\Z738F_RIZ5_PE_401_1_05.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z738F\Z738F_RIU5_PE_401_1_05.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z738F\Z738H_RIH7_PE_401_1_15.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z738F\Z738H_RIH7_PE_401_1_05.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z738F\Z738H_RIH7_PE_401_1_10.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Test\Strategies\Z738\Test_Z738C_RIH9_15_311_01.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Content Include="Exceptions\XMLFile1.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="HTMLPage1.html" />
+    <Content Include="Init\ConfigurationResourse.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Init\ConfigurationResourse1.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Init\EventHub.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Init\EventHub1.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Init\EventLog.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Init\EventLog2.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Init\EventLog1.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Init\EventLogOld.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Init\Portfolios.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Init\Strategies.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Init\Tickers.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Init\TickersAll.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Init\TradeContext.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Init\TradeContext1.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Init\TradeRepositories.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Init\TradeStorages21.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Init\TradeStorages.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Init\TradeStorages1.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Init\WebClients.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Repozitary\Xml\Accounts.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Repozitary\Xml\Accounts1.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Resource Include="Repozitary\Xml\Tickers_161212.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Content Include="Repozitary\Xml\Tickers.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Repozitary\Xml\Tickers_170615.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Repozitary\Xml\Tickers_170415.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Repozitary\Xml\TickersNew.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Repozitary\Xml\Tickers_151003.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Repozitary\Xml\TimePlans2.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Repozitary\Xml\TimePlans3.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Strategies\Old\Cmp_Z603_Z702.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Strategies\Old\StratCollection01.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="FinamTickers.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="FinamTimeInts.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SpsInit.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Strategies\Old\StratCollection.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Strategies\Old\StratCollection03.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Strategies\Old\StratCollection05.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Strategies\Old\StratCollection2.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Strategies.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Strategies\Old\StratFiles.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Strategies\Old\Test_Z706_551.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Strategies\Old\Test_117_00.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Strategies\Old\Test_1171_019.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Strategies\Old\Real_116_03.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Strategies\Old\Test_00.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Strategies\Old\Test_01.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Strategies\Old\Test_02.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Strategies\Old\Test_116.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Strategies\Old\Test_116_00.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Strategies\Old\Test_116_02.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Strategies\Old\Test_116_01.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Strategies\Old\Test_116_021.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Strategies\Old\Test_116_03.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Strategies\Old\Test_1171_01.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Strategies\Old\Test_117_01.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Strategies\Old\Test_117_02.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Strategies\Old\Test_117_05.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Strategies\Old\Test_117_07.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Strategies\Old\Test_11805_01.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Strategies\Old\Test_11807_01.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Strategies\Old\Test_11809_01.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Strategies\Old\Test_11811_01.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Strategies\Old\Test_11811_02.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Strategies\Old\Test_11812_01.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Strategies\Old\Test_11812_02.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Strategies\Old\Test_11812_03.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Strategies\Old\Test_11812_05.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Strategies\Old\Test_11812_06.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Strategies\Old\Test_11812_08.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Strategies\Old\Test_11812_09.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Strategies\Old\Test_11812_10.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Strategies\Old\Test_11812_11.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Strategies\Old\Test_11812_12.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Strategies\Old\Test_11812_13.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Strategies\Old\Test_11812_15.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Strategies\Old\Test_11812_16.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Strategies\Old\Test_11821_02.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Strategies\Old\Test_11815_01.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Strategies\Old\Test_11819_02.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Strategies\Old\Test_11819_01.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Strategies\Old\Test_11819_03.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Strategies\Old\Test_11819_05.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Strategies\Old\Test_11820_01.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Strategies\Old\Test_11820_02.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Strategies\Old\Test_11821_01.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Strategies\Old\Test_11821_03.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Strategies\Old\Test_11821_04.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Strategies\Old\Test_11821_05.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Strategies\Old\Test_11821_06.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Strategies\Old\Test_11821_07.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Strategies\Old\Test_11821_08.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Strategies\Old\Test_11823_02.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Strategies\Old\Test_11825_01.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Strategies\Old\Test_11828_01.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Strategies\Old\Test_11830_01.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Strategies\Old\Test_11830_02.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Strategies\Old\Test_11830_03.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Strategies\Old\Test_11830_05.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Strategies\Old\Test_11830_06.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Strategies\Old\Test_11830_08.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Strategies\Old\Test_11831_01.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Strategies\Old\Test_11831_51.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Strategies\Old\Test_11831_P01.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Strategies\Old\Test_11832_01.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Strategies\Old\Test_11832_02.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Strategies\Old\Test_11832_03.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Strategies\Old\Test_11832_05.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Strategies\Old\Test_11832_06.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Strategies\Old\Test_11832_10.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Strategies\Old\Test_11833_01.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Strategies\Old\Test_11833_02.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Strategies\Old\Test_11833_03.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Strategies\Old\Test_11833_05.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Strategies\Old\Test_11833_301.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Strategies\Old\Test_11835_01.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Strategies\Old\Test_11835_02.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Strategies\Old\Test_11835_03.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Strategies\Old\Test_11835_04.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Strategies\Old\Test_11835_05.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Strategies\Old\Test_11835_06.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Strategies\Old\Test_11835_07.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Strategies\Old\Test_11835_09.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Strategies\Old\Test_11835_10.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Strategies\Old\Test_11835_12.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Strategies\Old\Test_11835_13.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Strategies\Old\Test_11835_14.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Strategies\Old\Test_11835_15.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Strategies\Old\Test_11835_16.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Strategies\Old\Test_11835_17.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Strategies\Old\Test_11836_01.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Strategies\Old\Test_11836_02.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Strategies\Old\Test_11836_05.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Strategies\Old\Test_11836_06.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Strategies\Old\Test_11836_07.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Strategies\Old\Test_11837_01.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Strategies\Old\Test_11838_01.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Strategies\Old\Test_11838_02.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Strategies\Old\Test_11838_03.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Strategies\Old\Test_11838_04.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Strategies\Old\Test_11838_05.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Strategies\Old\Test_11839_01.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Strategies\Old\Test_11839_02.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Strategies\Old\Test_11839_03.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Strategies\Old\Test_11839_04.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Strategies\Old\Test_11839_05.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Strategies\Old\Test_11839_06.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Strategies\Old\Test_11839_07P.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Strategies\Old\Test_11839_08.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Strategies\Old\Test_11839_09.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Strategies\Old\Test_11839_10.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Strategies\Old\Test_11839_11.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Strategies\Old\Test_11839_12.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Strategies\Old\Test_11839_13.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Strategies\Old\Test_11839_14.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Strategies\Old\Test_11839_15.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Strategies\Old\Test_118_01.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Repozitary\Xml\TickersOld.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Strategies\Old\Test_11823_01.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Strategies\Old\Test_118_02.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Strategies\Old\Test_11830_07.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Strategies\Old\Test_11835_08.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Strategies\Old\Test_11835_11.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Strategies\Old\Test_11836_03.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Strategies\Old\Test_Z702_01.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Strategies\Old\Test_Z104_02.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Strategies\Old\Test_Z101.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Strategies\Old\Test_Z101_01.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Strategies\Old\Test_Z104_01.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Strategies\Old\Test_Z105_01.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Strategies\Old\Test_Z506_01.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Strategies\Old\Test_Z508_01.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Strategies\Old\Test_Z516_01.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Strategies\Old\Test_Z517_01.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Strategies\Old\Test_Z601_01.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Strategies\Old\Test_Z602_01.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Strategies\Old\Test_Z603_02.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Strategies\Old\Test_Z604_01.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Strategies\Old\Test_Z701_01.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Strategies\Old\Test_Z701_02.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Strategies\Old\Test_Z703_01.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Strategies\Old\Test_Z703_02.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Strategies\Old\Test_Z703_03.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Strategies\Old\Test_Z704_01.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
+    </Content>
+    <Resource Include="Strategies\Old\Test_Z704_022.xml">
+      <SubType>Designer</SubType>
+    </Resource>
+    <Resource Include="Strategies\Old\Test_Z704_021.xml" />
+    <Content Include="Strategies\Old\Test_Z704_02.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Strategies\Old\Test_Z705_01.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Strategies\Old\Test_Z705_02.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Strategies\Old\Test_Z705_03.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Strategies\Old\Test_Z705_05.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Strategies\Old\Test_Z705_06.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Strategies\Old\Test_Z705_061.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Strategies\Old\Test_Z705_062.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Strategies\Old\Test_Z705_063.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Strategies\Old\Test_Z706_001.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Strategies\Old\Test_Z705_064.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Strategies\Old\Test_Z706_002.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Strategies\Old\Test_Z707_001.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Strategies\Old\Test_Z707_002.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Strategies\Old\Test_Z706_003.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Strategies\Old\Test_Z706_003A.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Strategies\Old\Test_Z707_003.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Strategies\Old\Test_Z707_003A.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Strategies\Old\StratFiles2.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Strategies\Old\StratFiles3.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
+    </Content>
+    <Resource Include="Strategies\StratFiles.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Strategies\StratFiles2.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Content Include="Strategies\Real\R_BkStandard_Fin_Z735P_SIU5_151014.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Strategies\Real\R_BkStandard_Fin_Z735P_SIZ5_151014.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Strategies\Real\R_BkStandard_Fin_Z737_150921.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Resource Include="Strategies\Real\Test_Z732_01.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Content Include="Strategies\Real\Test_Z735_CT_01.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Strategies\Real\SOpen_Z735_CT_U5_01_151002.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Strategies\Real\SOpen_Z735_CT_01_151002.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Strategies\Real\SOpen_Z735_CT_01_151002_Old.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Strategies\Real\Test_Z735_Deb_SIZ5_01.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Strategies\Real\Test_Z735_Deb_SIU5_01.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Strategies\Real\Test_Z735_Deb_01.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Strategies\Real\Test_Z735_TS_SIZ5_01.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Strategies\Real\Test_Z735_TS_SIU5_01.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Strategies\Real\Test_Z736_TS_SIZ5_01.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Strategies\Real\Test_Z736_TS_SIU5_01.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Strategies\Real\Test_Z736_TS_SIZ5_01_old.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Strategies\Real\Test_Z737_01.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Strategies\Real\Test_Z7350_03.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Strategies\Real\Test_Z7350_02.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Strategies\Real\Test_Z7350_01.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Strategies\Real\Test_Z736_01.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Strategies\StratFiles3.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Strategies\Z706\Test_Z706_551.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Strategies\Z706\Test_Z706_552.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Strategies\Z706\Test_Z708_06_Cmp.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Strategies\Z706\Test_Z719_01.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Strategies\Z706\Test_Z73501_Portf_02.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Resource Include="Strategies\Z706\Test_Z7350_02.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Content Include="Strategies\Z706\Test_Z7350_Portf_01.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Strategies\Z706\Test_Z7351_02.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Strategies\Z706\Test_Z7351_01.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Strategies\Z706\Test_Z7361_01.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Strategies\Z706\Test_Z736_Portf_02.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Strategies\Z706\Test_Z736_Portf_01.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Strategies\Z706\Test_Z737_SE_03.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Strategies\Z706\Test_Z738_02.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Strategies\Z706\Test_Z738_01.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Strategies\Z706\Test_Z737_01.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Strategies\Z706\Test_Z733_03.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Strategies\Z706\Test_Z736_03.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Strategies\Z706\Test_Z736_02.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Strategies\Z706\Test_Z736_01.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Strategies\Z706\Test_Z735_05.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Strategies\Z706\Test_Z735_03.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Strategies\Z706\Test_Z735_02.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Strategies\Z706\Test_Z735_01.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Strategies\Z706\Test_Z732_04.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Strategies\Z706\Test_Z733_02.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Strategies\Z706\Test_Z733_01.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Strategies\Z706\Test_Z732_03.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Strategies\Z706\Test_Z732_02.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Strategies\Z706\Test_Z732_01.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Strategies\Z706\Test_Z710_09.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Strategies\Z706\Test_Z710_08.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Strategies\Z706\Test_Z712.222_01.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Strategies\Z706\Test_Z710_07.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Strategies\Z706\Test_Z710_06.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Strategies\Z706\Test_Z721_01.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Strategies\Z706\Test_Z712_08.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Strategies\Z706\Test_Z712_07.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Strategies\Z706\Test_Z712_vs_7121.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Strategies\Z706\Test_Z718_01.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Strategies\Z706\Test_Z717_01.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Strategies\Z706\Test_Z714_03.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Strategies\Z706\Test_Z710_1931.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Strategies\Z706\Test_Z716_02.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Strategies\Z706\Test_Z716_01.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Strategies\Z706\Test_Z715_01.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Strategies\Z706\Test_Z708_7.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Strategies\Z706\Test_Z714_02.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Strategies\Z706\Test_Z710_14_01.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Strategies\Z706\Test_Z710_12_01.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Strategies\Z706\Test_Z710_05.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Strategies\Z706\Test_Z710_04.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Strategies\Z706\Test_Z710_032.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Strategies\Z706\Test_Z710_03.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Strategies\Z706\Test_Z710_02.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Strategies\Z706\Test_Z712_06_2506.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Strategies\Z706\Test_Z712_06.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Strategies\Z706\Test_Z712_04.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Strategies\Z706\Test_Z712_05.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Strategies\Z706\Test_Z713_01.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Strategies\Z706\Test_Z712_02.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Strategies\Z706\Test_Z712_01.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Strategies\Z706\Test_Z711_02.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Strategies\Z706\Test_Z711_01.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Strategies\Z706\Test_Z710_01.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Strategies\Z706\Test_Z709_01.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Strategies\Z706\Test_Z708_05_Cmp.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Strategies\Z706\Test_Z708_04.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Strategies\Z706\Test_Z708_03.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Strategies\Z706\Test_Z708_02.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Strategies\Z706\Test_Z708_552.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Strategies\Z706\Test_Z708_01.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Strategies\Z706\Test_Z708_6_3_6_3.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Strategies\Z706\Test_Z708_6_3_6_2.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Strategies\Z706\Test_Z708_6_3_6_1.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Strategies\Z706\Test_Z708_6_3_6.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Strategies\Z706\Test_Z708_6_3.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Strategies\Z706\Test_Z708_553_6_1.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Strategies\Z706\Test_Z708_553_6.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Strategies\Z706\Test_Z708_553_5.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Strategies\Z706\Test_Z708_553.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="TickersOLd.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tickers2.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="TRANS2QUIK_1.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="TRANS2QUIK_2.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="TRANS2QUIK_3.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\GS.Time\GS.Time.csproj">
+      <Project>{AE893C39-AC85-467F-9A6F-B9F409DAE994}</Project>
+      <Name>GS.Time</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\GS.Trade.BackTest\GS.Trade.BackTest.csproj">
+      <Project>{6E172EA4-9774-4258-A253-681884445292}</Project>
+      <Name>GS.Trade.BackTest</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\GS.Trade.Data\GS.Trade.Data.csproj">
+      <Project>{758D4D02-B35B-482F-84A7-D68847155030}</Project>
+      <Name>GS.Trade.Data</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\GS.Trade.Strategies\GS.Trade.Strategies.csproj">
+      <Project>{E71FE541-9FE1-4EDA-87CC-2BAF01BEA26A}</Project>
+      <Name>GS.Trade.Strategies</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\GS.Trade.TradeContext\GS.Trade.TradeContext.csproj">
+      <Project>{48F7F179-CDE6-493A-A83D-9BBFE891A11E}</Project>
+      <Name>GS.Trade.TradeContext</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\GS.Trade.Trades\GS.Trade.Trades.csproj">
+      <Project>{323CD232-D99D-411D-B7D3-B8752E2BAD58}</Project>
+      <Name>GS.Trade.Trades</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\GS.Trade.Windows\GS.Trade.TradeWindows.csproj">
+      <Project>{1E8D6D71-6910-42F2-8871-F7C65BD53B1D}</Project>
+      <Name>GS.Trade.TradeWindows</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

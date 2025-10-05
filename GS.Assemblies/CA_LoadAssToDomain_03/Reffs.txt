@@ -1,0 +1,3 @@
+﻿https://stackoverflow.com/questions/658498/how-to-load-an-assembly-to-appdomain-with-all-references-recursively
+https://gs-sft.blogspot.ru/2017/12/assembly-loading.html
+

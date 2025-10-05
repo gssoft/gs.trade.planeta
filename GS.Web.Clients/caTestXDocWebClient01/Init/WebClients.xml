@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<WebClients>
+  <XDocWebClient>
+    <!--<Code>StringWebClient</Code>-->
+    <BaseAddress>http://localhost/GS.Trade.Web.Mvc.Cfg_01/</BaseAddress>
+    <ApiPrefix>api/x</ApiPrefix>
+    <MediaTypeHeader>application/xml</MediaTypeHeader>
+    <ErrorCountToStop>30</ErrorCountToStop>
+    <WorkTask>
+      <Code>XDocWebClient.WorkTask</Code>
+      <TimeInterval>60</TimeInterval>
+      <ErrorCountToStop>30</ErrorCountToStop>
+    </WorkTask>
+  </XDocWebClient>
+  <XmlWebClient>
+    <!--<Code>StringWebClient</Code>-->
+    <BaseAddress>http://localhost/GS.Trade.Web.Mvc.Cfg_01/</BaseAddress>
+    <ApiPrefix>api/</ApiPrefix>
+    <MediaTypeHeader>application/xml</MediaTypeHeader>
+    <ErrorCountToStop>30</ErrorCountToStop>
+    <WorkTask>
+      <Code>XmlWebClient.WorkTask</Code>
+      <TimeInterval>60</TimeInterval>
+      <ErrorCountToStop>30</ErrorCountToStop>
+    </WorkTask>
+  </XmlWebClient>
+  <XmlDataWebClient>
+    <!--<Code>StringWebClient</Code>-->
+    <BaseAddress>http://localhost/GS.Trade.Web.Mvc.Cfg_01/</BaseAddress>
+    <ApiPrefix>api/x</ApiPrefix>
+    <MediaTypeHeader>application/xml</MediaTypeHeader>
+    <ErrorCountToStop>30</ErrorCountToStop>
+    <WorkTask>
+      <Code>XmlWebClient.WorkTask</Code>
+      <TimeInterval>60</TimeInterval>
+      <ErrorCountToStop>30</ErrorCountToStop>
+    </WorkTask>
+  </XmlDataWebClient>
+</WebClients>

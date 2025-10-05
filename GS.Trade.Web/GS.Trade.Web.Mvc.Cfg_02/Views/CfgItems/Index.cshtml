@@ -1,0 +1,115 @@
+﻿@model IEnumerable<GS.DataBase.Configuration.Model.Item>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h4>Configuration Items</h4>
+
+<p>
+    <b>
+        @Html.ActionLink("Create New", "Create")
+        @*@Html.ActionLink("Enable All", "ToEnable")
+        @Html.ActionLink("Disable All", "ToDisable")*@
+        @Html.ActionLink("Enable", "ToEnable", "CfgItems", new { cnfId = @ViewBag.ConfigurationId }, null)
+        @Html.ActionLink("Disable", "ToDisable", "CfgItems", new { cnfId = @ViewBag.ConfigurationId }, null)
+    </b>
+</p>
+<table class="table">
+    <tr>
+        <th>ID</th>
+        <th>
+            Configuration
+            @*@Html.DisplayNameFor(model => model.Configuration.Code)*@
+        </th>
+        <th>ID</th>
+       
+        <th>
+            @Html.DisplayNameFor(model => model.Code)
+        </th>
+       
+        <th>
+            @Html.DisplayNameFor(model => model.Catalog)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CatalogExt)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Obj)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Enabled)
+        </th>
+        @*<th>
+            @Html.DisplayNameFor(model => model.TrCount)
+        </th>*@
+        @*<th>
+            @Html.DisplayNameFor(model => model.CreatedDT)
+        </th>*@
+        <th>
+            @Html.DisplayNameFor(model => model.ModifiedDT)
+        </th>
+        <th></th>
+        <th></th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Configuration.Id)
+        </td>
+        <td>
+            @{
+                string cnfCode = item.Configuration.Code;
+            }
+            @Html.ActionLink(cnfCode, "Details", "Configurations", new { id = item.ConfigurationId }, null)
+            @Html.ActionLink("Items", "Index", "CfgItems", new { cnfId = item.ConfigurationId }, null)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Id)
+        </td>
+        
+        <td>
+            @{
+                string cnfItemCode = item.Code;
+            }
+            @Html.ActionLink(cnfItemCode, "Details", "CfgItems", new { cnfId = item.ConfigurationId, itemId = item.Id }, null)
+        </td>    
+        <td>
+            @Html.DisplayFor(modelItem => item.Catalog)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.CatalogExt)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Obj)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Enabled)
+        </td>
+        @*<td>
+            @Html.DisplayFor(modelItem => item.TrCount)
+        </td>*@
+        @*<td>
+            @Html.DisplayFor(modelItem => item.CreatedDT)
+        </td>*@
+        <td>
+            @Html.DisplayFor(modelItem => item.ModifiedDT)
+        </td>
+        <td>
+            @Html.ActionLink("Trans", "Index", "CfgTrans", new { cnfItemId = item.Id }, null)
+        </td>
+        <td>
+            @Html.ActionLink("Enable", "ToEnable", "CfgItems", new { cnfId = item.ConfigurationId , itemId = item.Id }, null)
+            @Html.ActionLink("Disable", "ToDisable", "CfgItems", new { cnfId = item.ConfigurationId, itemId = item.Id }, null)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.Id })
+            @Html.ActionLink("Details", "Details", new { cnfId = item.ConfigurationId, itemId=item.Id })
+            @Html.ActionLink("Delete", "Delete", new { id=item.Id })
+        </td>
+    </tr>
+}
+
+</table>

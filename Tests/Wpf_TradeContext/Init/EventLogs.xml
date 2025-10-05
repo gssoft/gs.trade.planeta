@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<EventLogs>
+  <EventLogList>
+    <EventLog>
+      <IsEnabled>true</IsEnabled>
+    </EventLog>
+    <EventLog>
+      <IsEnabled>false</IsEnabled>
+    </EventLog>
+  </EventLogList>
+</EventLogs>

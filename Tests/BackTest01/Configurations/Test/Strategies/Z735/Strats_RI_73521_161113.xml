@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ArrayOfString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+
+  <!--<string>Z735\110\210\RFin_05_RIU5_161004.xml</string>
+  <string>Z735\110\210\RFin_05_RIZ5_161004.xml</string>
+  <string>Z735\110\210\RFin_05_RIH6_161004.xml</string>
+
+  <string>Z735\110\230\RFin_05_RIU5_161004.xml</string>
+  <string>Z735\110\230\RFin_05_RIZ5_161004.xml</string>
+  <string>Z735\110\230\RFin_05_RIH6_161004.xml</string>-->
+
+  <!--<string>Z735\110\230\RFin_05_RIU5_161026.xml</string>
+  <string>Z735\110\230\RFin_05_RIZ5_161026.xml</string>
+  <string>Z735\110\230\RFin_05_RIH6_161026.xml</string>-->
+  <!--<string>Z735\110\230\RFin_Si_73521_161113.xml</string>-->
+  <!--<string>Z735\110\230\RFin_RI_73521_161113.xml</string>-->
+  <!-- 17.11.11-->
+  <!--<string>Z735\110\230\RFin_RI_73521_170513.xml</string>-->
+  <string>Z735\110\230\RFin_RI_73521_171011.xml</string>
+  
+<!--<string>Z735\110\210\RFin_05_SiU5_161004.xml</string>
+  <string>Z735\110\210\RFin_05_SiZ5_161004.xml</string>
+  <string>Z735\110\210\RFin_05_SiH6_161004.xml</string>-->
+
+  <!--<string>Z735\110\210\RFin_05_SRU5_161004.xml</string>
+  <string>Z735\110\210\RFin_05_SRZ5_161004.xml</string>-->
+  <!--
+  <string>Z735\110\210\RFin_05_SRH6_161004.xml</string>
+-->
+
+</ArrayOfString>

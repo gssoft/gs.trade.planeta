@@ -1,0 +1,370 @@
+﻿@model IEnumerable<GS.Trade.Trades.PositionDb2>
+<h4>@ViewBag.FullTitle</h4>
+
+@using (Html.BeginForm("Index", "Reports", FormMethod.Get))
+{
+    <table class="table">
+        <tr>
+            <th>Account</th>
+            <th>Symbol</th>
+            <th>Ticker</th>
+            <th>Strategy</th>
+            <th>TimeInt</th>
+            <th>Search</th>
+            <th>LastDay</th>
+            <th></th>
+        </tr>
+        <tr>
+            <td>@Html.DropDownList("accountList", "All")</td>
+            <td>@Html.DropDownList("symbolList", "All")</td>
+            <td>@Html.DropDownList("tickerList", "All")</td>
+            <td>@Html.DropDownList("strategyList", "All")</td>
+            <td>@Html.DropDownList("timeIntList", "All")</td>
+            <td>@Html.TextBox("searchString")</td>
+            <td>@Html.CheckBox("lastDayChecked", true)</td>
+            <td><input class="btn-primary" type="submit" value="Filter" /></td>
+        </tr>
+        <tr>
+            <td>@Html.CheckBox("accountGroup", true)</td>
+            <td>@Html.CheckBox("symbolGroup", true)</td>
+            <td>@Html.CheckBox("tickerGroup", true)</td>
+            <td>@Html.CheckBox("strategyGroup", true)</td>
+            <td>@Html.CheckBox("timeIntGroup", false)</td>
+            <td>@Html.DropDownList("condition", "All")</td>
+            <td></td>
+            <td><input class="btn-warning" type="submit" value="Clear" /></td>
+        </tr>
+    
+    </table>
+    <p>
+        Days: @Html.TextBox("conditionDays")
+        Trades: @Html.TextBox("conditionTradesN")
+        PF: @Html.TextBox("conditionPf")
+        NetToDD: @Html.TextBox("conditionNetToDd")
+    </p>
+}
+<table class="table">
+    <tr>
+        <th>
+            Account
+        </th>
+        <th>Symbol</th>
+        <th>
+            Ticker
+        </th>
+        <th>
+            Strategy
+        </th>
+        <th>
+            TI
+        </th>
+        @*<th>
+            Qty
+        </th>
+        <th>
+            P&amp;L
+        </th>*@
+        @*<th>TradeAvg</th>
+        <th>DailyPnL</th>
+        <th>Days</th>*@
+
+        <th>
+            @Html.ActionLink("P&L", "Index", new
+                  {
+                      accountList = ViewBag.Account,
+                      symbolList = ViewBag.Symbol,
+                      tickerList = ViewBag.Ticker,
+                      strategyList = ViewBag.Strategy,
+                      timeIntList = ViewBag.TimeInt,
+                      searchString = ViewBag.SearchString,
+                      lastDayChecked = ViewBag.LastDayChecked,
+                      charttype = ViewBag.LastDayChecked != null && ViewBag.LastDayChecked == true ? 10 : 1,
+
+                      accountGroup = ViewBag.AccountGr,
+                      symbolGroup = ViewBag.SymbolGr,
+                      tickerGroup = ViewBag.TickerGr,
+                      strategyGroup = ViewBag.StrategyGr,
+                      timeIntGroup = ViewBag.TimeIntGr,
+
+                      conditionDays = ViewBag.ConditionDays,
+                      conditionTradesN = ViewBag.ConditionTradesN,
+                      conditionPf = ViewBag.ConditionPf,
+                      conditionNetToDd = ViewBag.ConditionNetToDd,
+                      
+                      sortOrder = ViewBag.SortPnL
+                  }, null)
+        </th>
+        <th>Trades</th>
+        <th>
+            @Html.ActionLink("Profitable", "Index", new
+                  {
+                      accountList = ViewBag.Account,
+                      symbolList = ViewBag.Symbol,
+                      tickerList = ViewBag.Ticker,
+                      strategyList = ViewBag.Strategy,
+                      timeIntList = ViewBag.TimeInt,
+                      searchString = ViewBag.SearchString,
+                      lastDayChecked = ViewBag.LastDayChecked,
+                      charttype = ViewBag.LastDayChecked != null && ViewBag.LastDayChecked == true ? 10 : 1,
+
+                      accountGroup = ViewBag.AccountGr,
+                      symbolGroup = ViewBag.SymbolGr,
+                      tickerGroup = ViewBag.TickerGr,
+                      strategyGroup = ViewBag.StrategyGr,
+                      timeIntGroup = ViewBag.TimeIntGr,
+
+                      conditionDays = ViewBag.ConditionDays,
+                      conditionTradesN = ViewBag.ConditionTradesN,
+                      conditionPf = ViewBag.ConditionPf,
+                      conditionNetToDd = ViewBag.ConditionNetToDd,
+
+                      sortOrder = ViewBag.SortProfitable
+                  }, null)
+        </th>
+        <th>
+            @Html.ActionLink("Avg", "Index", new
+                  {
+                      accountList = ViewBag.Account,
+                      symbolList = ViewBag.Symbol,
+                      tickerList = ViewBag.Ticker,
+                      strategyList = ViewBag.Strategy,
+                      timeIntList = ViewBag.TimeInt,
+                      searchString = ViewBag.SearchString,
+                      lastDayChecked = ViewBag.LastDayChecked,
+                      charttype = ViewBag.LastDayChecked != null && ViewBag.LastDayChecked == true ? 10 : 1,
+
+                      accountGroup = ViewBag.AccountGr,
+                      symbolGroup = ViewBag.SymbolGr,
+                      tickerGroup = ViewBag.TickerGr,
+                      strategyGroup = ViewBag.StrategyGr,
+                      timeIntGroup = ViewBag.TimeIntGr,
+
+                      conditionDays = ViewBag.ConditionDays,
+                      conditionTradesN = ViewBag.ConditionTradesN,
+                      conditionPf = ViewBag.ConditionPf,
+                      conditionNetToDd = ViewBag.ConditionNetToDd,
+
+                      sortOrder = ViewBag.SortAvg
+                  }, null)
+        </th>
+        <th>@Html.ActionLink("StDev", "Index", new
+                  {
+                      accountList = ViewBag.Account,
+                      symbolList = ViewBag.Symbol,
+                      tickerList = ViewBag.Ticker,
+                      strategyList = ViewBag.Strategy,
+                      timeIntList = ViewBag.TimeInt,
+                      searchString = ViewBag.SearchString,
+                      lastDayChecked = ViewBag.LastDayChecked,
+                      charttype = ViewBag.LastDayChecked != null && ViewBag.LastDayChecked == true ? 10 : 1,
+
+                      accountGroup = ViewBag.AccountGr,
+                      symbolGroup = ViewBag.SymbolGr,
+                      tickerGroup = ViewBag.TickerGr,
+                      strategyGroup = ViewBag.StrategyGr,
+                      timeIntGroup = ViewBag.TimeIntGr,
+
+                      conditionDays = ViewBag.ConditionDays,
+                      conditionTradesN = ViewBag.ConditionTradesN,
+                      conditionPf = ViewBag.ConditionPf,
+                      conditionNetToDd = ViewBag.ConditionNetToDd,
+
+                      sortOrder = ViewBag.SortStDev
+                  }, null)
+        </th>
+        <th>
+            @Html.ActionLink("MaxDD", "Index", new
+                  {
+                      accountList = ViewBag.Account,
+                      symbolList = ViewBag.Symbol,
+                      tickerList = ViewBag.Ticker,
+                      strategyList = ViewBag.Strategy,
+                      timeIntList = ViewBag.TimeInt,
+                      searchString = ViewBag.SearchString,
+                      lastDayChecked = ViewBag.LastDayChecked,
+                      charttype = ViewBag.LastDayChecked != null && ViewBag.LastDayChecked == true ? 10 : 1,
+
+                      accountGroup = ViewBag.AccountGr,
+                      symbolGroup = ViewBag.SymbolGr,
+                      tickerGroup = ViewBag.TickerGr,
+                      strategyGroup = ViewBag.StrategyGr,
+                      timeIntGroup = ViewBag.TimeIntGr,
+
+                      conditionDays = ViewBag.ConditionDays,
+                      conditionTradesN = ViewBag.ConditionTradesN,
+                      conditionPf = ViewBag.ConditionPf,
+                      conditionNetToDd = ViewBag.ConditionNetToDd,
+
+                      sortOrder = ViewBag.SortMaxDD
+                  }, null)
+        </th>
+        <th>
+            @Html.ActionLink("PF", "Index", new
+                  {
+                      accountList = ViewBag.Account,
+                      symbolList = ViewBag.Symbol,
+                      tickerList = ViewBag.Ticker,
+                      strategyList = ViewBag.Strategy,
+                      timeIntList = ViewBag.TimeInt,
+                      searchString = ViewBag.SearchString,
+                      lastDayChecked = ViewBag.LastDayChecked,
+                      charttype = ViewBag.LastDayChecked != null && ViewBag.LastDayChecked == true ? 10 : 1,
+
+                      accountGroup = ViewBag.AccountGr,
+                      symbolGroup = ViewBag.SymbolGr,
+                      tickerGroup = ViewBag.TickerGr,
+                      strategyGroup = ViewBag.StrategyGr,
+                      timeIntGroup = ViewBag.TimeIntGr,
+
+                      conditionDays = ViewBag.ConditionDays,
+                      conditionTradesN = ViewBag.ConditionTradesN,
+                      conditionPf = ViewBag.ConditionPf,
+                      conditionNetToDd = ViewBag.ConditionNetToDd,
+
+                      sortOrder = ViewBag.SortPf
+                  }, null)
+        </th>
+        <th>
+            @Html.ActionLink("NetToDD", "Index", new
+                  {
+                      accountList = ViewBag.Account,
+                      symbolList = ViewBag.Symbol,
+                      tickerList = ViewBag.Ticker,
+                      strategyList = ViewBag.Strategy,
+                      timeIntList = ViewBag.TimeInt,
+                      searchString = ViewBag.SearchString,
+                      lastDayChecked = ViewBag.LastDayChecked,
+                      charttype = ViewBag.LastDayChecked != null && ViewBag.LastDayChecked == true ? 10 : 1,
+
+                      accountGroup = ViewBag.AccountGr,
+                      symbolGroup = ViewBag.SymbolGr,
+                      tickerGroup = ViewBag.TickerGr,
+                      strategyGroup = ViewBag.StrategyGr,
+                      timeIntGroup = ViewBag.TimeIntGr,
+
+                      conditionDays = ViewBag.ConditionDays,
+                      conditionTradesN = ViewBag.ConditionTradesN,
+                      conditionPf = ViewBag.ConditionPf,
+                      conditionNetToDd = ViewBag.ConditionNetToDd,
+
+                      sortOrder = ViewBag.SortNetToDD
+                  }, null)
+        </th>
+        <th>Days</th>
+        <th>
+            FirstTradeDT
+        </th>
+        <th>
+            LastTradeDT
+        </th>
+        @*<th>
+                Count
+            </th>*@
+        <th>Action</th>
+    </tr>
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.AccountCodeEx)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Symbol)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.TickerKey)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.StrategyCodeEx)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.TimeInt)
+            </td>
+            @*<td>
+                @Html.DisplayFor(modelItem => item.Count)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.PnLFormated)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.TradeAvg1Formated)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.DailyPnLAvgFormated)
+            </td>*@
+            @*<td>
+                @Html.DisplayFor(modelItem => item.TotalDays)
+            </td>*@
+            <td>
+                @Html.DisplayFor(modelItem => item.Report.TotalNetProfitStr)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Report.TotalTrades)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Report.PercentProfitableStr)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Report.AverageTradeStr)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Report.StdDevTradeStr)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Report.MaxDrawDownStr)
+            </td>
+
+            <td>
+                @Html.DisplayFor(modelItem => item.Report.ProfitFactorStr)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Report.NetPrtfToMaxDDRatioStr)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Report.Days)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.FirstTradeDT)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.LastTradeDT)
+            </td>
+            <td>
+                @Html.ActionLink("Chart", "Chart", "Deals", routeValues: new
+            {
+                account = item.AccountCodeEx != "All" ? item.AccountCodeEx : null,
+                symbol = item.Symbol != "All" ? item.Symbol : null,
+                ticker = item.TickerKey != "All" ? item.TickerKey : null,
+                strategy = item.StrategyCodeEx != "All" ? item.StrategyCodeEx : null,
+                timeInt = item.TimeInt,
+                searchString = ViewBag.SearchString,
+                lastDayChecked = ViewBag.LastDayChecked,
+                charttype = ViewBag.LastDayChecked != null && ViewBag.LastDayChecked == true ? 10 : 1
+            }, htmlAttributes: null)
+                @Html.ActionLink("Report", "Report", "Deals", routeValues: new
+            {
+                account = item.AccountCodeEx != "All" ? item.AccountCodeEx : null,
+                symbol = item.Symbol != "All" ? item.Symbol : null,
+                ticker = item.TickerKey != "All" ? item.TickerKey : null,
+                strategy = item.StrategyCodeEx != "All" ? item.StrategyCodeEx : null,
+                timeInt = item.TimeInt,
+                searchString = ViewBag.SearchString,
+                lastDayChecked = ViewBag.LastDayChecked,
+                charttype = ViewBag.LastDayChecked != null && ViewBag.LastDayChecked == true ? 10 : 1
+            }, htmlAttributes: null)
+                @Html.ActionLink("Deals", "Index", "Deals", routeValues: new
+            {
+                accountList = item.AccountCodeEx != "All" ? item.AccountCodeEx : null,
+                symbolList = item.Symbol != "All" ? item.Symbol : null,
+                tickerList = item.TickerKey != "All" ? item.TickerKey : null,
+                strategyList = item.StrategyCodeEx != "All" ? item.StrategyCodeEx : null,
+                timeIntList = item.TimeInt,
+                searchString = ViewBag.SearchString,
+                lastDayChecked = ViewBag.LastDayChecked,
+                charttype = ViewBag.LastDayChecked != null && ViewBag.LastDayChecked == true ? 10 : 1
+            }, htmlAttributes: null)
+            </td>
+        </tr>
+    }
+    </table>
+

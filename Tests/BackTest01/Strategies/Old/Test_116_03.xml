@@ -1,0 +1,1715 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Strategies>
+  <X116>
+    <Name>116</Name>
+    <Code>116.15.200.1.1.18001</Code>
+    <TradeAccountKey>SPBFUT00S98</TradeAccountKey>
+    <TradeTerminalType>Simulator</TradeTerminalType>
+    <TradeTerminalKey>MyTerminal</TradeTerminalKey>
+    <TickerKey>RIU1</TickerKey>
+    <TimeInt>15</TimeInt>
+    <TimeInt2>15</TimeInt2>
+
+    <Ma1Length>300</Ma1Length>
+    <Ma1AtrLength>200</Ma1AtrLength>
+    <Ma1KAtr>1.0</Ma1KAtr>
+    <Ma1Mode>1</Ma1Mode>
+
+    <MaAtrLength1>100</MaAtrLength1>
+    <MaAtrLength2>500</MaAtrLength2>
+
+    <Ma2Length>5</Ma2Length>
+    <Ma2AtrLength>50</Ma2AtrLength>
+    <Ma2KAtr>1.0</Ma2KAtr>
+    <Ma2Mode>1</Ma2Mode>
+
+    <Contracts>1</Contracts>
+    <SignalMap>0</SignalMap>
+
+    <KAtrStop>6</KAtrStop>
+    <KAtrStopZone1>2</KAtrStopZone1>
+    <KAtrStopZone2>3</KAtrStopZone2>
+
+    <Mode1>1</Mode1>
+    <Mode2>1</Mode2>
+    <AtrMode>1</AtrMode>
+
+    <EntryMode>2</EntryMode>
+
+    <RandMode>0</RandMode>
+    <SwingCount>1</SwingCount>
+    <SignalIndex>18001</SignalIndex>
+  </X116>
+  <X116>
+    <Name>116</Name>
+    <Code>116.15.300.2.1.18001</Code>
+    <TradeAccountKey>SPBFUT00S98</TradeAccountKey>
+    <TradeTerminalType>Simulator</TradeTerminalType>
+    <TradeTerminalKey>MyTerminal</TradeTerminalKey>
+    <TickerKey>RIU1</TickerKey>
+    <TimeInt>15</TimeInt>
+    <TimeInt2>15</TimeInt2>
+
+    <Ma1Length>300</Ma1Length>
+    <Ma1AtrLength>300</Ma1AtrLength>
+    <Ma1KAtr>1.5</Ma1KAtr>
+    <Ma1Mode>1</Ma1Mode>
+
+    <MaAtrLength1>100</MaAtrLength1>
+    <MaAtrLength2>500</MaAtrLength2>
+
+    <Ma2Length>5</Ma2Length>
+    <Ma2AtrLength>50</Ma2AtrLength>
+    <Ma2KAtr>1.0</Ma2KAtr>
+    <Ma2Mode>1</Ma2Mode>
+
+    <Contracts>1</Contracts>
+    <SignalMap>0</SignalMap>
+
+    <KAtrStop>6</KAtrStop>
+    <KAtrStopZone1>2</KAtrStopZone1>
+    <KAtrStopZone2>3</KAtrStopZone2>
+
+    <Mode1>1</Mode1>
+    <Mode2>1</Mode2>
+    <AtrMode>1</AtrMode>
+    <EntryMode>2</EntryMode>
+
+    <RandMode>0</RandMode>
+    <SwingCount>1</SwingCount>
+    <SignalIndex>18001</SignalIndex>
+  </X116>
+ 
+  <X116>
+    <Name>116</Name>
+    <Code>116.15.200.1.1.18002</Code>
+    <TradeAccountKey>SPBFUT00S98</TradeAccountKey>
+    <TradeTerminalType>Simulator</TradeTerminalType>
+    <TradeTerminalKey>MyTerminal</TradeTerminalKey>
+    <TickerKey>RIU1</TickerKey>
+    <TimeInt>15</TimeInt>
+    <TimeInt2>15</TimeInt2>
+
+    <Ma1Length>300</Ma1Length>
+    <Ma1AtrLength>200</Ma1AtrLength>
+    <Ma1KAtr>1.0</Ma1KAtr>
+    <Ma1Mode>1</Ma1Mode>
+
+    <MaAtrLength1>100</MaAtrLength1>
+    <MaAtrLength2>500</MaAtrLength2>
+
+    <Ma2Length>5</Ma2Length>
+    <Ma2AtrLength>50</Ma2AtrLength>
+    <Ma2KAtr>1.0</Ma2KAtr>
+    <Ma2Mode>1</Ma2Mode>
+
+    <Contracts>1</Contracts>
+    <SignalMap>0</SignalMap>
+
+    <KAtrStop>6</KAtrStop>
+    <KAtrStopZone1>2</KAtrStopZone1>
+    <KAtrStopZone2>3</KAtrStopZone2>
+
+    <Mode1>1</Mode1>
+    <Mode2>1</Mode2>
+    <AtrMode>1</AtrMode>
+
+    <EntryMode>2</EntryMode>
+
+    <RandMode>0</RandMode>
+    <SwingCount>1</SwingCount>
+    <SignalIndex>18002</SignalIndex>
+  </X116>
+  <X116>
+    <Name>116</Name>
+    <Code>116.15.300.2.1.18002</Code>
+    <TradeAccountKey>SPBFUT00S98</TradeAccountKey>
+    <TradeTerminalType>Simulator</TradeTerminalType>
+    <TradeTerminalKey>MyTerminal</TradeTerminalKey>
+    <TickerKey>RIU1</TickerKey>
+    <TimeInt>15</TimeInt>
+    <TimeInt2>15</TimeInt2>
+
+    <Ma1Length>300</Ma1Length>
+    <Ma1AtrLength>300</Ma1AtrLength>
+    <Ma1KAtr>1.5</Ma1KAtr>
+    <Ma1Mode>1</Ma1Mode>
+
+    <MaAtrLength1>100</MaAtrLength1>
+    <MaAtrLength2>500</MaAtrLength2>
+
+    <Ma2Length>5</Ma2Length>
+    <Ma2AtrLength>50</Ma2AtrLength>
+    <Ma2KAtr>1.0</Ma2KAtr>
+    <Ma2Mode>1</Ma2Mode>
+
+    <Contracts>1</Contracts>
+    <SignalMap>0</SignalMap>
+
+    <KAtrStop>6</KAtrStop>
+    <KAtrStopZone1>2</KAtrStopZone1>
+    <KAtrStopZone2>3</KAtrStopZone2>
+
+    <Mode1>1</Mode1>
+    <Mode2>1</Mode2>
+    <AtrMode>1</AtrMode>
+
+    <EntryMode>2</EntryMode>
+
+    <RandMode>0</RandMode>
+    <SwingCount>1</SwingCount>
+    <SignalIndex>18002</SignalIndex>
+  </X116>
+
+  <X116>
+    <Name>116</Name>
+    <Code>116.15.200.1.1.18005</Code>
+    <TradeAccountKey>SPBFUT00S98</TradeAccountKey>
+    <TradeTerminalType>Simulator</TradeTerminalType>
+    <TradeTerminalKey>MyTerminal</TradeTerminalKey>
+    <TickerKey>RIU1</TickerKey>
+    <TimeInt>15</TimeInt>
+    <TimeInt2>15</TimeInt2>
+
+    <Ma1Length>300</Ma1Length>
+    <Ma1AtrLength>200</Ma1AtrLength>
+    <Ma1KAtr>1.0</Ma1KAtr>
+    <Ma1Mode>1</Ma1Mode>
+
+    <MaAtrLength1>100</MaAtrLength1>
+    <MaAtrLength2>500</MaAtrLength2>
+
+    <Ma2Length>5</Ma2Length>
+    <Ma2AtrLength>50</Ma2AtrLength>
+    <Ma2KAtr>1.0</Ma2KAtr>
+    <Ma2Mode>1</Ma2Mode>
+
+    <Contracts>1</Contracts>
+    <SignalMap>0</SignalMap>
+
+    <KAtrStop>6</KAtrStop>
+    <KAtrStopZone1>2</KAtrStopZone1>
+    <KAtrStopZone2>3</KAtrStopZone2>
+
+    <Mode1>1</Mode1>
+    <Mode2>1</Mode2>
+    <AtrMode>1</AtrMode>
+
+    <EntryMode>2</EntryMode>
+
+    <RandMode>0</RandMode>
+    <SwingCount>1</SwingCount>
+    <SignalIndex>18005</SignalIndex>
+  </X116>
+  <X116>
+    <Name>116</Name>
+    <Code>116.15.300.2.1.18005</Code>
+    <TradeAccountKey>SPBFUT00S98</TradeAccountKey>
+    <TradeTerminalType>Simulator</TradeTerminalType>
+    <TradeTerminalKey>MyTerminal</TradeTerminalKey>
+    <TickerKey>RIU1</TickerKey>
+    <TimeInt>15</TimeInt>
+    <TimeInt2>15</TimeInt2>
+
+    <Ma1Length>300</Ma1Length>
+    <Ma1AtrLength>300</Ma1AtrLength>
+    <Ma1KAtr>1.5</Ma1KAtr>
+    <Ma1Mode>1</Ma1Mode>
+
+    <MaAtrLength1>100</MaAtrLength1>
+    <MaAtrLength2>500</MaAtrLength2>
+
+    <Ma2Length>5</Ma2Length>
+    <Ma2AtrLength>50</Ma2AtrLength>
+    <Ma2KAtr>1.0</Ma2KAtr>
+    <Ma2Mode>1</Ma2Mode>
+
+    <Contracts>1</Contracts>
+    <SignalMap>0</SignalMap>
+
+    <KAtrStop>6</KAtrStop>
+    <KAtrStopZone1>2</KAtrStopZone1>
+    <KAtrStopZone2>3</KAtrStopZone2>
+
+    <Mode1>1</Mode1>
+    <Mode2>1</Mode2>
+    <AtrMode>1</AtrMode>
+
+    <EntryMode>2</EntryMode>
+
+    <RandMode>0</RandMode>
+    <SwingCount>1</SwingCount>
+    <SignalIndex>18005</SignalIndex>
+  </X116>
+
+  <X116>
+    <Name>116</Name>
+    <Code>116.15.200.1.1.18004</Code>
+    <TradeAccountKey>SPBFUT00S98</TradeAccountKey>
+    <TradeTerminalType>Simulator</TradeTerminalType>
+    <TradeTerminalKey>MyTerminal</TradeTerminalKey>
+    <TickerKey>RIU1</TickerKey>
+    <TimeInt>15</TimeInt>
+    <TimeInt2>15</TimeInt2>
+
+    <Ma1Length>300</Ma1Length>
+    <Ma1AtrLength>200</Ma1AtrLength>
+    <Ma1KAtr>1.0</Ma1KAtr>
+    <Ma1Mode>1</Ma1Mode>
+
+    <MaAtrLength1>100</MaAtrLength1>
+    <MaAtrLength2>500</MaAtrLength2>
+
+    <Ma2Length>5</Ma2Length>
+    <Ma2AtrLength>50</Ma2AtrLength>
+    <Ma2KAtr>1.0</Ma2KAtr>
+    <Ma2Mode>1</Ma2Mode>
+
+    <Contracts>1</Contracts>
+    <SignalMap>0</SignalMap>
+
+    <KAtrStop>6</KAtrStop>
+    <KAtrStopZone1>2</KAtrStopZone1>
+    <KAtrStopZone2>3</KAtrStopZone2>
+
+    <Mode1>1</Mode1>
+    <Mode2>1</Mode2>
+    <AtrMode>1</AtrMode>
+
+    <EntryMode>2</EntryMode>
+
+    <RandMode>0</RandMode>
+    <SwingCount>1</SwingCount>
+    <SignalIndex>18004</SignalIndex>
+  </X116>
+  <X116>
+    <Name>116</Name>
+    <Code>116.15.300.2.1.18004</Code>
+    <TradeAccountKey>SPBFUT00S98</TradeAccountKey>
+    <TradeTerminalType>Simulator</TradeTerminalType>
+    <TradeTerminalKey>MyTerminal</TradeTerminalKey>
+    <TickerKey>RIU1</TickerKey>
+    <TimeInt>15</TimeInt>
+    <TimeInt2>15</TimeInt2>
+
+    <Ma1Length>300</Ma1Length>
+    <Ma1AtrLength>300</Ma1AtrLength>
+    <Ma1KAtr>1.5</Ma1KAtr>
+    <Ma1Mode>1</Ma1Mode>
+
+    <MaAtrLength1>100</MaAtrLength1>
+    <MaAtrLength2>500</MaAtrLength2>
+
+    <Ma2Length>5</Ma2Length>
+    <Ma2AtrLength>50</Ma2AtrLength>
+    <Ma2KAtr>1.0</Ma2KAtr>
+    <Ma2Mode>1</Ma2Mode>
+
+    <Contracts>1</Contracts>
+    <SignalMap>0</SignalMap>
+
+    <KAtrStop>6</KAtrStop>
+    <KAtrStopZone1>2</KAtrStopZone1>
+    <KAtrStopZone2>3</KAtrStopZone2>
+
+    <Mode1>1</Mode1>
+    <Mode2>1</Mode2>
+    <AtrMode>1</AtrMode>
+
+    <EntryMode>2</EntryMode>
+
+    <RandMode>0</RandMode>
+    <SwingCount>1</SwingCount>
+    <SignalIndex>18004</SignalIndex>
+  </X116>
+
+  <X116>
+    <Name>116</Name>
+    <Code>116.15.200.1.1.18006</Code>
+    <TradeAccountKey>SPBFUT00S98</TradeAccountKey>
+    <TradeTerminalType>Simulator</TradeTerminalType>
+    <TradeTerminalKey>MyTerminal</TradeTerminalKey>
+    <TickerKey>RIU1</TickerKey>
+    <TimeInt>15</TimeInt>
+    <TimeInt2>15</TimeInt2>
+
+    <Ma1Length>300</Ma1Length>
+    <Ma1AtrLength>200</Ma1AtrLength>
+    <Ma1KAtr>1.0</Ma1KAtr>
+    <Ma1Mode>1</Ma1Mode>
+
+    <MaAtrLength1>100</MaAtrLength1>
+    <MaAtrLength2>500</MaAtrLength2>
+
+    <Ma2Length>5</Ma2Length>
+    <Ma2AtrLength>50</Ma2AtrLength>
+    <Ma2KAtr>1.0</Ma2KAtr>
+    <Ma2Mode>1</Ma2Mode>
+
+    <Contracts>1</Contracts>
+    <SignalMap>0</SignalMap>
+
+    <KAtrStop>6</KAtrStop>
+    <KAtrStopZone1>2</KAtrStopZone1>
+    <KAtrStopZone2>3</KAtrStopZone2>
+
+    <Mode1>1</Mode1>
+    <Mode2>1</Mode2>
+    <AtrMode>1</AtrMode>
+
+    <EntryMode>2</EntryMode>
+
+    <RandMode>0</RandMode>
+    <SwingCount>1</SwingCount>
+    <SignalIndex>18006</SignalIndex>
+  </X116>
+  <X116>
+    <Name>116</Name>
+    <Code>116.15.300.2.1.18006</Code>
+    <TradeAccountKey>SPBFUT00S98</TradeAccountKey>
+    <TradeTerminalType>Simulator</TradeTerminalType>
+    <TradeTerminalKey>MyTerminal</TradeTerminalKey>
+    <TickerKey>RIU1</TickerKey>
+    <TimeInt>15</TimeInt>
+    <TimeInt2>15</TimeInt2>
+
+    <Ma1Length>300</Ma1Length>
+    <Ma1AtrLength>300</Ma1AtrLength>
+    <Ma1KAtr>1.5</Ma1KAtr>
+    <Ma1Mode>1</Ma1Mode>
+
+    <MaAtrLength1>100</MaAtrLength1>
+    <MaAtrLength2>500</MaAtrLength2>
+
+    <Ma2Length>5</Ma2Length>
+    <Ma2AtrLength>50</Ma2AtrLength>
+    <Ma2KAtr>1.0</Ma2KAtr>
+    <Ma2Mode>1</Ma2Mode>
+
+    <Contracts>1</Contracts>
+    <SignalMap>0</SignalMap>
+
+    <KAtrStop>6</KAtrStop>
+    <KAtrStopZone1>2</KAtrStopZone1>
+    <KAtrStopZone2>3</KAtrStopZone2>
+
+    <Mode1>1</Mode1>
+    <Mode2>1</Mode2>
+    <AtrMode>1</AtrMode>
+
+    <EntryMode>2</EntryMode>
+
+    <RandMode>0</RandMode>
+    <SwingCount>1</SwingCount>
+    <SignalIndex>18006</SignalIndex>
+  </X116>
+
+  <X116>
+    <Name>116</Name>
+    <Code>116.15.200.1.1.18007</Code>
+    <TradeAccountKey>SPBFUT00S98</TradeAccountKey>
+    <TradeTerminalType>Simulator</TradeTerminalType>
+    <TradeTerminalKey>MyTerminal</TradeTerminalKey>
+    <TickerKey>RIU1</TickerKey>
+    <TimeInt>15</TimeInt>
+    <TimeInt2>15</TimeInt2>
+
+    <Ma1Length>300</Ma1Length>
+    <Ma1AtrLength>200</Ma1AtrLength>
+    <Ma1KAtr>1.0</Ma1KAtr>
+    <Ma1Mode>1</Ma1Mode>
+
+    <MaAtrLength1>100</MaAtrLength1>
+    <MaAtrLength2>500</MaAtrLength2>
+
+    <Ma2Length>5</Ma2Length>
+    <Ma2AtrLength>50</Ma2AtrLength>
+    <Ma2KAtr>1.0</Ma2KAtr>
+    <Ma2Mode>1</Ma2Mode>
+
+    <Contracts>1</Contracts>
+    <SignalMap>0</SignalMap>
+
+    <KAtrStop>6</KAtrStop>
+    <KAtrStopZone1>2</KAtrStopZone1>
+    <KAtrStopZone2>3</KAtrStopZone2>
+
+    <Mode1>1</Mode1>
+    <Mode2>1</Mode2>
+    <AtrMode>1</AtrMode>
+
+    <EntryMode>2</EntryMode>
+
+    <RandMode>0</RandMode>
+    <SwingCount>1</SwingCount>
+    <SignalIndex>18007</SignalIndex>
+  </X116>
+  <X116>
+    <Name>116</Name>
+    <Code>116.15.300.2.1.18007</Code>
+    <TradeAccountKey>SPBFUT00S98</TradeAccountKey>
+    <TradeTerminalType>Simulator</TradeTerminalType>
+    <TradeTerminalKey>MyTerminal</TradeTerminalKey>
+    <TickerKey>RIU1</TickerKey>
+    <TimeInt>15</TimeInt>
+    <TimeInt2>15</TimeInt2>
+
+    <Ma1Length>300</Ma1Length>
+    <Ma1AtrLength>300</Ma1AtrLength>
+    <Ma1KAtr>1.5</Ma1KAtr>
+    <Ma1Mode>1</Ma1Mode>
+
+    <MaAtrLength1>100</MaAtrLength1>
+    <MaAtrLength2>500</MaAtrLength2>
+
+    <Ma2Length>5</Ma2Length>
+    <Ma2AtrLength>50</Ma2AtrLength>
+    <Ma2KAtr>1.0</Ma2KAtr>
+    <Ma2Mode>1</Ma2Mode>
+
+    <Contracts>1</Contracts>
+    <SignalMap>0</SignalMap>
+
+    <KAtrStop>6</KAtrStop>
+    <KAtrStopZone1>2</KAtrStopZone1>
+    <KAtrStopZone2>3</KAtrStopZone2>
+
+    <Mode1>1</Mode1>
+    <Mode2>1</Mode2>
+    <AtrMode>1</AtrMode>
+
+    <EntryMode>2</EntryMode>
+
+    <RandMode>0</RandMode>
+    <SwingCount>1</SwingCount>
+    <SignalIndex>18007</SignalIndex>
+  </X116>
+
+  <X116>
+    <Name>116</Name>
+    <Code>116.15.200.1.1.18008</Code>
+    <TradeAccountKey>SPBFUT00S98</TradeAccountKey>
+    <TradeTerminalType>Simulator</TradeTerminalType>
+    <TradeTerminalKey>MyTerminal</TradeTerminalKey>
+    <TickerKey>RIU1</TickerKey>
+    <TimeInt>15</TimeInt>
+    <TimeInt2>15</TimeInt2>
+
+    <Ma1Length>300</Ma1Length>
+    <Ma1AtrLength>200</Ma1AtrLength>
+    <Ma1KAtr>1.0</Ma1KAtr>
+    <Ma1Mode>1</Ma1Mode>
+
+    <MaAtrLength1>100</MaAtrLength1>
+    <MaAtrLength2>500</MaAtrLength2>
+
+    <Ma2Length>5</Ma2Length>
+    <Ma2AtrLength>50</Ma2AtrLength>
+    <Ma2KAtr>1.0</Ma2KAtr>
+    <Ma2Mode>1</Ma2Mode>
+
+    <Contracts>1</Contracts>
+    <SignalMap>0</SignalMap>
+
+    <KAtrStop>6</KAtrStop>
+    <KAtrStopZone1>2</KAtrStopZone1>
+    <KAtrStopZone2>3</KAtrStopZone2>
+
+    <Mode1>1</Mode1>
+    <Mode2>1</Mode2>
+    <AtrMode>1</AtrMode>
+
+    <EntryMode>2</EntryMode>
+
+    <RandMode>0</RandMode>
+    <SwingCount>1</SwingCount>
+    <SignalIndex>18008</SignalIndex>
+  </X116>
+  <X116>
+    <Name>116</Name>
+    <Code>116.15.300.2.1.18008</Code>
+    <TradeAccountKey>SPBFUT00S98</TradeAccountKey>
+    <TradeTerminalType>Simulator</TradeTerminalType>
+    <TradeTerminalKey>MyTerminal</TradeTerminalKey>
+    <TickerKey>RIU1</TickerKey>
+    <TimeInt>15</TimeInt>
+    <TimeInt2>15</TimeInt2>
+
+    <Ma1Length>300</Ma1Length>
+    <Ma1AtrLength>300</Ma1AtrLength>
+    <Ma1KAtr>1.5</Ma1KAtr>
+    <Ma1Mode>1</Ma1Mode>
+
+    <MaAtrLength1>100</MaAtrLength1>
+    <MaAtrLength2>500</MaAtrLength2>
+
+    <Ma2Length>5</Ma2Length>
+    <Ma2AtrLength>50</Ma2AtrLength>
+    <Ma2KAtr>1.0</Ma2KAtr>
+    <Ma2Mode>1</Ma2Mode>
+
+    <Contracts>1</Contracts>
+    <SignalMap>0</SignalMap>
+
+    <KAtrStop>6</KAtrStop>
+    <KAtrStopZone1>2</KAtrStopZone1>
+    <KAtrStopZone2>3</KAtrStopZone2>
+
+    <Mode1>1</Mode1>
+    <Mode2>1</Mode2>
+    <AtrMode>1</AtrMode>
+
+    <EntryMode>2</EntryMode>
+
+    <RandMode>0</RandMode>
+    <SwingCount>1</SwingCount>
+    <SignalIndex>18008</SignalIndex>
+  </X116>
+<!--
+  <X116>
+    <Name>116</Name>
+    <Code>116.15.200.1.2.18001</Code>
+    <TradeAccountKey>SPBFUT00S98</TradeAccountKey>
+    <TradeTerminalType>Simulator</TradeTerminalType>
+    <TradeTerminalKey>MyTerminal</TradeTerminalKey>
+    <TickerKey>RIU1</TickerKey>
+    <TimeInt>15</TimeInt>
+    <TimeInt2>15</TimeInt2>
+
+    <Ma1Length>300</Ma1Length>
+    <Ma1AtrLength>200</Ma1AtrLength>
+    <Ma1KAtr>1.0</Ma1KAtr>
+    <Ma1Mode>1</Ma1Mode>
+
+    <MaAtrLength1>100</MaAtrLength1>
+    <MaAtrLength2>500</MaAtrLength2>
+
+    <Ma2Length>5</Ma2Length>
+    <Ma2AtrLength>50</Ma2AtrLength>
+    <Ma2KAtr>1.0</Ma2KAtr>
+    <Ma2Mode>1</Ma2Mode>
+
+    <Contracts>1</Contracts>
+    <SignalMap>0</SignalMap>
+
+    <KAtrStop>6</KAtrStop>
+    <KAtrStopZone1>2</KAtrStopZone1>
+    <KAtrStopZone2>3</KAtrStopZone2>
+
+    <Mode1>1</Mode1>
+    <Mode2>1</Mode2>
+    <AtrMode>2</AtrMode>
+
+    <EntryMode>2</EntryMode>
+
+    <RandMode>0</RandMode>
+    <SwingCount>1</SwingCount>
+    <SignalIndex>18001</SignalIndex>
+  </X116>
+  <X116>
+    <Name>116</Name>
+    <Code>116.15.300.2.2.18001</Code>
+    <TradeAccountKey>SPBFUT00S98</TradeAccountKey>
+    <TradeTerminalType>Simulator</TradeTerminalType>
+    <TradeTerminalKey>MyTerminal</TradeTerminalKey>
+    <TickerKey>RIU1</TickerKey>
+    <TimeInt>15</TimeInt>
+    <TimeInt2>15</TimeInt2>
+
+    <Ma1Length>300</Ma1Length>
+    <Ma1AtrLength>300</Ma1AtrLength>
+    <Ma1KAtr>1.5</Ma1KAtr>
+    <Ma1Mode>1</Ma1Mode>
+
+    <MaAtrLength1>100</MaAtrLength1>
+    <MaAtrLength2>500</MaAtrLength2>
+
+    <Ma2Length>5</Ma2Length>
+    <Ma2AtrLength>50</Ma2AtrLength>
+    <Ma2KAtr>1.0</Ma2KAtr>
+    <Ma2Mode>1</Ma2Mode>
+
+    <Contracts>1</Contracts>
+    <SignalMap>0</SignalMap>
+
+    <KAtrStop>6</KAtrStop>
+    <KAtrStopZone1>2</KAtrStopZone1>
+    <KAtrStopZone2>3</KAtrStopZone2>
+
+    <Mode1>1</Mode1>
+    <Mode2>1</Mode2>
+    <AtrMode>2</AtrMode>
+    <EntryMode>2</EntryMode>
+
+    <RandMode>0</RandMode>
+    <SwingCount>1</SwingCount>
+    <SignalIndex>18001</SignalIndex>
+  </X116>
+
+  <X116>
+    <Name>116</Name>
+    <Code>116.15.200.1.2.18002</Code>
+    <TradeAccountKey>SPBFUT00S98</TradeAccountKey>
+    <TradeTerminalType>Simulator</TradeTerminalType>
+    <TradeTerminalKey>MyTerminal</TradeTerminalKey>
+    <TickerKey>RIU1</TickerKey>
+    <TimeInt>15</TimeInt>
+    <TimeInt2>15</TimeInt2>
+
+    <Ma1Length>300</Ma1Length>
+    <Ma1AtrLength>200</Ma1AtrLength>
+    <Ma1KAtr>1.0</Ma1KAtr>
+    <Ma1Mode>1</Ma1Mode>
+
+    <MaAtrLength1>100</MaAtrLength1>
+    <MaAtrLength2>500</MaAtrLength2>
+
+    <Ma2Length>5</Ma2Length>
+    <Ma2AtrLength>50</Ma2AtrLength>
+    <Ma2KAtr>1.0</Ma2KAtr>
+    <Ma2Mode>1</Ma2Mode>
+
+    <Contracts>1</Contracts>
+    <SignalMap>0</SignalMap>
+
+    <KAtrStop>6</KAtrStop>
+    <KAtrStopZone1>2</KAtrStopZone1>
+    <KAtrStopZone2>3</KAtrStopZone2>
+
+    <Mode1>1</Mode1>
+    <Mode2>1</Mode2>
+    <AtrMode>2</AtrMode>
+
+    <EntryMode>2</EntryMode>
+
+    <RandMode>0</RandMode>
+    <SwingCount>1</SwingCount>
+    <SignalIndex>18002</SignalIndex>
+  </X116>
+  <X116>
+    <Name>116</Name>
+    <Code>116.15.300.2.2.18002</Code>
+    <TradeAccountKey>SPBFUT00S98</TradeAccountKey>
+    <TradeTerminalType>Simulator</TradeTerminalType>
+    <TradeTerminalKey>MyTerminal</TradeTerminalKey>
+    <TickerKey>RIU1</TickerKey>
+    <TimeInt>15</TimeInt>
+    <TimeInt2>15</TimeInt2>
+
+    <Ma1Length>300</Ma1Length>
+    <Ma1AtrLength>300</Ma1AtrLength>
+    <Ma1KAtr>1.5</Ma1KAtr>
+    <Ma1Mode>1</Ma1Mode>
+
+    <MaAtrLength1>100</MaAtrLength1>
+    <MaAtrLength2>500</MaAtrLength2>
+
+    <Ma2Length>5</Ma2Length>
+    <Ma2AtrLength>50</Ma2AtrLength>
+    <Ma2KAtr>1.0</Ma2KAtr>
+    <Ma2Mode>1</Ma2Mode>
+
+    <Contracts>1</Contracts>
+    <SignalMap>0</SignalMap>
+
+    <KAtrStop>6</KAtrStop>
+    <KAtrStopZone1>2</KAtrStopZone1>
+    <KAtrStopZone2>3</KAtrStopZone2>
+
+    <Mode1>1</Mode1>
+    <Mode2>1</Mode2>
+    <AtrMode>2</AtrMode>
+
+    <EntryMode>2</EntryMode>
+
+    <RandMode>0</RandMode>
+    <SwingCount>1</SwingCount>
+    <SignalIndex>18002</SignalIndex>
+  </X116>
+
+-->
+
+  <X116>
+  <Name>116</Name>
+  <Code>116.15.200.1.1.18101</Code>
+  <TradeAccountKey>SPBFUT00S98</TradeAccountKey>
+  <TradeTerminalType>Simulator</TradeTerminalType>
+  <TradeTerminalKey>MyTerminal</TradeTerminalKey>
+  <TickerKey>RIU1</TickerKey>
+  <TimeInt>15</TimeInt>
+  <TimeInt2>15</TimeInt2>
+
+  <Ma1Length>300</Ma1Length>
+  <Ma1AtrLength>200</Ma1AtrLength>
+  <Ma1KAtr>1.0</Ma1KAtr>
+  <Ma1Mode>1</Ma1Mode>
+
+  <MaAtrLength1>50</MaAtrLength1>
+  <MaAtrLength2>300</MaAtrLength2>
+
+  <Ma2Length>5</Ma2Length>
+  <Ma2AtrLength>50</Ma2AtrLength>
+  <Ma2KAtr>1.0</Ma2KAtr>
+  <Ma2Mode>1</Ma2Mode>
+
+  <Contracts>1</Contracts>
+  <SignalMap>0</SignalMap>
+
+  <KAtrStop>6</KAtrStop>
+  <KAtrStopZone1>2</KAtrStopZone1>
+  <KAtrStopZone2>3</KAtrStopZone2>
+
+  <Mode1>1</Mode1>
+  <Mode2>1</Mode2>
+  <AtrMode>1</AtrMode>
+  
+  <EntryMode>2</EntryMode>
+
+  <RandMode>0</RandMode>
+  <SwingCount>1</SwingCount>
+  <SignalIndex>18101</SignalIndex>
+</X116>
+  <X116>
+  <Name>116</Name>
+  <Code>116.15.300.2.1.18101</Code>
+  <TradeAccountKey>SPBFUT00S98</TradeAccountKey>
+  <TradeTerminalType>Simulator</TradeTerminalType>
+  <TradeTerminalKey>MyTerminal</TradeTerminalKey>
+  <TickerKey>RIU1</TickerKey>
+  <TimeInt>15</TimeInt>
+  <TimeInt2>15</TimeInt2>
+
+  <Ma1Length>300</Ma1Length>
+  <Ma1AtrLength>300</Ma1AtrLength>
+  <Ma1KAtr>1.5</Ma1KAtr>
+  <Ma1Mode>1</Ma1Mode>
+
+  <MaAtrLength1>50</MaAtrLength1>
+  <MaAtrLength2>300</MaAtrLength2>
+
+  <Ma2Length>5</Ma2Length>
+  <Ma2AtrLength>50</Ma2AtrLength>
+  <Ma2KAtr>1.0</Ma2KAtr>
+  <Ma2Mode>1</Ma2Mode>
+
+  <Contracts>1</Contracts>
+  <SignalMap>0</SignalMap>
+
+  <KAtrStop>6</KAtrStop>
+  <KAtrStopZone1>2</KAtrStopZone1>
+  <KAtrStopZone2>3</KAtrStopZone2>
+
+  <Mode1>1</Mode1>
+  <Mode2>1</Mode2>
+  <AtrMode>1</AtrMode>
+  <EntryMode>2</EntryMode>
+
+  <RandMode>0</RandMode>
+  <SwingCount>1</SwingCount>
+  <SignalIndex>18101</SignalIndex>
+</X116>
+
+  <X116>
+  <Name>116</Name>
+  <Code>116.15.200.1.1.18102</Code>
+  <TradeAccountKey>SPBFUT00S98</TradeAccountKey>
+  <TradeTerminalType>Simulator</TradeTerminalType>
+  <TradeTerminalKey>MyTerminal</TradeTerminalKey>
+  <TickerKey>RIU1</TickerKey>
+  <TimeInt>15</TimeInt>
+  <TimeInt2>15</TimeInt2>
+
+  <Ma1Length>300</Ma1Length>
+  <Ma1AtrLength>200</Ma1AtrLength>
+  <Ma1KAtr>1.0</Ma1KAtr>
+  <Ma1Mode>1</Ma1Mode>
+
+  <MaAtrLength1>50</MaAtrLength1>
+  <MaAtrLength2>300</MaAtrLength2>
+
+  <Ma2Length>5</Ma2Length>
+  <Ma2AtrLength>50</Ma2AtrLength>
+  <Ma2KAtr>1.0</Ma2KAtr>
+  <Ma2Mode>1</Ma2Mode>
+
+  <Contracts>1</Contracts>
+  <SignalMap>0</SignalMap>
+
+  <KAtrStop>6</KAtrStop>
+  <KAtrStopZone1>2</KAtrStopZone1>
+  <KAtrStopZone2>3</KAtrStopZone2>
+
+  <Mode1>1</Mode1>
+  <Mode2>1</Mode2>
+  <AtrMode>1</AtrMode>
+  
+  <EntryMode>2</EntryMode>
+
+  <RandMode>0</RandMode>
+  <SwingCount>1</SwingCount>
+  <SignalIndex>18102</SignalIndex>
+</X116>
+  <X116>
+  <Name>116</Name>
+  <Code>116.15.300.2.1.18102</Code>
+  <TradeAccountKey>SPBFUT00S98</TradeAccountKey>
+  <TradeTerminalType>Simulator</TradeTerminalType>
+  <TradeTerminalKey>MyTerminal</TradeTerminalKey>
+  <TickerKey>RIU1</TickerKey>
+  <TimeInt>15</TimeInt>
+  <TimeInt2>15</TimeInt2>
+
+  <Ma1Length>300</Ma1Length>
+  <Ma1AtrLength>300</Ma1AtrLength>
+  <Ma1KAtr>1.5</Ma1KAtr>
+  <Ma1Mode>1</Ma1Mode>
+
+  <MaAtrLength1>50</MaAtrLength1>
+  <MaAtrLength2>300</MaAtrLength2>
+
+  <Ma2Length>5</Ma2Length>
+  <Ma2AtrLength>50</Ma2AtrLength>
+  <Ma2KAtr>1.0</Ma2KAtr>
+  <Ma2Mode>1</Ma2Mode>
+
+  <Contracts>1</Contracts>
+  <SignalMap>0</SignalMap>
+
+  <KAtrStop>6</KAtrStop>
+  <KAtrStopZone1>2</KAtrStopZone1>
+  <KAtrStopZone2>3</KAtrStopZone2>
+
+  <Mode1>1</Mode1>
+  <Mode2>1</Mode2>
+  <AtrMode>1</AtrMode>
+  
+  <EntryMode>2</EntryMode>
+
+  <RandMode>0</RandMode>
+  <SwingCount>1</SwingCount>
+  <SignalIndex>18102</SignalIndex>
+</X116>
+
+  <X116>
+    <Name>116</Name>
+    <Code>116.15.200.1.1.18105</Code>
+    <TradeAccountKey>SPBFUT00S98</TradeAccountKey>
+    <TradeTerminalType>Simulator</TradeTerminalType>
+    <TradeTerminalKey>MyTerminal</TradeTerminalKey>
+    <TickerKey>RIU1</TickerKey>
+    <TimeInt>15</TimeInt>
+    <TimeInt2>15</TimeInt2>
+
+    <Ma1Length>300</Ma1Length>
+    <Ma1AtrLength>200</Ma1AtrLength>
+    <Ma1KAtr>1.0</Ma1KAtr>
+    <Ma1Mode>1</Ma1Mode>
+
+    <MaAtrLength1>100</MaAtrLength1>
+    <MaAtrLength2>500</MaAtrLength2>
+
+    <Ma2Length>5</Ma2Length>
+    <Ma2AtrLength>50</Ma2AtrLength>
+    <Ma2KAtr>1.0</Ma2KAtr>
+    <Ma2Mode>1</Ma2Mode>
+
+    <Contracts>1</Contracts>
+    <SignalMap>0</SignalMap>
+
+    <KAtrStop>6</KAtrStop>
+    <KAtrStopZone1>2</KAtrStopZone1>
+    <KAtrStopZone2>3</KAtrStopZone2>
+
+    <Mode1>1</Mode1>
+    <Mode2>1</Mode2>
+    <AtrMode>1</AtrMode>
+
+    <EntryMode>2</EntryMode>
+
+    <RandMode>0</RandMode>
+    <SwingCount>1</SwingCount>
+    <SignalIndex>18105</SignalIndex>
+  </X116>
+  <X116>
+    <Name>116</Name>
+    <Code>116.15.300.2.1.18105</Code>
+    <TradeAccountKey>SPBFUT00S98</TradeAccountKey>
+    <TradeTerminalType>Simulator</TradeTerminalType>
+    <TradeTerminalKey>MyTerminal</TradeTerminalKey>
+    <TickerKey>RIU1</TickerKey>
+    <TimeInt>15</TimeInt>
+    <TimeInt2>15</TimeInt2>
+
+    <Ma1Length>300</Ma1Length>
+    <Ma1AtrLength>300</Ma1AtrLength>
+    <Ma1KAtr>1.5</Ma1KAtr>
+    <Ma1Mode>1</Ma1Mode>
+
+    <MaAtrLength1>100</MaAtrLength1>
+    <MaAtrLength2>500</MaAtrLength2>
+
+    <Ma2Length>5</Ma2Length>
+    <Ma2AtrLength>50</Ma2AtrLength>
+    <Ma2KAtr>1.0</Ma2KAtr>
+    <Ma2Mode>1</Ma2Mode>
+
+    <Contracts>1</Contracts>
+    <SignalMap>0</SignalMap>
+
+    <KAtrStop>6</KAtrStop>
+    <KAtrStopZone1>2</KAtrStopZone1>
+    <KAtrStopZone2>3</KAtrStopZone2>
+
+    <Mode1>1</Mode1>
+    <Mode2>1</Mode2>
+    <AtrMode>1</AtrMode>
+
+    <EntryMode>2</EntryMode>
+
+    <RandMode>0</RandMode>
+    <SwingCount>1</SwingCount>
+    <SignalIndex>18105</SignalIndex>
+  </X116>
+
+  <X116>
+    <Name>116</Name>
+    <Code>116.15.200.1.1.18106</Code>
+    <TradeAccountKey>SPBFUT00S98</TradeAccountKey>
+    <TradeTerminalType>Simulator</TradeTerminalType>
+    <TradeTerminalKey>MyTerminal</TradeTerminalKey>
+    <TickerKey>RIU1</TickerKey>
+    <TimeInt>15</TimeInt>
+    <TimeInt2>15</TimeInt2>
+
+    <Ma1Length>300</Ma1Length>
+    <Ma1AtrLength>200</Ma1AtrLength>
+    <Ma1KAtr>1.0</Ma1KAtr>
+    <Ma1Mode>1</Ma1Mode>
+
+    <MaAtrLength1>100</MaAtrLength1>
+    <MaAtrLength2>500</MaAtrLength2>
+
+    <Ma2Length>5</Ma2Length>
+    <Ma2AtrLength>50</Ma2AtrLength>
+    <Ma2KAtr>1.0</Ma2KAtr>
+    <Ma2Mode>1</Ma2Mode>
+
+    <Contracts>1</Contracts>
+    <SignalMap>0</SignalMap>
+
+    <KAtrStop>6</KAtrStop>
+    <KAtrStopZone1>2</KAtrStopZone1>
+    <KAtrStopZone2>3</KAtrStopZone2>
+
+    <Mode1>1</Mode1>
+    <Mode2>1</Mode2>
+    <AtrMode>1</AtrMode>
+
+    <EntryMode>2</EntryMode>
+
+    <RandMode>0</RandMode>
+    <SwingCount>1</SwingCount>
+    <SignalIndex>18106</SignalIndex>
+  </X116>
+  <X116>
+    <Name>116</Name>
+    <Code>116.15.300.2.1.18106</Code>
+    <TradeAccountKey>SPBFUT00S98</TradeAccountKey>
+    <TradeTerminalType>Simulator</TradeTerminalType>
+    <TradeTerminalKey>MyTerminal</TradeTerminalKey>
+    <TickerKey>RIU1</TickerKey>
+    <TimeInt>15</TimeInt>
+    <TimeInt2>15</TimeInt2>
+
+    <Ma1Length>300</Ma1Length>
+    <Ma1AtrLength>300</Ma1AtrLength>
+    <Ma1KAtr>1.5</Ma1KAtr>
+    <Ma1Mode>1</Ma1Mode>
+
+    <MaAtrLength1>100</MaAtrLength1>
+    <MaAtrLength2>500</MaAtrLength2>
+
+    <Ma2Length>5</Ma2Length>
+    <Ma2AtrLength>50</Ma2AtrLength>
+    <Ma2KAtr>1.0</Ma2KAtr>
+    <Ma2Mode>1</Ma2Mode>
+
+    <Contracts>1</Contracts>
+    <SignalMap>0</SignalMap>
+
+    <KAtrStop>6</KAtrStop>
+    <KAtrStopZone1>2</KAtrStopZone1>
+    <KAtrStopZone2>3</KAtrStopZone2>
+
+    <Mode1>1</Mode1>
+    <Mode2>1</Mode2>
+    <AtrMode>1</AtrMode>
+
+    <EntryMode>2</EntryMode>
+
+    <RandMode>0</RandMode>
+    <SwingCount>1</SwingCount>
+    <SignalIndex>18106</SignalIndex>
+  </X116>
+
+  <!--
+  <X116>
+    <Name>116</Name>
+    <Code>116.15.200.1.2.18101</Code>
+    <TradeAccountKey>SPBFUT00S98</TradeAccountKey>
+    <TradeTerminalType>Simulator</TradeTerminalType>
+    <TradeTerminalKey>MyTerminal</TradeTerminalKey>
+    <TickerKey>RIU1</TickerKey>
+    <TimeInt>15</TimeInt>
+    <TimeInt2>15</TimeInt2>
+
+    <Ma1Length>300</Ma1Length>
+    <Ma1AtrLength>200</Ma1AtrLength>
+    <Ma1KAtr>1.0</Ma1KAtr>
+    <Ma1Mode>1</Ma1Mode>
+
+    <MaAtrLength1>100</MaAtrLength1>
+    <MaAtrLength2>500</MaAtrLength2>
+
+    <Ma2Length>5</Ma2Length>
+    <Ma2AtrLength>50</Ma2AtrLength>
+    <Ma2KAtr>1.0</Ma2KAtr>
+    <Ma2Mode>1</Ma2Mode>
+
+    <Contracts>1</Contracts>
+    <SignalMap>0</SignalMap>
+
+    <KAtrStop>6</KAtrStop>
+    <KAtrStopZone1>2</KAtrStopZone1>
+    <KAtrStopZone2>3</KAtrStopZone2>
+
+    <Mode1>1</Mode1>
+    <Mode2>1</Mode2>
+    <AtrMode>2</AtrMode>
+
+    <EntryMode>2</EntryMode>
+
+    <RandMode>0</RandMode>
+    <SwingCount>1</SwingCount>
+    <SignalIndex>18101</SignalIndex>
+  </X116>
+  <X116>
+    <Name>116</Name>
+    <Code>116.15.300.2.2.18101</Code>
+    <TradeAccountKey>SPBFUT00S98</TradeAccountKey>
+    <TradeTerminalType>Simulator</TradeTerminalType>
+    <TradeTerminalKey>MyTerminal</TradeTerminalKey>
+    <TickerKey>RIU1</TickerKey>
+    <TimeInt>15</TimeInt>
+    <TimeInt2>15</TimeInt2>
+
+    <Ma1Length>300</Ma1Length>
+    <Ma1AtrLength>300</Ma1AtrLength>
+    <Ma1KAtr>1.5</Ma1KAtr>
+    <Ma1Mode>1</Ma1Mode>
+
+    <MaAtrLength1>100</MaAtrLength1>
+    <MaAtrLength2>500</MaAtrLength2>
+
+    <Ma2Length>5</Ma2Length>
+    <Ma2AtrLength>50</Ma2AtrLength>
+    <Ma2KAtr>1.0</Ma2KAtr>
+    <Ma2Mode>1</Ma2Mode>
+
+    <Contracts>1</Contracts>
+    <SignalMap>0</SignalMap>
+
+    <KAtrStop>6</KAtrStop>
+    <KAtrStopZone1>2</KAtrStopZone1>
+    <KAtrStopZone2>3</KAtrStopZone2>
+
+    <Mode1>1</Mode1>
+    <Mode2>1</Mode2>
+    <AtrMode>2</AtrMode>
+    <EntryMode>2</EntryMode>
+
+    <RandMode>0</RandMode>
+    <SwingCount>1</SwingCount>
+    <SignalIndex>18101</SignalIndex>
+  </X116>
+
+  <X116>
+    <Name>116</Name>
+    <Code>116.15.200.1.2.18102</Code>
+    <TradeAccountKey>SPBFUT00S98</TradeAccountKey>
+    <TradeTerminalType>Simulator</TradeTerminalType>
+    <TradeTerminalKey>MyTerminal</TradeTerminalKey>
+    <TickerKey>RIU1</TickerKey>
+    <TimeInt>15</TimeInt>
+    <TimeInt2>15</TimeInt2>
+
+    <Ma1Length>300</Ma1Length>
+    <Ma1AtrLength>200</Ma1AtrLength>
+    <Ma1KAtr>1.0</Ma1KAtr>
+    <Ma1Mode>1</Ma1Mode>
+
+    <MaAtrLength1>100</MaAtrLength1>
+    <MaAtrLength2>500</MaAtrLength2>
+
+    <Ma2Length>5</Ma2Length>
+    <Ma2AtrLength>50</Ma2AtrLength>
+    <Ma2KAtr>1.0</Ma2KAtr>
+    <Ma2Mode>1</Ma2Mode>
+
+    <Contracts>1</Contracts>
+    <SignalMap>0</SignalMap>
+
+    <KAtrStop>6</KAtrStop>
+    <KAtrStopZone1>2</KAtrStopZone1>
+    <KAtrStopZone2>3</KAtrStopZone2>
+
+    <Mode1>1</Mode1>
+    <Mode2>1</Mode2>
+    <AtrMode>2</AtrMode>
+
+    <EntryMode>2</EntryMode>
+
+    <RandMode>0</RandMode>
+    <SwingCount>1</SwingCount>
+    <SignalIndex>18102</SignalIndex>
+  </X116>
+  <X116>
+    <Name>116</Name>
+    <Code>116.15.300.2.2.18102</Code>
+    <TradeAccountKey>SPBFUT00S98</TradeAccountKey>
+    <TradeTerminalType>Simulator</TradeTerminalType>
+    <TradeTerminalKey>MyTerminal</TradeTerminalKey>
+    <TickerKey>RIU1</TickerKey>
+    <TimeInt>15</TimeInt>
+    <TimeInt2>15</TimeInt2>
+
+    <Ma1Length>300</Ma1Length>
+    <Ma1AtrLength>300</Ma1AtrLength>
+    <Ma1KAtr>1.5</Ma1KAtr>
+    <Ma1Mode>1</Ma1Mode>
+
+    <MaAtrLength1>100</MaAtrLength1>
+    <MaAtrLength2>500</MaAtrLength2>
+
+    <Ma2Length>5</Ma2Length>
+    <Ma2AtrLength>50</Ma2AtrLength>
+    <Ma2KAtr>1.0</Ma2KAtr>
+    <Ma2Mode>1</Ma2Mode>
+
+    <Contracts>1</Contracts>
+    <SignalMap>0</SignalMap>
+
+    <KAtrStop>6</KAtrStop>
+    <KAtrStopZone1>2</KAtrStopZone1>
+    <KAtrStopZone2>3</KAtrStopZone2>
+
+    <Mode1>1</Mode1>
+    <Mode2>1</Mode2>
+    <AtrMode>2</AtrMode>
+
+    <EntryMode>2</EntryMode>
+
+    <RandMode>0</RandMode>
+    <SwingCount>1</SwingCount>
+    <SignalIndex>18102</SignalIndex>
+  </X116>
+-->
+
+  <X116>
+    <Name>116</Name>
+    <Code>116.1.100.1.105</Code>
+    <TradeAccountKey>SPBFUT00S98</TradeAccountKey>
+    <TradeTerminalType>Simulator</TradeTerminalType>
+    <TradeTerminalKey>MyTerminal</TradeTerminalKey>
+    <TickerKey>RIU1</TickerKey>
+    <TimeInt>15</TimeInt>
+    <TimeInt2>15</TimeInt2>
+
+    <Ma1Length>300</Ma1Length>
+    <Ma1AtrLength>150</Ma1AtrLength>
+    <Ma1KAtr>1.0</Ma1KAtr>
+    <Ma1Mode>1</Ma1Mode>
+
+    <Ma2Length>5</Ma2Length>
+    <Ma2AtrLength>50</Ma2AtrLength>
+    <Ma2KAtr>1.0</Ma2KAtr>
+    <Ma2Mode>1</Ma2Mode>
+
+    <Contracts>1</Contracts>
+    <SignalMap>0</SignalMap>
+
+    <KAtrStop>6</KAtrStop>
+    <KAtrStopZone1>2</KAtrStopZone1>
+    <KAtrStopZone2>3</KAtrStopZone2>
+
+    <Mode1>1</Mode1>
+    <Mode2>1</Mode2>
+    <EntryMode>100</EntryMode>
+
+    <RandMode>0</RandMode>
+    <SwingCount>1</SwingCount>
+    <SignalIndex>105</SignalIndex>
+  </X116>
+  <X116>
+    <Name>116</Name>
+    <Code>116.1.100.1.106</Code>
+    <TradeAccountKey>SPBFUT00S98</TradeAccountKey>
+    <TradeTerminalType>Simulator</TradeTerminalType>
+    <TradeTerminalKey>MyTerminal</TradeTerminalKey>
+    <TickerKey>RIU1</TickerKey>
+    <TimeInt>15</TimeInt>
+    <TimeInt2>15</TimeInt2>
+
+    <Ma1Length>300</Ma1Length>
+    <Ma1AtrLength>150</Ma1AtrLength>
+    <Ma1KAtr>1.0</Ma1KAtr>
+    <Ma1Mode>1</Ma1Mode>
+
+    <Ma2Length>5</Ma2Length>
+    <Ma2AtrLength>50</Ma2AtrLength>
+    <Ma2KAtr>1.0</Ma2KAtr>
+    <Ma2Mode>1</Ma2Mode>
+
+    <Contracts>1</Contracts>
+    <SignalMap>0</SignalMap>
+
+    <KAtrStop>6</KAtrStop>
+    <KAtrStopZone1>2</KAtrStopZone1>
+    <KAtrStopZone2>3</KAtrStopZone2>
+
+    <Mode1>1</Mode1>
+    <Mode2>1</Mode2>
+    <EntryMode>100</EntryMode>
+
+    <RandMode>0</RandMode>
+    <SwingCount>1</SwingCount>
+    <SignalIndex>106</SignalIndex>
+  </X116>
+  
+  
+  
+  <X116>
+    <Name>116</Name>
+    <Code>116.1.100.1.19</Code>
+    <TradeAccountKey>SPBFUT00S98</TradeAccountKey>
+    <TradeTerminalType>Simulator</TradeTerminalType>
+    <TradeTerminalKey>MyTerminal</TradeTerminalKey>
+    <TickerKey>RIU1</TickerKey>
+    <TimeInt>15</TimeInt>
+    <TimeInt2>15</TimeInt2>
+
+    <Ma1Length>300</Ma1Length>
+    <Ma1AtrLength>150</Ma1AtrLength>
+    <Ma1KAtr>1.0</Ma1KAtr>
+    <Ma1Mode>1</Ma1Mode>
+
+    <Ma2Length>5</Ma2Length>
+    <Ma2AtrLength>50</Ma2AtrLength>
+    <Ma2KAtr>1.0</Ma2KAtr>
+    <Ma2Mode>1</Ma2Mode>
+
+    <Contracts>1</Contracts>
+    <SignalMap>0</SignalMap>
+
+    <KAtrStop>6</KAtrStop>
+    <KAtrStopZone1>2</KAtrStopZone1>
+    <KAtrStopZone2>3</KAtrStopZone2>
+
+    <Mode1>1</Mode1>
+    <Mode2>1</Mode2>
+    <EntryMode>1</EntryMode>
+
+    <RandMode>0</RandMode>
+    <SwingCount>1</SwingCount>
+    <SignalIndex>19</SignalIndex>
+  </X116>
+  <X116>
+    <Name>116</Name>
+    <Code>116.1.100.1.21</Code>
+    <TradeAccountKey>SPBFUT00S98</TradeAccountKey>
+    <TradeTerminalType>Simulator</TradeTerminalType>
+    <TradeTerminalKey>MyTerminal</TradeTerminalKey>
+    <TickerKey>RIU1</TickerKey>
+    <TimeInt>15</TimeInt>
+    <TimeInt2>15</TimeInt2>
+
+    <Ma1Length>300</Ma1Length>
+    <Ma1AtrLength>150</Ma1AtrLength>
+    <Ma1KAtr>1.0</Ma1KAtr>
+    <Ma1Mode>1</Ma1Mode>
+
+    <Ma2Length>5</Ma2Length>
+    <Ma2AtrLength>50</Ma2AtrLength>
+    <Ma2KAtr>1.0</Ma2KAtr>
+    <Ma2Mode>1</Ma2Mode>
+
+    <Contracts>1</Contracts>
+    <SignalMap>0</SignalMap>
+
+    <KAtrStop>6</KAtrStop>
+    <KAtrStopZone1>2</KAtrStopZone1>
+    <KAtrStopZone2>3</KAtrStopZone2>
+
+    <Mode1>1</Mode1>
+    <Mode2>1</Mode2>
+    <EntryMode>1</EntryMode>
+
+    <RandMode>0</RandMode>
+    <SwingCount>1</SwingCount>
+    <SignalIndex>21</SignalIndex>
+  </X116>
+  <X116>
+    <Name>116</Name>
+    <Code>116.1.100.1.22</Code>
+    <TradeAccountKey>SPBFUT00S98</TradeAccountKey>
+    <TradeTerminalType>Simulator</TradeTerminalType>
+    <TradeTerminalKey>MyTerminal</TradeTerminalKey>
+    <TickerKey>RIU1</TickerKey>
+    <TimeInt>15</TimeInt>
+    <TimeInt2>15</TimeInt2>
+
+    <Ma1Length>300</Ma1Length>
+    <Ma1AtrLength>150</Ma1AtrLength>
+    <Ma1KAtr>1.0</Ma1KAtr>
+    <Ma1Mode>1</Ma1Mode>
+
+    <Ma2Length>5</Ma2Length>
+    <Ma2AtrLength>50</Ma2AtrLength>
+    <Ma2KAtr>1.0</Ma2KAtr>
+    <Ma2Mode>1</Ma2Mode>
+
+    <Contracts>1</Contracts>
+    <SignalMap>0</SignalMap>
+
+    <KAtrStop>6</KAtrStop>
+    <KAtrStopZone1>2</KAtrStopZone1>
+    <KAtrStopZone2>3</KAtrStopZone2>
+
+    <Mode1>1</Mode1>
+    <Mode2>1</Mode2>
+    <EntryMode>1</EntryMode>
+
+    <RandMode>0</RandMode>
+    <SwingCount>1</SwingCount>
+    <SignalIndex>22</SignalIndex>
+  </X116>
+  <X116>
+    <Name>116</Name>
+    <Code>116.1.100.1.23</Code>
+    <TradeAccountKey>SPBFUT00S98</TradeAccountKey>
+    <TradeTerminalType>Simulator</TradeTerminalType>
+    <TradeTerminalKey>MyTerminal</TradeTerminalKey>
+    <TickerKey>RIU1</TickerKey>
+    <TimeInt>15</TimeInt>
+    <TimeInt2>15</TimeInt2>
+
+    <Ma1Length>300</Ma1Length>
+    <Ma1AtrLength>150</Ma1AtrLength>
+    <Ma1KAtr>1.0</Ma1KAtr>
+    <Ma1Mode>1</Ma1Mode>
+
+    <Ma2Length>5</Ma2Length>
+    <Ma2AtrLength>50</Ma2AtrLength>
+    <Ma2KAtr>1.0</Ma2KAtr>
+    <Ma2Mode>1</Ma2Mode>
+
+    <Contracts>1</Contracts>
+    <SignalMap>0</SignalMap>
+
+    <KAtrStop>6</KAtrStop>
+    <KAtrStopZone1>2</KAtrStopZone1>
+    <KAtrStopZone2>3</KAtrStopZone2>
+
+    <Mode1>1</Mode1>
+    <Mode2>1</Mode2>
+    <EntryMode>1</EntryMode>
+
+    <RandMode>0</RandMode>
+    <SwingCount>1</SwingCount>
+    <SignalIndex>23</SignalIndex>
+  </X116>
+  <X116>
+    <Name>116</Name>
+    <Code>116.1.100.1.24</Code>
+    <TradeAccountKey>SPBFUT00S98</TradeAccountKey>
+    <TradeTerminalType>Simulator</TradeTerminalType>
+    <TradeTerminalKey>MyTerminal</TradeTerminalKey>
+    <TickerKey>RIU1</TickerKey>
+    <TimeInt>15</TimeInt>
+    <TimeInt2>15</TimeInt2>
+
+    <Ma1Length>300</Ma1Length>
+    <Ma1AtrLength>150</Ma1AtrLength>
+    <Ma1KAtr>1.0</Ma1KAtr>
+    <Ma1Mode>1</Ma1Mode>
+
+    <Ma2Length>5</Ma2Length>
+    <Ma2AtrLength>50</Ma2AtrLength>
+    <Ma2KAtr>1.0</Ma2KAtr>
+    <Ma2Mode>1</Ma2Mode>
+
+    <Contracts>1</Contracts>
+    <SignalMap>0</SignalMap>
+
+    <KAtrStop>6</KAtrStop>
+    <KAtrStopZone1>2</KAtrStopZone1>
+    <KAtrStopZone2>3</KAtrStopZone2>
+
+    <Mode1>1</Mode1>
+    <Mode2>1</Mode2>
+    <EntryMode>1</EntryMode>
+
+    <RandMode>0</RandMode>
+    <SwingCount>1</SwingCount>
+    <SignalIndex>24</SignalIndex>
+  </X116>
+  <X116>
+    <Name>116</Name>
+    <Code>116.1.100.1.25</Code>
+    <TradeAccountKey>SPBFUT00S98</TradeAccountKey>
+    <TradeTerminalType>Simulator</TradeTerminalType>
+    <TradeTerminalKey>MyTerminal</TradeTerminalKey>
+    <TickerKey>RIU1</TickerKey>
+    <TimeInt>15</TimeInt>
+    <TimeInt2>15</TimeInt2>
+
+    <Ma1Length>300</Ma1Length>
+    <Ma1AtrLength>150</Ma1AtrLength>
+    <Ma1KAtr>1.0</Ma1KAtr>
+    <Ma1Mode>1</Ma1Mode>
+
+    <Ma2Length>5</Ma2Length>
+    <Ma2AtrLength>50</Ma2AtrLength>
+    <Ma2KAtr>1.0</Ma2KAtr>
+    <Ma2Mode>1</Ma2Mode>
+
+    <Contracts>1</Contracts>
+    <SignalMap>0</SignalMap>
+
+    <KAtrStop>6</KAtrStop>
+    <KAtrStopZone1>2</KAtrStopZone1>
+    <KAtrStopZone2>3</KAtrStopZone2>
+
+    <Mode1>1</Mode1>
+    <Mode2>1</Mode2>
+    <EntryMode>2</EntryMode>
+
+    <RandMode>0</RandMode>
+    <SwingCount>1</SwingCount>
+    <SignalIndex>25</SignalIndex>
+  </X116>
+
+  <!-- 1.5 -->
+
+  <X116>
+    <Name>116</Name>
+    <Code>116.1.150.1.19</Code>
+    <TradeAccountKey>SPBFUT00S98</TradeAccountKey>
+    <TradeTerminalType>Simulator</TradeTerminalType>
+    <TradeTerminalKey>MyTerminal</TradeTerminalKey>
+    <TickerKey>RIU1</TickerKey>
+    <TimeInt>15</TimeInt>
+    <TimeInt2>15</TimeInt2>
+
+    <Ma1Length>300</Ma1Length>
+    <Ma1AtrLength>150</Ma1AtrLength>
+    <Ma1KAtr>1.5</Ma1KAtr>
+    <Ma1Mode>1</Ma1Mode>
+
+    <Ma2Length>5</Ma2Length>
+    <Ma2AtrLength>50</Ma2AtrLength>
+    <Ma2KAtr>1.0</Ma2KAtr>
+    <Ma2Mode>1</Ma2Mode>
+
+    <Contracts>1</Contracts>
+    <SignalMap>0</SignalMap>
+
+    <KAtrStop>6</KAtrStop>
+    <KAtrStopZone1>2</KAtrStopZone1>
+    <KAtrStopZone2>3</KAtrStopZone2>
+
+    <Mode1>1</Mode1>
+    <Mode2>1</Mode2>
+    <EntryMode>1</EntryMode>
+
+    <RandMode>0</RandMode>
+    <SwingCount>1</SwingCount>
+    <SignalIndex>19</SignalIndex>
+  </X116>
+  <X116>
+    <Name>116</Name>
+    <Code>116.1.150.1.21</Code>
+    <TradeAccountKey>SPBFUT00S98</TradeAccountKey>
+    <TradeTerminalType>Simulator</TradeTerminalType>
+    <TradeTerminalKey>MyTerminal</TradeTerminalKey>
+    <TickerKey>RIU1</TickerKey>
+    <TimeInt>15</TimeInt>
+    <TimeInt2>15</TimeInt2>
+
+    <Ma1Length>300</Ma1Length>
+    <Ma1AtrLength>150</Ma1AtrLength>
+    <Ma1KAtr>1.5</Ma1KAtr>
+    <Ma1Mode>1</Ma1Mode>
+
+    <Ma2Length>5</Ma2Length>
+    <Ma2AtrLength>50</Ma2AtrLength>
+    <Ma2KAtr>1.0</Ma2KAtr>
+    <Ma2Mode>1</Ma2Mode>
+
+    <Contracts>1</Contracts>
+    <SignalMap>0</SignalMap>
+
+    <KAtrStop>6</KAtrStop>
+    <KAtrStopZone1>2</KAtrStopZone1>
+    <KAtrStopZone2>3</KAtrStopZone2>
+
+    <Mode1>1</Mode1>
+    <Mode2>1</Mode2>
+    <EntryMode>1</EntryMode>
+
+    <RandMode>0</RandMode>
+    <SwingCount>1</SwingCount>
+    <SignalIndex>21</SignalIndex>
+  </X116>
+  <X116>
+    <Name>116</Name>
+    <Code>116.1.150.1.22</Code>
+    <TradeAccountKey>SPBFUT00S98</TradeAccountKey>
+    <TradeTerminalType>Simulator</TradeTerminalType>
+    <TradeTerminalKey>MyTerminal</TradeTerminalKey>
+    <TickerKey>RIU1</TickerKey>
+    <TimeInt>15</TimeInt>
+    <TimeInt2>15</TimeInt2>
+
+    <Ma1Length>300</Ma1Length>
+    <Ma1AtrLength>150</Ma1AtrLength>
+    <Ma1KAtr>1.5</Ma1KAtr>
+    <Ma1Mode>1</Ma1Mode>
+
+    <Ma2Length>5</Ma2Length>
+    <Ma2AtrLength>50</Ma2AtrLength>
+    <Ma2KAtr>1.0</Ma2KAtr>
+    <Ma2Mode>1</Ma2Mode>
+
+    <Contracts>1</Contracts>
+    <SignalMap>0</SignalMap>
+
+    <KAtrStop>6</KAtrStop>
+    <KAtrStopZone1>2</KAtrStopZone1>
+    <KAtrStopZone2>3</KAtrStopZone2>
+
+    <Mode1>1</Mode1>
+    <Mode2>1</Mode2>
+    <EntryMode>1</EntryMode>
+
+    <RandMode>0</RandMode>
+    <SwingCount>1</SwingCount>
+    <SignalIndex>22</SignalIndex>
+  </X116>
+  <X116>
+    <Name>116</Name>
+    <Code>116.1.150.1.23</Code>
+    <TradeAccountKey>SPBFUT00S98</TradeAccountKey>
+    <TradeTerminalType>Simulator</TradeTerminalType>
+    <TradeTerminalKey>MyTerminal</TradeTerminalKey>
+    <TickerKey>RIU1</TickerKey>
+    <TimeInt>15</TimeInt>
+    <TimeInt2>15</TimeInt2>
+
+    <Ma1Length>300</Ma1Length>
+    <Ma1AtrLength>150</Ma1AtrLength>
+    <Ma1KAtr>1.5</Ma1KAtr>
+    <Ma1Mode>1</Ma1Mode>
+
+    <Ma2Length>5</Ma2Length>
+    <Ma2AtrLength>50</Ma2AtrLength>
+    <Ma2KAtr>1.0</Ma2KAtr>
+    <Ma2Mode>1</Ma2Mode>
+
+    <Contracts>1</Contracts>
+    <SignalMap>0</SignalMap>
+
+    <KAtrStop>6</KAtrStop>
+    <KAtrStopZone1>2</KAtrStopZone1>
+    <KAtrStopZone2>3</KAtrStopZone2>
+
+    <Mode1>1</Mode1>
+    <Mode2>1</Mode2>
+    <EntryMode>1</EntryMode>
+
+    <RandMode>0</RandMode>
+    <SwingCount>1</SwingCount>
+    <SignalIndex>23</SignalIndex>
+  </X116>
+  <X116>
+    <Name>116</Name>
+    <Code>116.1.150.1.24</Code>
+    <TradeAccountKey>SPBFUT00S98</TradeAccountKey>
+    <TradeTerminalType>Simulator</TradeTerminalType>
+    <TradeTerminalKey>MyTerminal</TradeTerminalKey>
+    <TickerKey>RIU1</TickerKey>
+    <TimeInt>15</TimeInt>
+    <TimeInt2>15</TimeInt2>
+
+    <Ma1Length>300</Ma1Length>
+    <Ma1AtrLength>150</Ma1AtrLength>
+    <Ma1KAtr>1.5</Ma1KAtr>
+    <Ma1Mode>1</Ma1Mode>
+
+    <Ma2Length>5</Ma2Length>
+    <Ma2AtrLength>50</Ma2AtrLength>
+    <Ma2KAtr>1.0</Ma2KAtr>
+    <Ma2Mode>1</Ma2Mode>
+
+    <Contracts>1</Contracts>
+    <SignalMap>0</SignalMap>
+
+    <KAtrStop>6</KAtrStop>
+    <KAtrStopZone1>2</KAtrStopZone1>
+    <KAtrStopZone2>3</KAtrStopZone2>
+
+    <Mode1>1</Mode1>
+    <Mode2>1</Mode2>
+    <EntryMode>1</EntryMode>
+
+    <RandMode>0</RandMode>
+    <SwingCount>1</SwingCount>
+    <SignalIndex>24</SignalIndex>
+  </X116>
+  <X116>
+    <Name>116</Name>
+    <Code>116.1.150.1.25</Code>
+    <TradeAccountKey>SPBFUT00S98</TradeAccountKey>
+    <TradeTerminalType>Simulator</TradeTerminalType>
+    <TradeTerminalKey>MyTerminal</TradeTerminalKey>
+    <TickerKey>RIU1</TickerKey>
+    <TimeInt>15</TimeInt>
+    <TimeInt2>15</TimeInt2>
+
+    <Ma1Length>300</Ma1Length>
+    <Ma1AtrLength>150</Ma1AtrLength>
+    <Ma1KAtr>1.5</Ma1KAtr>
+    <Ma1Mode>1</Ma1Mode>
+
+    <Ma2Length>5</Ma2Length>
+    <Ma2AtrLength>50</Ma2AtrLength>
+    <Ma2KAtr>1.0</Ma2KAtr>
+    <Ma2Mode>1</Ma2Mode>
+
+    <Contracts>1</Contracts>
+    <SignalMap>0</SignalMap>
+
+    <KAtrStop>6</KAtrStop>
+    <KAtrStopZone1>2</KAtrStopZone1>
+    <KAtrStopZone2>3</KAtrStopZone2>
+
+    <Mode1>1</Mode1>
+    <Mode2>1</Mode2>
+    <EntryMode>2</EntryMode>
+
+    <RandMode>0</RandMode>
+    <SwingCount>1</SwingCount>
+    <SignalIndex>25</SignalIndex>
+  </X116>
+
+</Strategies>

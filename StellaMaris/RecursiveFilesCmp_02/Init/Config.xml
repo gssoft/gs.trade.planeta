@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Root>
+  <Config>
+    <FtpFileComparer>Init\CompareInfoGsStMa.xml</FtpFileComparer>
+    <FtpWebClient>Init\FtpWebClientPlaStMa.xml</FtpWebClient>
+    <!--<FtpWebClient>Init\FtpWebClientGsStMa.xml</FtpWebClient>-->
+    
+    <!--<FtpFileComparer>Init\CompareInfoGsPays.xml</FtpFileComparer>
+    <FtpWebClient>Init\FtpWebClientGsPays.xml</FtpWebClient>-->
+
+  </Config>
+ </Root>

@@ -1,0 +1,43 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+//namespace GS.ConsoleAsync
+//{
+//    //public static class ConsoleSync
+//    //{
+//    //    public static void WriteLineT(string s)
+//    //    {
+//    //        s = DateTime.Now.TimeOfDay.ToString("c") + " " + s;
+//    //        Console.WriteLine(s);
+//    //    }
+//    //    public static void WriteLineT(string format, params object[] args)
+//    //    {
+//    //        var s = DateTime.Now.TimeOfDay.ToString("c") + " " + String.Format(format, args);
+//    //        Console.WriteLine(s);
+//    //    }
+
+//    //    public static void WriteLineD(string s)
+//    //    {
+//    //        s = DateTime.Now.Date.ToString("d") + " " + s;
+//    //        Console.WriteLine(s);
+//    //    }
+//    //    public static void WriteLineD(string format, params object[] args)
+//    //    {
+//    //        var s = DateTime.Now.Date.ToString("d") + " " + String.Format(format, args);
+//    //        Console.WriteLine(s);
+//    //    }
+//    //    public static void WriteLineDT(string s)
+//    //    {
+//    //        s = DateTime.Now.ToString("G") + " " + s;
+//    //        Console.WriteLine(s);
+//    //    }
+//    //    public  static void WriteLineDT(string format, params object[] args)
+//    //    {
+//    //        var s = DateTime.Now.ToString("G") + " " + String.Format(format, args);
+//    //        Console.WriteLine(s);
+//    //    }
+//    //}
+//}

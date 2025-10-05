@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<TimeInts>
+<TimeInt ID="2" Code="1Min" Name="1 Min" DaysPerPass="30" />
+<TimeInt ID="2" Code="1_Min" Name="1 Min" DaysPerPass="30" />  
+<TimeInt ID="7" Code="1H" Name="1 Hour" DaysPerPass="100" />
+<TimeInt ID="7" Code="1_Hour" Name="1 Hour" DaysPerPass="100" />
+<TimeInt ID="7" Code="Hour" Name="1 Hour" DaysPerPass="100" />
+<TimeInt ID="8" Code="Daily" Name="Daily" DaysPerPass="360" />
+<TimeInt ID="8" Code="Day" Name="Daily" DaysPerPass="360" />
+<TimeInt ID="9" Code="Weekly" Name="Weekly" DaysPerPass="1000" />
+<TimeInt ID="9" Code="Week" Name="Weekly" DaysPerPass="1000" />
+<TimeInt ID="10" Code="Monthly" Name="Monthly" DaysPerPass="3000" />
+<TimeInt ID="10" Code="Month" Name="Monthly" DaysPerPass="3000" />
+<TimeInt ID="10" Code="1Mon" Name="Monthly" DaysPerPass="3000" />
+</TimeInts>

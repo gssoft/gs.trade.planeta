@@ -1,0 +1,98 @@
+﻿@model GS.Trade.TimeSeries.FortsTicks.Model.Stat
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Stat</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Ticker.Code)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Ticker.Code)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Type)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Type)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Period)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Period)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.LastDate)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.LastDate)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Count)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Count)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.FirstDT)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.FirstDT)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.LastDT)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.LastDT)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.MinValue)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.MinValue)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.MaxValue)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.MaxValue)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ModifiedDT)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ModifiedDT)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.ID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

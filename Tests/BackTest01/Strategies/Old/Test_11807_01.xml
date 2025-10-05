@@ -1,0 +1,254 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Strategies>
+
+  <X11807>
+    <Name>11807</Name>
+    <Code>11807.15.2.1.1.0.0.10.0</Code>
+    <TradeAccountKey>SPBFUT00S98</TradeAccountKey>
+    <TradeTerminalType>Simulator</TradeTerminalType>
+    <TradeTerminalKey>MyTerminal</TradeTerminalKey>
+    <TickerKey>RIU1</TickerKey>
+    <TimeInt>15</TimeInt>
+    <TimeInt2>15</TimeInt2>
+
+    <Ma1Length>300</Ma1Length>
+    <Ma1AtrLength>200</Ma1AtrLength>
+    <Ma1KAtr>1.5</Ma1KAtr>
+    <Ma1Mode>1</Ma1Mode>
+
+    <MaAtrLength1>100</MaAtrLength1>
+    <MaAtrLength2>500</MaAtrLength2>
+
+    <Ma2Length>5</Ma2Length>
+    <Ma2AtrLength>50</Ma2AtrLength>
+    <Ma2KAtr>1.0</Ma2KAtr>
+    <Ma2Mode>1</Ma2Mode>
+
+    <Contracts>1</Contracts>
+
+    <KAtrStop>10</KAtrStop>
+    <KAtrTake>0</KAtrTake>
+    
+    <Mode1>0</Mode1>
+    <Mode2>0</Mode2>
+
+    <RandMode>0</RandMode>
+
+    <SwingCountEntry>1</SwingCountEntry>
+    <SwingCountReverse>1</SwingCountReverse>
+    <SwingCountExit>2</SwingCountExit>
+
+    <CancelOrderMode>0</CancelOrderMode>
+    <FlatCount>1</FlatCount>
+
+    <EntryId>18007</EntryId>
+    <ExitId>0</ExitId>
+    <ReverseId>18007</ReverseId>
+    
+    <EntryPriceId>1</EntryPriceId>
+    <ExitPriceId>1</ExitPriceId>
+    <ReversePriceId>1</ReversePriceId>
+
+    <StopExitId>0</StopExitId>
+    <StopPriceId>1</StopPriceId>
+
+  </X11807>
+
+  <X11807>
+    <Name>11807</Name>
+    <Code>11807.15.2.1.1.0.0.10.1</Code>
+    <TradeAccountKey>SPBFUT00S98</TradeAccountKey>
+    <TradeTerminalType>Simulator</TradeTerminalType>
+    <TradeTerminalKey>MyTerminal</TradeTerminalKey>
+    <TickerKey>RIU1</TickerKey>
+    <TimeInt>15</TimeInt>
+    <TimeInt2>15</TimeInt2>
+
+    <Ma1Length>300</Ma1Length>
+    <Ma1AtrLength>200</Ma1AtrLength>
+    <Ma1KAtr>1.5</Ma1KAtr>
+    <Ma1Mode>1</Ma1Mode>
+
+    <MaAtrLength1>100</MaAtrLength1>
+    <MaAtrLength2>500</MaAtrLength2>
+
+    <Contracts>1</Contracts>
+
+    <KAtrStop>10</KAtrStop>
+    <KAtrTake>10</KAtrTake>
+    
+    <Mode1>2</Mode1>
+    <Mode2>0</Mode2>
+
+    <RandMode>0</RandMode>
+
+    <SwingCountEntry>1</SwingCountEntry>
+    <SwingCountReverse>1</SwingCountReverse>
+    <SwingCountExit>2</SwingCountExit>
+
+    <CancelOrderMode>0</CancelOrderMode>
+    <FlatCount>1</FlatCount>
+
+    <EntryId>18007</EntryId>
+    <ExitId>106</ExitId>
+    <ReverseId>18007</ReverseId>
+
+    <EntryPriceId>1</EntryPriceId>
+    <ExitPriceId>1</ExitPriceId>
+    <ReversePriceId>1</ReversePriceId>
+
+    <StopExitId>0</StopExitId>
+    <StopPriceId>1</StopPriceId>
+
+  </X11807>
+
+  <X11807>
+    <Name>11807</Name>
+    <Code>11807.15.2.1.1.0.0.10.2</Code>
+    <TradeAccountKey>SPBFUT00S98</TradeAccountKey>
+    <TradeTerminalType>Simulator</TradeTerminalType>
+    <TradeTerminalKey>MyTerminal</TradeTerminalKey>
+    <TickerKey>RIU1</TickerKey>
+    <TimeInt>15</TimeInt>
+    <TimeInt2>15</TimeInt2>
+
+    <Ma1Length>300</Ma1Length>
+    <Ma1AtrLength>200</Ma1AtrLength>
+    <Ma1KAtr>1.5</Ma1KAtr>
+    <Ma1Mode>1</Ma1Mode>
+
+    <MaAtrLength1>100</MaAtrLength1>
+    <MaAtrLength2>500</MaAtrLength2>
+
+    <Contracts>1</Contracts>
+
+    <KAtrStop>10</KAtrStop>
+    <KAtrTake>20</KAtrTake>
+    
+    <Mode1>2</Mode1>
+    <Mode2>0</Mode2>
+
+    <RandMode>0</RandMode>
+
+    <SwingCountEntry>1</SwingCountEntry>
+    <SwingCountReverse>1</SwingCountReverse>
+    <SwingCountExit>2</SwingCountExit>
+
+    <CancelOrderMode>0</CancelOrderMode>
+    <FlatCount>1</FlatCount>
+
+    <EntryId>18007</EntryId>
+    <ExitId>106</ExitId>
+    <ReverseId>18007</ReverseId>
+
+    <EntryPriceId>1</EntryPriceId>
+    <ExitPriceId>1</ExitPriceId>
+    <ReversePriceId>1</ReversePriceId>
+
+    <StopExitId>0</StopExitId>
+    <StopPriceId>1</StopPriceId>
+
+  </X11807>
+
+  <X11807>
+    <Name>11807</Name>
+    <Code>11807.15.2.1.1.0.0.10.3</Code>
+    <TradeAccountKey>SPBFUT00S98</TradeAccountKey>
+    <TradeTerminalType>Simulator</TradeTerminalType>
+    <TradeTerminalKey>MyTerminal</TradeTerminalKey>
+    <TickerKey>RIU1</TickerKey>
+    <TimeInt>15</TimeInt>
+    <TimeInt2>15</TimeInt2>
+
+    <Ma1Length>300</Ma1Length>
+    <Ma1AtrLength>200</Ma1AtrLength>
+    <Ma1KAtr>1.5</Ma1KAtr>
+    <Ma1Mode>1</Ma1Mode>
+
+    <MaAtrLength1>100</MaAtrLength1>
+    <MaAtrLength2>500</MaAtrLength2>
+
+    <Contracts>1</Contracts>
+
+    <KAtrStop>10</KAtrStop>
+    <KAtrTake>30</KAtrTake>
+
+    <Mode1>2</Mode1>
+    <Mode2>0</Mode2>
+
+    <RandMode>0</RandMode>
+
+    <SwingCountEntry>1</SwingCountEntry>
+    <SwingCountReverse>1</SwingCountReverse>
+    <SwingCountExit>2</SwingCountExit>
+
+    <CancelOrderMode>0</CancelOrderMode>
+    <FlatCount>1</FlatCount>
+
+    <EntryId>18007</EntryId>
+    <ExitId>106</ExitId>
+    <ReverseId>18007</ReverseId>
+
+    <EntryPriceId>1</EntryPriceId>
+    <ExitPriceId>1</ExitPriceId>
+    <ReversePriceId>1</ReversePriceId>
+
+    <StopExitId>0</StopExitId>
+    <StopPriceId>1</StopPriceId>
+
+  </X11807>
+
+
+  <X118106>
+    <Name>118106</Name>
+    <Code>118106.15.2.1.1.0.0.10.1</Code>
+    <TradeAccountKey>SPBFUT00S98</TradeAccountKey>
+    <TradeTerminalType>Simulator</TradeTerminalType>
+    <TradeTerminalKey>MyTerminal</TradeTerminalKey>
+    <TickerKey>RIU1</TickerKey>
+    <TimeInt>15</TimeInt>
+    <TimeInt2>15</TimeInt2>
+
+    <Ma1Length>300</Ma1Length>
+    <Ma1AtrLength>200</Ma1AtrLength>
+    <Ma1KAtr>1.5</Ma1KAtr>
+    <Ma1Mode>1</Ma1Mode>
+
+    <MaAtrLength1>100</MaAtrLength1>
+    <MaAtrLength2>500</MaAtrLength2>
+
+    <Ma2Length>5</Ma2Length>
+    <Ma2AtrLength>50</Ma2AtrLength>
+    <Ma2KAtr>1.0</Ma2KAtr>
+    <Ma2Mode>1</Ma2Mode>
+
+    <Contracts>1</Contracts>
+
+    <KAtrStop>10</KAtrStop>
+    <Mode1>1</Mode1>
+    <Mode2>0</Mode2>
+
+    <RandMode>0</RandMode>
+
+    <SwingCountEntry>1</SwingCountEntry>
+    <SwingCountReverse>1</SwingCountReverse>
+    <SwingCountExit>2</SwingCountExit>
+
+    <CancelOrderMode>0</CancelOrderMode>
+    <FlatCount>1</FlatCount>
+
+    <EntryId>106</EntryId>
+    <ExitId>0</ExitId>
+    <ReverseId>106</ReverseId>
+
+    <EntryPriceId>1</EntryPriceId>
+    <ExitPriceId>1</ExitPriceId>
+    <ReversePriceId>1</ReversePriceId>
+
+    <StopExitId>0</StopExitId>
+    <StopPriceId>1</StopPriceId>
+
+  </X118106>
+  
+  
+</Strategies>

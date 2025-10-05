@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<EventHub xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Name>Event Hub</Name>
+  <Code>EventHub</Code>
+  <IsEnabled>true</IsEnabled>
+  <IsEvlEnabled>false</IsEvlEnabled>
+  <IsQueueEnabled>true</IsQueueEnabled>
+  <IsProcessTaskInUse>true</IsProcessTaskInUse>
+  <Description>Event Hub with Queue</Description>
+  <EventHubItems>
+    <EventHubItem>
+      <Entity>Transaction</Entity>
+      <Category>Transactions</Category>
+    </EventHubItem>
+    <EventHubItem>
+      <Entity>Order</Entity>
+      <Category>Orders</Category>
+    </EventHubItem>
+    <EventHubItem>
+      <Entity>Status</Entity>
+      <Category>Order</Category>
+    </EventHubItem>
+    <EventHubItem>
+      <Entity>Order</Entity>
+      <Category>UI.Orders</Category>
+    </EventHubItem>
+    <EventHubItem>
+      <Entity>Order.Completed</Entity>
+      <Category>UI.Orders</Category>
+    </EventHubItem>
+    <EventHubItem>
+      <Entity>Order.Unknown</Entity>
+      <Category>UI.Orders</Category>
+    </EventHubItem>
+    <EventHubItem>
+      <Entity>Trade</Entity>
+      <Category>UI.Trades</Category>
+    </EventHubItem>
+    <EventHubItem>
+      <Entity>Deal</Entity>
+      <Category>Deals</Category>
+    </EventHubItem>
+    <EventHubItem>
+      <Entity>Deal</Entity>
+      <Category>UI.Deals</Category>
+    </EventHubItem>
+    <EventHubItem>
+      <Entity>Current</Entity>
+      <Category>UI.Positions</Category>
+    </EventHubItem>
+    <EventHubItem>
+      <Entity>Total</Entity>
+      <Category>UI.Positions</Category>
+    </EventHubItem>
+    <EventHubItem>
+      <Entity>Exception</Entity>
+      <Category>UI.Exceptions</Category>
+    </EventHubItem>
+    <EventHubItem>
+      <Entity>Position</Entity>
+      <Category>UI.Portfolio</Category>
+    </EventHubItem>
+  </EventHubItems>
+</EventHub>

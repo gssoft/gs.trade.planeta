@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<WebClients>
+  <WebEventLogClient01>
+    <!--<Code>StringWebClient</Code>-->
+    <BaseAddress>http://localhost/WebEventLog_02/</BaseAddress>
+    <ApiPrefix>api/eventlogs</ApiPrefix>
+    <MediaTypeHeader>application/xml</MediaTypeHeader>
+    <ErrorCountToStop>30</ErrorCountToStop>
+    <WorkTask>
+      <Code>WebEventLogClient01.WorkTask</Code>
+      <TimeInterval>60</TimeInterval>
+      <ErrorCountToStop>1000</ErrorCountToStop>
+    </WorkTask>
+  </WebEventLogClient01>
+  
+</WebClients>

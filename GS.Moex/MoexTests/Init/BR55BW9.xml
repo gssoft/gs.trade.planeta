@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document>
+<data id="securities">
+<metadata>
+<columns>
+<column name="SECID" type="string" bytes="36" max_size="0" />
+<column name="BOARDID" type="string" bytes="12" max_size="0" />
+<column name="SHORTNAME" type="string" bytes="75" max_size="0" />
+<column name="SECNAME" type="string" bytes="225" max_size="0" />
+<column name="PREVSETTLEPRICE" type="double" />
+<column name="STATUS" type="string" bytes="3" max_size="0" />
+<column name="DECIMALS" type="int32" />
+<column name="MINSTEP" type="double" />
+<column name="LASTTRADEDATE" type="date" bytes="10" max_size="0" />
+<column name="LASTDELDATE" type="date" bytes="10" max_size="0" />
+<column name="LATNAME" type="string" bytes="90" max_size="0" />
+<column name="ASSETCODE" type="string" bytes="75" max_size="0" />
+<column name="PREVOPENPOSITION" type="int64" />
+<column name="PREVPRICE" type="double" />
+<column name="FIRSTTRADEDATE" type="date" bytes="10" max_size="0" />
+</columns>
+</metadata>
+<rows>
+<row SECID="BR55BW9" BOARDID="ROPD" SHORTNAME="BR-12.19M261119PA55" SECNAME="Марж. амер. Put 55 с исп. 26 нояб. на фьюч. контр. BR-12.19" PREVSETTLEPRICE="1.78" STATUS="" DECIMALS="2" MINSTEP="0.01" LASTTRADEDATE="2019-11-26" LASTDELDATE="2019-11-26" LATNAME="BR55BW9" ASSETCODE="BR" PREVOPENPOSITION="6" PREVPRICE="0" FIRSTTRADEDATE="2018-11-27" />
+</rows>
+</data>
+<data id="marketdata">
+<metadata>
+<columns>
+<column name="SECID" type="string" bytes="36" max_size="0" />
+<column name="BOARDID" type="string" bytes="12" max_size="0" />
+<column name="BID" type="undefined" bytes="0" max_size="0" />
+<column name="OFFER" type="undefined" bytes="0" max_size="0" />
+<column name="SPREAD" type="double" />
+<column name="OPEN" type="double" />
+<column name="HIGH" type="double" />
+<column name="LOW" type="double" />
+<column name="LAST" type="double" />
+<column name="QUANTITY" type="int32" />
+<column name="LASTCHANGE" type="double" />
+<column name="SETTLEPRICE" type="double" />
+<column name="SETTLETOPREVSETTLE" type="double" />
+<column name="NUMTRADES" type="int32" />
+<column name="VOLTODAY" type="int64" />
+<column name="VALTODAY" type="int64" />
+<column name="VALTODAY_USD" type="int64" />
+<column name="UPDATETIME" type="time" bytes="10" max_size="0" />
+<column name="LASTCHANGEPRCNT" type="double" />
+<column name="BIDDEPTH" type="undefined" bytes="0" max_size="0" />
+<column name="BIDDEPTHT" type="undefined" bytes="0" max_size="0" />
+<column name="NUMBIDS" type="undefined" bytes="0" max_size="0" />
+<column name="OFFERDEPTH" type="undefined" bytes="0" max_size="0" />
+<column name="OFFERDEPTHT" type="undefined" bytes="0" max_size="0" />
+<column name="NUMOFFERS" type="undefined" bytes="0" max_size="0" />
+<column name="TIME" type="time" bytes="10" max_size="0" />
+<column name="SETTLETOPREVSETTLEPRC" type="double" />
+<column name="SEQNUM" type="int64" />
+<column name="SYSTIME" type="datetime" bytes="19" max_size="0" />
+<column name="OICHANGE" type="int64" />
+</columns>
+</metadata>
+<rows>
+<row SECID="BR55BW9" BOARDID="ROPD" BID="" OFFER="" SPREAD="19.66" OPEN="0" HIGH="0" LOW="0" LAST="0" QUANTITY="0" LASTCHANGE="0" SETTLEPRICE="0" SETTLETOPREVSETTLE="0" NUMTRADES="0" VOLTODAY="0" VALTODAY="0" VALTODAY_USD="0" UPDATETIME="10:28:22" LASTCHANGEPRCNT="0" BIDDEPTH="" BIDDEPTHT="" NUMBIDS="" OFFERDEPTH="" OFFERDEPTHT="" NUMOFFERS="" TIME="10:28:22" SETTLETOPREVSETTLEPRC="0" SEQNUM="1570434203955" SYSTIME="2019-10-07 10:43:23" OICHANGE="0" />
+</rows>
+</data>
+<data id="dataversion">
+<metadata>
+<columns>
+<column name="data_version" type="int64" />
+<column name="seqnum" type="int64" />
+</columns>
+</metadata>
+<rows>
+<row data_version="5889" seqnum="1570436731545" />
+</rows>
+</data>
+</document>

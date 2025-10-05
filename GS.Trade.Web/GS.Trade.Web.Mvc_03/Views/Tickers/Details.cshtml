@@ -1,0 +1,106 @@
+﻿@model GS.Trade.DataBase.Model.Ticker
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<fieldset>
+    <legend>Ticker</legend>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Name)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Name)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Alias)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Alias)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Decimals)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Decimals)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.MinMove)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.MinMove)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.TradeBoard)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.TradeBoard)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Code)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Code)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.BaseContract)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.BaseContract)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Margin)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Margin)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.PriceLimit)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.PriceLimit)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Modified)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Modified)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.LaunchDate)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.LaunchDate)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.ExpireDate)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.ExpireDate)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.StrKey)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.StrKey)
+    </div>
+</fieldset>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id=Model.Id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

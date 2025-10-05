@@ -1,0 +1,56 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GS.Trade.Web.Clients", "GS.Trade.Web.Clients\GS.Trade.Web.Clients.csproj", "{DA5F852A-0047-41EB-A7AC-5FB58B7A2DAF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Test_WebClient_01", "Test_WebClient_01\Test_WebClient_01.csproj", "{F5FA9642-B24D-459D-A7CB-3D59D750C889}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RequestGo", "..\GS.Trade.Web\RequestGo\RequestGo.csproj", "{2A37E01F-6D5C-48BE-B459-8FA12A8CD520}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RtsMarginUpdate_01", "RtsMarginUpdate_01\RtsMarginUpdate_01.csproj", "{9CB34796-6E11-4007-87DF-CDFC33DE6A13}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Test_Web_Client_2", "Test_Web_Client_2\Test_Web_Client_2.csproj", "{DEC922FA-D271-4031-AF3C-63181FA56F52}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RtsMargin", "RtsMargin\RtsMargin.csproj", "{C03CC2D7-7302-4B90-A91A-380FA2EA0EE2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Test_WebClient_03", "Test_WebClient_03\Test_WebClient_03.csproj", "{B5B42EF9-A3FF-459F-A514-257891920E23}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DA5F852A-0047-41EB-A7AC-5FB58B7A2DAF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DA5F852A-0047-41EB-A7AC-5FB58B7A2DAF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DA5F852A-0047-41EB-A7AC-5FB58B7A2DAF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DA5F852A-0047-41EB-A7AC-5FB58B7A2DAF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F5FA9642-B24D-459D-A7CB-3D59D750C889}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F5FA9642-B24D-459D-A7CB-3D59D750C889}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F5FA9642-B24D-459D-A7CB-3D59D750C889}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F5FA9642-B24D-459D-A7CB-3D59D750C889}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2A37E01F-6D5C-48BE-B459-8FA12A8CD520}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2A37E01F-6D5C-48BE-B459-8FA12A8CD520}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2A37E01F-6D5C-48BE-B459-8FA12A8CD520}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2A37E01F-6D5C-48BE-B459-8FA12A8CD520}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9CB34796-6E11-4007-87DF-CDFC33DE6A13}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9CB34796-6E11-4007-87DF-CDFC33DE6A13}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9CB34796-6E11-4007-87DF-CDFC33DE6A13}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9CB34796-6E11-4007-87DF-CDFC33DE6A13}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DEC922FA-D271-4031-AF3C-63181FA56F52}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DEC922FA-D271-4031-AF3C-63181FA56F52}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DEC922FA-D271-4031-AF3C-63181FA56F52}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DEC922FA-D271-4031-AF3C-63181FA56F52}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C03CC2D7-7302-4B90-A91A-380FA2EA0EE2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C03CC2D7-7302-4B90-A91A-380FA2EA0EE2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C03CC2D7-7302-4B90-A91A-380FA2EA0EE2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C03CC2D7-7302-4B90-A91A-380FA2EA0EE2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B5B42EF9-A3FF-459F-A514-257891920E23}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B5B42EF9-A3FF-459F-A514-257891920E23}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B5B42EF9-A3FF-459F-A514-257891920E23}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B5B42EF9-A3FF-459F-A514-257891920E23}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

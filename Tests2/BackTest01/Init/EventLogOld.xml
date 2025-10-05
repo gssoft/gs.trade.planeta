@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<EventLogTypes>
+  <EventLogs>
+    <Name>EventLogs</Name>
+    <IsEnabled>true</IsEnabled>
+    <IsAsync>true</IsAsync>
+    <IsPrimary>false</IsPrimary>
+  </EventLogs>
+  <EventLogList>
+    <EventLog>
+      <Name>Memory EventLog</Name>
+      <IsEnabled>true</IsEnabled>
+      <IsAsync>true</IsAsync>
+      <IsPrimary>true</IsPrimary>
+      <IsSaveEnabled>false</IsSaveEnabled>
+      <IsUIEnabled>true</IsUIEnabled>
+    </EventLog>
+    <ConsoleEventLog>
+      <Name>Console EventLog</Name>
+      <IsEnabled>false</IsEnabled>
+      <IsAsync>false</IsAsync>
+      <IsPrimary>false</IsPrimary>
+    </ConsoleEventLog>
+    <FileEventLog>
+      <Name>File EventLog</Name>
+      <FileName>FileEventLog.txt</FileName>
+      <IsEnabled>false</IsEnabled>
+      <IsAsync>false</IsAsync>
+      <IsPrimary>false</IsPrimary>
+    </FileEventLog>
+    <WebEventLog>
+      <Name>Web EventLog</Name>
+      <EventLogKey>GS.Trade.EventLog</EventLogKey>
+      <BaseAddress>http://gonchar.net/ApiEventLog/</BaseAddress>
+      <RequestHeader>application/xml</RequestHeader>
+      <ApiEventLogs>api/eventlogs/</ApiEventLogs>
+      <ApiEventLogItems>api/eventlogitems/</ApiEventLogItems>
+      <IsEnabled>false</IsEnabled>
+      <IsAsync>true</IsAsync>
+      <IsPrimary>false</IsPrimary>
+    </WebEventLog>
+  </EventLogList>
+</EventLogTypes>

@@ -1,0 +1,438 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Strategies>
+  <Test01>
+    <Name>Test01</Name>
+    <Code>Test01.1.150</Code>
+    <TradeAccountKey>SPBFUT00S98</TradeAccountKey>
+    <TradeTerminalType>Simulator</TradeTerminalType>
+    <TradeTerminalKey>MyTerminal</TradeTerminalKey>
+    <TickerKey>RIU1</TickerKey>
+    <TimeInt>1</TimeInt>
+
+    <MaLength>5</MaLength>
+    <MaAtrLength>15</MaAtrLength>
+    <MaAtrLength1>50</MaAtrLength1>
+    <MaAtrLength2>300</MaAtrLength2>
+    <MaKAtr>1.5</MaKAtr>
+    <MaMode>1</MaMode>
+
+    <XMaLength>50</XMaLength>
+
+    <CciMaLength>25</CciMaLength>
+    <CciMaSmoothLength>50</CciMaSmoothLength>
+    <CciKDeviation>2.0</CciKDeviation>
+
+    <CciMaLength2>150</CciMaLength2>
+    <CciMaSmoothLength2>150</CciMaSmoothLength2>
+    <CciKDeviation2>2.0</CciKDeviation2>
+  </Test01>
+
+  <Test01>
+    <Name>Test01</Name>
+    <Code>Test01.3.150</Code>
+    <TradeAccountKey>SPBFUT00S98</TradeAccountKey>
+    <TradeTerminalType>Simulator</TradeTerminalType>
+    <TradeTerminalKey>MyTerminal</TradeTerminalKey>
+    <TickerKey>RIU1</TickerKey>
+    <TimeInt>3</TimeInt>
+
+    <MaLength>5</MaLength>
+    <MaAtrLength>15</MaAtrLength>
+    <MaAtrLength1>50</MaAtrLength1>
+    <MaAtrLength2>300</MaAtrLength2>
+    <MaKAtr>1.5</MaKAtr>
+    <MaMode>1</MaMode>
+
+    <XMaLength>50</XMaLength>
+
+    <CciMaLength>25</CciMaLength>
+    <CciMaSmoothLength>50</CciMaSmoothLength>
+    <CciKDeviation>2.0</CciKDeviation>
+
+    <CciMaLength2>150</CciMaLength2>
+    <CciMaSmoothLength2>150</CciMaSmoothLength2>
+    <CciKDeviation2>2.0</CciKDeviation2>
+  </Test01>
+
+<Test01>
+  <Name>Test01</Name>
+  <Code>Test01.5.150</Code>
+  <TradeAccountKey>SPBFUT00S98</TradeAccountKey>
+  <TradeTerminalType>Simulator</TradeTerminalType>
+  <TradeTerminalKey>MyTerminal</TradeTerminalKey>
+  <TickerKey>RIU1</TickerKey>
+  <TimeInt>5</TimeInt>
+
+  <MaLength>5</MaLength>
+  <MaAtrLength>15</MaAtrLength>
+  <MaAtrLength1>50</MaAtrLength1>
+  <MaAtrLength2>300</MaAtrLength2>
+  <MaKAtr>1.5</MaKAtr>
+  <MaMode>1</MaMode>
+
+  <XMaLength>25</XMaLength>
+
+  <CciMaLength>15</CciMaLength>
+  <CciMaSmoothLength>150</CciMaSmoothLength>
+  <CciKDeviation>2.0</CciKDeviation>
+
+  <CciMaLength2>150</CciMaLength2>
+  <CciMaSmoothLength2>150</CciMaSmoothLength2>
+  <CciKDeviation2>2.0</CciKDeviation2>
+</Test01>
+
+  <Test01>
+    <Name>Test01</Name>
+    <Code>Test01.10.150</Code>
+    <TradeAccountKey>SPBFUT00S98</TradeAccountKey>
+    <TradeTerminalType>Simulator</TradeTerminalType>
+    <TradeTerminalKey>MyTerminal</TradeTerminalKey>
+    <TickerKey>RIU1</TickerKey>
+    <TimeInt>15</TimeInt>
+
+    <MaLength>5</MaLength>
+    <MaAtrLength>15</MaAtrLength>
+    <MaAtrLength1>50</MaAtrLength1>
+    <MaAtrLength2>300</MaAtrLength2>
+    <MaKAtr>1.5</MaKAtr>
+    <MaMode>1</MaMode>
+
+    <XMaLength>25</XMaLength>
+
+    <CciMaLength>15</CciMaLength>
+    <CciMaSmoothLength>150</CciMaSmoothLength>
+    <CciKDeviation>2.0</CciKDeviation>
+
+    <CciMaLength2>150</CciMaLength2>
+    <CciMaSmoothLength2>150</CciMaSmoothLength2>
+    <CciKDeviation2>2.0</CciKDeviation2>
+  </Test01>
+
+
+  <Test01>
+    <Name>Test01</Name>
+    <Code>Test01.10.150</Code>
+    <TradeAccountKey>SPBFUT00S98</TradeAccountKey>
+    <TradeTerminalType>Simulator</TradeTerminalType>
+    <TradeTerminalKey>MyTerminal</TradeTerminalKey>
+    <TickerKey>SIU2</TickerKey>
+    <TimeInt>5</TimeInt>
+
+    <MaLength>5</MaLength>
+    <MaAtrLength>15</MaAtrLength>
+    <MaAtrLength1>50</MaAtrLength1>
+    <MaAtrLength2>300</MaAtrLength2>
+    <MaKAtr>1.5</MaKAtr>
+    <MaMode>1</MaMode>
+
+    <XMaLength>25</XMaLength>
+
+    <CciMaLength>15</CciMaLength>
+    <CciMaSmoothLength>150</CciMaSmoothLength>
+    <CciKDeviation>2.0</CciKDeviation>
+
+    <CciMaLength2>150</CciMaLength2>
+    <CciMaSmoothLength2>150</CciMaSmoothLength2>
+    <CciKDeviation2>2.0</CciKDeviation2>
+  </Test01>
+  <Test01>
+    <Name>Test01</Name>
+    <Code>Test01.10.150</Code>
+    <TradeAccountKey>SPBFUT00S98</TradeAccountKey>
+    <TradeTerminalType>Simulator</TradeTerminalType>
+    <TradeTerminalKey>MyTerminal</TradeTerminalKey>
+    <TickerKey>SIU2</TickerKey>
+    <TimeInt>15</TimeInt>
+
+    <MaLength>5</MaLength>
+    <MaAtrLength>15</MaAtrLength>
+    <MaAtrLength1>50</MaAtrLength1>
+    <MaAtrLength2>300</MaAtrLength2>
+    <MaKAtr>1.5</MaKAtr>
+    <MaMode>1</MaMode>
+
+    <XMaLength>25</XMaLength>
+
+    <CciMaLength>15</CciMaLength>
+    <CciMaSmoothLength>150</CciMaSmoothLength>
+    <CciKDeviation>2.0</CciKDeviation>
+
+    <CciMaLength2>150</CciMaLength2>
+    <CciMaSmoothLength2>150</CciMaSmoothLength2>
+    <CciKDeviation2>2.0</CciKDeviation2>
+  </Test01>
+
+  <Test01>
+    <Name>Test01</Name>
+    <Code>Test01.10.150</Code>
+    <TradeAccountKey>SPBFUT00S98</TradeAccountKey>
+    <TradeTerminalType>Simulator</TradeTerminalType>
+    <TradeTerminalKey>MyTerminal</TradeTerminalKey>
+    <TickerKey>RIU2</TickerKey>
+    <TimeInt>5</TimeInt>
+
+    <MaLength>5</MaLength>
+    <MaAtrLength>15</MaAtrLength>
+    <MaAtrLength1>50</MaAtrLength1>
+    <MaAtrLength2>300</MaAtrLength2>
+    <MaKAtr>1.5</MaKAtr>
+    <MaMode>1</MaMode>
+
+    <XMaLength>25</XMaLength>
+
+    <CciMaLength>15</CciMaLength>
+    <CciMaSmoothLength>150</CciMaSmoothLength>
+    <CciKDeviation>2.0</CciKDeviation>
+
+    <CciMaLength2>150</CciMaLength2>
+    <CciMaSmoothLength2>150</CciMaSmoothLength2>
+    <CciKDeviation2>2.0</CciKDeviation2>
+  </Test01>
+  <Test01>
+    <Name>Test01</Name>
+    <Code>Test01.10.150</Code>
+    <TradeAccountKey>SPBFUT00S98</TradeAccountKey>
+    <TradeTerminalType>Simulator</TradeTerminalType>
+    <TradeTerminalKey>MyTerminal</TradeTerminalKey>
+    <TickerKey>RIU2</TickerKey>
+    <TimeInt>15</TimeInt>
+
+    <MaLength>5</MaLength>
+    <MaAtrLength>15</MaAtrLength>
+    <MaAtrLength1>50</MaAtrLength1>
+    <MaAtrLength2>300</MaAtrLength2>
+    <MaKAtr>1.5</MaKAtr>
+    <MaMode>1</MaMode>
+
+    <XMaLength>25</XMaLength>
+
+    <CciMaLength>15</CciMaLength>
+    <CciMaSmoothLength>150</CciMaSmoothLength>
+    <CciKDeviation>2.0</CciKDeviation>
+
+    <CciMaLength2>150</CciMaLength2>
+    <CciMaSmoothLength2>150</CciMaSmoothLength2>
+    <CciKDeviation2>2.0</CciKDeviation2>
+  </Test01>
+
+  <Test01>
+    <Name>Test01</Name>
+    <Code>Test01.10.150</Code>
+    <TradeAccountKey>SPBFUT00S98</TradeAccountKey>
+    <TradeTerminalType>Simulator</TradeTerminalType>
+    <TradeTerminalKey>MyTerminal</TradeTerminalKey>
+    <TickerKey>SRU2</TickerKey>
+    <TimeInt>5</TimeInt>
+
+    <MaLength>5</MaLength>
+    <MaAtrLength>15</MaAtrLength>
+    <MaAtrLength1>50</MaAtrLength1>
+    <MaAtrLength2>300</MaAtrLength2>
+    <MaKAtr>1.5</MaKAtr>
+    <MaMode>1</MaMode>
+
+    <XMaLength>25</XMaLength>
+
+    <CciMaLength>15</CciMaLength>
+    <CciMaSmoothLength>150</CciMaSmoothLength>
+    <CciKDeviation>2.0</CciKDeviation>
+
+    <CciMaLength2>150</CciMaLength2>
+    <CciMaSmoothLength2>150</CciMaSmoothLength2>
+    <CciKDeviation2>2.0</CciKDeviation2>
+  </Test01>
+ 
+  <Test01>
+    <Name>Test01</Name>
+    <Code>Test01.10.150</Code>
+    <TradeAccountKey>SPBFUT00S98</TradeAccountKey>
+    <TradeTerminalType>Simulator</TradeTerminalType>
+    <TradeTerminalKey>MyTerminal</TradeTerminalKey>
+    <TickerKey>SRU2</TickerKey>
+    <TimeInt>15</TimeInt>
+
+    <MaLength>5</MaLength>
+    <MaAtrLength>15</MaAtrLength>
+    <MaAtrLength1>50</MaAtrLength1>
+    <MaAtrLength2>300</MaAtrLength2>
+    <MaKAtr>1.5</MaKAtr>
+    <MaMode>1</MaMode>
+
+    <XMaLength>25</XMaLength>
+
+    <CciMaLength>15</CciMaLength>
+    <CciMaSmoothLength>150</CciMaSmoothLength>
+    <CciKDeviation>2.0</CciKDeviation>
+
+    <CciMaLength2>150</CciMaLength2>
+    <CciMaSmoothLength2>150</CciMaSmoothLength2>
+    <CciKDeviation2>2.0</CciKDeviation2>
+  </Test01>
+
+  <!--
+<Test01>
+  <Name>Test01</Name>
+  <Code>Test01.1.150</Code>
+  <TradeAccountKey>SPBFUT00S98</TradeAccountKey>
+  <TradeTerminalType>Simulator</TradeTerminalType>
+  <TradeTerminalKey>MyTerminal</TradeTerminalKey>
+  <TickerKey>RIM2</TickerKey>
+  <TimeInt>1</TimeInt>
+
+  <MaLength>5</MaLength>
+  <MaAtrLength>15</MaAtrLength>
+  <MaAtrLength1>50</MaAtrLength1>
+  <MaAtrLength2>300</MaAtrLength2>
+  <MaKAtr>1.0</MaKAtr>
+  <MaMode>1</MaMode>
+
+  <XMaLength>200</XMaLength>
+
+  <CciMaLength>15</CciMaLength>
+  <CciMaSmoothLength>150</CciMaSmoothLength>
+  <CciKDeviation>2.0</CciKDeviation>
+
+  <CciMaLength2>150</CciMaLength2>
+  <CciMaSmoothLength2>150</CciMaSmoothLength2>
+  <CciKDeviation2>2.0</CciKDeviation2>
+
+</Test01>
+
+  <Test01>
+    <Name>Test01</Name>
+    <Code>Test01.1.150</Code>
+    <TradeAccountKey>SPBFUT00S98</TradeAccountKey>
+    <TradeTerminalType>Simulator</TradeTerminalType>
+    <TradeTerminalKey>MyTerminal</TradeTerminalKey>
+    <TickerKey>RIM2</TickerKey>
+    <TimeInt>300</TimeInt>
+
+    <MaLength>5</MaLength>
+    <MaAtrLength>15</MaAtrLength>
+    <MaAtrLength1>50</MaAtrLength1>
+    <MaAtrLength2>300</MaAtrLength2>
+    <MaKAtr>1.5</MaKAtr>
+    <MaMode>1</MaMode>
+
+    <XMaLength>200</XMaLength>
+
+    <CciMaLength>15</CciMaLength>
+    <CciMaSmoothLength>150</CciMaSmoothLength>
+    <CciKDeviation>2.0</CciKDeviation>
+
+    <CciMaLength2>150</CciMaLength2>
+    <CciMaSmoothLength2>150</CciMaSmoothLength2>
+    <CciKDeviation2>2.0</CciKDeviation2>
+
+  </Test01>
+<Test01>
+  <Name>Test01</Name>
+  <Code>Test01.1.150</Code>
+  <TradeAccountKey>SPBFUT00S98</TradeAccountKey>
+  <TradeTerminalType>Simulator</TradeTerminalType>
+  <TradeTerminalKey>MyTerminal</TradeTerminalKey>
+  <TickerKey>SRM2</TickerKey>
+  <TimeInt>1</TimeInt>
+
+  <MaLength>5</MaLength>
+  <MaAtrLength>15</MaAtrLength>
+  <MaAtrLength1>50</MaAtrLength1>
+  <MaAtrLength2>300</MaAtrLength2>
+  <MaKAtr>1.5</MaKAtr>
+  <MaMode>1</MaMode>
+
+  <XMaLength>100</XMaLength>
+
+  <CciMaLength>15</CciMaLength>
+  <CciMaSmoothLength>150</CciMaSmoothLength>
+  <CciKDeviation>2.0</CciKDeviation>
+
+  <CciMaLength2>150</CciMaLength2>
+  <CciMaSmoothLength2>150</CciMaSmoothLength2>
+  <CciKDeviation2>2.0</CciKDeviation2>
+  
+</Test01>
+<Test01>
+  <Name>Test01</Name>
+  <Code>Test01.1.150</Code>
+  <TradeAccountKey>SPBFUT00S98</TradeAccountKey>
+  <TradeTerminalType>Simulator</TradeTerminalType>
+  <TradeTerminalKey>MyTerminal</TradeTerminalKey>
+  <TickerKey>GZM2</TickerKey>
+  <TimeInt>1</TimeInt>
+
+  <MaLength>5</MaLength>
+  <MaAtrLength>15</MaAtrLength>
+  <MaAtrLength1>50</MaAtrLength1>
+  <MaAtrLength2>300</MaAtrLength2>
+  <MaKAtr>1.5</MaKAtr>
+  <MaMode>1</MaMode>
+
+  <XMaLength>25</XMaLength>
+
+  <CciMaLength>15</CciMaLength>
+  <CciMaSmoothLength>150</CciMaSmoothLength>
+  <CciKDeviation>2.0</CciKDeviation>
+
+  <CciMaLength2>150</CciMaLength2>
+  <CciMaSmoothLength2>150</CciMaSmoothLength2>
+  <CciKDeviation2>2.0</CciKDeviation2>
+
+</Test01>
+<Test01>
+  <Name>Test01</Name>
+  <Code>Test01.1.150</Code>
+  <TradeAccountKey>SPBFUT00S98</TradeAccountKey>
+  <TradeTerminalType>Simulator</TradeTerminalType>
+  <TradeTerminalKey>MyTerminal</TradeTerminalKey>
+  <TickerKey>SIM2</TickerKey>
+  <TimeInt>1</TimeInt>
+
+  <MaLength>5</MaLength>
+  <MaAtrLength>15</MaAtrLength>
+  <MaAtrLength1>50</MaAtrLength1>
+  <MaAtrLength2>300</MaAtrLength2>
+  <MaKAtr>1.5</MaKAtr>
+  <MaMode>1</MaMode>
+
+  <XMaLength>200</XMaLength>
+
+  <CciMaLength>15</CciMaLength>
+  <CciMaSmoothLength>150</CciMaSmoothLength>
+  <CciKDeviation>2.0</CciKDeviation>
+
+  <CciMaLength2>150</CciMaLength2>
+  <CciMaSmoothLength2>150</CciMaSmoothLength2>
+  <CciKDeviation2>2.0</CciKDeviation2>
+
+</Test01>
+<Test01>
+  <Name>Test01</Name>
+  <Code>Test01.1.150</Code>
+  <TradeAccountKey>SPBFUT00S98</TradeAccountKey>
+  <TradeTerminalType>Simulator</TradeTerminalType>
+  <TradeTerminalKey>MyTerminal</TradeTerminalKey>
+  <TickerKey>EDM2</TickerKey>
+  <TimeInt>1</TimeInt>
+
+  <MaLength>5</MaLength>
+  <MaAtrLength>15</MaAtrLength>
+  <MaAtrLength1>50</MaAtrLength1>
+  <MaAtrLength2>300</MaAtrLength2>
+  <MaKAtr>1.5</MaKAtr>
+  <MaMode>1</MaMode>
+
+  <XMaLength>100</XMaLength>
+
+  <CciMaLength>15</CciMaLength>
+  <CciMaSmoothLength>150</CciMaSmoothLength>
+  <CciKDeviation>2.0</CciKDeviation>
+
+  <CciMaLength2>150</CciMaLength2>
+  <CciMaSmoothLength2>150</CciMaSmoothLength2>
+  <CciKDeviation2>2.0</CciKDeviation2>
+
+</Test01>
+
+-->
+</Strategies>

@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<WorkTaskSet>
+  <WorkTasks enabled="true" ns="GS.WorkTasks" as="GS">
+    <Code>WorkTasks</Code>
+    <Name>WorkTasks</Name>
+    <IsEnabled>true</IsEnabled>
+    <XPath>WorkTaskList</XPath>
+  </WorkTasks>
+  <WorkTaskList>
+    <WorkTask3 ns="GS.WorkTasks" as="GS">
+      <Code>EventHubReceiver</Code>
+      <TimeInterval>5000</TimeInterval>
+    </WorkTask3>
+    <WorkTask3 ns="GS.WorkTasks" as="GS">
+      <Code>RandomTickPusher</Code>
+      <TimeInterval>1000</TimeInterval>
+    </WorkTask3>
+    <WorkTask3 ns="GS.WorkTasks" as="GS">
+      <Code>TickerTickReceiver</Code>
+      <TimeInterval>60000</TimeInterval>
+    </WorkTask3>
+  </WorkTaskList>
+</WorkTaskSet>

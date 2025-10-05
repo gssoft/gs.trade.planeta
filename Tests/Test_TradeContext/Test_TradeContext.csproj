@@ -1,0 +1,138 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{1560E448-C72C-4DC6-8025-709C0220E747}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Test_TradeContext</RootNamespace>
+    <AssemblyName>Test_TradeContext</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="FinamTickers.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="FinamTimeInts.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SpsInit.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="StratCollection.xml" />
+    <Content Include="StratCollection0.xml" />
+    <Content Include="StratCollection01.xml" />
+    <Content Include="StratCollection03.xml" />
+    <Content Include="StratCollection05.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="StratCollection2.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Strategies.xml" />
+    <Content Include="Tickers.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tickers2.xml" />
+    <Content Include="TRANS2QUIK_1.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="TRANS2QUIK_2.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="TRANS2QUIK_3.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\GS\GS.EventLog\GS.EventLog.csproj">
+      <Project>{591F2A6D-C05E-418A-AB63-3A232D74BC55}</Project>
+      <Name>GS.EventLog</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\GS\GS.ICharts\GS.ICharts.csproj">
+      <Project>{AB7BA95C-282D-4960-AA4E-4849AAF92C86}</Project>
+      <Name>GS.ICharts</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\GS\GS\GS.csproj">
+      <Project>{70005B16-BCB7-4776-8747-C107344090DB}</Project>
+      <Name>GS</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\GS.Trade.Data\GS.Trade.Data.csproj">
+      <Project>{758D4D02-B35B-482F-84A7-D68847155030}</Project>
+      <Name>GS.Trade.Data</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\GS.Trade.Interfaces\GS.Trade.Interfaces.csproj">
+      <Project>{7E3F4DF4-FFC3-4265-91A7-5480E817C51C}</Project>
+      <Name>GS.Trade.Interfaces</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\GS.Trade.Strategies\GS.Trade.Strategies.csproj">
+      <Project>{E71FE541-9FE1-4EDA-87CC-2BAF01BEA26A}</Project>
+      <Name>GS.Trade.Strategies</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\GS.Trade.TradeContext\GS.Trade.TradeContext.csproj">
+      <Project>{48F7F179-CDE6-493A-A83D-9BBFE891A11E}</Project>
+      <Name>GS.Trade.TradeContext</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\GS.Trade.Trades\GS.Trade.Trades.csproj">
+      <Project>{323CD232-D99D-411D-B7D3-B8752E2BAD58}</Project>
+      <Name>GS.Trade.Trades</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\GS.TradeTerminal\GS.Trade.TradeTerminals.csproj">
+      <Project>{BB453CDE-9569-4D88-93CE-734873D12B67}</Project>
+      <Name>GS.Trade.TradeTerminals</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\GS.Trade\GS.Trade\GS.Trade.csproj">
+      <Project>{0D8E2D20-24CC-4C80-9F52-815F76DC0522}</Project>
+      <Name>GS.Trade</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

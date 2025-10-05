@@ -1,0 +1,63 @@
+USE EventLog1
+-- USE EventLog
+-- USE EvlContext
+
+DECLARE @EVL_ID INT
+DECLARE @EVL_CODE VARCHAR (100)
+DECLARE @MIN_DT DATE
+DECLARE @MAX_DT DATE
+
+DECLARE @CURSOR CURSOR
+
+SET @CURSOR = CURSOR SCROLL
+
+FOR
+SELECT EventLogID, Code
+FROM dbo.EventLogs
+OPEN @CURSOR
+
+FETCH NEXT FROM @CURSOR INTO @EVL_ID, @EVL_CODE
+WHILE @@FETCH_STATUS = 0
+BEGIN
+
+SELECT DB_NAME() [DB_NAME], [Code] [EVL_NAME], 'DELETE' [Operation] 
+FROM EventLogs WHERE EventLogID = @EVL_ID
+
+Select DB_NAME() [DB_NAME], @EVL_CODE [EVL_NAME], 'Before Delete' as Operation, Count(*) as Cnt, 
+Min(Cast( DT as Date)) as Dt1, Max(Cast( DT as Date)) as Dt2, DATEDIFF(day, Min(DT), Max(DT)) +1 [DAYS]
+From EventLogItems
+where	EventLogID = @EVL_ID
+
+SELECT @MIN_DT = Min(dt), @MAX_DT = Max(dt)
+FROM
+(
+select top 2 Cast( DT as Date) dt
+from EventLogItems o
+WHERE EventLogID = @EVL_ID
+Group by Cast( DT as Date)
+Order by Cast( DT as Date) DESC
+) a
+
+PRINT(@MIN_DT)
+
+if @MIN_DT IS NOT NULL
+BEGIN
+
+--SET @MIN_DT = CAST(@MIN_DT as Datetime)
+--PRINT(@MIN_DT)
+
+DELETE from EventLogItems 
+WHERE	EventLogID = @EVL_ID 
+AND		@MIN_DT IS NOT NULL
+AND		DT < @MIN_DT 
+
+END
+
+Select DB_NAME() [DB_NAME], @EVL_CODE [EVL_NAME], 'After Delete' as Operation, Count(*) as Cnt, 
+Min(Cast( DT as Date)) as Dt1, Max(Cast( DT as Date)) as Dt2, DATEDIFF(day, Min(DT), Max(DT)) +1 [DAYS]
+From EventLogItems
+where	EventLogID = @EVL_ID
+
+FETCH NEXT FROM @CURSOR INTO @EVL_ID, @EVL_CODE
+END
+CLOSE @CURSOR

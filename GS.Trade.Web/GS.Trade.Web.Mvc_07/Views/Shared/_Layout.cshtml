@@ -1,0 +1,54 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title – GS.Trade</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+
+</head>
+<body>
+    <div class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                @Html.ActionLink("GS.Trade", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
+            </div>
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li>@Html.ActionLink("Accounts", "Index", "Accounts")</li>
+                    <li>@Html.ActionLink("Strategies", "Index", "StrategiesAsync")</li>
+                    <li>@Html.ActionLink("Positions", "Index", "Positions")</li>
+                    <li>@Html.ActionLink("Deals", "Index", "Deals", new {lastDayChecked = true},null)</li>
+                    <li>@Html.ActionLink("Trades", "Index", "TradesAsync", new { lastDayChecked = true }, null)</li>
+                    <li>@Html.ActionLink("Totals", "Index", "Totals")</li>
+                    <li>@Html.ActionLink("Totals1", "Index", "TotalDeals")</li>
+                    <li>@Html.ActionLink("Reports", "Index", "Reports")</li>
+                    <li>@Html.ActionLink("Admin", "Index", "AdminWorks")</li>
+                    @*<li>@Html.ActionLink("Home", "Index", "Home")</li>*@
+                    @*<li>@Html.ActionLink("About", "About", "Home")</li>*@
+                    @*<li>@Html.ActionLink("Contacts", "Contact", "Home")</li>*@
+                </ul>
+                @Html.Partial("_LoginPartial")
+            </div>
+        </div>
+    </div>
+    <div class="container body-content">
+        @RenderBody()
+        @*<hr />*@
+        <footer>
+            <p>&copy; @DateTime.Now.Year – GS.Trade Software Projects</p>
+        </footer>
+    </div>
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @RenderSection("scripts", required: false)
+</body>
+</html>

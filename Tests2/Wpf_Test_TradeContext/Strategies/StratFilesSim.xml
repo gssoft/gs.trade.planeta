@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ArrayOfString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+ <!--
+ -->
+  <string>Strategies\Simulate\Z706\S_Z706_003.xml</string>
+  <string>Strategies\Simulate\Z706\S_Z706_003A.xml</string>
+
+  <string>Strategies\Simulate\Z706\S_Z706_003_SiM.xml</string>
+  <string>Strategies\Simulate\Z706\S_Z706_003A_SiM.xml</string>
+
+  <string>Strategies\Simulate\Z706\S_Z706_003_SRM.xml</string>
+  <string>Strategies\Simulate\Z706\S_Z706_003A_SRM.xml</string>
+
+  <string>Strategies\Simulate\Z706\S_Z706_003_GZM.xml</string>
+  <string>Strategies\Simulate\Z706\S_Z706_003A_GZM.xml</string>
+
+  <string>Strategies\Simulate\Z706\S_Z706_003_LKM.xml</string>
+  <string>Strategies\Simulate\Z706\S_Z706_003A_LKM.xml</string>
+<!--   -->
+  <string>Strategies\Simulate\Z706\S_Z706_003_Eu.xml</string>
+  <string>Strategies\Simulate\Z706\S_Z706_003A_Eu.xml</string>
+  
+  <string>Strategies\Simulate\Z706\S_Z706_551.xml</string>
+
+</ArrayOfString>

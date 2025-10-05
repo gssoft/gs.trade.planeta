@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<WebClients>
+  <BarWebClient>
+    <!--<Code>StringWebClient</Code>-->
+    <!--<BaseAddress>http://localhost/gs.trade.web.api.timeseries01/</BaseAddress>-->
+    <BaseAddress>http://192.168.1.11/gs.trade.web.api.timeseries01/</BaseAddress>
+    <!--<BaseAddress>http://185.31.161.159/gs.trade.web.api.timeseries01/</BaseAddress>-->
+    <!--<BaseAddress>http://185.31.162.98/gs.trade.web.api.timeseries01/</BaseAddress>-->
+    <ApiPrefix>api/bars</ApiPrefix>
+    <MediaTypeHeader>application/json</MediaTypeHeader>
+    <ErrorCountToStop>30</ErrorCountToStop>
+    <WorkTask>
+      <Code>BarWebClient.WorkTask</Code>
+      <TimeInterval>60</TimeInterval>
+      <ErrorCountToStop>30</ErrorCountToStop>
+    </WorkTask>
+  </BarWebClient>
+  <TimeSeriesStatWebClient>
+    <!--<Code>StringWebClient</Code>-->
+    <!--<BaseAddress>http://localhost/gs.trade.web.api.timeseries01/</BaseAddress>-->
+    <BaseAddress>http://192.168.1.11/gs.trade.web.api.timeseries01/</BaseAddress>
+    <!--<BaseAddress>http://185.31.161.159/gs.trade.web.api.timeseries01/</BaseAddress>-->
+    <!--<BaseAddress>http://185.31.162.98/gs.trade.web.api.timeseries01/</BaseAddress>-->
+    <ApiPrefix>api/TimeSeriesStat</ApiPrefix>
+    <MediaTypeHeader>application/json</MediaTypeHeader>
+    <ErrorCountToStop>30</ErrorCountToStop>
+    <WorkTask>
+      <Code>TimeSeriesStat.WorkTask</Code>
+      <TimeInterval>60</TimeInterval>
+      <ErrorCountToStop>30</ErrorCountToStop>
+    </WorkTask>
+  </TimeSeriesStatWebClient>
+  <XmlWebClient>
+    <!--<Code>StringWebClient</Code>-->
+    <!--<BaseAddress>http://185.31.161.159/GS.Trade.Web.Mvc.Cfg_01/</BaseAddress>-->
+    <BaseAddress>http://localhost/GS.Trade.Web.Mvc.Cfg_01/</BaseAddress>
+    <ApiPrefix>api/x</ApiPrefix>
+    <MediaTypeHeader>application/xml</MediaTypeHeader>
+    <ErrorCountToStop>30</ErrorCountToStop>
+    <WorkTask>
+      <Code>XmlWebClient.WorkTask</Code>
+      <TimeInterval>60</TimeInterval>
+      <ErrorCountToStop>30</ErrorCountToStop>
+    </WorkTask>
+  </XmlWebClient>
+  
+</WebClients>

@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ArrayOfString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <string>SOpen_Z718_01_150910.xml</string>
+  <string>SOpen_Z730_01_150910.xml</string>
+  <string>SOpen_Z732_01_150910.xml</string>
+  <string>SOpen_Z7350_01_150910.xml</string>
+  <string>SOpen_Z7350_01_150910_FE.xml</string>
+  <string>SOpen_Z735_01_150910.xml</string>
+  <string>SOpen_Z735_01_150910_FE.xml</string>
+  <string>SOpen_Z736_01_150910.xml</string>
+  <!--<string>Strategies\Real\Z706\SOpen_Z736_01_150910_PE.xml</string>-->
+  <string>SOpen_Z737_01_150910.xml</string>
+  <string>SOpen_Z7372_01_150921.xml</string>
+  <string>SOpen_Z735_CT_01_151002.xml</string>
+  <string>SOpen_Z7357_PE.M5_RIZ5_01.xml</string>
+
+</ArrayOfString>

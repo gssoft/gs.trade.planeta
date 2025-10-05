@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Strategies>
+<Test01>
+  <Name>Test01</Name>
+  <Code>Test01.1.150</Code>
+  <TradeAccountKey>SPBFUT00S98</TradeAccountKey>
+  <TradeTerminalType>Simulator</TradeTerminalType>
+  <TradeTerminalKey>MyTerminal</TradeTerminalKey>
+  <TickerKey>RIU1</TickerKey>
+  <TimeInt>15</TimeInt>
+
+  <MaLength>5</MaLength>
+  <MaAtrLength>150</MaAtrLength>
+  <MaAtrLength1>50</MaAtrLength1>
+  <MaAtrLength2>300</MaAtrLength2>
+  <MaKAtr>1.5</MaKAtr>
+  <MaMode>1</MaMode>
+
+  <XMaLength>300</XMaLength>
+
+  <CciMaLength>15</CciMaLength>
+  <CciMaSmoothLength>150</CciMaSmoothLength>
+  <CciKDeviation>2.0</CciKDeviation>
+
+</Test01>
+
+</Strategies>

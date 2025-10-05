@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Root>
+<ConfigurationResourse enabled="true" ns="GS.Configurations" as="GS.Configurations">
+  <ConfigurationKey>BackTest</ConfigurationKey>
+  <Token>1772204864</Token>
+  <RequesterInitPath>Init\ConfigurationResourse.xml</RequesterInitPath>
+  <RequesterInitName>XmlWebRequester</RequesterInitName>
+</ConfigurationResourse>
+  <XmlWebRequester enabled="true" ns="WebClients" as="WebClients">
+    <Code>XmlWebRequester</Code>
+    <XmlWebClient>
+      <BaseAddress>http://localhost/GS.Trade.Web.Mvc.Cfg_01/</BaseAddress>
+      <ApiPrefix>api/</ApiPrefix>
+      <MediaTypeHeader>application/xml</MediaTypeHeader>
+      <ErrorCountToStop>30</ErrorCountToStop>
+      <IsUserPost>true</IsUserPost>
+      <WorkTask>
+        <Code>XmlWebClient.WorkTask</Code>
+        <TimeInterval>60</TimeInterval>
+        <ErrorCountToStop>30</ErrorCountToStop>
+      </WorkTask>
+    </XmlWebClient>
+  </XmlWebRequester>
+</Root>
+

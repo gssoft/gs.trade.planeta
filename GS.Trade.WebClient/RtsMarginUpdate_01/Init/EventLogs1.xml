@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<EventLogs>
+  <EventLogList>
+    <EventLog>
+      <Name>Memory EventLog</Name>
+      <IsEnabled>false</IsEnabled>
+    </EventLog>
+    <ConsoleEventLog>
+      <Name>Console EventLog</Name>
+      <IsEnabled>true</IsEnabled>
+    </ConsoleEventLog>
+    <FileEventLog>
+      <Name>File EventLog</Name>
+      <FileName>FileEventLog.txt</FileName>
+      <IsEnabled>false</IsEnabled>
+    </FileEventLog>
+    <WebEventLog>
+      <Name>Web EventLog</Name>
+      <EventLogKey>GS.Trade.EventLog</EventLogKey>
+      <!--
+      <BaseAddress>http://gonchar.net/ApiEventLog/</BaseAddress>
+      -->
+      <BaseAddress>http://localhost/WebEventLog_02/</BaseAddress>
+      
+      <RequestHeader>application/json</RequestHeader>
+      <ApiEventLogs>api/eventlogs/</ApiEventLogs>
+      <ApiEventLogItems>api/eventlogitems/</ApiEventLogItems>
+      <IsEnabled>true</IsEnabled>
+      <IsAsync>false</IsAsync>
+    </WebEventLog>
+
+  </EventLogList>
+</EventLogs>

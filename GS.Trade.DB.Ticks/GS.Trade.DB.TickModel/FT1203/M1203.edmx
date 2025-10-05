@@ -1,0 +1,676 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="2.0" xmlns:edmx="http://schemas.microsoft.com/ado/2008/10/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="FT1203.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/02/edm/ssdl">
+        <EntityContainer Name="FT1203StoreContainer">
+          <EntitySet Name="Categories" EntityType="FT1203.Store.Categories" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="Series" EntityType="FT1203.Store.Series" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="SeriesDefs" EntityType="FT1203.Store.SeriesDefs" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="SeriesParts" EntityType="FT1203.Store.SeriesParts" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="Symbols" EntityType="FT1203.Store.Symbols" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="sysdiagrams" EntityType="FT1203.Store.sysdiagrams" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="Tickers" EntityType="FT1203.Store.Tickers" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="TickerStores" EntityType="FT1203.Store.TickerStores" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="Ticks" EntityType="FT1203.Store.Ticks" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="TimeInts" EntityType="FT1203.Store.TimeInts" store:Type="Tables" Schema="dbo" />
+          <AssociationSet Name="FK_Series_Tickers" Association="FT1203.Store.FK_Series_Tickers">
+            <End Role="Tickers" EntitySet="Tickers" />
+            <End Role="Series" EntitySet="Series" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Series_TimeInts" Association="FT1203.Store.FK_Series_TimeInts">
+            <End Role="TimeInts" EntitySet="TimeInts" />
+            <End Role="Series" EntitySet="Series" />
+          </AssociationSet>
+          <AssociationSet Name="FK_SeriesParts_SeriesDefs" Association="FT1203.Store.FK_SeriesParts_SeriesDefs">
+            <End Role="SeriesDefs" EntitySet="SeriesDefs" />
+            <End Role="SeriesParts" EntitySet="SeriesParts" />
+          </AssociationSet>
+          <AssociationSet Name="FK_SeriesParts_Tickers" Association="FT1203.Store.FK_SeriesParts_Tickers">
+            <End Role="Tickers" EntitySet="Tickers" />
+            <End Role="SeriesParts" EntitySet="SeriesParts" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Symbols_Categories" Association="FT1203.Store.FK_Symbols_Categories">
+            <End Role="Categories" EntitySet="Categories" />
+            <End Role="Symbols" EntitySet="Symbols" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Tickers_Symbols" Association="FT1203.Store.FK_Tickers_Symbols">
+            <End Role="Symbols" EntitySet="Symbols" />
+            <End Role="Tickers" EntitySet="Tickers" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Ticks_Series" Association="FT1203.Store.FK_Ticks_Series">
+            <End Role="Series" EntitySet="Series" />
+            <End Role="Ticks" EntitySet="Ticks" />
+          </AssociationSet>
+        </EntityContainer>
+        <EntityType Name="Categories">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="Code" Type="nchar" Nullable="false" MaxLength="10" />
+          <Property Name="Name" Type="nvarchar" Nullable="false" MaxLength="50" />
+        </EntityType>
+        <EntityType Name="Series">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="TickerID" Type="int" Nullable="false" />
+          <Property Name="TimeIntID" Type="int" Nullable="false" />
+          <Property Name="Code" Type="nvarchar" Nullable="false" MaxLength="12" />
+          <Property Name="Name" Type="nvarchar" MaxLength="50" />
+        </EntityType>
+        <EntityType Name="SeriesDefs">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="Code" Type="nchar" Nullable="false" MaxLength="10" />
+          <Property Name="Name" Type="nvarchar" Nullable="false" MaxLength="50" />
+        </EntityType>
+        <EntityType Name="SeriesParts">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="SeriesDefID" Type="int" Nullable="false" />
+          <Property Name="TickerID" Type="int" Nullable="false" />
+          <Property Name="DT1" Type="smalldatetime" Nullable="false" />
+          <Property Name="DT2" Type="smalldatetime" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Symbols">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="Code" Type="nvarchar" Nullable="false" MaxLength="12" />
+          <Property Name="LongCode" Type="nvarchar" Nullable="false" MaxLength="24" />
+          <Property Name="CategoryID" Type="int" Nullable="false" />
+          <Property Name="Enabled" Type="tinyint" Nullable="false" />
+          <Property Name="TickerDays" Type="smallint" />
+        </EntityType>
+        <EntityType Name="sysdiagrams">
+          <Key>
+            <PropertyRef Name="diagram_id" />
+          </Key>
+          <Property Name="name" Type="nvarchar" Nullable="false" MaxLength="128" />
+          <Property Name="principal_id" Type="int" Nullable="false" />
+          <Property Name="diagram_id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="version" Type="int" />
+          <Property Name="definition" Type="varbinary(max)" />
+        </EntityType>
+        <EntityType Name="Tickers">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="Code" Type="nvarchar" Nullable="false" MaxLength="12" />
+          <Property Name="LongCode" Type="nvarchar" Nullable="false" MaxLength="24" />
+          <Property Name="KeyCode" Type="nvarchar" MaxLength="24" />
+          <Property Name="Name" Type="nvarchar" MaxLength="50" />
+          <Property Name="Description" Type="nvarchar(max)" />
+          <Property Name="DT1" Type="datetime" />
+          <Property Name="DT2" Type="datetime" />
+          <Property Name="D1" Type="date" />
+          <Property Name="D2" Type="date" />
+          <Property Name="D3" Type="date" />
+          <Property Name="Cnt" Type="int" />
+          <Property Name="Alias" Type="nvarchar" MaxLength="12" />
+          <Property Name="SymbolID" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="TickerStores">
+          <Key>
+            <PropertyRef Name="LongCode" />
+          </Key>
+          <Property Name="Code" Type="nvarchar" Nullable="false" MaxLength="12" />
+          <Property Name="LongCode" Type="nvarchar" Nullable="false" MaxLength="24" />
+          <Property Name="KeyCode" Type="nvarchar" MaxLength="24" />
+          <Property Name="Name" Type="nvarchar" MaxLength="50" />
+          <Property Name="Description" Type="nvarchar(max)" />
+          <Property Name="DT1" Type="datetime" />
+          <Property Name="DT2" Type="datetime" />
+          <Property Name="D1" Type="date" />
+          <Property Name="D2" Type="date" />
+          <Property Name="D3" Type="date" />
+          <Property Name="Cnt" Type="int" />
+          <Property Name="Alias" Type="nvarchar" MaxLength="12" />
+          <Property Name="SymbolID" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Ticks">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="SeriesID" Type="int" Nullable="false" />
+          <Property Name="DT" Type="datetime" Nullable="false" />
+          <Property Name="Price" Type="float" Nullable="false" />
+          <Property Name="Amount" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="TimeInts">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="Code" Type="nvarchar" Nullable="false" MaxLength="10" />
+          <Property Name="Name" Type="nvarchar" Nullable="false" MaxLength="50" />
+          <Property Name="Description" Type="nvarchar(max)" />
+          <Property Name="Enabled" Type="tinyint" Nullable="false" />
+        </EntityType>
+        <Association Name="FK_Series_Tickers">
+          <End Role="Tickers" Type="FT1203.Store.Tickers" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="Series" Type="FT1203.Store.Series" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Tickers">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="Series">
+              <PropertyRef Name="TickerID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Series_TimeInts">
+          <End Role="TimeInts" Type="FT1203.Store.TimeInts" Multiplicity="1" />
+          <End Role="Series" Type="FT1203.Store.Series" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="TimeInts">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="Series">
+              <PropertyRef Name="TimeIntID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_SeriesParts_SeriesDefs">
+          <End Role="SeriesDefs" Type="FT1203.Store.SeriesDefs" Multiplicity="1" />
+          <End Role="SeriesParts" Type="FT1203.Store.SeriesParts" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="SeriesDefs">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="SeriesParts">
+              <PropertyRef Name="SeriesDefID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_SeriesParts_Tickers">
+          <End Role="Tickers" Type="FT1203.Store.Tickers" Multiplicity="1" />
+          <End Role="SeriesParts" Type="FT1203.Store.SeriesParts" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Tickers">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="SeriesParts">
+              <PropertyRef Name="TickerID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Symbols_Categories">
+          <End Role="Categories" Type="FT1203.Store.Categories" Multiplicity="1" />
+          <End Role="Symbols" Type="FT1203.Store.Symbols" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Categories">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="Symbols">
+              <PropertyRef Name="CategoryID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Tickers_Symbols">
+          <End Role="Symbols" Type="FT1203.Store.Symbols" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="Tickers" Type="FT1203.Store.Tickers" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Symbols">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="Tickers">
+              <PropertyRef Name="SymbolID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Ticks_Series">
+          <End Role="Series" Type="FT1203.Store.Series" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="Ticks" Type="FT1203.Store.Ticks" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Series">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="Ticks">
+              <PropertyRef Name="SeriesID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="FT1203" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2008/09/edm">
+        <EntityContainer Name="M1203" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="Categories" EntityType="FT1203.Category" />
+          <EntitySet Name="Series" EntityType="FT1203.Series" />
+          <EntitySet Name="SeriesDefs" EntityType="FT1203.SeriesDef" />
+          <EntitySet Name="SeriesParts" EntityType="FT1203.SeriesPart" />
+          <EntitySet Name="Symbols" EntityType="FT1203.Symbol" />
+          <EntitySet Name="sysdiagrams" EntityType="FT1203.sysdiagram" />
+          <EntitySet Name="Tickers" EntityType="FT1203.Ticker" />
+          <EntitySet Name="TickerStores" EntityType="FT1203.TickerStore" />
+          <EntitySet Name="Ticks" EntityType="FT1203.Tick" />
+          <EntitySet Name="TimeInts" EntityType="FT1203.TimeInt" />
+          <AssociationSet Name="FK_Symbols_Categories" Association="FT1203.FK_Symbols_Categories">
+            <End Role="Categories" EntitySet="Categories" />
+            <End Role="Symbols" EntitySet="Symbols" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Series_Tickers" Association="FT1203.FK_Series_Tickers">
+            <End Role="Tickers" EntitySet="Tickers" />
+            <End Role="Series" EntitySet="Series" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Series_TimeInts" Association="FT1203.FK_Series_TimeInts">
+            <End Role="TimeInts" EntitySet="TimeInts" />
+            <End Role="Series" EntitySet="Series" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Ticks_Series" Association="FT1203.FK_Ticks_Series">
+            <End Role="Series" EntitySet="Series" />
+            <End Role="Ticks" EntitySet="Ticks" />
+          </AssociationSet>
+          <AssociationSet Name="FK_SeriesParts_SeriesDefs" Association="FT1203.FK_SeriesParts_SeriesDefs">
+            <End Role="SeriesDefs" EntitySet="SeriesDefs" />
+            <End Role="SeriesParts" EntitySet="SeriesParts" />
+          </AssociationSet>
+          <AssociationSet Name="FK_SeriesParts_Tickers" Association="FT1203.FK_SeriesParts_Tickers">
+            <End Role="Tickers" EntitySet="Tickers" />
+            <End Role="SeriesParts" EntitySet="SeriesParts" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Tickers_Symbols" Association="FT1203.FK_Tickers_Symbols">
+            <End Role="Symbols" EntitySet="Symbols" />
+            <End Role="Tickers" EntitySet="Tickers" />
+          </AssociationSet>
+        </EntityContainer>
+        <EntityType Name="Category">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Code" Type="String" Nullable="false" MaxLength="10" Unicode="true" FixedLength="true" />
+          <Property Name="Name" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+          <NavigationProperty Name="Symbols" Relationship="FT1203.FK_Symbols_Categories" FromRole="Categories" ToRole="Symbols" />
+        </EntityType>
+        <EntityType Name="Series">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="TickerID" Type="Int32" Nullable="false" />
+          <Property Name="TimeIntID" Type="Int32" Nullable="false" />
+          <Property Name="Code" Type="String" Nullable="false" MaxLength="12" Unicode="true" FixedLength="false" />
+          <Property Name="Name" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+          <NavigationProperty Name="Ticker" Relationship="FT1203.FK_Series_Tickers" FromRole="Series" ToRole="Tickers" />
+          <NavigationProperty Name="TimeInt" Relationship="FT1203.FK_Series_TimeInts" FromRole="Series" ToRole="TimeInts" />
+          <NavigationProperty Name="Ticks" Relationship="FT1203.FK_Ticks_Series" FromRole="Series" ToRole="Ticks" />
+        </EntityType>
+        <EntityType Name="SeriesDef">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Code" Type="String" Nullable="false" MaxLength="10" Unicode="true" FixedLength="true" />
+          <Property Name="Name" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+          <NavigationProperty Name="SeriesParts" Relationship="FT1203.FK_SeriesParts_SeriesDefs" FromRole="SeriesDefs" ToRole="SeriesParts" />
+        </EntityType>
+        <EntityType Name="SeriesPart">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="SeriesDefID" Type="Int32" Nullable="false" />
+          <Property Name="TickerID" Type="Int32" Nullable="false" />
+          <Property Name="DT1" Type="DateTime" Nullable="false" />
+          <Property Name="DT2" Type="DateTime" Nullable="false" />
+          <NavigationProperty Name="SeriesDef" Relationship="FT1203.FK_SeriesParts_SeriesDefs" FromRole="SeriesParts" ToRole="SeriesDefs" />
+          <NavigationProperty Name="Ticker" Relationship="FT1203.FK_SeriesParts_Tickers" FromRole="SeriesParts" ToRole="Tickers" />
+        </EntityType>
+        <EntityType Name="Symbol">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Code" Type="String" Nullable="false" MaxLength="12" Unicode="true" FixedLength="false" />
+          <Property Name="LongCode" Type="String" Nullable="false" MaxLength="24" Unicode="true" FixedLength="false" />
+          <Property Name="CategoryID" Type="Int32" Nullable="false" />
+          <Property Name="Enabled" Type="Byte" Nullable="false" />
+          <Property Name="TickerDays" Type="Int16" />
+          <NavigationProperty Name="Category" Relationship="FT1203.FK_Symbols_Categories" FromRole="Symbols" ToRole="Categories" />
+          <NavigationProperty Name="Tickers" Relationship="FT1203.FK_Tickers_Symbols" FromRole="Symbols" ToRole="Tickers" />
+        </EntityType>
+        <EntityType Name="sysdiagram">
+          <Key>
+            <PropertyRef Name="diagram_id" />
+          </Key>
+          <Property Name="name" Type="String" Nullable="false" MaxLength="128" Unicode="true" FixedLength="false" />
+          <Property Name="principal_id" Type="Int32" Nullable="false" />
+          <Property Name="diagram_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="version" Type="Int32" />
+          <Property Name="definition" Type="Binary" MaxLength="Max" FixedLength="false" />
+        </EntityType>
+        <EntityType Name="Ticker">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Code" Type="String" Nullable="false" MaxLength="12" Unicode="true" FixedLength="false" />
+          <Property Name="LongCode" Type="String" Nullable="false" MaxLength="24" Unicode="true" FixedLength="false" />
+          <Property Name="KeyCode" Type="String" MaxLength="24" Unicode="true" FixedLength="false" />
+          <Property Name="Name" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="Description" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+          <Property Name="DT1" Type="DateTime" />
+          <Property Name="DT2" Type="DateTime" />
+          <Property Name="D1" Type="DateTime" />
+          <Property Name="D2" Type="DateTime" />
+          <Property Name="D3" Type="DateTime" />
+          <Property Name="Cnt" Type="Int32" />
+          <Property Name="Alias" Type="String" MaxLength="12" Unicode="true" FixedLength="false" />
+          <Property Name="SymbolID" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="Series" Relationship="FT1203.FK_Series_Tickers" FromRole="Tickers" ToRole="Series" />
+          <NavigationProperty Name="SeriesParts" Relationship="FT1203.FK_SeriesParts_Tickers" FromRole="Tickers" ToRole="SeriesParts" />
+          <NavigationProperty Name="Symbol" Relationship="FT1203.FK_Tickers_Symbols" FromRole="Tickers" ToRole="Symbols" />
+        </EntityType>
+        <EntityType Name="TickerStore">
+          <Key>
+            <PropertyRef Name="LongCode" />
+          </Key>
+          <Property Name="Code" Type="String" Nullable="false" MaxLength="12" Unicode="true" FixedLength="false" />
+          <Property Name="LongCode" Type="String" Nullable="false" MaxLength="24" Unicode="true" FixedLength="false" />
+          <Property Name="KeyCode" Type="String" MaxLength="24" Unicode="true" FixedLength="false" />
+          <Property Name="Name" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="Description" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+          <Property Name="DT1" Type="DateTime" />
+          <Property Name="DT2" Type="DateTime" />
+          <Property Name="D1" Type="DateTime" />
+          <Property Name="D2" Type="DateTime" />
+          <Property Name="D3" Type="DateTime" />
+          <Property Name="Cnt" Type="Int32" />
+          <Property Name="Alias" Type="String" MaxLength="12" Unicode="true" FixedLength="false" />
+          <Property Name="SymbolID" Type="Int32" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Tick">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="SeriesID" Type="Int32" Nullable="false" />
+          <Property Name="DT" Type="DateTime" Nullable="false" />
+          <Property Name="Price" Type="Double" Nullable="false" />
+          <Property Name="Amount" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="Series" Relationship="FT1203.FK_Ticks_Series" FromRole="Ticks" ToRole="Series" />
+        </EntityType>
+        <EntityType Name="TimeInt">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Code" Type="String" Nullable="false" MaxLength="10" Unicode="true" FixedLength="false" />
+          <Property Name="Name" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="Description" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+          <Property Name="Enabled" Type="Byte" Nullable="false" />
+          <NavigationProperty Name="Series" Relationship="FT1203.FK_Series_TimeInts" FromRole="TimeInts" ToRole="Series" />
+        </EntityType>
+        <Association Name="FK_Symbols_Categories">
+          <End Role="Categories" Type="FT1203.Category" Multiplicity="1" />
+          <End Role="Symbols" Type="FT1203.Symbol" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Categories">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="Symbols">
+              <PropertyRef Name="CategoryID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Series_Tickers">
+          <End Role="Tickers" Type="FT1203.Ticker" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="Series" Type="FT1203.Series" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Tickers">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="Series">
+              <PropertyRef Name="TickerID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Series_TimeInts">
+          <End Role="TimeInts" Type="FT1203.TimeInt" Multiplicity="1" />
+          <End Role="Series" Type="FT1203.Series" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="TimeInts">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="Series">
+              <PropertyRef Name="TimeIntID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Ticks_Series">
+          <End Role="Series" Type="FT1203.Series" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="Ticks" Type="FT1203.Tick" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Series">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="Ticks">
+              <PropertyRef Name="SeriesID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_SeriesParts_SeriesDefs">
+          <End Role="SeriesDefs" Type="FT1203.SeriesDef" Multiplicity="1" />
+          <End Role="SeriesParts" Type="FT1203.SeriesPart" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="SeriesDefs">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="SeriesParts">
+              <PropertyRef Name="SeriesDefID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_SeriesParts_Tickers">
+          <End Role="Tickers" Type="FT1203.Ticker" Multiplicity="1" />
+          <End Role="SeriesParts" Type="FT1203.SeriesPart" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Tickers">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="SeriesParts">
+              <PropertyRef Name="TickerID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Tickers_Symbols">
+          <End Role="Symbols" Type="FT1203.Symbol" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="Tickers" Type="FT1203.Ticker" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Symbols">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="Tickers">
+              <PropertyRef Name="SymbolID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2008/09/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="FT1203StoreContainer" CdmEntityContainer="M1203">
+          <EntitySetMapping Name="Categories"><EntityTypeMapping TypeName="FT1203.Category"><MappingFragment StoreEntitySet="Categories">
+            <ScalarProperty Name="ID" ColumnName="ID" />
+            <ScalarProperty Name="Code" ColumnName="Code" />
+            <ScalarProperty Name="Name" ColumnName="Name" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <EntitySetMapping Name="Series"><EntityTypeMapping TypeName="FT1203.Series"><MappingFragment StoreEntitySet="Series">
+            <ScalarProperty Name="ID" ColumnName="ID" />
+            <ScalarProperty Name="TickerID" ColumnName="TickerID" />
+            <ScalarProperty Name="TimeIntID" ColumnName="TimeIntID" />
+            <ScalarProperty Name="Code" ColumnName="Code" />
+            <ScalarProperty Name="Name" ColumnName="Name" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <EntitySetMapping Name="SeriesDefs"><EntityTypeMapping TypeName="FT1203.SeriesDef"><MappingFragment StoreEntitySet="SeriesDefs">
+            <ScalarProperty Name="ID" ColumnName="ID" />
+            <ScalarProperty Name="Code" ColumnName="Code" />
+            <ScalarProperty Name="Name" ColumnName="Name" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <EntitySetMapping Name="SeriesParts"><EntityTypeMapping TypeName="FT1203.SeriesPart"><MappingFragment StoreEntitySet="SeriesParts">
+            <ScalarProperty Name="ID" ColumnName="ID" />
+            <ScalarProperty Name="SeriesDefID" ColumnName="SeriesDefID" />
+            <ScalarProperty Name="TickerID" ColumnName="TickerID" />
+            <ScalarProperty Name="DT1" ColumnName="DT1" />
+            <ScalarProperty Name="DT2" ColumnName="DT2" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <EntitySetMapping Name="Symbols"><EntityTypeMapping TypeName="FT1203.Symbol"><MappingFragment StoreEntitySet="Symbols">
+            <ScalarProperty Name="ID" ColumnName="ID" />
+            <ScalarProperty Name="Code" ColumnName="Code" />
+            <ScalarProperty Name="LongCode" ColumnName="LongCode" />
+            <ScalarProperty Name="CategoryID" ColumnName="CategoryID" />
+            <ScalarProperty Name="Enabled" ColumnName="Enabled" />
+            <ScalarProperty Name="TickerDays" ColumnName="TickerDays" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <EntitySetMapping Name="sysdiagrams"><EntityTypeMapping TypeName="FT1203.sysdiagram"><MappingFragment StoreEntitySet="sysdiagrams">
+            <ScalarProperty Name="name" ColumnName="name" />
+            <ScalarProperty Name="principal_id" ColumnName="principal_id" />
+            <ScalarProperty Name="diagram_id" ColumnName="diagram_id" />
+            <ScalarProperty Name="version" ColumnName="version" />
+            <ScalarProperty Name="definition" ColumnName="definition" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <EntitySetMapping Name="Tickers"><EntityTypeMapping TypeName="FT1203.Ticker"><MappingFragment StoreEntitySet="Tickers">
+            <ScalarProperty Name="ID" ColumnName="ID" />
+            <ScalarProperty Name="Code" ColumnName="Code" />
+            <ScalarProperty Name="LongCode" ColumnName="LongCode" />
+            <ScalarProperty Name="KeyCode" ColumnName="KeyCode" />
+            <ScalarProperty Name="Name" ColumnName="Name" />
+            <ScalarProperty Name="Description" ColumnName="Description" />
+            <ScalarProperty Name="DT1" ColumnName="DT1" />
+            <ScalarProperty Name="DT2" ColumnName="DT2" />
+            <ScalarProperty Name="D1" ColumnName="D1" />
+            <ScalarProperty Name="D2" ColumnName="D2" />
+            <ScalarProperty Name="D3" ColumnName="D3" />
+            <ScalarProperty Name="Cnt" ColumnName="Cnt" />
+            <ScalarProperty Name="Alias" ColumnName="Alias" />
+            <ScalarProperty Name="SymbolID" ColumnName="SymbolID" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <EntitySetMapping Name="TickerStores"><EntityTypeMapping TypeName="FT1203.TickerStore"><MappingFragment StoreEntitySet="TickerStores">
+            <ScalarProperty Name="Code" ColumnName="Code" />
+            <ScalarProperty Name="LongCode" ColumnName="LongCode" />
+            <ScalarProperty Name="KeyCode" ColumnName="KeyCode" />
+            <ScalarProperty Name="Name" ColumnName="Name" />
+            <ScalarProperty Name="Description" ColumnName="Description" />
+            <ScalarProperty Name="DT1" ColumnName="DT1" />
+            <ScalarProperty Name="DT2" ColumnName="DT2" />
+            <ScalarProperty Name="D1" ColumnName="D1" />
+            <ScalarProperty Name="D2" ColumnName="D2" />
+            <ScalarProperty Name="D3" ColumnName="D3" />
+            <ScalarProperty Name="Cnt" ColumnName="Cnt" />
+            <ScalarProperty Name="Alias" ColumnName="Alias" />
+            <ScalarProperty Name="SymbolID" ColumnName="SymbolID" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <EntitySetMapping Name="Ticks"><EntityTypeMapping TypeName="FT1203.Tick"><MappingFragment StoreEntitySet="Ticks">
+            <ScalarProperty Name="ID" ColumnName="ID" />
+            <ScalarProperty Name="SeriesID" ColumnName="SeriesID" />
+            <ScalarProperty Name="DT" ColumnName="DT" />
+            <ScalarProperty Name="Price" ColumnName="Price" />
+            <ScalarProperty Name="Amount" ColumnName="Amount" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <EntitySetMapping Name="TimeInts"><EntityTypeMapping TypeName="FT1203.TimeInt"><MappingFragment StoreEntitySet="TimeInts">
+            <ScalarProperty Name="ID" ColumnName="ID" />
+            <ScalarProperty Name="Code" ColumnName="Code" />
+            <ScalarProperty Name="Name" ColumnName="Name" />
+            <ScalarProperty Name="Description" ColumnName="Description" />
+            <ScalarProperty Name="Enabled" ColumnName="Enabled" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2008/10/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="False" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="True" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams>
+      <Diagram Name="M1203">
+        <EntityTypeShape EntityType="FT1203.Category" Width="1.5" PointX="0.75" PointY="4" Height="1.5923063151041665" IsExpanded="true" />
+        <EntityTypeShape EntityType="FT1203.Series" Width="1.5" PointX="7.5" PointY="3.625" Height="2.2496956380208335" IsExpanded="true" />
+        <EntityTypeShape EntityType="FT1203.SeriesDef" Width="1.5" PointX="5.25" PointY="9.125" Height="1.5923063151041674" IsExpanded="true" />
+        <EntityTypeShape EntityType="FT1203.SeriesPart" Width="1.5" PointX="7.5" PointY="0.75" Height="2.0853483072916656" IsExpanded="true" />
+        <EntityTypeShape EntityType="FT1203.Symbol" Width="1.5" PointX="3" PointY="3.625" Height="2.2496956380208339" IsExpanded="true" />
+        <EntityTypeShape EntityType="FT1203.sysdiagram" Width="1.5" PointX="0.75" PointY="6.875" Height="1.7566536458333326" IsExpanded="true" />
+        <EntityTypeShape EntityType="FT1203.Ticker" Width="1.5" PointX="5.25" PointY="2.875" Height="3.7288216145833313" IsExpanded="true" />
+        <EntityTypeShape EntityType="FT1203.TickerStore" Width="1.5" PointX="7.75" PointY="6.875" Height="3.0714322916666683" IsExpanded="true" />
+        <EntityTypeShape EntityType="FT1203.Tick" Width="1.5" PointX="9.75" PointY="3.875" Height="1.9210009765624996" IsExpanded="true" />
+        <EntityTypeShape EntityType="FT1203.TimeInt" Width="1.5" PointX="5.25" PointY="11.875" Height="1.9210009765624996" IsExpanded="true" />
+        <AssociationConnector Association="FT1203.FK_Symbols_Categories" ManuallyRouted="false">
+          <ConnectorPoint PointX="2.25" PointY="4.7961531575520837" />
+          <ConnectorPoint PointX="3" PointY="4.7961531575520837" />
+        </AssociationConnector>
+        <AssociationConnector Association="FT1203.FK_Series_Tickers" ManuallyRouted="false">
+          <ConnectorPoint PointX="6.75" PointY="4.7498478190104167" />
+          <ConnectorPoint PointX="7.041666666666667" PointY="4.7498478190104159" />
+          <ConnectorPoint PointX="7.208333333333333" PointY="4.7498478190104167" />
+          <ConnectorPoint PointX="7.5" PointY="4.7498478190104167" />
+        </AssociationConnector>
+        <AssociationConnector Association="FT1203.FK_Series_TimeInts" ManuallyRouted="false">
+          <ConnectorPoint PointX="6.75" PointY="12.83550048828125" />
+          <ConnectorPoint PointX="7.59375" PointY="12.83550048828125" />
+          <ConnectorPoint PointX="7.59375" PointY="5.8746956380208335" />
+        </AssociationConnector>
+        <AssociationConnector Association="FT1203.FK_Ticks_Series" ManuallyRouted="false">
+          <ConnectorPoint PointX="9" PointY="4.83550048828125" />
+          <ConnectorPoint PointX="9.75" PointY="4.83550048828125" />
+        </AssociationConnector>
+        <AssociationConnector Association="FT1203.FK_SeriesParts_SeriesDefs" ManuallyRouted="false">
+          <ConnectorPoint PointX="6.75" PointY="9.1261528461538468" />
+          <ConnectorPoint PointX="7.125" PointY="8.7511528461538468" />
+          <ConnectorPoint PointX="7.125" PointY="1.7926741536458328" />
+          <ConnectorPoint PointX="7.5" PointY="1.7926741536458328" />
+        </AssociationConnector>
+        <AssociationConnector Association="FT1203.FK_SeriesParts_Tickers" ManuallyRouted="false">
+          <ConnectorPoint PointX="6" PointY="2.875" />
+          <ConnectorPoint PointX="6" PointY="2.34526373046875" />
+          <ConnectorPoint PointX="7.041666666666667" PointY="2.3452637304687496" />
+          <ConnectorPoint PointX="7.208333333333333" PointY="2.34526373046875" />
+          <ConnectorPoint PointX="7.5" PointY="2.34526373046875" />
+        </AssociationConnector>
+        <AssociationConnector Association="FT1203.FK_Tickers_Symbols" ManuallyRouted="false">
+          <ConnectorPoint PointX="4.5" PointY="4.7498478190104167" />
+          <ConnectorPoint PointX="5.25" PointY="4.7498478190104167" />
+        </AssociationConnector>
+      </Diagram>
+    </Diagrams>
+  </Designer>
+</edmx:Edmx>

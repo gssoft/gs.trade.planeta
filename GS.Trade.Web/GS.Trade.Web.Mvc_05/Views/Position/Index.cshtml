@@ -1,0 +1,153 @@
+﻿@model IEnumerable<GS.Trade.DataBase.Model.Position>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table>
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Strategy.Name)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.FirstTradeDT)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.FirstTradeNumber)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.LastTradeDT)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.LastTradeNumber)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Quantity)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Price1)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Price2)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Price3)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.PnL3)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Key)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Created)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Modified)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Pos)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.PnL1)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.PnL2)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.IsOpened)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.IsClosed)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.IsLong)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.IsShort)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.IsNeutral)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Strategy.Name)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.FirstTradeDT)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.FirstTradeNumber)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.LastTradeDT)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.LastTradeNumber)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Quantity)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Price1)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Price2)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Price3)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.PnL3)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Key)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Created)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Modified)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Pos)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.PnL1)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.PnL2)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.IsOpened)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.IsClosed)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.IsLong)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.IsShort)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.IsNeutral)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.Id }) |
+            @Html.ActionLink("Details", "Details", new { id=item.Id }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.Id })
+        </td>
+    </tr>
+}
+
+</table>

@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<DdeServer>
+  <Dde enabled="true" ns="GS.Trade.Dde" as="GS.Trade.Dde">
+    <!--<Mode>Mixed</Mode>-->
+    <Mode>Table</Mode>
+    <IsEnabled>true</IsEnabled>
+    <IsProcessTaskInUse>true</IsProcessTaskInUse>
+    <IsNeedTopicName>false</IsNeedTopicName>
+    <Name>DdeServer</Name>
+    <Code>QuikVtbSim</Code>
+    <!--<Code>QuikVtbSim</Code>-->
+    <!--<Code>QuikOpenReal</Code>-->
+    <!--<Code>QuikBkStandard</Code>-->
+    <XPath>DdeTopicList</XPath>
+  </Dde>
+  <DdeTopicList>
+    <TopicItem ns="GS.Trade.Dde" as="GS.Trade.Dde">
+      <TopicItemKey>[Forts]1</TopicItemKey>
+    </TopicItem>
+    <TopicItem ns="GS.Trade.Dde" as="GS.Trade.Dde">
+      <TopicItemKey>[Micex]1</TopicItemKey>
+    </TopicItem>
+  </DdeTopicList>
+</DdeServer>

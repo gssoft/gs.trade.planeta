@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<EventLogs>
+  <EventLogList>
+    <EventLog>
+      <IsEnabled>true</IsEnabled>
+    </EventLog>
+   
+    <WebEventLog>
+      <EventLogKey>GS.Trade.EventLog</EventLogKey>
+      <BaseAddress>http://81.176.229.34/ApiEventLog/</BaseAddress>
+      <RequestHeader>application/xml</RequestHeader>
+      <ApiEventLogs>api/eventlogs/</ApiEventLogs>
+      <ApiEventLogItems>api/eventlogitems/</ApiEventLogItems>
+      <IsEnabled>true</IsEnabled>
+      <IsAsync>false</IsAsync>
+    </WebEventLog>
+
+  </EventLogList>
+</EventLogs>

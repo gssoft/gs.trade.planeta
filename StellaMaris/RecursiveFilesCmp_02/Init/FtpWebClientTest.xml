@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Root>
+<FtpWebClient>
+  <Code>FtpWebClient</Code>
+  <Name>FtpWebClient</Name>
+  <BaseAddress>ftp://185.31.161.159/Pays</BaseAddress>
+  <User>gs</User>
+  <Password>x5Aiw3p2MV27mtwh9fG</Password>
+  <IsUnixFtpServer>false</IsUnixFtpServer>
+</FtpWebClient>
+</Root>

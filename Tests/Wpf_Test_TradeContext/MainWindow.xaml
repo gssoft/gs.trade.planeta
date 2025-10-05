@@ -1,0 +1,49 @@
+﻿<Window x:Class="Wpf_Test_TradeContext.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MainWindow" Height="500" Width="219.5" Loaded="WindowLoaded" Closed="WindowClosed" Closing="WindowClosing">
+    <Grid>
+        <TabControl>
+            <TabItem Header="Start / Stop">
+                <GroupBox Header="Группа элементов" Margin="5,5,5,-55" Padding="5">
+                    <StackPanel>
+                        <ToggleButton Name ="BtStartStop" Margin="5" Padding="5" Click="ToggleButtonClick" ClickMode="Press">Stopped</ToggleButton>
+
+                        <Button Name="BtStart" Margin="5" Padding="5" Click="BtStartClick">Start</Button>
+                        <Button Name="BtStop" Margin="5" Padding="5" Click="BtStopClick">Stop</Button>
+                        <Button Name="BtReStart" Margin="5" Padding="5">Restart</Button>
+                        <Button Name="BtSuspend" Margin="5" Padding="5" Click="BtSuspendClick">Suspend</Button>
+                        <Button Name="BtResume" Margin="5" Padding="5" Click="BtResumeClick">Resume</Button>
+                        <Button Name="BtClearOrders" Margin="5" Padding="5"
+                                Click ="ClearOrders">Clear OrderCollection</Button>
+                        <Button Name="BtCloseStrategies" Margin="5" Padding="5"
+                                Click ="CloseStrategies">Close All Strategies</Button>
+                        <Button Name="BtCloseSoftStrategies" Margin="5" Padding="5"
+                                Click ="CloseSoftStrategies">Close Soft Strategies</Button>
+                        <ToggleButton Name ="TglBtnStrWorkingStatus" Margin="1" Click="TglBtnStrWorkingStatusClick" ClickMode="Press">Strategies Enabled Now</ToggleButton>
+                        <Button Name="BtCloseApp" Margin="5" Padding="5" Click="BtCloseAppClick">Close Application</Button>
+                    </StackPanel>
+                </GroupBox>
+            </TabItem>
+            <!-- Используем нестандартное содержимое в заголовке TabItem -->
+            <TabItem Header="Settings">
+                <GroupBox Header="Elements" Margin="5" Padding="5">
+                    <StackPanel>
+                        <!--<CheckBox Margin="0,5,0,5" Click="BtLongEnabledClick" IsChecked="{Binding Path=LongEnabled, Mode=TwoWay }">Long</CheckBox>
+                        <CheckBox Margin="0,5,0,5" Click="BtShortEnabledClick" IsChecked="{Binding Path=ShortEnabled, Mode=TwoWay }">Short</CheckBox>
+                        -->
+                        <CheckBox Name="ChBoxLongEnabled" Margin="0,5,0,5" IsChecked="{Binding Path=LongEnabled, Mode=TwoWay }">Long</CheckBox>
+                        <CheckBox Name="ChBoxShortEnabled" Margin="0,5,0,5" IsChecked="{Binding Path=ShortEnabled, Mode=TwoWay }">Short</CheckBox>
+                        <!--<CheckBox>Три</CheckBox>-->
+                        <TextBox Name="TextBtMaxSideSize" Margin="0,5,65,5" Text="{Binding Path=MaxSideSize, Mode=TwoWay}"></TextBox>
+                        <Button HorizontalAlignment="Center" Padding="5" Click="BtLongShortEnabledClick">Submit</Button>
+                        <!--<Button HorizontalAlignment="Center" Padding="5">Ok</Button>-->
+                    </StackPanel>
+                </GroupBox>
+            </TabItem>
+            <TabItem Header="Info">
+                
+            </TabItem>
+        </TabControl>
+    </Grid>
+</Window>

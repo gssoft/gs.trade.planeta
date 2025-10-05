@@ -1,0 +1,75 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+
+
+namespace GS.Extension
+{
+    public static class ExceptionExt
+    {
+        public static string AggrExceptionMessage(this AggregateException e)
+        {
+            return e.Message + e.InnerExceptions.Aggregate(e.Message, (current, v) => current + ("\r\n" + v.Message));
+        }
+        public static string ExceptionMessage(this Exception e)
+        {
+            var s = e.Message;
+            while (e.InnerException != null)
+            {
+                e = e.InnerException;
+                s += "\r\n" + e.Message;
+            }
+            return s;
+        }
+        public static string ExceptionMessageAgg(this Exception e)
+        {
+            var origExc = e;
+            var s = "Exception:" +Environment.NewLine + e.Message;
+            while (e.InnerException != null)
+            {
+                e = e.InnerException;
+                s += "\r\n" + e.Message;
+            }
+            var ae = origExc as AggregateException;
+            if (ae == null)
+                return s;
+            s += ae.AggExceptionMessage();
+            return s;
+        }
+        public static string AggExceptionMessage(this AggregateException ae)
+        {
+            string[] s = { "AggregateException:" + Environment.NewLine + ae.Message };
+            ae = ae.Flatten();
+            ae.Handle((ie) =>
+            {
+                s[0] += Environment.NewLine + ie.Message;
+                return true;
+            });
+            return s[0];
+        }
+
+
+        public static string ExceptionMessageAsync(Exception e)
+        {
+            return ExceptionMessageA(e).Result;
+        }
+
+        private static Task<string> ExceptionMessageA(this Exception exc)
+        {
+            return Task<string>.Factory.StartNew((exception) =>
+            {
+                var e = (Exception) exception;
+                var s = e.Message;
+                while (e.InnerException != null)
+                {
+                    e = e.InnerException;
+                    s += "\r\n" + e.Message;
+                }
+                return s;
+            }, exc);
+        }
+    }
+}

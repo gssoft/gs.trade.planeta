@@ -1,0 +1,131 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Tickers>
+<Ticker ID="19715" Code="AFKS" Name="ОАО АФК &quot;Система&quot;" />
+<Ticker ID="29" Code="AFLT" Name="ОАО &quot;АЭРОФЛОТ&quot;" />
+<Ticker ID="17564" Code="AKRN" Name="ОАО &quot;Акрон&quot;" />
+<Ticker ID="39" Code="AVAZ3" Name="ОАО &quot;АвтоВаз&quot;" />
+<Ticker ID="18950" Code="Benzin" Name="Benzin" />
+<Ticker ID="18483" Code="BLNG" Name="ОАО &quot;Белон&quot;" />
+<Ticker ID="18958" Code="Brent" Name="Нефть &quot;Brent&quot;" />
+<Ticker ID="1097" Code="BRSP_Bovespa" Name="BRSP_Bovespa" />
+<Ticker ID="112" Code="CAC-40" Name="CAC-40" />
+<Ticker ID="16136" Code="CHMF" Name="ОАО &quot;Северсталь&quot;" />
+<Ticker ID="18931" Code="Cuprum" Name="Cuprum" />
+<Ticker ID="94" Code="DAX" Name="DAX" />
+<Ticker ID="17919" Code="DGBZ" Name="ОАО &quot;Дорогобуж&quot;" />
+<Ticker ID="18564" Code="DIXY" Name="ОАО &quot;Дикси Групп&quot;" />
+<Ticker ID="91" Code="DJ" Name="DJ" />
+<Ticker ID="15366" Code="ENCO" Name="ОАО &quot;Сибирь Телеком&quot;" />
+<Ticker ID="16052" Code="ESMO" Name="ОАО &quot;ЦентрТелеком&quot;" />
+<Ticker ID="20509" Code="FEES" Name="ОАО &quot;ФСК ЕЭС&quot;" />
+<Ticker ID="93" Code="FTSE" Name="FTSE" />
+<Ticker ID="16842" Code="GAZP" Name="ОАО &quot;Газпром&quot;" />
+<Ticker ID="20125" Code="GCHE" Name="ОАО &quot;Группа Черкизово&quot;" />
+<Ticker ID="795" Code="GMKN" Name="ОАО &quot;ГМК &quot;Норильский никель&quot;" />
+<Ticker ID="18953" Code="Gold" Name="Gold" />
+<Ticker ID="16610" Code="GRAZ" Name="ОАО &quot;Группа Разгуляй&quot;" />
+<Ticker ID="17698" Code="HALS" Name="ОАО &quot;Система-Галс&quot;" />
+<Ticker ID="111" Code="HangSeng" Name="HangSeng" />
+<Ticker ID="20266" Code="HYDR" Name="ОАО &quot;РусГидро&quot;" />
+<Ticker ID="20516" Code="IRAO" Name="ОАО «ИНТЕР РАО ЕЭС»" />
+<Ticker ID="20030" Code="KCHE" Name="ОАО &quot;Камчатскэнерго&quot;" />
+<Ticker ID="15544" Code="KMAZ" Name="ОАО &quot;КАМАЗ&quot;" />
+<Ticker ID="510" Code="KROT" Name="ОАО &quot;Красный Октябрь&quot;" />
+<Ticker ID="15518" Code="KRSG" Name="ОАО &quot;Красноярская ГЭС&quot;" />
+<Ticker ID="20204" Code="KZBN" Name="ОАО &quot;Кузбассэнерго&quot;" />
+<Ticker ID="16023" Code="LEKZ" Name="ОАО &quot;ЭКЗ Лебедянский&quot;" />
+<Ticker ID="18948" Code="Light" Name="Light" />
+<Ticker ID="8" Code="LKOH" Name="ОАО &quot;Лукойл&quot;" />
+<Ticker ID="19736" Code="LSRG" Name="ОАО &quot;Группа ЛСР&quot;" />
+<Ticker ID="18951" Code="Mazut" Name="Mazut" />
+<Ticker ID="17086" Code="MGNT" Name="ОАО  &quot;Магнит&quot;" />
+<Ticker ID="20739" Code="MicexFnl" Name="ММВБ финансы" />
+<Ticker ID="18857" Code="MicexLC" Name="Индекс компаний высокой капитализации" />
+<Ticker ID="18858" Code="MicexMC" Name="Индекс компаний средней капитализации" />
+<Ticker ID="18886" Code="MicexMm" Name="ММВБ металлургия" />
+<Ticker ID="18887" Code="MicexMnf" Name="ММВБ машиностроение" />
+<Ticker ID="18454" Code="MicexOg" Name="ММВБ нефть и газ" />
+<Ticker ID="18455" Code="MicexPwr" Name="ММВБ энергетика" />
+<Ticker ID="18859" Code="MicexSC" Name="Индекс компаний базовой капитализации" />
+<Ticker ID="18456" Code="MicexTlc" Name="ММВБ телекоммникации" />
+<Ticker ID="15914" Code="MMBM" Name="ОАО &quot;Банк Москвы&quot;" />
+<Ticker ID="16782" Code="MMK" Name="ОАО &quot;ММК&quot;" />
+<Ticker ID="13851" Code="MMVB" Name="Индекс ММВБ" />
+<Ticker ID="13850" Code="MMVB10" Name="Индекс ММВБ 10" />
+<Ticker ID="20235" Code="MRKC" Name="ОАО &quot;МРСК Центра&quot;" />
+<Ticker ID="20971" Code="MRKH" Name="ОАО «Холдинг МРСК»" />
+<Ticker ID="20107" Code="MRKP" Name="ОАО &quot;МРСК Центра и Приволжья&quot;" />
+<Ticker ID="20346" Code="MRKS" Name="ОАО &quot;МРКС Сибири&quot;" />
+<Ticker ID="20402" Code="MRKU" Name="ОАО &quot;МРСК Урала&quot;" />
+<Ticker ID="20286" Code="MRKV" Name="ОАО &quot;МРСК Волги&quot;" />
+<Ticker ID="20309" Code="MRKZ" Name="ОАО &quot;МРСК Северо-Запада&quot;" />
+<Ticker ID="6" Code="MSNG" Name="ОАО &quot;Мосэнерго&quot;" />
+<Ticker ID="16917" Code="MSRS" Name="ОАО &quot;МОЭСК&quot;" />
+<Ticker ID="15523" Code="MTSI" Name="ОАО &quot;Мобильные ТелеСистемы&quot;" />
+<Ticker ID="19737" Code="MVID" Name="ОАО &quot;Компания &quot;М.видео&quot;" />
+<Ticker ID="92" Code="NASDAQ" Name="NASDAQ" />
+<Ticker ID="19063" Code="NIKKEI" Name="NIKKEI" />
+<Ticker ID="20100" Code="NKNC" Name="ОАО &quot;Нижнекамскнефтехим&quot;" />
+<Ticker ID="17046" Code="NLMK" Name="ОАО &quot;Новолипецкий металлургический комбинат&quot;" />
+<Ticker ID="523" Code="NNSI" Name="ОАО &quot;ВолгаТелеком&quot;" />
+<Ticker ID="17370" Code="NVTK" Name="ОАО &quot;Новатэк&quot;" />
+<Ticker ID="18684" Code="OGK2" Name="ОАО ОГК-2" />
+<Ticker ID="18934" Code="Olovo" Name="Olovo" />
+<Ticker ID="18959" Code="Palad" Name="Palad" />
+<Ticker ID="19717" Code="PHST" Name="ОАО &quot;Фармстандарт&quot;" />
+<Ticker ID="17375" Code="PKBA" Name="ОАО &quot;Пивоваренная компания &quot;Балтика&quot;" />
+<Ticker ID="18947" Code="Plat" Name="Plat" />
+<Ticker ID="18236" Code="PLMTL" Name="ОАО &quot;Полиметал&quot;" />
+<Ticker ID="17123" Code="PLZL" Name="ОАО &quot;Полюсзолото&quot;" />
+<Ticker ID="17713" Code="RASP" Name="ОАО &quot;Распадская&quot;" />
+<Ticker ID="17273" Code="ROSN" Name="ОАО &quot;НК &quot;Роснефть&quot;" />
+<Ticker ID="16866" Code="RSB" Name="ОАО АКБ &quot;Росбанк&quot;" />
+<Ticker ID="7" Code="RTKM" Name="ОАО &quot;Ростелеком&quot;" />
+<Ticker ID="95" Code="RTSI" Name="Индекс РТС" />
+<Ticker ID="19628" Code="RtsiFn" Name="РТС банки и финансы" />
+<Ticker ID="18167" Code="RTSIindu" Name="РТС промышленность" />
+<Ticker ID="18162" Code="RTSImet" Name="РТС металлы и добыча" />
+<Ticker ID="18166" Code="RTSIoil" Name="РТС нефть и газ" />
+<Ticker ID="18163" Code="RTSIpotr" Name="РТС потреб. Товары" />
+<Ticker ID="19627" Code="RtsiPwr" Name="РТС электроэнергетика" />
+<Ticker ID="18161" Code="RTSItele" Name="РТС телекоммуникации" />
+<Ticker ID="3" Code="SBER" Name="ОАО &quot;Сбербанк России&quot;" />
+<Ticker ID="23" Code="SBERP" Name="ОАО &quot;Сбербанк России&quot;" />
+<Ticker ID="16049" Code="SCON" Name="ОАО &quot;Седьмой Континент&quot;" />
+<Ticker ID="2" Code="SIBN" Name="ОАО &quot;Газпромнефть&quot;" />
+<Ticker ID="20713" Code="SILM" Name="ОАО &quot;Силовые машины&quot;" />
+<Ticker ID="20714" Code="SILV" Name="ОАО &quot;Сильвинит&quot;" />
+<Ticker ID="18952" Code="Silver" Name="Silver" />
+<Ticker ID="4" Code="SNGS" Name="ОАО &quot;Сургутнефтегаз&quot;" />
+<Ticker ID="13" Code="SNGSP" Name="ОАО &quot;Сургутнефтегаз&quot;" />
+<Ticker ID="90" Code="SP500" Name="SP500" />
+<Ticker ID="590" Code="SPTL" Name="ОАО &quot;Северо-Западнй Телеком&quot;" />
+<Ticker ID="16080" Code="SVAV" Name="ОАО &quot;Соллерс&quot;" />
+<Ticker ID="18933" Code="Svin" Name="Svin" />
+<Ticker ID="19651" Code="SYNG" Name="ОАО &quot;Синергия&quot;" />
+<Ticker ID="825" Code="TATN" Name="ОАО &quot;Татнефть&quot;" />
+<Ticker ID="1012" Code="TRNFP" Name="ОАО &quot;Транснефть&quot;" />
+<Ticker ID="19623" Code="URKA" Name="ОАО &quot;Уралкалий&quot;" />
+<Ticker ID="18" Code="URSI" Name="ОАО &quot;Уралсвязьинформ&quot;" />
+<Ticker ID="17942" Code="VRPH" Name="ОАО &quot;ВЕРОФАРМ&quot;" />
+<Ticker ID="19043" Code="VTBR" Name="ОАО &quot;Банк ВТБ&quot;" />
+<Ticker ID="17068" Code="VZRZ" Name="Банк &quot;Возрождение&quot; (ОАО)" />
+<Ticker ID="15545" Code="WBDF" Name="ОАО &quot;ВБД ПП&quot;" />
+<Ticker ID="19095" Code="WTCM" Name="ОАО &quot;Центр международной торговли&quot;" />
+<Ticker ID="18935" Code="Zink" Name="Zink" />
+<Ticker ID="9" Code="ИркЭнерго" Name="ОАО &quot;ИркутскЭнерго&quot;" />
+<Ticker ID="17204" Code="ОГК-3_ао" Name="ОАО ОГК-3" />
+<Ticker ID="16440" Code="ОГК-5_ао" Name="ОАО ОГК-5" />
+<Ticker ID="1009" Code="РБКИС-ао" Name="ОАО &quot;РБК Информационные системы&quot;" />
+<Ticker ID="15534" Code="РИТЭК_ао" Name="ОАО &quot;РИТЭК&quot;" />
+<Ticker ID="18382" Code="ТГК-1" Name="ОАО &quot;ТГК-1&quot;" />
+<Ticker ID="18310" Code="ТГК-4" Name="ОАО ТГК-4" />
+<Ticker ID="17399" Code="ТГК-8" Name="ОАО ТГК-8" />
+<Ticker ID="16805" Code="УАЗ_ао" Name="ОАО &quot;УАЗ&quot;" />
+<Ticker ID="17455" Code="F_RTSI" Name="FORTS.RTS" />
+<Ticker ID="17451" Code="F_GAZR" Name="FORTS.GAZR" />
+<Ticker ID="17456" Code="F_SBER" Name="FORTS.SBRF" />
+<Ticker ID="21989" Code="F_EURUSD" Name="FORTS.ED" />
+<Ticker ID="19899" Code="F_USDRUR" Name="FORTS.SI" />
+<Ticker ID="22460" Code="F_Brent" Name="FORTS.BR" />
+</Tickers>

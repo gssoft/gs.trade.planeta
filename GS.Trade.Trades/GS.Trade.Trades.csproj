@@ -1,0 +1,118 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{323CD232-D99D-411D-B7D3-B8752E2BAD58}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>GS.Trade.Trades</RootNamespace>
+    <AssemblyName>GS.Trade.Trades</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+    <PlatformTarget>x64</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="GS, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\GS\GS\bin\Debug\GS.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CheckMinMaxNumber\CheckMinMaxNumber.cs" />
+    <Compile Include="DataBase\Position2.cs" />
+    <Compile Include="Deals\Deal.cs" />
+    <Compile Include="Deals\Deals.cs" />
+    <Compile Include="Equity\Equity.cs" />
+    <Compile Include="Equity\OmegaReport.cs" />
+    <Compile Include="General.cs" />
+    <Compile Include="Orders2\Order2.cs" />
+    <Compile Include="OrderComparer.cs" />
+    <Compile Include="OrderFiller.cs" />
+    <Compile Include="Orders2\Orders2.cs" />
+    <Compile Include="Orders3\Order3.cs" />
+    <Compile Include="Orders3\Orders3.cs" />
+    <Compile Include="OrdersChart.cs" />
+    <Compile Include="Position2.cs" />
+    <Compile Include="PositionFifo.cs" />
+    <Compile Include="PositionNpc.cs" />
+    <Compile Include="SimulateOrders.cs" />
+    <Compile Include="Storage\EmptyStorage.cs" />
+    <Compile Include="Storage\MemStorage.cs" />
+    <Compile Include="UI.Model\PositionNpc2.cs" />
+    <Compile Include="Positions2.cs" />
+    <Compile Include="PositionsChart.cs" />
+    <Compile Include="Order.cs" />
+    <Compile Include="OrderCommand.cs" />
+    <Compile Include="Orders.cs" />
+    <Compile Include="Position.cs" />
+    <Compile Include="Positions.cs" />
+    <Compile Include="PositionsEventArgs.cs" />
+    <Compile Include="PositionTotal2.cs" />
+    <Compile Include="PositionTotals.cs" />
+    <Compile Include="PositionTotals2.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Time\TimePLans.cs" />
+    <Compile Include="Time\TimePlans2.cs" />
+    <Compile Include="Trade.cs" />
+    <Compile Include="TradeEntity.cs" />
+    <Compile Include="Trades.cs" />
+    <Compile Include="Trades2\Trade2.cs" />
+    <Compile Include="Trades2\Trades2.cs" />
+    <Compile Include="Trades3\Trade3.cs" />
+    <Compile Include="Trades3\Trades3.cs" />
+    <Compile Include="UI.Model\PositionTotalNpc2.cs" />
+    <Compile Include="UI.Model\TradeNpc.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\GS.Trade\GS.Trade\GS.Trade.csproj">
+      <Project>{0D8E2D20-24CC-4C80-9F52-815F76DC0522}</Project>
+      <Name>GS.Trade</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PreBuildEvent>del  "D:\VC\1305\Asmbls\$(TargetFileName)"</PreBuildEvent>
+  </PropertyGroup>
+  <PropertyGroup>
+    <PostBuildEvent>copy $(TargetPath) D:\VC\1305\Asmbls\</PostBuildEvent>
+  </PropertyGroup>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

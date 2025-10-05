@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document>
+<data id="securities">
+<metadata>
+<columns>
+<column name="SECID" type="string" bytes="36" max_size="0"/>
+<column name="BOARDID" type="string" bytes="12" max_size="0"/>
+<column name="SHORTNAME" type="string" bytes="75" max_size="0"/>
+<column name="SECNAME" type="string" bytes="225" max_size="0"/>
+<column name="PREVSETTLEPRICE" type="double"/>
+<column name="STATUS" type="string" bytes="3" max_size="0"/>
+<column name="DECIMALS" type="int32"/>
+<column name="MINSTEP" type="double"/>
+<column name="LASTTRADEDATE" type="date" bytes="10" max_size="0"/>
+<column name="LASTDELDATE" type="date" bytes="10" max_size="0"/>
+<column name="SECTYPE" type="string" bytes="6" max_size="0"/>
+<column name="LATNAME" type="string" bytes="90" max_size="0"/>
+<column name="ASSETCODE" type="string" bytes="75" max_size="0"/>
+<column name="PREVOPENPOSITION" type="int64"/>
+<column name="LOTVOLUME" type="int32"/>
+<column name="INITIALMARGIN" type="double"/>
+<column name="HIGHLIMIT" type="double"/>
+<column name="LOWLIMIT" type="double"/>
+<column name="STEPPRICE" type="double"/>
+<column name="LASTSETTLEPRICE" type="double"/>
+<column name="PREVPRICE" type="double"/>
+<column name="FIRSTTRADEDATE" type="date" bytes="10" max_size="0"/>
+</columns>
+</metadata>
+<rows>
+<row SECID="BRH0" BOARDID="RFUD" SHORTNAME="BR-3.20" SECNAME="Фьючерсный контракт BR-3.20" PREVSETTLEPRICE="61.7" STATUS="" DECIMALS="2" MINSTEP="0.01" LASTTRADEDATE="2020-03-02" LASTDELDATE="2020-03-02" SECTYPE="BR" LATNAME="BRH0" ASSETCODE="BR" PREVOPENPOSITION="584" LOTVOLUME="10" INITIALMARGIN="6935.32" HIGHLIMIT="6.55000" LOWLIMIT="6.55000" STEPPRICE="6.39373" LASTSETTLEPRICE="61.7" PREVPRICE="0" FIRSTTRADEDATE="2019-02-25"/>
+</rows>
+</data>
+<data id="marketdata">
+<metadata>
+<columns>
+<column name="SECID" type="string" bytes="36" max_size="0"/>
+<column name="BOARDID" type="string" bytes="12" max_size="0"/>
+<column name="BID" type="undefined" bytes="0" max_size="0"/>
+<column name="OFFER" type="undefined" bytes="0" max_size="0"/>
+<column name="SPREAD" type="double"/>
+<column name="OPEN" type="double"/>
+<column name="HIGH" type="double"/>
+<column name="LOW" type="double"/>
+<column name="LAST" type="double"/>
+<column name="QUANTITY" type="int32"/>
+<column name="LASTCHANGE" type="double"/>
+<column name="SETTLEPRICE" type="double"/>
+<column name="SETTLETOPREVSETTLE" type="double"/>
+<column name="OPENPOSITION" type="double"/>
+<column name="NUMTRADES" type="int32"/>
+<column name="VOLTODAY" type="int64"/>
+<column name="VALTODAY" type="int64"/>
+<column name="VALTODAY_USD" type="int64"/>
+<column name="UPDATETIME" type="time" bytes="10" max_size="0"/>
+<column name="LASTCHANGEPRCNT" type="double"/>
+<column name="BIDDEPTH" type="undefined" bytes="0" max_size="0"/>
+<column name="BIDDEPTHT" type="undefined" bytes="0" max_size="0"/>
+<column name="NUMBIDS" type="undefined" bytes="0" max_size="0"/>
+<column name="OFFERDEPTH" type="undefined" bytes="0" max_size="0"/>
+<column name="OFFERDEPTHT" type="undefined" bytes="0" max_size="0"/>
+<column name="NUMOFFERS" type="undefined" bytes="0" max_size="0"/>
+<column name="TIME" type="time" bytes="10" max_size="0"/>
+<column name="SETTLETOPREVSETTLEPRC" type="double"/>
+<column name="SEQNUM" type="int64"/>
+<column name="SYSTIME" type="datetime" bytes="19" max_size="0"/>
+<column name="TRADEDATE" type="date" bytes="10" max_size="0"/>
+<column name="LASTTOPREVPRICE" type="double"/>
+<column name="OICHANGE" type="int64"/>
+</columns>
+</metadata>
+<rows>
+<row SECID="BRH0" BOARDID="RFUD" BID="" OFFER="" SPREAD="1.77" OPEN="61.5" HIGH="61.74" LOW="61.15" LAST="61.15" QUANTITY="1" LASTCHANGE="-0.59" SETTLEPRICE="61.67" SETTLETOPREVSETTLE="-0.03" OPENPOSITION="588" NUMTRADES="3" VOLTODAY="3" VALTODAY="117894" VALTODAY_USD="1836" UPDATETIME="23:50:34" LASTCHANGEPRCNT="-0.96" BIDDEPTH="" BIDDEPTHT="" NUMBIDS="" OFFERDEPTH="" OFFERDEPTHT="" NUMOFFERS="" TIME="20:58:28" SETTLETOPREVSETTLEPRC="-0.05" SEQNUM="1569013563360" SYSTIME="2019-09-21 00:06:03" TRADEDATE="2019-09-20" LASTTOPREVPRICE="0" OICHANGE="-4"/>
+</rows>
+</data>
+<data id="dataversion">
+<metadata>
+<columns>
+<column name="data_version" type="int64"/>
+<column name="seqnum" type="int64"/>
+</columns>
+</metadata>
+<rows>
+<row data_version="5879" seqnum="1569035703251"/>
+</rows>
+</data>
+</document>

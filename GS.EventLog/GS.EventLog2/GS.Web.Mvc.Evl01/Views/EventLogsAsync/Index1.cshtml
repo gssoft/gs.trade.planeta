@@ -1,0 +1,71 @@
+﻿@model IEnumerable<GS.Web.Mvc.Evl01.ViewModels.AppEventLog>
+
+@{
+    Layout = "~/Views/Shared/_LayoutEventLog.cshtml";
+}
+
+<h5><b>@ViewBag.Title</b></h5>
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            AppID
+        </th>
+        <th>
+            Application
+        </th>
+        <th>
+            ID
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Code)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Name)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Description)
+        </th>
+       
+        <th></th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.AppID)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.AppName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.EventLogID)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Code)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Name)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Description)
+        </td>
+       
+        <td>
+            @Html.ActionLink("Items", "Index", "EventLogItemsAsync",
+                new { eventLogId = item.EventLogID, evlCodeList = item.Code}, null) |
+            @Html.ActionLink("Stats", "StatsAsync", new { evlId = item.EventLogID })
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id = item.EventLogID }) |
+            @Html.ActionLink("Details", "Details", new { id = item.EventLogID }) |
+            @Html.ActionLink("Delete", "Delete", new { id = item.EventLogID }) |
+        </td>
+           
+    </tr>
+}
+
+</table>

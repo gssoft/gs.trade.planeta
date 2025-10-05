@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<TradeContext5>
+  <Code>TradeContext</Code>
+  <Name>TradeContext</Name>
+  <Alias>TradeContext</Alias>
+  <NeedToReCreateDb>true</NeedToReCreateDb>
+  <GetFromDbMode>0</GetFromDbMode>
+</TradeContext5>

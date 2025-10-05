@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ArrayOfTicker xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Ticker>
+    <BarSeriesCollection>
+      <BarSeries>
+        <TimeIntSecond>60</TimeIntSecond>
+        <ShiftIntSecond>0</ShiftIntSecond>
+        <BarCollection />
+        <ID>1</ID>
+        <Name>1_Minute</Name>
+      </BarSeries>
+    </BarSeriesCollection>
+    <ID>1</ID>
+    <Code>RIU1</Code>
+    <ClassCode>SPBFUT</ClassCode>
+    <BaseContract>RTS</BaseContract>
+    <Name>RTSI September,2011</Name>
+    <Key>RTSI_1109</Key>
+    <Symbol>F_RTSI</Symbol>
+    <Format>N0</Format>
+    <MinMove>5</MinMove>
+    <From>2011-03-15T10:00:00</From>
+    <To>2011-06-15T18:45:00</To>
+  </Ticker>
+  <Ticker>
+    <BarSeriesCollection>
+      <BarSeries>
+        <TimeIntSecond>60</TimeIntSecond>
+        <ShiftIntSecond>0</ShiftIntSecond>
+        <BarCollection />
+        <ID>1</ID>
+        <Name>1_Minute</Name>
+      </BarSeries>
+    </BarSeriesCollection>
+    <ID>1</ID>
+    <Code>GZU1</Code>
+    <ClassCode>SPBFUT</ClassCode>
+    <BaseContract>RTS</BaseContract>
+    <Name>GAZP September,2011</Name>
+    <Key>GAZP_1109</Key>
+    <Symbol>F_GAZP</Symbol>
+    <Format>N0</Format>
+    <MinMove>1</MinMove>
+    <From>2011-03-15T10:00:00</From>
+    <To>2011-06-15T18:45:00</To>
+  </Ticker>
+  <Ticker>
+    <BarSeriesCollection>
+      <BarSeries>
+        <TimeIntSecond>60</TimeIntSecond>
+        <ShiftIntSecond>0</ShiftIntSecond>
+        <BarCollection />
+        <ID>1</ID>
+        <Name>1_Minute</Name>
+      </BarSeries>
+    </BarSeriesCollection>
+    <ID>1</ID>
+    <Code>SBU1</Code>
+    <ClassCode>SPBFUT</ClassCode>
+    <BaseContract>RTS</BaseContract>
+    <Name>SBER September,2011</Name>
+    <Key>SBER_1109</Key>
+    <Symbol>F_SBER</Symbol>
+    <Format>N0</Format>
+    <MinMove>1</MinMove>
+    <From>2011-03-15T10:00:00</From>
+    <To>2011-06-15T18:45:00</To>
+  </Ticker>
+</ArrayOfTicker>

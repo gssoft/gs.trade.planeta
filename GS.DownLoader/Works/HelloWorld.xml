@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Works>
+  <LogWork>
+    <IsEnabled>true</IsEnabled>
+    <Name>"Hello World" Example</Name>
+    <Subject>"Hello World" Demonstration:</Subject>
+    <Description>"Hello World"</Description>
+  </LogWork>
+  <LogWork>
+    <IsEnabled>false</IsEnabled>
+    <Name>"Hello Peace" Example</Name>
+    <Subject>"Hello Peace" Demonstration:</Subject>
+    <Description>"Hello Peace"</Description>
+  </LogWork>
+  <LogWork>
+    <IsEnabled>true</IsEnabled>
+    <Name>"Hello GS.Trade.World" Example</Name>
+    <Subject>"Hello GS.Trade.World" Demonstration:</Subject>
+    <Description>"Hello GS.Trade.World"</Description>
+  </LogWork>
+</Works> 

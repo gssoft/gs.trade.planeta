@@ -1,0 +1,2351 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\..\GS.Trade\packages\EntityFramework.6.4.4\build\EntityFramework.props" Condition="Exists('..\..\GS.Trade\packages\EntityFramework.6.4.4\build\EntityFramework.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{F15FF585-8DDC-431F-AA6C-D3D6957947B4}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Wpf_Test_TradeContext</RootNamespace>
+    <AssemblyName>Wpf_Test_TradeContext</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <WarningLevel>4</WarningLevel>
+    <SolutionDir Condition="$(SolutionDir) == '' Or $(SolutionDir) == '*Undefined*'">..\..\GS.Trade\</SolutionDir>
+    <RestorePackages>true</RestorePackages>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x64</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x64</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x64\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <LangVersion>7.3</LangVersion>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <OutputPath>bin\x64\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <LangVersion>7.3</LangVersion>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\..\GS.Trade\packages\EntityFramework.6.4.4\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\..\GS.Trade\packages\EntityFramework.6.4.4\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="GS">
+      <HintPath>..\..\GS\GS\bin\Debug\GS.dll</HintPath>
+    </Reference>
+    <Reference Include="GS.EventLog">
+      <HintPath>..\..\GS.EventLog\GS.EventLog2\GS.EventLog\bin\Debug\GS.EventLog.dll</HintPath>
+    </Reference>
+    <Reference Include="GS.Moex.Interfaces, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\GS.Moex\GS.Moex.Interfaces\bin\Debug\GS.Moex.Interfaces.dll</HintPath>
+    </Reference>
+    <Reference Include="GS.Time, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\GS.Time\bin\Debug\GS.Time.dll</HintPath>
+    </Reference>
+    <Reference Include="GS.Trade.Data">
+      <HintPath>..\..\GS.Trade.Data\bin\Debug\GS.Trade.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="GS.Trade.Dde">
+      <HintPath>..\..\GS.Trade.Dde\GS.Trade.Dde\bin\Debug\GS.Trade.Dde.dll</HintPath>
+    </Reference>
+    <Reference Include="GS.Trade.Strategies">
+      <HintPath>..\..\GS.Trade.Strategies\bin\Debug\GS.Trade.Strategies.dll</HintPath>
+    </Reference>
+    <Reference Include="GS.Trade.Trades, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\GS.Trade.Trades\bin\Debug\GS.Trade.Trades.dll</HintPath>
+    </Reference>
+    <Reference Include="GS.Trade.WebClients">
+      <HintPath>..\..\GS.Trade.WebClients\bin\Debug\GS.Trade.WebClients.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=6.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\GS.Trade\packages\Newtonsoft.Json.6.0.8\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Net.Http.WebRequest" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Xaml">
+      <RequiredTargetFramework>4.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="WebClients">
+      <HintPath>..\..\GS.Web.Clients\WebClients\bin\Debug\WebClients.dll</HintPath>
+    </Reference>
+    <Reference Include="WindowsBase" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+    <Page Include="MainWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DataContext\PortfolioSettings.cs" />
+    <Compile Include="EventHandlers.cs" />
+    <Compile Include="MainWindow.xaml.cs">
+      <DependentUpon>MainWindow.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="app.config" />
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <AppDesigner Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\GS.Configurations\GS.Configurations.csproj">
+      <Project>{71732837-C48B-4E09-961D-5EF9AC16E06C}</Project>
+      <Name>GS.Configurations</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\GS.Trade.DataBase\GS.Trade.DataBase.csproj">
+      <Project>{75095b3f-878e-4fee-a6d8-e998ea25add5}</Project>
+      <Name>GS.Trade.DataBase</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\GS.Trade.TradeContext\GS.Trade.TradeContext.csproj">
+      <Project>{48F7F179-CDE6-493A-A83D-9BBFE891A11E}</Project>
+      <Name>GS.Trade.TradeContext</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\GS.TradeTerminal64\GS.Trade.TradeTerminals64.csproj">
+      <Project>{627c9411-39b3-4ed1-82d4-a3ba7febc1f9}</Project>
+      <Name>GS.Trade.TradeTerminals64</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\GS.Trade\GS.Trade\GS.Trade.csproj">
+      <Project>{0D8E2D20-24CC-4C80-9F52-815F76DC0522}</Project>
+      <Name>GS.Trade</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="trans2quik.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Resource Include="Configurations\BC.Standard\Init\TradeStorages21.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\BC.Standard\Init\TradeRepositories.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\BC.Standard\Strategies\R_BkStandard_Fin_Z735P_151113.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\BC.Standard\Init\AssemblyInfoList.xml" />
+    <Resource Include="Configurations\BC.Standard\Init\Strategies.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Content Include="Configurations\BC.Standard\Strategies\R_BkStandard_Fin_Z735P_151021.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Resource Include="Configurations\BC.Standard\Strategies\R_BkStandard_Fin_Z735P_151201.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\BC.Standard\Strategies\R_BkStandard_Fin_Z7357P_151201.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Content Include="Configurations\BC.Standard\Strategies\Strat_BkStandard_Fin.Real_150903.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Resource Include="Configurations\GS.Trade.Finam\Init\Assemblies.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\GS.Trade.Finam\Init\AssemblyInfoList.xml" />
+    <Resource Include="Configurations\GS.Trade.Finam\Init\Dde_21_Prev.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\GS.Trade.Finam\Init\Dde25_180530.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\GS.Trade.Finam.Kvm\Strategies\73521_M9_190514.xml" />
+    <Resource Include="Configurations\GS.Trade.Finam.Kvm\Init\Assemblies.xml" />
+    <Resource Include="Configurations\GS.Trade.Finam.Kvm\Init\AssemblyInfoList.xml" />
+    <Resource Include="Configurations\GS.Trade.Finam.Kvm\Init\Dde.xml" />
+    <Resource Include="Configurations\GS.Trade.Finam.Kvm\Init\Dde25.xml" />
+    <Resource Include="Configurations\GS.Trade.Finam.Kvm\Init\Dde25_180530.xml" />
+    <Resource Include="Configurations\GS.Trade.Finam.Kvm\Init\Dde_2018.05.12.xml" />
+    <Resource Include="Configurations\GS.Trade.Finam.Kvm\Init\Dde_21_18.05.11.xml" />
+    <Resource Include="Configurations\GS.Trade.Finam.Kvm\Init\Dde_21_Prev.xml" />
+    <Resource Include="Configurations\GS.Trade.Finam.Kvm\Init\Dde_25_180514.xml" />
+    <Resource Include="Configurations\GS.Trade.Finam.Kvm\Init\EventLog.xml" />
+    <Resource Include="Configurations\GS.Trade.Finam.Kvm\Init\EventLog_151224.xml" />
+    <Resource Include="Configurations\GS.Trade.Finam.Kvm\Init\Strategies.xml" />
+    <Resource Include="Configurations\GS.Trade.Finam.Kvm\Init\TradeRepositories.xml" />
+    <Resource Include="Configurations\GS.Trade.Finam.Kvm\Init\TradeStorages21.xml" />
+    <Resource Include="Configurations\GS.Trade.Finam.Kvm\Strategies\Strategies.xml" />
+    <Resource Include="Configurations\GS.Trade.Finam.Kvm\Strategies\73521_M9_190624.xml" />
+    <Resource Include="Configurations\GS.Trade.Finam.Kvm\Init\AssemblyInfoList_190604.xml" />
+    <Resource Include="Configurations\GS.Trade.Finam.Kvm\Strategies\73521_M5_190807.xml" />
+    <Resource Include="Configurations\GS.Trade.Finam.Kvm\Strategies\73521_M5_190711.xml" />
+    <Resource Include="Configurations\GS.Trade.Finam.Kvm\Strategies\73521_M9_190829.xml" />
+    <Content Include="Configurations\GS.Trade.Finam\Init\Dde.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Configurations\GS.Trade.Finam\Init\Dde_21_18.05.11.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Resource Include="Configurations\GS.Trade.Finam\Init\EventLog_151224.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Content Include="Configurations\GS.Trade.Finam\Init\EventLog.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Resource Include="Configurations\GS.Trade.Finam\Init\TradeRepositories.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\GS.Trade.Finam\Init\TradeStorages21.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\GS.Trade.Finam\Strategies\RFin_Z735P_151112.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\GS.Trade.Finam\Init\Strategies.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\GS.Trade.Finam\Strategies\Ren_05_RIZ5_01.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\GS.Trade.Finam\Strategies\RFin_05_RIH6_151215.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\GS.Trade.Finam\Strategies\73521_M9_190829.xml" />
+    <Resource Include="Configurations\GS.Trade.Finam\Strategies\73521_M5_190826.xml" />
+    <Resource Include="Configurations\GS.Trade.Finam\Strategies\73521_M5_190903_1.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Content Include="Configurations\GS.Trade.Finam\Strategies\73521_M5_190902.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Resource Include="Configurations\GS.Trade.Finam\Strategies\73521_M5_190903.xml" />
+    <Resource Include="Configurations\GS.Trade.Finam\Strategies\736_M5_190930.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Content Include="Configurations\GS.Trade.Finam\Strategies\73521_M5_190919.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Resource Include="Configurations\GS.Trade.Finam\Strategies\736_M5_191001.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\GS.Trade.Finam\Strategies\736_M5_191113.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\GS.Trade.Finam\Strategies\736Z_M5_200504.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\GS.Trade.Finam\Strategies\736Z_M5_200603.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Content Include="Configurations\GS.Trade.Finam\Strategies\736Z_BRK1_01.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Configurations\GS.Trade.Finam\Strategies\736Z_M5_200602.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Configurations\GS.Trade.Finam\Strategies\736Z_M5_200601.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Resource Include="Configurations\GS.Trade.Finam\Strategies\736Z_M5_200608.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\GS.Trade.Finam\Strategies\736Z_M5_200610.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\GS.Trade.Finam\Strategies\736Z_M5_2006161.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\GS.Trade.Finam\Strategies\736Z_M5_210323.xml" />
+    <Content Include="Configurations\GS.Trade.Finam\Strategies\736_M5_191003.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Resource Include="Configurations\GS.Trade.Finam\Strategies\736_M5_191011.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Content Include="Configurations\GS.Trade.Finam\Strategies\736_M5_191107.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Resource Include="Configurations\GS.Trade.Finam\Strategies\736_M5_191219.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Content Include="Configurations\GS.Trade.Finam\Strategies\736_M5_191209.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Resource Include="Configurations\GS.Trade.Finam\Strategies\736_M5_200103.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\GS.Trade.Finam\Strategies\736_M5_200217.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\GS.Trade.Finam\Strategies\736_M5_200221.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\GS.Trade.Finam\Strategies\736_M5_200305.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\GS.Trade.Finam\Strategies\736_M5_200306.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\GS.Trade.Finam\Strategies\736_M5_200319.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Content Include="Configurations\GS.Trade.Finam\Strategies\736_M5_200325.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Configurations\GS.Trade.Finam\Strategies\736Z_M5_200424.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Configurations\GS.Trade.Finam\Strategies\RFin_05_161014.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Resource Include="Configurations\GS.Trade.Finam\Strategies\RFin_05_161110.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Content Include="Configurations\GS.Trade.Finam\Strategies\RFin_05_161109.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Configurations\GS.Trade.Finam\Strategies\RFin_05_161031.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Resource Include="Configurations\GS.Trade.Finam\Strategies\RFin_05_161110_180112.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Content Include="Configurations\GS.Trade.Finam\Strategies\RFin_05_RIZ6_161004.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Configurations\GS.Trade.Finam\Strategies\RFin_05_RIH6_160127.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Configurations\GS.Trade.Finam\Strategies\RFin_Z735P_151014.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Resource Include="Configurations\GS.Trade.Finam\Strategies\RFin_Z735P_151113.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\GS.Trade.Finam\Strategies\Strategies.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
+    </Resource>
+    <Resource Include="Configurations\GS.Trade.Finam\Strategies\SiM0_73521_05_225_92.xml" />
+    <Content Include="Configurations\GS.Trade.Finam\Strategies\Strat_Fin.Real_150609.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Resource Include="Configurations\BC.Standard\Init\Dde.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\BC.Standard\Init\EventLog.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\GS.Trade.Open\Init\TradeRepositories.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\GS.Trade.Open\Init\TradeStorages21.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Ren.Simulate\Init\Dde_180712.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Ren.Simulate\Init\EventLogOld.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Ren.Simulate\Init\TradeRepositories.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Ren.Simulate\Init\TradeStorages21.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\GS.Trade.Open\Strategies\ROpen_Z735P_151113.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\GS.Trade.Simulate\Init\Dde_21_180514.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\GS.Trade.Finam\Strategies\Z73521_M5_RIM8_15_45_150.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\GS.Trade.Finam\Strategies\Z73521_M5_RIM8_15_150_180424.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\GS.Trade.Finam\Strategies\Z73523_M5_RIM8_150_5-15_%283,5-5,0%29_01.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\GS.Trade.Finam\Strategies\Z73523_M5_SRM8_150_Test_180504.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\GS.Trade.Finam\Strategies\Z73523_M5_SiM8_150_Test_180507.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\GS.Trade.Finam\Strategies\Z73523_M5_RIM8_150_5-15_180510.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\GS.Trade.Finam\Strategies\Z73523_M5_RIM8_150_5-15_180510_Real.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\GS.Trade.Finam\Strategies\Z73523_M5_RIM8_150_5-15_180524_Real.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\GS.Trade.Finam\Strategies\Z73523_M5_RIM8_150_5-15_180531_Real.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\GS.Trade.Finam\Strategies\Z73523_M5_RIM8_150_5-15_180601.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\GS.Trade.Finam\Strategies\Z73523_M5_RIM8_150_5-15_180603.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\GS.Trade.Finam\Strategies\Z73523_M5_RIM8_150_5-15_180608.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\GS.Trade.Finam\Strategies\Z73523_M5_RIM8_150_5-15_180609.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\GS.Trade.Finam\Strategies\Z73523_M5_RIM8_150_5-15_180618.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\GS.Trade.Finam\Strategies\Z73523_M5_RIU8_150_5-15_180703.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\GS.Trade.Finam\Strategies\Z73523_M5_RIU8_150_5-15_180710.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\GS.Trade.Finam\Strategies\Z73523_M5_RIU8_150_5-15_180806.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\GS.Trade.Finam\Strategies\Z73523A72_TPT_M5_RIU8_150_5-15_%283,5-5,0%29_4%28519%29_8%28519%29_5%28519%29_01.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\GS.Trade.Finam\Strategies\Z73523A52_TPT_M5_RIU8_150_5-15_%283,5-5,0%29_4%28519%29_8%28519%29_5%28519%29_01.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\GS.Trade.Finam\Strategies\Z73523A72_TPT_M5_RIU8_150_5_%283,5-5,0%29_4%2819%29_5%28519%29_8%28519%29_01.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\GS.Trade.Finam\Strategies\Z73523A72_TPT_M5_RIU8_150_5-15_%283,5-5,0%29_4%2819%29_8%28519%29_5%28519%29_01.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\GS.Trade.Finam\Strategies\Z73523A72_TPT_M5_RIU8_150_4%2819%29_8%28519%29_5%28519%29_01.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\GS.Trade.Finam\Strategies\Z73523A72_TPT_M5_RI_150_4%2819%29_8%28519%29_5%28519%29_01.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\GS.Trade.Finam\Strategies\Z73523A72_Contest_181003_01.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\GS.Trade.Finam\Strategies\Z73523A72_TPT_M58_RIZ8_P_MA2%280%29_150_05-15_01.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\GS.Trade.Finam\Strategies\Z73523A72_TPT_M58_RIZ8_P_181025.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\GS.Trade.Finam\Strategies\Z73523A72_TPT_M58_RIZ8_P_181101.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\GS.Trade.Finam\Strategies\Z73523A72_TPT_M58_RIZ8_P_181130.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\GS.Trade.Finam\Strategies\Z73523A72_TPT_M58_RIH9_P_181221.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\GS.Trade.Finam\Strategies\Z73523A76_TPT_M58_RIH9_P_4%28225%29_190107.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\GS.Trade.Finam\Strategies\Z73523A76_TPT_M58_RIH9_P_4%28225%29_190122.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\GS.Trade.Finam\Strategies\Z73523A76_TPT_M58_RIH9_P_4%28225%29_190123.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\GS.Trade.Finam\Strategies\Z73523A76_TPT_M58_RIH9_S_4%28225%29_190206.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\GS.Trade.Finam\Strategies\Z736_73521_M9_190320.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Content Include="Configurations\GS.Trade.Finam\Strategies\Z73523_M5_RIU8_150_5-15_180823.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Resource Include="Configurations\GS.Trade.Finam\Strategies\73521_M9_190327.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\GS.Trade.Open.Kvm\Init\AssemblyInfoList.xml" />
+    <Resource Include="Configurations\GS.Trade.Open.Kvm\Init\AssemblyInfoList1.xml" />
+    <Resource Include="Configurations\GS.Trade.Open.Kvm\Init\Dde.xml" />
+    <Resource Include="Configurations\GS.Trade.Open.Kvm\Init\Dde_180730.xml" />
+    <Resource Include="Configurations\GS.Trade.Open.Kvm\Init\EventLog.xml" />
+    <Resource Include="Configurations\GS.Trade.Open.Kvm\Init\EventLog1.xml" />
+    <Resource Include="Configurations\GS.Trade.Open.Kvm\Init\EventLog_180730.xml" />
+    <Resource Include="Configurations\GS.Trade.Open.Kvm\Init\Strategies.xml" />
+    <Resource Include="Configurations\GS.Trade.Open.Kvm\Init\TradeRepositories.xml" />
+    <Resource Include="Configurations\GS.Trade.Open.Kvm\Init\TradeStorages21.xml" />
+    <Resource Include="Configurations\GS.Trade.Open.Kvm\Strategies\73521\SiM9_73521_01.xml" />
+    <Resource Include="Configurations\GS.Trade.Open.Kvm\Strategies\73521\SiM9_73521_02.xml" />
+    <Resource Include="Configurations\GS.Trade.Open.Kvm\Strategies\73521\SRM9_73521_01.xml" />
+    <Content Include="Configurations\GS.Trade.Open\Init\AssemblyInfoList.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Resource Include="Configurations\GS.Trade.Open\Init\Dde.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\GS.Trade.Open\Init\EventLog.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Content Include="Configurations\GS.Trade.Open\Init\EventLog_180730.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Resource Include="Configurations\GS.Trade.Open\Strategies\SR_73521_180221.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\GS.Trade.Open\Strategies\RIM8_73521_180315.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\GS.Trade.Open\Strategies\SiM8_73521_180315.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\GS.Trade.Open\Strategies\SiH9_73521_190225.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\GS.Trade.Open\Strategies\SiM9_73521_190320.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\GS.Trade.Open\Strategies\73521\SiM9_73521_01.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\GS.Trade.Open\Strategies\73521\SRM9_73521_01.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\GS.Trade.Open\Strategies\73521\SiM9_73521_02.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\GS.Trade.Open\Strategies\736_M5_191011.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\GS.Trade.Open\Strategies\736_M5_191219.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\GS.Trade.Open\Strategies\73521\SiH0_73521_05.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\GS.Trade.Open\Strategies\736_M5_200103.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\GS.Trade.Open\Strategies\73523A72\736_M5_200103.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\GS.Trade.Open\Strategies\736_M5_200119.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\GS.Trade.Open\Strategies\73521\SiM0_73521_05.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\GS.Trade.Open\Strategies\736Z_M5_200616.xml" />
+    <Resource Include="Configurations\GS.Trade.Open\Strategies\736Z_M5_210104.xml" />
+    <Resource Include="Configurations\GS.Trade.Open\Init\TradeRepositoriesDb3.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\GS.Trade.Open\Strategies\736Z_M5_210318.xml" />
+    <Resource Include="Configurations\GS.Trade.Open\Strategies\736Z_M5_210323.xml" />
+    <Resource Include="Configurations\GS.Trade.Open\Strategies\736Z_M5_210921.xml" />
+    <Content Include="Configurations\GS.Trade.Open\Strategies\736Z_M5_210617.xml" />
+    <Content Include="Configurations\GS.Trade.Open\Strategies\Si_73521_180207_01.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Configurations\GS.Trade.Open\Strategies\RI_73521_180207_01.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Resource Include="Configurations\GS.Trade.Open\Strategies\Strat_Open.Real_150622.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\GS.Trade.Open\Strategies\SRM8_73521_180315.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\GS.Trade.Simulate\Init\Dde_180530.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\GS.Trade.Simulate\Init\EventLog_180530.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\GS.Trade.Simulate\Init\Dde.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\GS.Trade.Open\Strategies\Z73523A5_TPT_M5_RIU8_150_5-15_%283,5-5,0%29_01.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\GS.Trade.Open\Strategies\Z73523A5_TPT_M5_RIU8_150_5-15_4%281010%29%283,5-5,0%29_01.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\GS.Trade.Open\Strategies\Z73523_M5_RIU8_150_5-15_180806.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\GS.Trade.Open\Strategies\Z73523A52_TPT_M5_RIU8_150_5-15_%283,5-5,0%29_01.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\GS.Trade.Open\Strategies\Z73523A52_TPT_M5_RIU8_150_019_10_%283,5-10%29_01.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\GS.Trade.Open\Strategies\Z73523A5_TPT_M5_RIU8_150_5-15_4%28019%29%283,5-5,0%29_01.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\GS.Trade.Open\Strategies\Z73523_M5_RIU8_150_5-15_180823.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\GS.Trade.Open\Strategies\Z73523A52_TPT_M5_RIU8_150_5-15_%283,5-5,0%29_4%28519%29_8%28519%29_5%28519%29_01.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\GS.Trade.Open\Strategies\73523A72\Z73523A72_TPT_M58_RIZ8_MA2%280%29_150_05-15_01.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\GS.Trade.Open\Strategies\73523A72\Z73523A72_TPT_M58_RIZ8_150_05_%283,5-5,0%29_4%2819%29_5%28519%29_8%28019%29_01.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\GS.Trade.Open\Strategies\73523A72\Z73523A72_TPT_M58_RIZ8_150_05_%283,5-5,0%29_4%2819%29_5%28519%29_8%28519%29_01.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\GS.Trade.Open\Strategies\73523A72\Z73523A72_TPT_M58_RIZ8_150_05_%283,5-5,0%29_4%28519%29_5%28519%29_8%28519%29_01.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\GS.Trade.Open\Strategies\73523A72\Z73523A72_TPT_M58_RIZ8_150_10_%283,5-5,0%29_4%2819%29_5%28519%29_8%28019%29_01.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\GS.Trade.Open\Strategies\73523A72\Z73523A72_TPT_M58_RIZ8_150_10_%283,5-5,0%29_4%2819%29_5%28519%29_8%28519%29_01.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\GS.Trade.Open\Strategies\73523A72\Z73523A72_TPT_M58_RIZ8_150_10_%283,5-5,0%29_4%28519%29_5%28519%29_8%28519%29_01.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\GS.Trade.Open\Strategies\73523A72\Z73523A72_TPT_M58_RIZ8_150_15_%283,5-5,0%29_4%2819%29_5%28519%29_8%28019%29_01.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\GS.Trade.Open\Strategies\73523A72\Z73523A72_TPT_M58_RIZ8_150_15_%283,5-5,0%29_4%2819%29_5%28519%29_8%28519%29_01.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\GS.Trade.Open\Strategies\73523A72\Z73523A72_TPT_M58_RIZ8_150_15_%283,5-5,0%29_4%28519%29_5%28519%29_8%28519%29_01.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\GS.Trade.Open\Strategies\Z736_SiH9_PE_401_1_60_900_01.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\GS.Trade.Open\Strategies\Z736_SiM9_PE_401_1_60_900_01.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\GS.Trade.Open\Strategies\Z736_BRV9_PE_401_1_60_900_01.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\GS.Trade.Open\Strategies\Z736_BRX9_PE_401_1_60_900_01.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\GS.Trade.Open\Strategies\Strategies.xml" />
+    <Content Include="Configurations\GS.Trade.Open\Strategies\736Z_M5_231003.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Configurations\GS.Trade.Simulate\Init\Dde_180712.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Configurations\GS.Trade.Simulate\Init\EventLog.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Configurations\GS.Trade.Simulate\Init\EventLog_180514.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Resource Include="Configurations\GS.Trade.Simulate\Init\TradeRepositories.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\GS.Trade.Simulate\Init\TradeStorages21.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\GS.Trade.Simulate\Strategies\Strat_Open.Sim_151113.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\GS.Trade.Simulate\Strategies\SOpen_Z718_01_150910.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\GS.Trade.Simulate\Strategies\SOpen_Z730_01_150910.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\GS.Trade.Simulate\Strategies\SOpen_Z732_01_150910.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\GS.Trade.Simulate\Strategies\SOpen_Z7350_01_150910.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\GS.Trade.Simulate\Strategies\SOpen_Z7350_01_150910_FE.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\GS.Trade.Simulate\Strategies\SOpen_Z735_01_150910.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\GS.Trade.Simulate\Strategies\SOpen_Z735_01_150910_FE.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\GS.Trade.Simulate\Strategies\SOpen_Z735_CT_01_151002.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\GS.Trade.Simulate\Strategies\SOpen_Z736_01_150910.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\GS.Trade.Simulate\Strategies\SOpen_Z736_01_150910_PE.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\GS.Trade.Simulate\Strategies\SOpen_Z7372_01_150921.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\GS.Trade.Simulate\Strategies\SOpen_Z737_01_150910.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\GS.Trade.Simulate\Strategies\SOpen_Z7357_PE.M5_RIZ5_01.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\GS.Trade.Open\Init\AssemblyInfoList1.xml" />
+    <Resource Include="Configurations\GS.Trade.Simulate\Init\AssemblyInfoList_161214.xml" />
+    <Resource Include="Configurations\Ren.Simulate\Init\AssemblyInfoListOld.xml" />
+    <Resource Include="Configurations\Ren.Simulate\Init\Strategies.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\GS.Trade.Open\Init\Strategies.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\GS.Trade.Simulate\Init\Strategies.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\GS.Trade.Open\Strategies\ROpen_05_RIZ5_151201.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\GS.Trade.Open\Strategies\ROpen_05_RIZ5_151202.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\GS.Trade.Open\Strategies\ROpen_05_RIZ5_151208.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\GS.Trade.Open\Strategies\ROpen_05_RIH6_151215.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Ren.Simulate\Strategies\Ren_05_RIH6_01.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Content Include="Configurations\GS.Trade.Open\Init\EventLog1.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Configurations\GS.Trade.Open\Strategies\ROpen_05_RIH6_160129.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Resource Include="Configurations\Ren.Simulate\Strategies\Ren_05_RI_161209.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Ren.Simulate\Init\EventLog_190206.xml">
+      <SubType>Designer</SubType>
+    </Resource>
+    <Resource Include="Configurations\Ren.Simulate\Init\Assemblies.xml" />
+    <Resource Include="Configurations\Ren.Simulate\Init\AssemblyInfoList.xml" />
+    <Resource Include="Configurations\GS.Trade.Simulate\Strategies\Strat_Open.Sim_161214_Old4.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\GS.Trade.Simulate\Strategies\Strat_Open.Sim_161214_Old5.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\GS.Trade.Simulate\Strategies\Strat_Open.Sim_161214_Old6.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\GS.Trade.Simulate\Strategies\Strat_Open.Sim_161214_Old7_171221.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\GS.Trade.Simulate\Strategies\738T_180213.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Content Include="Configurations\GS.Trade.Simulate\Strategies\738T_01.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Resource Include="Configurations\GS.Trade.Simulate\Strategies\Strat_Open.Sim_161214_Old8_180213.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Content Include="Configurations\GS.Trade.Simulate\Strategies\Strat_Open.Sim_161214.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
+    </Content>
+    <Resource Include="Configurations\GS.Trade.Simulate\Init\Assemblies.xml" />
+    <Resource Include="Configurations\GS.Trade.Simulate\Init\AssemblyInfoList.xml" />
+    <Resource Include="Configurations\GS.Trade.Simulate\Strategies\Strat_Open.Sim_161214_Old.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\GS.Trade.Simulate\Strategies\Strat_Open.Sim_161214_Old1.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\GS.Trade.Simulate\Strategies\Strat_Open.Sim_161214_Old2.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\GS.Trade.Simulate\Strategies\Strat_Open.Sim_161214_Old3.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\GS.Trade.Simulate\Strategies\Z736_RIM8_PE_403_1_5-60_01.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\GS.Trade.Simulate\Strategies\Z736_RIM8_PE_401_1_5-60_01.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\GS.Trade.Simulate\Strategies\Z738F_RIM8_PE_401_1_05.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\GS.Trade.Simulate\Strategies\Z738F_RIM8_PE_401_1_10.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\GS.Trade.Simulate\Strategies\Z738F_RIM8_PE_401_1_15.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\GS.Trade.Simulate\Strategies\Z738F_SRM8_PE_401_1_05.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\GS.Trade.Simulate\Strategies\Z738F_SRM8_PE_401_1_10.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\GS.Trade.Simulate\Strategies\Z738F_SRM8_PE_401_1_15.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\GS.Trade.Simulate\Strategies\Z73521_RIM8_5_60_01.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\GS.Trade.Simulate\Strategies\Z73523_M5_RIM8_150_5-15_180510.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Ren.Simulate\Init\Dde.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\GS.Trade.Simulate\Strategies\Z73521_RIU8_5_60_01.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\GS.Trade.Simulate\Strategies\Z73523_M5_RIU8_150_5-15_180510.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Ren.Simulate\Init\EventLog.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Content Include="Configurations\Ren.Simulate\Strategies\738T_RIM8_01.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Configurations\Ren.Simulate\Strategies\738T_01.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Configurations\Ren.Simulate\Strategies\Ren_05_RIH6_161003.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Configurations\Ren.Simulate\Strategies\Ren_05_RIH6_160129.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Configurations\Ren.Simulate\Strategies\Ren_05_RIZ5_01.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Resource Include="Configurations\Ren.Simulate\Strategies\Ren_05_RI_161209_Old.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Ren.Simulate\Strategies\Ren_05_RI_161209_Old1.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Ren.Simulate\Strategies\Ren_05_RI_161209_Old2.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Ren.Simulate\Strategies\Ren_05_RI_161209_Old3.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Ren.Simulate\Strategies\Ren_05_RI_161209_Old4_171221.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Ren.Simulate\Strategies\Ren_05_RI_161209_Old5_180212.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Ren.Simulate\Strategies\Ren_05_RI_161209_Old6_180221.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Ren.Simulate\Strategies\738C_RIM8_180315.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Content Include="Configurations\Ren.Simulate\Strategies\RIH8_738C_180221.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Configurations\Ren.Simulate\Strategies\Ren_Z735P_151021.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Resource Include="Configurations\Ren.Simulate\Strategies\Strategies.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Ren.Simulate\Init\EventLogMem.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Ren.Simulate\Init\AssembliesOld.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Content Include="Configurations\Ren.Simulate\Strategies\Ren_Z7357_PE.M5_RIZ5_01.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Resource Include="Configurations\Renessanse\Init\AssemblyInfoList.xml" />
+    <Resource Include="Configurations\Ren.Simulate\Strategies\738E_RIM8_180315.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Content Include="Configurations\Ren.Simulate\Strategies\RIH8_738E_180221.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Resource Include="Configurations\Ren.Simulate\Strategies\Z73523A72_TPT_M58_RIZ8_P_MA2%280%29_150_05-15_01.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Ren.Simulate\Strategies\Z73523A75_TPT_M58_RIH9_P_MA2%280,2,3,4%29_4%28019%29_150_05-15_01.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Ren.Simulate\Strategies\Z73523A75_TPT_M58_RIH9_P_MA2%280,2,3,4%29_4%28225%29_150_05-15_01.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Content Include="Configurations\Renessanse\Init\Dde.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Configurations\Renessanse\Init\EventLog.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Resource Include="Configurations\Renessanse\Init\TradeRepositories.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Renessanse\Init\TradeStorages21.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Configurations\Renessanse\Strategies\Ren_Z735P_181021.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Content Include="Configurations\Renessanse\Strategies\Ren_Z735P_151021.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Configurations\Renessanse\Strategies\Strat_Ren_Real_150622.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Configurations\GS.Trade.Open\Init\Dde_180730.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Configurations\GS.Trade.Open\Strategies\ROpen_Z735P_151021.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Configurations\GS.Trade.Open\Strategies\Strat_Open.Real_150622_02.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Exceptions\HTMLPage1.html">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="FinamTickers.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="FinamTimeInts.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Init\736Z_M5_210921.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Init\ConfigurationResourse1.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Init\ConfigurationResourse.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Init\Dde.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Init\EventHubStrat1.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Init\EventHubStrat.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Init\EventHub1.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Init\EventLog.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Init\EventLogMemProcTask.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Init\EventLogMem.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Init\EventLog_230925.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Init\EventLogOld.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Init\EventLogs.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Init\Moex.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Init\StrategiesType.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Init\TickersAll.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Init\Tickers.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Init\Strategies.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Init\ProcessManager3.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Init\QuikTransactions.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Init\Portfolios.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Init\TradeContext.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Init\TradeContextInit.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Init\TradeRepositories.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Init\TradeStorage.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Init\TradeStorages21.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Init\TradeStorages.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Init\TradeStorages1.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Init\EventHub.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Init\WebClients.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Init\WebConfigurator.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Repozitary\Xml\Accounts.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
+    </Content>
+    <Resource Include="Repozitary\Xml\Tickers_150613.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Repozitary\Xml\Tickers_151215.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Repozitary\Xml\Tickers_161212.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Repozitary\Xml\Tickers_170315.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Repozitary\Xml\Tickers_170614.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Repozitary\Xml\Tickers_171221.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Repozitary\Xml\Tickers_180311.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Repozitary\Xml\Tickers_210921.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Content Include="Repozitary\Xml\Tickers_150919.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Repozitary\Xml\Tickers_141211.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Repozitary\Xml\Tickers_150316.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Repozitary\Xml\Tickers_1403132.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Repozitary\Xml\TimePlans.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Repozitary\Xml\TimePlans2.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Repozitary\Xml\TimePlans15.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Repozitary\Xml\TimePlans3.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Repozitary\Xml\Tickers_131230.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Repozitary\Xml\Tickers_140213.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Repozitary\Xml\Tickers_140313.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Repozitary\Xml\Tickers.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Resource Include="Repozitary\Xml\Tickers_140325.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Content Include="SpsInit.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Strategies\Init\Strat_BkStandard_Fin.Real_150903.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Strategies\Init\Strat_Fin.Real_150609.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Strategies\Init\Strat_Open.Real_150622.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Strategies\Init\Strat_Open.Sim_150910.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Strategies\Real\150215\Real_01.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Strategies\Real\150215\Real_02.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Strategies\Real\150215\Real_03.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Strategies\Real\150215\Real_05.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Strategies\Real\150215\Real_12_06.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Strategies\Real\150215\Real_08.xml" />
+    <Content Include="Strategies\Real\150215\Real_09.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Strategies\Real\150215\Real_10.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Strategies\Real\150215\Real_11.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Strategies\Real\150215\Real_116_03.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Strategies\Real\150215\Real_117_01.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Strategies\Real\150215\Real_12_05.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Strategies\Real\150215\Real_11820_01.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Strategies\Real\150215\Real_12.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Strategies\Real\150215\Real_12_01.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Strategies\Real\150215\Real_12_02.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Strategies\Real\150215\Real_12_03.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Strategies\Real\150215\Real_21_01.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Strategies\Real\150215\Real_30_01.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Strategies\Real\150215\Real_30_02.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Strategies\Real\150215\Real_31_01.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Strategies\Real\150215\Real_31_02.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Strategies\Real\150215\Real_31_03.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Strategies\Real\150215\Real_32_01.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Strategies\Real\150215\Real_33_01.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Strategies\Real\150215\Real_33_02.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Strategies\Real\150215\Real_35_01.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Strategies\Real\150215\Real_35_02.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Strategies\Real\150215\Real_35_03.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Strategies\Real\150215\Real_35_05.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Strategies\Real\150215\Real_35_06.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Strategies\Real\150215\Real_35_09.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Strategies\Real\150215\Real_35_10.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Strategies\Real\150215\Real_Z01_01.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Strategies\Real\150215\Real_Z02_01.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Strategies\Real\150215\Real_Z03_01.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Strategies\Real\150215\Real_Z102_01.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Strategies\Real\150215\Real_Z102_03.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Strategies\Real\150215\Real_Z102_03_130213.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Strategies\Real\150215\Real_Z102_05.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
+    </Content>
+    <Resource Include="Strategies\Real\150215\Real_Z102_06.xml">
+      <SubType>Designer</SubType>
+    </Resource>
+    <Content Include="Strategies\Real\150215\Real_Z102_15.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Strategies\Real\150215\Real_Z102_16.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Strategies\Real\150215\Real_Z_01.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Strategies\Real\150215\Real_Z_03.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Strategies\Real\Z706\RFin_Z70608_553_5.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Strategies\Real\Z706\RFin_Z70608_553.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Strategies\Real\Z706\RFin_Z706_55227F2.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Strategies\Real\Z706\RFin_StratFiles01.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Strategies\Real\Z706\RFin_Z706_55226F2.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Strategies\Real\Z706\RFin_Z708_06.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Strategies\Real\Z706\RFin_Z708_05.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Strategies\Real\Z706\RFin_Z708_03.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Strategies\Real\Z706\RFin_Z708_02.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Strategies\Real\Z706\RFin_Z732_150812.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Strategies\Real\Z706\RFin_Z735P_151014.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Strategies\Real\Z706\RFin_Z735P_151007.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Strategies\Real\Z706\RFin_Z735P_150930.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Strategies\Real\Z706\RFin_Z735_150816.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Strategies\Real\Z706\RFin_Z736_150831.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Strategies\Real\Z706\RFin_Z736_150830.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Strategies\Real\Z706\RFin_Z736_150826.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Strategies\Real\Z706\RFin_Z735_150826.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Strategies\Real\Z706\RFin_Z735_150824.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Strategies\Real\Z706\RFin_Z735_150820.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Strategies\Real\Z706\RFin_Z735P_150929.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Strategies\Real\Z706\RFin_Z737_150923.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Strategies\Real\Z706\RFin_Z737_150921.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Strategies\Real\Z706\RFin_Z737_150915.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Strategies\Real\Z706\ROpen_Z735P_151021.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Strategies\Real\Z706\ROpen_Z735P_151014.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Strategies\Real\Z706\ROpen_Z735P_151007.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Strategies\Real\Z706\ROpen_Z735P_150930.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Strategies\Real\Z706\ROpen_Z735_150816.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Strategies\Real\Z706\ROpen_Z732_150812.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Strategies\Real\Z706\ROpen_Z733_150810.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Strategies\Real\Z706\ROpen_Z732_150809.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Strategies\Real\Z706\RFin_Z7_150717.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Strategies\Real\Z706\RFin_Z7_150727.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Strategies\Real\Z706\RFin_Z732_150809.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Strategies\Real\Z706\RFin_Z7_150727_1.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Strategies\Real\Z706\RFin_Z736_150903_01.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Strategies\Real\Z706\RFin_Z737_150914.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Strategies\Real\Z706\ROpen_Z735P_150929.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Strategies\Real\Z706\ROpen_Z737_150924.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Strategies\Real\Z706\ROpen_Z737_150923.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Strategies\Real\Z706\ROpen_Z737_150921.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Strategies\Real\Z706\ROpen_Z737_150915.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Strategies\Real\Z706\ROpen_Z737_150914.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Strategies\Real\Z706\ROpen_Z736_150903_01.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Strategies\Real\Z706\R_BkStandard_Fin_Z735P_151021.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Strategies\Real\Z706\R_BkStandard_Fin_Z735P_151014.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Strategies\Real\Z706\R_BkStandard_Fin_Z735P_151007.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Strategies\Real\Z706\R_BkStandard_Fin_Z735P_151002.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Strategies\Real\Z706\R_BkStandard_Fin_Z735P_150930.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Strategies\Real\Z706\R_BkStandard_Fin_Z737_150921.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Strategies\Real\Z706\R_BkStandard_Fin_Z737_150918.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Strategies\Real\Z706\R_BkStandard_Fin_Z737_150915.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Strategies\Real\Z706\R_BkStandard_Fin_Z736_150903.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Strategies\Real\Z706\ROpen_Z736_150903.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Strategies\Real\Z706\ROpen_Z736_150831.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Strategies\Real\Z706\ROpen_Z736_150830.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Strategies\Real\Z706\ROpen_Z736_150826.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Strategies\Real\Z706\ROpen_Z736_150825.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Strategies\Real\Z706\ROpen_Z735_150824.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Strategies\Real\Z706\ROpen_Z735_150820.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Strategies\Real\Z706\ROpen_Z7_150727.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Strategies\Real\Z706\ROpen_Z7_150709.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Strategies\Real\Z706\ROpen_Z720_01.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Strategies\Real\Z706\ROpen_Z710_303401_01.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Strategies\Real\Z706\RFin_Z710_303401_01.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Strategies\Real\Z706\RFin_Z720_01.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Strategies\Real\Z706\RFin_Z712_14_01.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Strategies\Real\Z706\RFin_Z712_16_01.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Strategies\Real\Z706\RFin_Z710_16_01.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Strategies\Real\Z706\RFin_Z710_033.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Strategies\Real\Z706\RFin_Z710_032.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Strategies\Real\Z706\RFin_Z710_03.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Strategies\Real\Z706\RFin_Z710_02.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Strategies\Real\Z706\RFin_Z712_01.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Strategies\Real\Z706\RFin_Z710_01.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Strategies\Real\Z706\RFin_Z709_02.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Strategies\Real\Z706\RFin_Z709_01.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Strategies\Real\Z706\ROpen_Z7_150727_1.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Strategies\Real\Z706\SOpen_Z710_01_2506_M5.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Strategies\Real\Z706\SOpen_Z710_02_25_M5_2.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Strategies\Real\Z706\SOpen_Z710_02_25_M5_401.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Strategies\Real\Z706\SOpen_Z710_02_25_M5.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Strategies\Real\Z706\SOpen_Z710_02_25.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Strategies\Real\Z706\SOpen_Z710_01_25.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Strategies\Real\Z706\SFin_Z712_01.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Strategies\Real\Z706\SFin_Z710_01.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Strategies\Real\Z706\SFin_Z709_01.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Strategies\Real\Z706\SFin_Z708_03.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Strategies\Real\Z706\SFin_Z708_02.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Strategies\Real\Z706\SFin_Z708_01.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Strategies\Real\Z706\RFin_Z708_01.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Strategies\Real\Z706\SOpen_Z710_01_2506.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Strategies\Real\Z706\SOpen_Z712_303_01.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Strategies\Real\Z706\SOpen_Z714_032.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Strategies\Real\Z706\SOpen_Z716_01.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Strategies\Real\Z706\SOpen_Z718_01_150910.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Strategies\Real\Z706\SOpen_Z730_01_150910.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Strategies\Real\Z706\SOpen_Z730_01_150816.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Strategies\Real\Z706\SOpen_Z732_01_150910.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Strategies\Real\Z706\SOpen_Z7350_01_150910_FE.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Strategies\Real\Z706\SOpen_Z7350_01_150910.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Strategies\Real\Z706\SOpen_Z7350_01_150816_FE.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Strategies\Real\Z706\SOpen_Z7350_01_150816.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Strategies\Real\Z706\SOpen_Z732_01_150816.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Strategies\Real\Z706\SOpen_Z735_CT_01_151002.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Strategies\Real\Z706\SOpen_Z7372_01_150921.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Strategies\Real\Z706\SOpen_Z7372_01_150910.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Strategies\Real\Z706\SOpen_Z737_01_150910.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Strategies\Real\Z706\SOpen_Z735_01_150910_FE.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Strategies\Real\Z706\SOpen_Z735_01_150910.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Strategies\Real\Z706\SOpen_Z735_01_150816_FE.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Strategies\Real\Z706\SOpen_Z736_01_150910.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Strategies\Real\Z706\SOpen_Z736_01_150910_PE.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Strategies\Real\Z706\SOpen_Z736_01_150816_PE.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Strategies\Real\Z706\SOpen_Z736_01_150816.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Strategies\Real\Z706\SOpen_Z735_01_150816.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Strategies\Real\Z706\SOpen_Z721_01.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Strategies\Real\Z706\SOpen_Z720_01.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Strategies\Real\Z706\SOpen_Z718_01.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Strategies\Real\Z706\SOpen_Z717_01.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Strategies\Real\Z706\Strat_BkStandard_Fin.Real_150903.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Strategies\Real\Z706\Strat_Open.Real_150622.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Strategies\Real\Z706\Strat_Open.Sim_150910.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Strategies\Real\Z706\Strat_Open.Sim_150606.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Strategies\Real\Z706\Strat_Open.Sim_150414.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Strategies\Real\Z706\Strat_Open.Sim_150303.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Strategies\Real\Z706\Strat_VTB.Real_150117.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Strategies\Real\Z706\Strat_Open.Sim_150225.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Strategies\Real\Z706\Strat_Fin.Real_150609.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Strategies\Real\Z706\Strat_VTB.Real_150506.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Strategies\Real\Z706\Strat_VTB.Real_150423.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Strategies\Real\Z706\Strat_VTB.Real_150414.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Strategies\Real\Z706\Strat_VTB.Real_150330.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Strategies\Real\Z706\Strat_VTB.Real_150325.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Strategies\Real\Z706\Strat_VTB.Real_150303.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Strategies\Real\Z706\Strat_VTB.Real_150226.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Strategies\Real\Z706\Strat_VTB.Real_150224.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Strategies\Real\Z706\Strat_VTB.Real_150216.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Strategies\Real\Z706\Strat_VTB.Real_150209.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Strategies\Real\Z706\Strat_VTB.Real_150205.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Strategies\Real\Z706\Strat_VTB.Real_150203.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Strategies\Real\Z706\Strat_VTB.Real_150201.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Strategies\Real\Z706\Strat_VTB.Real_150129.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Strategies\Real\Z706\Strat_VTB.Real_150123.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Strategies\Real\Z706\Strat_VTB.Real_02.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Strategies\Real\Z706\S_VTB.Real_553_63_01.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Strategies\Real\Z706\SOpen_Z714_03.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Strategies\Simulate\S_Z105_01.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Strategies\Simulate\S_Z105_02.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Strategies\Simulate\S_Z507_01.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Strategies\Simulate\S_Z508_01.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Strategies\Simulate\S_Z508_02.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Strategies\Simulate\S_Z514_01.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Strategies\Simulate\Simul_01.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Strategies\Simulate\S_Z517_01.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Strategies\Simulate\S_Z601_01.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Strategies\Simulate\S_Z603_01.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Strategies\Simulate\S_Z704_01.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Strategies\Simulate\S_Z705_02OpR.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Strategies\Simulate\S_Z705_02FR.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Strategies\Simulate\Z706\Strat_VTB.Real_01.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Strategies\Simulate\Z706\S_VTB.Real_5522_6.3.3.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Strategies\Simulate\Z706\S_VTB.Real_5522_6.3.4.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Strategies\Simulate\Z706\S_VTB.Real_5522_6.3.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Strategies\Simulate\Z706\S_VTB.Real_5522_6.1.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Strategies\Simulate\Z706\S_VTB.Real_55501.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Strategies\Simulate\Z706\Strat_VTB.Real_02.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Strategies\Simulate\Z706\S_Z706_003.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Strategies\Simulate\Z706\S_Z706_003A.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Strategies\Simulate\Z706\S_Z706_003_SRM.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Strategies\Simulate\Z706\S_Z706_003A_SRM.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Strategies\Simulate\Z706\S_Z706_003_GZM.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Strategies\Simulate\Z706\S_Z706_003A_GZM.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Strategies\Simulate\Z706\S_Z706_003_SiM.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Strategies\Simulate\Z706\S_Z706_003A_SiM.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Strategies\Simulate\Z706\S_Z706_003_LKM.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Strategies\Simulate\Z706\S_Z706_003A_LKM.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Strategies\Simulate\Z706\S_Z706_003A_Eu.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Strategies\Simulate\Z706\S_Z706_003_Eu.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Strategies\Simulate\Z706\S_Z706_551.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Strategies\Simulate\Z706\S_Z706_552.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Strategies\Simulate\Z706\S_Z706_553.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Strategies\Simulate\Z706\S_VTB.Real_55227_01.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Strategies\Simulate\Z706\S_VTB.Real_55222_01.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Strategies\Simulate\Z706\S_VTB.Real_55226_01.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Strategies\StratFiles1.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Strategies\StratFiles.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Strategies\StratFilesF3.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Strategies\Test\Test_00.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Strategies\Test\Test_01.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Resource Include="Strategies\Test\Test_116.xml" />
+    <Content Include="Strategies\Test\Test_116_01.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Strategies\Test\Test_116_02.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Strategies\Test\Test_11820_01.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Resource Include="Strategies\Train\Train_08.xml" />
+    <Content Include="Strategies\Test\Test_Z707_002.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Strategies\Train\Train_Z104_02_Sp6.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Strategies\Train\Train_Z104_03_Sp2.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Strategies\Train\Train_Z104_05_Sp2.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Strategies\Train\Train_Z105_01.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Strategies\Train\Tr_Z514_01.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Strategies\Train\Tr_Z514_02.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Strategies\Train\Train_35_02.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Strategies\Train\Train_09.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Strategies\Train\Train_10.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Strategies\Train\Train_12.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Strategies\Train\Train_30_01.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Strategies\Train\Train_31_01.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Strategies\Train\Train_35_01.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Strategies\Train\Train_35_03.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Strategies\Train\Train_Z00101.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Strategies\Train\Train_Z101_01.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Strategies\Train\Train_Z101_02.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Strategies\Train\Train_Z101_03.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Strategies\Train\Train_Z104_01.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Strategies\Train\TrSpot_35_01.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Strategies\Train\TrSpot_Z101.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Strategies\Train\Train_Z102_01.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Strategies\Train\Train_Z103_01.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Strategies\Real\150215\Real_Z102_02.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Strategies\Train\Tr_Z601_01.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Strategies\Train\Tr_Z603_01.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Strategies\Train\Tr_Z704_01.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Strategies\Train\Tr_Z704_02.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Strategies\Train\Tr_Z704_03.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Strategies\Train\Tr_Z704_031.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Strategies\Train\Tr_Z705_01.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Strategies\Train\Tr_Z705_01F.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Strategies\Train\Tr_Z705_01T.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Strategies\Train\Tr_Z705_01T2.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Strategies\Train\Tr_Z705_02F.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Strategies\Train\Tr_Z705_02Op.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Strategies\Train\Tr_Z705_02Op1.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Strategies\Train\Tr_Z705_02F1.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Strategies\StratFilesSim.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Strategies\Train\Tr_Z706_03F.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Strategies\StratFilesSim2.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Strategies\Train\Z706\StratFiles_OpTr_01.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Strategies\Train\Z706\StratFiles_55227_F_01.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Strategies\Train\Z706\Tr_Z706_55227F2.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Strategies\Train\Z706\Tr_Z706_Micex_Op_01.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Strategies\StratFilesTr01.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Strategies\Train\Z706\Tr_Z706_55227F3.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Strategies\Train\Z706\StratFiles_55227_Op_01.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Strategies\Train\Z706\Tr_Z706_55227Op1.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Strategies\Train\Z706\Tr_55232_Micex_Op_01.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Strategies\Train\Z706\Tr_Z706_55226F2.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Strategies\Train\Z706\Tr_Z706_55226F3.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Strategies\Train\Z706\StratFiles_55226_F_01.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="StratTest02.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="StratTest021.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Repozitary\Xml\Tickers_130207.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Strategies\Debug\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="..\..\GS.Trade\packages\Microsoft.Bcl.Build.1.0.21\build\Microsoft.Bcl.Build.targets" Condition="Exists('..\..\GS.Trade\packages\Microsoft.Bcl.Build.1.0.21\build\Microsoft.Bcl.Build.targets')" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>Данный проект ссылается на пакеты NuGet, отсутствующие на этом компьютере. Включите восстановление пакетов NuGet, чтобы загрузить их. Дополнительные сведения см. по адресу: http://go.microsoft.com/fwlink/?LinkID=322105. Отсутствует следующий файл: {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\..\GS.Trade\packages\Microsoft.Bcl.Build.1.0.21\build\Microsoft.Bcl.Build.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\..\GS.Trade\packages\Microsoft.Bcl.Build.1.0.21\build\Microsoft.Bcl.Build.targets'))" />
+    <Error Condition="!Exists('$(SolutionDir)\.nuget\NuGet.targets')" Text="$([System.String]::Format('$(ErrorText)', '$(SolutionDir)\.nuget\NuGet.targets'))" />
+    <Error Condition="!Exists('..\..\GS.Trade\packages\EntityFramework.6.4.4\build\EntityFramework.props')" Text="$([System.String]::Format('$(ErrorText)', '..\..\GS.Trade\packages\EntityFramework.6.4.4\build\EntityFramework.props'))" />
+    <Error Condition="!Exists('..\..\GS.Trade\packages\EntityFramework.6.4.4\build\EntityFramework.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\..\GS.Trade\packages\EntityFramework.6.4.4\build\EntityFramework.targets'))" />
+  </Target>
+  <Import Project="$(SolutionDir)\.nuget\NuGet.targets" Condition="Exists('$(SolutionDir)\.nuget\NuGet.targets')" />
+  <Import Project="..\..\GS.Trade\packages\EntityFramework.6.4.4\build\EntityFramework.targets" Condition="Exists('..\..\GS.Trade\packages\EntityFramework.6.4.4\build\EntityFramework.targets')" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

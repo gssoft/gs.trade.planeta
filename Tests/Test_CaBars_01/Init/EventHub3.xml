@@ -1,0 +1,69 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<EventHubServer xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <EventHub3 enabled="true" ns="GS.Events" as="GS">
+    <IsEnabled>true</IsEnabled>
+    <IsEvlEnabled>false</IsEvlEnabled>
+    <IsQueueEnabled>true</IsQueueEnabled>
+    <Name>EventHub</Name>
+    <Code>EventHub3</Code>
+    <XPath>EventHubItems</XPath>
+  </EventHub3>
+  <EventHubItems>
+    <EventHubItem3 ns="GS.Events" as="GS">
+      <Category>Quotes</Category>
+      <Entity>Quote</Entity>
+    </EventHubItem3>
+    <EventHubItem3 ns="GS.Events" as="GS">
+      <Entity>Transaction</Entity>
+      <Category>Transactions</Category>
+    </EventHubItem3>
+    <EventHubItem3 ns="GS.Events" as="GS">
+      <Entity>Order</Entity>
+      <Category>Orders</Category>
+    </EventHubItem3>
+    <EventHubItem3 ns="GS.Events" as="GS">
+      <Entity>Status</Entity>
+      <Category>Order</Category>
+    </EventHubItem3>
+    <EventHubItem3 ns="GS.Events" as="GS">
+      <Entity>Order</Entity>
+      <Category>UI.Orders</Category>
+    </EventHubItem3>
+    <EventHubItem3 ns="GS.Events" as="GS">
+      <Entity>Order.Completed</Entity>
+      <Category>UI.Orders</Category>
+    </EventHubItem3>
+    <EventHubItem3 ns="GS.Events" as="GS">
+      <Entity>Order.Unknown</Entity>
+      <Category>UI.Orders</Category>
+    </EventHubItem3>
+    <EventHubItem3 ns="GS.Events" as="GS">
+      <Entity>Trade</Entity>
+      <Category>UI.Trades</Category>
+    </EventHubItem3>
+    <EventHubItem3 ns="GS.Events" as="GS">
+      <Entity>Deal</Entity>
+      <Category>Deals</Category>
+    </EventHubItem3>
+    <EventHubItem3 ns="GS.Events" as="GS">
+      <Entity>Deal</Entity>
+      <Category>UI.Deals</Category>
+    </EventHubItem3>
+    <EventHubItem3 ns="GS.Events" as="GS">
+      <Entity>Current</Entity>
+      <Category>UI.Positions</Category>
+    </EventHubItem3>
+    <EventHubItem3 ns="GS.Events" as="GS">
+      <Entity>Total</Entity>
+      <Category>UI.Positions</Category>
+    </EventHubItem3>
+    <EventHubItem3 ns="GS.Events" as="GS">
+      <Entity>Exception</Entity>
+      <Category>UI.Exceptions</Category>
+    </EventHubItem3>
+    <EventHubItem3 ns="GS.Events" as="GS">
+      <Entity>Position</Entity>
+      <Category>UI.Portfolio</Category>
+    </EventHubItem3>
+  </EventHubItems>
+</EventHubServer>

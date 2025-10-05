@@ -1,0 +1,39 @@
+﻿<Window x:Class="GS.Trade.Windows.EventLogWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" 
+        xmlns:local="clr-namespace:GS.Trade.Windows" 
+        Title="EventLog" Height="300" Width="836" Loaded="WindowLoaded" Closed="WindowClosed">
+    <Window.Resources>
+        <Style x:Key="AlternateStyle">
+            <Setter Property="ListViewItem.Background" Value="#e1dfdc" />
+        </Style>
+    </Window.Resources>
+    <Grid Margin="1">
+            <ListView Margin="1" Name="lstEventView">
+                <ListView.View>
+                    <GridView>
+                        <GridView.Columns>
+                            <GridViewColumn Header="DateTime" DisplayMemberBinding="{Binding Path=TimeDateString}" />
+                            <!--
+                            <GridViewColumn Header="Index" DisplayMemberBinding="{Binding Path=MyIndex}" />
+                            -->
+                            <GridViewColumn Header="Result" DisplayMemberBinding="{Binding Path=ResultCode}" />
+                            <GridViewColumn Header="Subject" DisplayMemberBinding="{Binding Path=Subject}" />
+                            <GridViewColumn Header="Source" DisplayMemberBinding="{Binding Path=Source}" />
+                        <GridViewColumn Header="Entity" DisplayMemberBinding="{Binding Path=Entity}" />
+                        <GridViewColumn Header="Operation" DisplayMemberBinding="{Binding Path=Operation}" />
+                            <GridViewColumn Header="Description" DisplayMemberBinding="{Binding Path=Description}" />
+                            <GridViewColumn Header="Object" DisplayMemberBinding="{Binding Path=Object}" />
+                         
+                    </GridView.Columns>
+                    </GridView>
+                </ListView.View>
+
+            <ListView.ItemContainerStyleSelector>
+                <local:AlternatingRowStyleSelector AlternateStyle="{StaticResource AlternateStyle}" />
+            </ListView.ItemContainerStyleSelector>
+
+        </ListView>
+        
+    </Grid>
+</Window>

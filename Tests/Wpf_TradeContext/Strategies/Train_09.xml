@@ -1,0 +1,1403 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Strategies>
+
+  <X11809>
+    <Name>11809</Name>
+    <Code>15.2.8.3.0.85</Code>
+    <TradeAccountKey>QuikJunior.Open</TradeAccountKey>
+    <TradeTerminalType>Quik</TradeTerminalType>
+    <TradeTerminalKey>D:\TradeSoft\QUIK-Junior\</TradeTerminalKey>
+    <TickerKey>RIU2</TickerKey>
+    <TimeInt>15</TimeInt>
+    <TimeInt2>15</TimeInt2>
+
+    <Ma1Length>300</Ma1Length>
+    <Ma1AtrLength>200</Ma1AtrLength>
+    <Ma1KAtr>1.5</Ma1KAtr>
+    <Ma1Mode>1</Ma1Mode>
+
+    <MaAtrLength1>50</MaAtrLength1>
+    <MaAtrLength2>300</MaAtrLength2>
+
+    <Contracts>1</Contracts>
+
+
+    <KAtrStop>10</KAtrStop>
+
+    <Mode1>1</Mode1>
+    <Mode2>0</Mode2>
+
+    <RandMode>0</RandMode>
+
+    <SwingCountEntry>1</SwingCountEntry>
+    <SwingCountReverse>1</SwingCountReverse>
+    <SwingCountExit>2</SwingCountExit>
+
+    <CancelOrderMode>0</CancelOrderMode>
+    <FlatCount>0</FlatCount>
+
+    <EntryId>19003</EntryId>
+    <ExitId>0</ExitId>
+    <ReverseId>19003</ReverseId>
+
+    <ExitSignal2>0</ExitSignal2>
+    <ReverseSignal2>25</ReverseSignal2>
+
+    <EntryPriceId>8</EntryPriceId>
+    <ExitPriceId>8</ExitPriceId>
+    <ReversePriceId>8</ReversePriceId>
+
+    <StopExitId>0</StopExitId>
+    <StopPriceId>1</StopPriceId>
+
+
+    <ReverseLossCnt>1</ReverseLossCnt>
+
+    <RichTargetMode>8</RichTargetMode>
+    <RichTargetMode2>5</RichTargetMode2>
+
+    <TakeExitMode>0</TakeExitMode>
+
+  </X11809>
+  <X11809>
+    <Name>11809</Name>
+    <Code>15.2.8.3.0.85</Code>
+    <TradeAccountKey>QuikJunior.Open</TradeAccountKey>
+    <TradeTerminalType>Quik</TradeTerminalType>
+    <TradeTerminalKey>D:\TradeSoft\QUIK-Junior\</TradeTerminalKey>
+    <TickerKey>SRU2</TickerKey>
+    <TimeInt>15</TimeInt>
+    <TimeInt2>15</TimeInt2>
+
+    <Ma1Length>300</Ma1Length>
+    <Ma1AtrLength>200</Ma1AtrLength>
+    <Ma1KAtr>1.5</Ma1KAtr>
+    <Ma1Mode>1</Ma1Mode>
+
+    <MaAtrLength1>50</MaAtrLength1>
+    <MaAtrLength2>300</MaAtrLength2>
+
+    <Contracts>1</Contracts>
+
+
+    <KAtrStop>10</KAtrStop>
+
+    <Mode1>1</Mode1>
+    <Mode2>0</Mode2>
+
+    <RandMode>0</RandMode>
+
+    <SwingCountEntry>1</SwingCountEntry>
+    <SwingCountReverse>1</SwingCountReverse>
+    <SwingCountExit>2</SwingCountExit>
+
+    <CancelOrderMode>0</CancelOrderMode>
+    <FlatCount>0</FlatCount>
+
+    <EntryId>19003</EntryId>
+    <ExitId>0</ExitId>
+    <ReverseId>19003</ReverseId>
+
+    <ExitSignal2>0</ExitSignal2>
+    <ReverseSignal2>25</ReverseSignal2>
+
+    <EntryPriceId>8</EntryPriceId>
+    <ExitPriceId>8</ExitPriceId>
+    <ReversePriceId>8</ReversePriceId>
+
+    <StopExitId>0</StopExitId>
+    <StopPriceId>1</StopPriceId>
+
+
+    <ReverseLossCnt>1</ReverseLossCnt>
+
+    <RichTargetMode>8</RichTargetMode>
+    <RichTargetMode2>5</RichTargetMode2>
+
+    <TakeExitMode>0</TakeExitMode>
+
+  </X11809>
+  <X11809>
+    <Name>11809</Name>
+    <Code>15.2.8.3.0.85</Code>
+    <TradeAccountKey>QuikJunior.Open</TradeAccountKey>
+    <TradeTerminalType>Quik</TradeTerminalType>
+    <TradeTerminalKey>D:\TradeSoft\QUIK-Junior\</TradeTerminalKey>
+    <TickerKey>GZU2</TickerKey>
+    <TimeInt>15</TimeInt>
+    <TimeInt2>15</TimeInt2>
+
+    <Ma1Length>300</Ma1Length>
+    <Ma1AtrLength>200</Ma1AtrLength>
+    <Ma1KAtr>1.5</Ma1KAtr>
+    <Ma1Mode>1</Ma1Mode>
+
+    <MaAtrLength1>50</MaAtrLength1>
+    <MaAtrLength2>300</MaAtrLength2>
+
+    <Contracts>1</Contracts>
+
+
+    <KAtrStop>10</KAtrStop>
+
+    <Mode1>1</Mode1>
+    <Mode2>0</Mode2>
+
+    <RandMode>0</RandMode>
+
+    <SwingCountEntry>1</SwingCountEntry>
+    <SwingCountReverse>1</SwingCountReverse>
+    <SwingCountExit>2</SwingCountExit>
+
+    <CancelOrderMode>0</CancelOrderMode>
+    <FlatCount>0</FlatCount>
+
+    <EntryId>19003</EntryId>
+    <ExitId>0</ExitId>
+    <ReverseId>19003</ReverseId>
+
+    <ExitSignal2>0</ExitSignal2>
+    <ReverseSignal2>25</ReverseSignal2>
+
+    <EntryPriceId>8</EntryPriceId>
+    <ExitPriceId>8</ExitPriceId>
+    <ReversePriceId>8</ReversePriceId>
+
+    <StopExitId>0</StopExitId>
+    <StopPriceId>1</StopPriceId>
+
+
+    <ReverseLossCnt>1</ReverseLossCnt>
+
+    <RichTargetMode>8</RichTargetMode>
+    <RichTargetMode2>5</RichTargetMode2>
+
+    <TakeExitMode>0</TakeExitMode>
+
+  </X11809>
+  <X11809>
+    <Name>11809</Name>
+    <Code>15.2.8.3.0.85</Code>
+    <TradeAccountKey>QuikJunior.Open</TradeAccountKey>
+    <TradeTerminalType>Quik</TradeTerminalType>
+    <TradeTerminalKey>D:\TradeSoft\QUIK-Junior\</TradeTerminalKey>
+    <TickerKey>SiU2</TickerKey>
+    <TimeInt>15</TimeInt>
+    <TimeInt2>15</TimeInt2>
+
+    <Ma1Length>300</Ma1Length>
+    <Ma1AtrLength>200</Ma1AtrLength>
+    <Ma1KAtr>1.0</Ma1KAtr>
+    <Ma1Mode>1</Ma1Mode>
+
+    <MaAtrLength1>50</MaAtrLength1>
+    <MaAtrLength2>300</MaAtrLength2>
+
+    <Contracts>1</Contracts>
+
+
+    <KAtrStop>10</KAtrStop>
+
+    <Mode1>1</Mode1>
+    <Mode2>0</Mode2>
+
+    <RandMode>0</RandMode>
+
+    <SwingCountEntry>1</SwingCountEntry>
+    <SwingCountReverse>1</SwingCountReverse>
+    <SwingCountExit>2</SwingCountExit>
+
+    <CancelOrderMode>0</CancelOrderMode>
+    <FlatCount>0</FlatCount>
+
+    <EntryId>19003</EntryId>
+    <ExitId>0</ExitId>
+    <ReverseId>19003</ReverseId>
+
+    <ExitSignal2>0</ExitSignal2>
+    <ReverseSignal2>25</ReverseSignal2>
+
+    <EntryPriceId>8</EntryPriceId>
+    <ExitPriceId>8</ExitPriceId>
+    <ReversePriceId>8</ReversePriceId>
+
+    <StopExitId>0</StopExitId>
+    <StopPriceId>1</StopPriceId>
+
+
+    <ReverseLossCnt>1</ReverseLossCnt>
+
+    <RichTargetMode>8</RichTargetMode>
+    <RichTargetMode2>5</RichTargetMode2>
+
+    <TakeExitMode>0</TakeExitMode>
+
+  </X11809>
+
+  <X11809>
+    <Name>11809</Name>
+    <Code>15.2.8.3.0.85</Code>
+    <TradeAccountKey>QuikJunior.Open</TradeAccountKey>
+    <TradeTerminalType>Quik</TradeTerminalType>
+    <TradeTerminalKey>D:\TradeSoft\QUIK-Junior\</TradeTerminalKey>
+    <TickerKey>LKU2</TickerKey>
+    <TimeInt>15</TimeInt>
+    <TimeInt2>15</TimeInt2>
+
+    <Ma1Length>300</Ma1Length>
+    <Ma1AtrLength>200</Ma1AtrLength>
+    <Ma1KAtr>1.5</Ma1KAtr>
+    <Ma1Mode>1</Ma1Mode>
+
+    <MaAtrLength1>50</MaAtrLength1>
+    <MaAtrLength2>300</MaAtrLength2>
+
+    <Contracts>1</Contracts>
+
+
+    <KAtrStop>10</KAtrStop>
+
+    <Mode1>1</Mode1>
+    <Mode2>0</Mode2>
+
+    <RandMode>0</RandMode>
+
+    <SwingCountEntry>1</SwingCountEntry>
+    <SwingCountReverse>1</SwingCountReverse>
+    <SwingCountExit>2</SwingCountExit>
+
+    <CancelOrderMode>0</CancelOrderMode>
+    <FlatCount>0</FlatCount>
+
+    <EntryId>19003</EntryId>
+    <ExitId>0</ExitId>
+    <ReverseId>19003</ReverseId>
+
+    <ExitSignal2>0</ExitSignal2>
+    <ReverseSignal2>25</ReverseSignal2>
+
+    <EntryPriceId>8</EntryPriceId>
+    <ExitPriceId>8</ExitPriceId>
+    <ReversePriceId>8</ReversePriceId>
+
+    <StopExitId>0</StopExitId>
+    <StopPriceId>1</StopPriceId>
+
+
+    <ReverseLossCnt>1</ReverseLossCnt>
+
+    <RichTargetMode>8</RichTargetMode>
+    <RichTargetMode2>5</RichTargetMode2>
+
+    <TakeExitMode>0</TakeExitMode>
+
+  </X11809>
+  <X11809>
+    <Name>11809</Name>
+    <Code>15.2.8.3.0.85</Code>
+    <TradeAccountKey>QuikJunior.Open</TradeAccountKey>
+    <TradeTerminalType>Quik</TradeTerminalType>
+    <TradeTerminalKey>D:\TradeSoft\QUIK-Junior\</TradeTerminalKey>
+    <TickerKey>VBU2</TickerKey>
+    <TimeInt>15</TimeInt>
+    <TimeInt2>15</TimeInt2>
+
+    <Ma1Length>300</Ma1Length>
+    <Ma1AtrLength>200</Ma1AtrLength>
+    <Ma1KAtr>1.5</Ma1KAtr>
+    <Ma1Mode>1</Ma1Mode>
+
+    <MaAtrLength1>50</MaAtrLength1>
+    <MaAtrLength2>300</MaAtrLength2>
+
+    <Contracts>1</Contracts>
+
+
+    <KAtrStop>10</KAtrStop>
+
+    <Mode1>1</Mode1>
+    <Mode2>0</Mode2>
+
+    <RandMode>0</RandMode>
+
+    <SwingCountEntry>1</SwingCountEntry>
+    <SwingCountReverse>1</SwingCountReverse>
+    <SwingCountExit>2</SwingCountExit>
+
+    <CancelOrderMode>0</CancelOrderMode>
+    <FlatCount>0</FlatCount>
+
+    <EntryId>19003</EntryId>
+    <ExitId>0</ExitId>
+    <ReverseId>19003</ReverseId>
+
+    <ExitSignal2>0</ExitSignal2>
+    <ReverseSignal2>25</ReverseSignal2>
+
+    <EntryPriceId>8</EntryPriceId>
+    <ExitPriceId>8</ExitPriceId>
+    <ReversePriceId>8</ReversePriceId>
+
+    <StopExitId>0</StopExitId>
+    <StopPriceId>1</StopPriceId>
+
+
+    <ReverseLossCnt>1</ReverseLossCnt>
+
+    <RichTargetMode>8</RichTargetMode>
+    <RichTargetMode2>5</RichTargetMode2>
+
+    <TakeExitMode>0</TakeExitMode>
+
+  </X11809>
+  <X11809>
+    <Name>11809</Name>
+    <Code>15.2.8.3.0.85</Code>
+    <TradeAccountKey>QuikJunior.Open</TradeAccountKey>
+    <TradeTerminalType>Quik</TradeTerminalType>
+    <TradeTerminalKey>D:\TradeSoft\QUIK-Junior\</TradeTerminalKey>
+    <TickerKey>SPU2</TickerKey>
+    <TimeInt>15</TimeInt>
+    <TimeInt2>15</TimeInt2>
+
+    <Ma1Length>300</Ma1Length>
+    <Ma1AtrLength>200</Ma1AtrLength>
+    <Ma1KAtr>1.5</Ma1KAtr>
+    <Ma1Mode>1</Ma1Mode>
+
+    <MaAtrLength1>50</MaAtrLength1>
+    <MaAtrLength2>300</MaAtrLength2>
+
+    <Contracts>1</Contracts>
+
+
+    <KAtrStop>10</KAtrStop>
+
+    <Mode1>1</Mode1>
+    <Mode2>0</Mode2>
+
+    <RandMode>0</RandMode>
+
+    <SwingCountEntry>1</SwingCountEntry>
+    <SwingCountReverse>1</SwingCountReverse>
+    <SwingCountExit>2</SwingCountExit>
+
+    <CancelOrderMode>0</CancelOrderMode>
+    <FlatCount>0</FlatCount>
+
+    <EntryId>19003</EntryId>
+    <ExitId>0</ExitId>
+    <ReverseId>19003</ReverseId>
+
+    <ExitSignal2>0</ExitSignal2>
+    <ReverseSignal2>25</ReverseSignal2>
+
+    <EntryPriceId>8</EntryPriceId>
+    <ExitPriceId>8</ExitPriceId>
+    <ReversePriceId>8</ReversePriceId>
+
+    <StopExitId>0</StopExitId>
+    <StopPriceId>1</StopPriceId>
+
+
+    <ReverseLossCnt>1</ReverseLossCnt>
+
+    <RichTargetMode>8</RichTargetMode>
+    <RichTargetMode2>5</RichTargetMode2>
+
+    <TakeExitMode>0</TakeExitMode>
+
+  </X11809>
+  <X11809>
+    <Name>11809</Name>
+    <Code>15.2.8.3.0.85</Code>
+    <TradeAccountKey>QuikJunior.Open</TradeAccountKey>
+    <TradeTerminalType>Quik</TradeTerminalType>
+    <TradeTerminalKey>D:\TradeSoft\QUIK-Junior\</TradeTerminalKey>
+    <TickerKey>RNU2</TickerKey>
+    <TimeInt>15</TimeInt>
+    <TimeInt2>15</TimeInt2>
+
+    <Ma1Length>300</Ma1Length>
+    <Ma1AtrLength>200</Ma1AtrLength>
+    <Ma1KAtr>1.0</Ma1KAtr>
+    <Ma1Mode>1</Ma1Mode>
+
+    <MaAtrLength1>50</MaAtrLength1>
+    <MaAtrLength2>300</MaAtrLength2>
+
+    <Contracts>1</Contracts>
+
+
+    <KAtrStop>10</KAtrStop>
+
+    <Mode1>1</Mode1>
+    <Mode2>0</Mode2>
+
+    <RandMode>0</RandMode>
+
+    <SwingCountEntry>1</SwingCountEntry>
+    <SwingCountReverse>1</SwingCountReverse>
+    <SwingCountExit>2</SwingCountExit>
+
+    <CancelOrderMode>0</CancelOrderMode>
+    <FlatCount>0</FlatCount>
+
+    <EntryId>19003</EntryId>
+    <ExitId>0</ExitId>
+    <ReverseId>19003</ReverseId>
+
+    <ExitSignal2>0</ExitSignal2>
+    <ReverseSignal2>25</ReverseSignal2>
+
+    <EntryPriceId>8</EntryPriceId>
+    <ExitPriceId>8</ExitPriceId>
+    <ReversePriceId>8</ReversePriceId>
+
+    <StopExitId>0</StopExitId>
+    <StopPriceId>1</StopPriceId>
+
+
+    <ReverseLossCnt>1</ReverseLossCnt>
+
+    <RichTargetMode>8</RichTargetMode>
+    <RichTargetMode2>5</RichTargetMode2>
+
+    <TakeExitMode>0</TakeExitMode>
+
+  </X11809>
+
+  <X11809>
+    <Name>11809</Name>
+    <Code>15.2.8.3.0.85</Code>
+    <TradeAccountKey>QuikJunior.Open</TradeAccountKey>
+    <TradeTerminalType>Quik</TradeTerminalType>
+    <TradeTerminalKey>D:\TradeSoft\QUIK-Junior\</TradeTerminalKey>
+    <TickerKey>EDU2</TickerKey>
+    <TimeInt>15</TimeInt>
+    <TimeInt2>15</TimeInt2>
+
+    <Ma1Length>300</Ma1Length>
+    <Ma1AtrLength>200</Ma1AtrLength>
+    <Ma1KAtr>1.5</Ma1KAtr>
+    <Ma1Mode>1</Ma1Mode>
+
+    <MaAtrLength1>50</MaAtrLength1>
+    <MaAtrLength2>300</MaAtrLength2>
+
+    <Contracts>1</Contracts>
+
+
+    <KAtrStop>10</KAtrStop>
+
+    <Mode1>1</Mode1>
+    <Mode2>0</Mode2>
+
+    <RandMode>0</RandMode>
+
+    <SwingCountEntry>1</SwingCountEntry>
+    <SwingCountReverse>1</SwingCountReverse>
+    <SwingCountExit>2</SwingCountExit>
+
+    <CancelOrderMode>0</CancelOrderMode>
+    <FlatCount>0</FlatCount>
+
+    <EntryId>19003</EntryId>
+    <ExitId>0</ExitId>
+    <ReverseId>19003</ReverseId>
+
+    <ExitSignal2>0</ExitSignal2>
+    <ReverseSignal2>25</ReverseSignal2>
+
+    <EntryPriceId>8</EntryPriceId>
+    <ExitPriceId>8</ExitPriceId>
+    <ReversePriceId>8</ReversePriceId>
+
+    <StopExitId>0</StopExitId>
+    <StopPriceId>1</StopPriceId>
+
+
+    <ReverseLossCnt>1</ReverseLossCnt>
+
+    <RichTargetMode>8</RichTargetMode>
+    <RichTargetMode2>5</RichTargetMode2>
+
+    <TakeExitMode>0</TakeExitMode>
+
+  </X11809>
+  <X11809>
+    <Name>11809</Name>
+    <Code>15.2.8.3.0.85</Code>
+    <TradeAccountKey>QuikJunior.Open</TradeAccountKey>
+    <TradeTerminalType>Quik</TradeTerminalType>
+    <TradeTerminalKey>D:\TradeSoft\QUIK-Junior\</TradeTerminalKey>
+    <TickerKey>BRQ2</TickerKey>
+    <TimeInt>15</TimeInt>
+    <TimeInt2>15</TimeInt2>
+
+    <Ma1Length>300</Ma1Length>
+    <Ma1AtrLength>200</Ma1AtrLength>
+    <Ma1KAtr>1.5</Ma1KAtr>
+    <Ma1Mode>1</Ma1Mode>
+
+    <MaAtrLength1>50</MaAtrLength1>
+    <MaAtrLength2>300</MaAtrLength2>
+
+    <Contracts>1</Contracts>
+
+
+    <KAtrStop>10</KAtrStop>
+
+    <Mode1>1</Mode1>
+    <Mode2>0</Mode2>
+
+    <RandMode>0</RandMode>
+
+    <SwingCountEntry>1</SwingCountEntry>
+    <SwingCountReverse>1</SwingCountReverse>
+    <SwingCountExit>2</SwingCountExit>
+
+    <CancelOrderMode>0</CancelOrderMode>
+    <FlatCount>0</FlatCount>
+
+    <EntryId>19003</EntryId>
+    <ExitId>0</ExitId>
+    <ReverseId>19003</ReverseId>
+
+    <ExitSignal2>0</ExitSignal2>
+    <ReverseSignal2>25</ReverseSignal2>
+
+    <EntryPriceId>8</EntryPriceId>
+    <ExitPriceId>8</ExitPriceId>
+    <ReversePriceId>8</ReversePriceId>
+
+    <StopExitId>0</StopExitId>
+    <StopPriceId>1</StopPriceId>
+
+
+    <ReverseLossCnt>1</ReverseLossCnt>
+
+    <RichTargetMode>8</RichTargetMode>
+    <RichTargetMode2>5</RichTargetMode2>
+
+    <TakeExitMode>0</TakeExitMode>
+
+  </X11809>
+  <X11809>
+    <Name>11809</Name>
+    <Code>15.2.8.3.0.85</Code>
+    <TradeAccountKey>QuikJunior.Open</TradeAccountKey>
+    <TradeTerminalType>Quik</TradeTerminalType>
+    <TradeTerminalKey>D:\TradeSoft\QUIK-Junior\</TradeTerminalKey>
+    <TickerKey>GDU2</TickerKey>
+    <TimeInt>15</TimeInt>
+    <TimeInt2>15</TimeInt2>
+
+    <Ma1Length>300</Ma1Length>
+    <Ma1AtrLength>200</Ma1AtrLength>
+    <Ma1KAtr>1.5</Ma1KAtr>
+    <Ma1Mode>1</Ma1Mode>
+
+    <MaAtrLength1>50</MaAtrLength1>
+    <MaAtrLength2>300</MaAtrLength2>
+
+    <Contracts>1</Contracts>
+
+
+    <KAtrStop>10</KAtrStop>
+
+    <Mode1>1</Mode1>
+    <Mode2>0</Mode2>
+
+    <RandMode>0</RandMode>
+
+    <SwingCountEntry>1</SwingCountEntry>
+    <SwingCountReverse>1</SwingCountReverse>
+    <SwingCountExit>2</SwingCountExit>
+
+    <CancelOrderMode>0</CancelOrderMode>
+    <FlatCount>0</FlatCount>
+
+    <EntryId>19003</EntryId>
+    <ExitId>0</ExitId>
+    <ReverseId>19003</ReverseId>
+
+    <ExitSignal2>0</ExitSignal2>
+    <ReverseSignal2>25</ReverseSignal2>
+
+    <EntryPriceId>8</EntryPriceId>
+    <ExitPriceId>8</ExitPriceId>
+    <ReversePriceId>8</ReversePriceId>
+
+    <StopExitId>0</StopExitId>
+    <StopPriceId>1</StopPriceId>
+
+
+    <ReverseLossCnt>1</ReverseLossCnt>
+
+    <RichTargetMode>8</RichTargetMode>
+    <RichTargetMode2>5</RichTargetMode2>
+
+    <TakeExitMode>0</TakeExitMode>
+
+  </X11809>
+  <X11809>
+    <Name>11809</Name>
+    <Code>15.2.8.3.0.85</Code>
+    <TradeAccountKey>QuikJunior.Open</TradeAccountKey>
+    <TradeTerminalType>Quik</TradeTerminalType>
+    <TradeTerminalKey>D:\TradeSoft\QUIK-Junior\</TradeTerminalKey>
+    <TickerKey>SVU2</TickerKey>
+    <TimeInt>15</TimeInt>
+    <TimeInt2>15</TimeInt2>
+
+    <Ma1Length>300</Ma1Length>
+    <Ma1AtrLength>200</Ma1AtrLength>
+    <Ma1KAtr>1.0</Ma1KAtr>
+    <Ma1Mode>1</Ma1Mode>
+
+    <MaAtrLength1>50</MaAtrLength1>
+    <MaAtrLength2>300</MaAtrLength2>
+
+    <Contracts>1</Contracts>
+
+
+    <KAtrStop>10</KAtrStop>
+
+    <Mode1>1</Mode1>
+    <Mode2>0</Mode2>
+
+    <RandMode>0</RandMode>
+
+    <SwingCountEntry>1</SwingCountEntry>
+    <SwingCountReverse>1</SwingCountReverse>
+    <SwingCountExit>2</SwingCountExit>
+
+    <CancelOrderMode>0</CancelOrderMode>
+    <FlatCount>0</FlatCount>
+
+    <EntryId>19003</EntryId>
+    <ExitId>0</ExitId>
+    <ReverseId>19003</ReverseId>
+
+    <ExitSignal2>0</ExitSignal2>
+    <ReverseSignal2>25</ReverseSignal2>
+
+    <EntryPriceId>8</EntryPriceId>
+    <ExitPriceId>8</ExitPriceId>
+    <ReversePriceId>8</ReversePriceId>
+
+    <StopExitId>0</StopExitId>
+    <StopPriceId>1</StopPriceId>
+
+
+    <ReverseLossCnt>1</ReverseLossCnt>
+
+    <RichTargetMode>8</RichTargetMode>
+    <RichTargetMode2>5</RichTargetMode2>
+
+    <TakeExitMode>0</TakeExitMode>
+
+  </X11809>
+
+
+  <X11809>
+    <Name>11809</Name>
+    <Code>60.2.8.3.0.85</Code>
+    <TradeAccountKey>QuikJunior.Open</TradeAccountKey>
+    <TradeTerminalType>Quik</TradeTerminalType>
+    <TradeTerminalKey>D:\TradeSoft\QUIK-Junior\</TradeTerminalKey>
+    <TickerKey>RIU2</TickerKey>
+    <TimeInt>60</TimeInt>
+    <TimeInt2>60</TimeInt2>
+
+    <Ma1Length>300</Ma1Length>
+    <Ma1AtrLength>200</Ma1AtrLength>
+    <Ma1KAtr>1.5</Ma1KAtr>
+    <Ma1Mode>1</Ma1Mode>
+
+    <MaAtrLength1>50</MaAtrLength1>
+    <MaAtrLength2>300</MaAtrLength2>
+
+    <Contracts>1</Contracts>
+
+
+    <KAtrStop>10</KAtrStop>
+
+    <Mode1>1</Mode1>
+    <Mode2>0</Mode2>
+
+    <RandMode>0</RandMode>
+
+    <SwingCountEntry>1</SwingCountEntry>
+    <SwingCountReverse>1</SwingCountReverse>
+    <SwingCountExit>2</SwingCountExit>
+
+    <CancelOrderMode>0</CancelOrderMode>
+    <FlatCount>0</FlatCount>
+
+    <EntryId>19003</EntryId>
+    <ExitId>0</ExitId>
+    <ReverseId>19003</ReverseId>
+
+    <ExitSignal2>0</ExitSignal2>
+    <ReverseSignal2>25</ReverseSignal2>
+
+    <EntryPriceId>8</EntryPriceId>
+    <ExitPriceId>8</ExitPriceId>
+    <ReversePriceId>8</ReversePriceId>
+
+    <StopExitId>0</StopExitId>
+    <StopPriceId>1</StopPriceId>
+
+
+    <ReverseLossCnt>1</ReverseLossCnt>
+
+    <RichTargetMode>8</RichTargetMode>
+    <RichTargetMode2>5</RichTargetMode2>
+
+    <TakeExitMode>0</TakeExitMode>
+
+  </X11809>
+  <X11809>
+    <Name>11809</Name>
+    <Code>60.2.8.3.0.85</Code>
+    <TradeAccountKey>QuikJunior.Open</TradeAccountKey>
+    <TradeTerminalType>Quik</TradeTerminalType>
+    <TradeTerminalKey>D:\TradeSoft\QUIK-Junior\</TradeTerminalKey>
+    <TickerKey>SRU2</TickerKey>
+    <TimeInt>60</TimeInt>
+    <TimeInt2>60</TimeInt2>
+
+    <Ma1Length>300</Ma1Length>
+    <Ma1AtrLength>200</Ma1AtrLength>
+    <Ma1KAtr>1.5</Ma1KAtr>
+    <Ma1Mode>1</Ma1Mode>
+
+    <MaAtrLength1>50</MaAtrLength1>
+    <MaAtrLength2>300</MaAtrLength2>
+
+    <Contracts>1</Contracts>
+
+
+    <KAtrStop>10</KAtrStop>
+
+    <Mode1>1</Mode1>
+    <Mode2>0</Mode2>
+
+    <RandMode>0</RandMode>
+
+    <SwingCountEntry>1</SwingCountEntry>
+    <SwingCountReverse>1</SwingCountReverse>
+    <SwingCountExit>2</SwingCountExit>
+
+    <CancelOrderMode>0</CancelOrderMode>
+    <FlatCount>0</FlatCount>
+
+    <EntryId>19003</EntryId>
+    <ExitId>0</ExitId>
+    <ReverseId>19003</ReverseId>
+
+    <ExitSignal2>0</ExitSignal2>
+    <ReverseSignal2>25</ReverseSignal2>
+
+    <EntryPriceId>8</EntryPriceId>
+    <ExitPriceId>8</ExitPriceId>
+    <ReversePriceId>8</ReversePriceId>
+
+    <StopExitId>0</StopExitId>
+    <StopPriceId>1</StopPriceId>
+
+
+    <ReverseLossCnt>1</ReverseLossCnt>
+
+    <RichTargetMode>8</RichTargetMode>
+    <RichTargetMode2>5</RichTargetMode2>
+
+    <TakeExitMode>0</TakeExitMode>
+
+  </X11809>
+  <X11809>
+    <Name>11809</Name>
+    <Code>60.2.8.3.0.85</Code>
+    <TradeAccountKey>QuikJunior.Open</TradeAccountKey>
+    <TradeTerminalType>Quik</TradeTerminalType>
+    <TradeTerminalKey>D:\TradeSoft\QUIK-Junior\</TradeTerminalKey>
+    <TickerKey>GZU2</TickerKey>
+    <TimeInt>60</TimeInt>
+    <TimeInt2>60</TimeInt2>
+
+    <Ma1Length>300</Ma1Length>
+    <Ma1AtrLength>200</Ma1AtrLength>
+    <Ma1KAtr>1.5</Ma1KAtr>
+    <Ma1Mode>1</Ma1Mode>
+
+    <MaAtrLength1>50</MaAtrLength1>
+    <MaAtrLength2>300</MaAtrLength2>
+
+    <Contracts>1</Contracts>
+
+
+    <KAtrStop>10</KAtrStop>
+
+    <Mode1>1</Mode1>
+    <Mode2>0</Mode2>
+
+    <RandMode>0</RandMode>
+
+    <SwingCountEntry>1</SwingCountEntry>
+    <SwingCountReverse>1</SwingCountReverse>
+    <SwingCountExit>2</SwingCountExit>
+
+    <CancelOrderMode>0</CancelOrderMode>
+    <FlatCount>0</FlatCount>
+
+    <EntryId>19003</EntryId>
+    <ExitId>0</ExitId>
+    <ReverseId>19003</ReverseId>
+
+    <ExitSignal2>0</ExitSignal2>
+    <ReverseSignal2>25</ReverseSignal2>
+
+    <EntryPriceId>8</EntryPriceId>
+    <ExitPriceId>8</ExitPriceId>
+    <ReversePriceId>8</ReversePriceId>
+
+    <StopExitId>0</StopExitId>
+    <StopPriceId>1</StopPriceId>
+
+
+    <ReverseLossCnt>1</ReverseLossCnt>
+
+    <RichTargetMode>8</RichTargetMode>
+    <RichTargetMode2>5</RichTargetMode2>
+
+    <TakeExitMode>0</TakeExitMode>
+
+  </X11809>
+  <X11809>
+    <Name>11809</Name>
+    <Code>60.2.8.3.0.85</Code>
+    <TradeAccountKey>QuikJunior.Open</TradeAccountKey>
+    <TradeTerminalType>Quik</TradeTerminalType>
+    <TradeTerminalKey>D:\TradeSoft\QUIK-Junior\</TradeTerminalKey>
+    <TickerKey>SiU2</TickerKey>
+    <TimeInt>60</TimeInt>
+    <TimeInt2>60</TimeInt2>
+
+    <Ma1Length>300</Ma1Length>
+    <Ma1AtrLength>200</Ma1AtrLength>
+    <Ma1KAtr>1.0</Ma1KAtr>
+    <Ma1Mode>1</Ma1Mode>
+
+    <MaAtrLength1>50</MaAtrLength1>
+    <MaAtrLength2>300</MaAtrLength2>
+
+    <Contracts>1</Contracts>
+
+
+    <KAtrStop>10</KAtrStop>
+
+    <Mode1>1</Mode1>
+    <Mode2>0</Mode2>
+
+    <RandMode>0</RandMode>
+
+    <SwingCountEntry>1</SwingCountEntry>
+    <SwingCountReverse>1</SwingCountReverse>
+    <SwingCountExit>2</SwingCountExit>
+
+    <CancelOrderMode>0</CancelOrderMode>
+    <FlatCount>0</FlatCount>
+
+    <EntryId>19003</EntryId>
+    <ExitId>0</ExitId>
+    <ReverseId>19003</ReverseId>
+
+    <ExitSignal2>0</ExitSignal2>
+    <ReverseSignal2>25</ReverseSignal2>
+
+    <EntryPriceId>8</EntryPriceId>
+    <ExitPriceId>8</ExitPriceId>
+    <ReversePriceId>8</ReversePriceId>
+
+    <StopExitId>0</StopExitId>
+    <StopPriceId>1</StopPriceId>
+
+
+    <ReverseLossCnt>1</ReverseLossCnt>
+
+    <RichTargetMode>8</RichTargetMode>
+    <RichTargetMode2>5</RichTargetMode2>
+
+    <TakeExitMode>0</TakeExitMode>
+
+  </X11809>
+
+  <X11809>
+    <Name>11809</Name>
+    <Code>60.2.8.3.0.85</Code>
+    <TradeAccountKey>QuikJunior.Open</TradeAccountKey>
+    <TradeTerminalType>Quik</TradeTerminalType>
+    <TradeTerminalKey>D:\TradeSoft\QUIK-Junior\</TradeTerminalKey>
+    <TickerKey>LKU2</TickerKey>
+    <TimeInt>60</TimeInt>
+    <TimeInt2>60</TimeInt2>
+
+    <Ma1Length>300</Ma1Length>
+    <Ma1AtrLength>200</Ma1AtrLength>
+    <Ma1KAtr>1.5</Ma1KAtr>
+    <Ma1Mode>1</Ma1Mode>
+
+    <MaAtrLength1>50</MaAtrLength1>
+    <MaAtrLength2>300</MaAtrLength2>
+
+    <Contracts>1</Contracts>
+
+
+    <KAtrStop>10</KAtrStop>
+
+    <Mode1>1</Mode1>
+    <Mode2>0</Mode2>
+
+    <RandMode>0</RandMode>
+
+    <SwingCountEntry>1</SwingCountEntry>
+    <SwingCountReverse>1</SwingCountReverse>
+    <SwingCountExit>2</SwingCountExit>
+
+    <CancelOrderMode>0</CancelOrderMode>
+    <FlatCount>0</FlatCount>
+
+    <EntryId>19003</EntryId>
+    <ExitId>0</ExitId>
+    <ReverseId>19003</ReverseId>
+
+    <ExitSignal2>0</ExitSignal2>
+    <ReverseSignal2>25</ReverseSignal2>
+
+    <EntryPriceId>8</EntryPriceId>
+    <ExitPriceId>8</ExitPriceId>
+    <ReversePriceId>8</ReversePriceId>
+
+    <StopExitId>0</StopExitId>
+    <StopPriceId>1</StopPriceId>
+
+
+    <ReverseLossCnt>1</ReverseLossCnt>
+
+    <RichTargetMode>8</RichTargetMode>
+    <RichTargetMode2>5</RichTargetMode2>
+
+    <TakeExitMode>0</TakeExitMode>
+
+  </X11809>
+  <X11809>
+    <Name>11809</Name>
+    <Code>60.2.8.3.0.85</Code>
+    <TradeAccountKey>QuikJunior.Open</TradeAccountKey>
+    <TradeTerminalType>Quik</TradeTerminalType>
+    <TradeTerminalKey>D:\TradeSoft\QUIK-Junior\</TradeTerminalKey>
+    <TickerKey>VBU2</TickerKey>
+    <TimeInt>60</TimeInt>
+    <TimeInt2>60</TimeInt2>
+
+    <Ma1Length>300</Ma1Length>
+    <Ma1AtrLength>200</Ma1AtrLength>
+    <Ma1KAtr>1.5</Ma1KAtr>
+    <Ma1Mode>1</Ma1Mode>
+
+    <MaAtrLength1>50</MaAtrLength1>
+    <MaAtrLength2>300</MaAtrLength2>
+
+    <Contracts>1</Contracts>
+
+
+    <KAtrStop>10</KAtrStop>
+
+    <Mode1>1</Mode1>
+    <Mode2>0</Mode2>
+
+    <RandMode>0</RandMode>
+
+    <SwingCountEntry>1</SwingCountEntry>
+    <SwingCountReverse>1</SwingCountReverse>
+    <SwingCountExit>2</SwingCountExit>
+
+    <CancelOrderMode>0</CancelOrderMode>
+    <FlatCount>0</FlatCount>
+
+    <EntryId>19003</EntryId>
+    <ExitId>0</ExitId>
+    <ReverseId>19003</ReverseId>
+
+    <ExitSignal2>0</ExitSignal2>
+    <ReverseSignal2>25</ReverseSignal2>
+
+    <EntryPriceId>8</EntryPriceId>
+    <ExitPriceId>8</ExitPriceId>
+    <ReversePriceId>8</ReversePriceId>
+
+    <StopExitId>0</StopExitId>
+    <StopPriceId>1</StopPriceId>
+
+
+    <ReverseLossCnt>1</ReverseLossCnt>
+
+    <RichTargetMode>8</RichTargetMode>
+    <RichTargetMode2>5</RichTargetMode2>
+
+    <TakeExitMode>0</TakeExitMode>
+
+  </X11809>
+  <X11809>
+    <Name>11809</Name>
+    <Code>60.2.8.3.0.85</Code>
+    <TradeAccountKey>QuikJunior.Open</TradeAccountKey>
+    <TradeTerminalType>Quik</TradeTerminalType>
+    <TradeTerminalKey>D:\TradeSoft\QUIK-Junior\</TradeTerminalKey>
+    <TickerKey>SPU2</TickerKey>
+    <TimeInt>60</TimeInt>
+    <TimeInt2>60</TimeInt2>
+
+    <Ma1Length>300</Ma1Length>
+    <Ma1AtrLength>200</Ma1AtrLength>
+    <Ma1KAtr>1.5</Ma1KAtr>
+    <Ma1Mode>1</Ma1Mode>
+
+    <MaAtrLength1>50</MaAtrLength1>
+    <MaAtrLength2>300</MaAtrLength2>
+
+    <Contracts>1</Contracts>
+
+
+    <KAtrStop>10</KAtrStop>
+
+    <Mode1>1</Mode1>
+    <Mode2>0</Mode2>
+
+    <RandMode>0</RandMode>
+
+    <SwingCountEntry>1</SwingCountEntry>
+    <SwingCountReverse>1</SwingCountReverse>
+    <SwingCountExit>2</SwingCountExit>
+
+    <CancelOrderMode>0</CancelOrderMode>
+    <FlatCount>0</FlatCount>
+
+    <EntryId>19003</EntryId>
+    <ExitId>0</ExitId>
+    <ReverseId>19003</ReverseId>
+
+    <ExitSignal2>0</ExitSignal2>
+    <ReverseSignal2>25</ReverseSignal2>
+
+    <EntryPriceId>8</EntryPriceId>
+    <ExitPriceId>8</ExitPriceId>
+    <ReversePriceId>8</ReversePriceId>
+
+    <StopExitId>0</StopExitId>
+    <StopPriceId>1</StopPriceId>
+
+
+    <ReverseLossCnt>1</ReverseLossCnt>
+
+    <RichTargetMode>8</RichTargetMode>
+    <RichTargetMode2>5</RichTargetMode2>
+
+    <TakeExitMode>0</TakeExitMode>
+
+  </X11809>
+  <X11809>
+    <Name>11809</Name>
+    <Code>60.2.8.3.0.85</Code>
+    <TradeAccountKey>QuikJunior.Open</TradeAccountKey>
+    <TradeTerminalType>Quik</TradeTerminalType>
+    <TradeTerminalKey>D:\TradeSoft\QUIK-Junior\</TradeTerminalKey>
+    <TickerKey>RNU2</TickerKey>
+    <TimeInt>60</TimeInt>
+    <TimeInt2>60</TimeInt2>
+
+    <Ma1Length>300</Ma1Length>
+    <Ma1AtrLength>200</Ma1AtrLength>
+    <Ma1KAtr>1.0</Ma1KAtr>
+    <Ma1Mode>1</Ma1Mode>
+
+    <MaAtrLength1>50</MaAtrLength1>
+    <MaAtrLength2>300</MaAtrLength2>
+
+    <Contracts>1</Contracts>
+
+
+    <KAtrStop>10</KAtrStop>
+
+    <Mode1>1</Mode1>
+    <Mode2>0</Mode2>
+
+    <RandMode>0</RandMode>
+
+    <SwingCountEntry>1</SwingCountEntry>
+    <SwingCountReverse>1</SwingCountReverse>
+    <SwingCountExit>2</SwingCountExit>
+
+    <CancelOrderMode>0</CancelOrderMode>
+    <FlatCount>0</FlatCount>
+
+    <EntryId>19003</EntryId>
+    <ExitId>0</ExitId>
+    <ReverseId>19003</ReverseId>
+
+    <ExitSignal2>0</ExitSignal2>
+    <ReverseSignal2>25</ReverseSignal2>
+
+    <EntryPriceId>8</EntryPriceId>
+    <ExitPriceId>8</ExitPriceId>
+    <ReversePriceId>8</ReversePriceId>
+
+    <StopExitId>0</StopExitId>
+    <StopPriceId>1</StopPriceId>
+
+
+    <ReverseLossCnt>1</ReverseLossCnt>
+
+    <RichTargetMode>8</RichTargetMode>
+    <RichTargetMode2>5</RichTargetMode2>
+
+    <TakeExitMode>0</TakeExitMode>
+
+  </X11809>
+
+  <X11809>
+    <Name>11809</Name>
+    <Code>60.2.8.3.0.85</Code>
+    <TradeAccountKey>QuikJunior.Open</TradeAccountKey>
+    <TradeTerminalType>Quik</TradeTerminalType>
+    <TradeTerminalKey>D:\TradeSoft\QUIK-Junior\</TradeTerminalKey>
+    <TickerKey>EDU2</TickerKey>
+    <TimeInt>60</TimeInt>
+    <TimeInt2>60</TimeInt2>
+
+    <Ma1Length>300</Ma1Length>
+    <Ma1AtrLength>200</Ma1AtrLength>
+    <Ma1KAtr>1.5</Ma1KAtr>
+    <Ma1Mode>1</Ma1Mode>
+
+    <MaAtrLength1>50</MaAtrLength1>
+    <MaAtrLength2>300</MaAtrLength2>
+
+    <Contracts>1</Contracts>
+
+
+    <KAtrStop>10</KAtrStop>
+
+    <Mode1>1</Mode1>
+    <Mode2>0</Mode2>
+
+    <RandMode>0</RandMode>
+
+    <SwingCountEntry>1</SwingCountEntry>
+    <SwingCountReverse>1</SwingCountReverse>
+    <SwingCountExit>2</SwingCountExit>
+
+    <CancelOrderMode>0</CancelOrderMode>
+    <FlatCount>0</FlatCount>
+
+    <EntryId>19003</EntryId>
+    <ExitId>0</ExitId>
+    <ReverseId>19003</ReverseId>
+
+    <ExitSignal2>0</ExitSignal2>
+    <ReverseSignal2>25</ReverseSignal2>
+
+    <EntryPriceId>8</EntryPriceId>
+    <ExitPriceId>8</ExitPriceId>
+    <ReversePriceId>8</ReversePriceId>
+
+    <StopExitId>0</StopExitId>
+    <StopPriceId>1</StopPriceId>
+
+
+    <ReverseLossCnt>1</ReverseLossCnt>
+
+    <RichTargetMode>8</RichTargetMode>
+    <RichTargetMode2>5</RichTargetMode2>
+
+    <TakeExitMode>0</TakeExitMode>
+
+  </X11809>
+  <X11809>
+    <Name>11809</Name>
+    <Code>60.2.8.3.0.85</Code>
+    <TradeAccountKey>QuikJunior.Open</TradeAccountKey>
+    <TradeTerminalType>Quik</TradeTerminalType>
+    <TradeTerminalKey>D:\TradeSoft\QUIK-Junior\</TradeTerminalKey>
+    <TickerKey>BRQ2</TickerKey>
+    <TimeInt>60</TimeInt>
+    <TimeInt2>60</TimeInt2>
+
+    <Ma1Length>300</Ma1Length>
+    <Ma1AtrLength>200</Ma1AtrLength>
+    <Ma1KAtr>1.5</Ma1KAtr>
+    <Ma1Mode>1</Ma1Mode>
+
+    <MaAtrLength1>50</MaAtrLength1>
+    <MaAtrLength2>300</MaAtrLength2>
+
+    <Contracts>1</Contracts>
+
+
+    <KAtrStop>10</KAtrStop>
+
+    <Mode1>1</Mode1>
+    <Mode2>0</Mode2>
+
+    <RandMode>0</RandMode>
+
+    <SwingCountEntry>1</SwingCountEntry>
+    <SwingCountReverse>1</SwingCountReverse>
+    <SwingCountExit>2</SwingCountExit>
+
+    <CancelOrderMode>0</CancelOrderMode>
+    <FlatCount>0</FlatCount>
+
+    <EntryId>19003</EntryId>
+    <ExitId>0</ExitId>
+    <ReverseId>19003</ReverseId>
+
+    <ExitSignal2>0</ExitSignal2>
+    <ReverseSignal2>25</ReverseSignal2>
+
+    <EntryPriceId>8</EntryPriceId>
+    <ExitPriceId>8</ExitPriceId>
+    <ReversePriceId>8</ReversePriceId>
+
+    <StopExitId>0</StopExitId>
+    <StopPriceId>1</StopPriceId>
+
+
+    <ReverseLossCnt>1</ReverseLossCnt>
+
+    <RichTargetMode>8</RichTargetMode>
+    <RichTargetMode2>5</RichTargetMode2>
+
+    <TakeExitMode>0</TakeExitMode>
+
+  </X11809>
+  <X11809>
+    <Name>11809</Name>
+    <Code>60.2.8.3.0.85</Code>
+    <TradeAccountKey>QuikJunior.Open</TradeAccountKey>
+    <TradeTerminalType>Quik</TradeTerminalType>
+    <TradeTerminalKey>D:\TradeSoft\QUIK-Junior\</TradeTerminalKey>
+    <TickerKey>GDU2</TickerKey>
+    <TimeInt>60</TimeInt>
+    <TimeInt2>60</TimeInt2>
+
+    <Ma1Length>300</Ma1Length>
+    <Ma1AtrLength>200</Ma1AtrLength>
+    <Ma1KAtr>1.5</Ma1KAtr>
+    <Ma1Mode>1</Ma1Mode>
+
+    <MaAtrLength1>50</MaAtrLength1>
+    <MaAtrLength2>300</MaAtrLength2>
+
+    <Contracts>1</Contracts>
+
+
+    <KAtrStop>10</KAtrStop>
+
+    <Mode1>1</Mode1>
+    <Mode2>0</Mode2>
+
+    <RandMode>0</RandMode>
+
+    <SwingCountEntry>1</SwingCountEntry>
+    <SwingCountReverse>1</SwingCountReverse>
+    <SwingCountExit>2</SwingCountExit>
+
+    <CancelOrderMode>0</CancelOrderMode>
+    <FlatCount>0</FlatCount>
+
+    <EntryId>19003</EntryId>
+    <ExitId>0</ExitId>
+    <ReverseId>19003</ReverseId>
+
+    <ExitSignal2>0</ExitSignal2>
+    <ReverseSignal2>25</ReverseSignal2>
+
+    <EntryPriceId>8</EntryPriceId>
+    <ExitPriceId>8</ExitPriceId>
+    <ReversePriceId>8</ReversePriceId>
+
+    <StopExitId>0</StopExitId>
+    <StopPriceId>1</StopPriceId>
+
+
+    <ReverseLossCnt>1</ReverseLossCnt>
+
+    <RichTargetMode>8</RichTargetMode>
+    <RichTargetMode2>5</RichTargetMode2>
+
+    <TakeExitMode>0</TakeExitMode>
+
+  </X11809>
+  <X11809>
+    <Name>11809</Name>
+    <Code>60.2.8.3.0.85</Code>
+    <TradeAccountKey>QuikJunior.Open</TradeAccountKey>
+    <TradeTerminalType>Quik</TradeTerminalType>
+    <TradeTerminalKey>D:\TradeSoft\QUIK-Junior\</TradeTerminalKey>
+    <TickerKey>SVU2</TickerKey>
+    <TimeInt>60</TimeInt>
+    <TimeInt2>60</TimeInt2>
+
+    <Ma1Length>300</Ma1Length>
+    <Ma1AtrLength>200</Ma1AtrLength>
+    <Ma1KAtr>1.0</Ma1KAtr>
+    <Ma1Mode>1</Ma1Mode>
+
+    <MaAtrLength1>50</MaAtrLength1>
+    <MaAtrLength2>300</MaAtrLength2>
+
+    <Contracts>1</Contracts>
+
+
+    <KAtrStop>10</KAtrStop>
+
+    <Mode1>1</Mode1>
+    <Mode2>0</Mode2>
+
+    <RandMode>0</RandMode>
+
+    <SwingCountEntry>1</SwingCountEntry>
+    <SwingCountReverse>1</SwingCountReverse>
+    <SwingCountExit>2</SwingCountExit>
+
+    <CancelOrderMode>0</CancelOrderMode>
+    <FlatCount>0</FlatCount>
+
+    <EntryId>19003</EntryId>
+    <ExitId>0</ExitId>
+    <ReverseId>19003</ReverseId>
+
+    <ExitSignal2>0</ExitSignal2>
+    <ReverseSignal2>25</ReverseSignal2>
+
+    <EntryPriceId>8</EntryPriceId>
+    <ExitPriceId>8</ExitPriceId>
+    <ReversePriceId>8</ReversePriceId>
+
+    <StopExitId>0</StopExitId>
+    <StopPriceId>1</StopPriceId>
+
+
+    <ReverseLossCnt>1</ReverseLossCnt>
+
+    <RichTargetMode>8</RichTargetMode>
+    <RichTargetMode2>5</RichTargetMode2>
+
+    <TakeExitMode>0</TakeExitMode>
+
+  </X11809>
+  
+</Strategies>

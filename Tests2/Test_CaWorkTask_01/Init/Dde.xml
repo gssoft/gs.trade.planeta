@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<DdeServer>
+  <Dde2 enabled="true" ns="GS.Trade.Dde" as="GS.Trade.Dde">
+    <Mode>1</Mode>
+    <IsEnabled>true</IsEnabled>
+    <Name>Dde Server</Name>
+    <Code>QUIKInfoFin</Code>
+    <XPath>DdeTopicList</XPath>
+  </Dde2>
+  <DdeTopicList>
+    <TopicItem ns="GS.Trade.Dde" as="GS.Trade.Dde">
+      <TopicItemKey>[Forts]1</TopicItemKey>
+    </TopicItem>
+    <TopicItem ns="GS.Trade.Dde" as="GS.Trade.Dde">
+      <TopicItemKey>[Micex]1</TopicItemKey>
+    </TopicItem>
+  </DdeTopicList>
+</DdeServer>

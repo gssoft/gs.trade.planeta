@@ -1,0 +1,184 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<TradeRepositories>
+  
+  <ExceptionDbRepository ns="GS.Trade.DataBase.Storage" as="GS.Trade.DataBase">
+    <Name>Exception Repository</Name>
+    <Code>ExceptionRepository</Code>
+    <DataBaseName>DbTrade3</DataBaseName>
+    <IsEnabled>true</IsEnabled>
+    <IsUIEnabled>true</IsUIEnabled>
+    <IsEvlEnabled>true</IsEvlEnabled>
+    <IsQueueEnabled>false</IsQueueEnabled>
+  </ExceptionDbRepository>
+  
+  <AccountRepository32 ns="GS.Trade.DataBase.Storage" as="GS.Trade.DataBase">
+    <Name>Account Repository</Name>
+    <Code>AccountRepository</Code>
+    <DataBaseName>DbTrade3</DataBaseName>
+    <IsEnabled>true</IsEnabled>
+    <IsUIEnabled>true</IsUIEnabled>
+    <IsEvlEnabled>true</IsEvlEnabled>
+    <IsQueueEnabled>false</IsQueueEnabled>
+  </AccountRepository32>
+  
+  <TickerRepository32 ns="GS.Trade.DataBase.Storage" as="GS.Trade.DataBase">
+    <Name>Ticker Repository</Name>
+    <Code>TickerRepository</Code>
+    <DataBaseName>DbTrade3</DataBaseName>
+    <IsEnabled>true</IsEnabled>
+    <IsUIEnabled>true</IsUIEnabled>
+    <IsEvlEnabled>true</IsEvlEnabled>
+    <IsQueueEnabled>false</IsQueueEnabled>
+  </TickerRepository32>
+
+  <StrategyRepository32 ns="GS.Trade.DataBase.Storage" as="GS.Trade.DataBase">
+    <Name>Strategy Repository</Name>
+    <Code>StrategyRepository</Code>
+    <DataBaseName>DbTrade3</DataBaseName>
+    <IsEnabled>true</IsEnabled>
+    <IsUIEnabled>true</IsUIEnabled>
+    <IsEvlEnabled>true</IsEvlEnabled>
+    <IsQueueEnabled>false</IsQueueEnabled>
+  </StrategyRepository32>
+  
+  <OrderRepository32 ns="GS.Trade.DataBase.Storage" as="GS.Trade.DataBase">
+    <Name>Order Repository</Name>
+    <Code>OrderRepository</Code>
+    <DataBaseName>DbTrade3</DataBaseName>
+    <IsEnabled>true</IsEnabled>
+    <IsUIEnabled>false</IsUIEnabled>
+    <IsEvlEnabled>true</IsEvlEnabled>
+    <IsQueueEnabled>true</IsQueueEnabled>
+  </OrderRepository32>
+
+  <TradeRepository32 ns="GS.Trade.DataBase.Storage" as="GS.Trade.DataBase">
+    <Name>Trade Repository</Name>
+    <Code>TradeRepository</Code>
+    <DataBaseName>DbTrade3</DataBaseName>
+    <IsEnabled>true</IsEnabled>
+    <IsUIEnabled>false</IsUIEnabled>
+    <IsEvlEnabled>true</IsEvlEnabled>
+    <IsQueueEnabled>true</IsQueueEnabled>
+  </TradeRepository32>
+
+  <PositionRepository32 ns="GS.Trade.DataBase.Storage" as="GS.Trade.DataBase">
+    <Name>Position Repository</Name>
+    <Code>PositionRepository</Code>
+    <DataBaseName>DbTrade3</DataBaseName>
+    <IsEnabled>true</IsEnabled>
+    <IsUIEnabled>true</IsUIEnabled>
+    <IsEvlEnabled>true</IsEvlEnabled>
+    <IsQueueEnabled>true</IsQueueEnabled>
+  </PositionRepository32>
+
+  <PositionTotalRepository32 ns="GS.Trade.DataBase.Storage" as="GS.Trade.DataBase">
+    <Name>Total Repository</Name>
+    <Code>TotalRepository</Code>
+    <DataBaseName>DbTrade3</DataBaseName>
+    <IsEnabled>true</IsEnabled>
+    <IsUIEnabled>true</IsUIEnabled>
+    <IsEvlEnabled>true</IsEvlEnabled>
+    <IsQueueEnabled>true</IsQueueEnabled>
+  </PositionTotalRepository32>
+
+  <DealRepository32 ns="GS.Trade.DataBase.Storage" as="GS.Trade.DataBase">
+    <Name>Deal Repository</Name>
+    <Code>DealRepository</Code>
+    <DataBaseName>DbTrade3</DataBaseName>
+    <IsEnabled>true</IsEnabled>
+    <IsUIEnabled>false</IsUIEnabled>
+    <IsEvlEnabled>true</IsEvlEnabled>
+    <IsQueueEnabled>true</IsQueueEnabled>
+  </DealRepository32>
+  
+  <!-- DbStorage33 -->
+
+  <AccountRepository33 ns="GS.Trade.DataBase.Storage" as="GS.Trade.DataBase">
+    <Name>Account Repository</Name>
+    <Code>AccountRepository</Code>
+    <DataBaseName>DbTrade3</DataBaseName>
+    <TimeOut>180</TimeOut>
+    <IsEnabled>true</IsEnabled>
+    <IsUIEnabled>true</IsUIEnabled>
+    <IsEvlEnabled>true</IsEvlEnabled>
+    <IsQueueEnabled>false</IsQueueEnabled>
+  </AccountRepository33>
+
+  <TickerRepository33 ns="GS.Trade.DataBase.Storage" as="GS.Trade.DataBase">
+    <Name>Ticker Repository</Name>
+    <Code>TickerRepository</Code>
+    <DataBaseName>DbTrade3</DataBaseName>
+    <TimeOut>180</TimeOut>
+    <IsEnabled>true</IsEnabled>
+    <IsUIEnabled>true</IsUIEnabled>
+    <IsEvlEnabled>true</IsEvlEnabled>
+    <IsQueueEnabled>false</IsQueueEnabled>
+  </TickerRepository33>
+
+  <StrategyRepository33 ns="GS.Trade.DataBase.Storage" as="GS.Trade.DataBase">
+    <Name>Strategy Repository</Name>
+    <Code>StrategyRepository</Code>
+    <DataBaseName>DbTrade3</DataBaseName>
+    <TimeOut>180</TimeOut>
+    <IsEnabled>true</IsEnabled>
+    <IsUIEnabled>true</IsUIEnabled>
+    <IsEvlEnabled>true</IsEvlEnabled>
+    <IsQueueEnabled>false</IsQueueEnabled>
+  </StrategyRepository33>
+
+  <OrderRepository33 ns="GS.Trade.DataBase.Storage" as="GS.Trade.DataBase">
+    <Name>Order Repository</Name>
+    <Code>OrderRepository</Code>
+    <DataBaseName>DbTrade3</DataBaseName>
+    <TimeOut>180</TimeOut>
+    <IsEnabled>true</IsEnabled>
+    <IsUIEnabled>false</IsUIEnabled>
+    <IsEvlEnabled>true</IsEvlEnabled>
+    <IsQueueEnabled>true</IsQueueEnabled>
+  </OrderRepository33>
+
+  <TradeRepository33 ns="GS.Trade.DataBase.Storage" as="GS.Trade.DataBase">
+    <Name>Trade Repository</Name>
+    <Code>TradeRepository</Code>
+    <DataBaseName>DbTrade3</DataBaseName>
+    <TimeOut>180</TimeOut>
+    <IsEnabled>true</IsEnabled>
+    <IsUIEnabled>false</IsUIEnabled>
+    <IsEvlEnabled>true</IsEvlEnabled>
+    <IsQueueEnabled>true</IsQueueEnabled>
+  </TradeRepository33>
+
+  <PositionRepository33 ns="GS.Trade.DataBase.Storage" as="GS.Trade.DataBase">
+    <Name>Position Repository</Name>
+    <Code>PositionRepository</Code>
+    <DataBaseName>DbTrade3</DataBaseName>
+    <TimeOut>180</TimeOut>
+    <IsEnabled>true</IsEnabled>
+    <IsUIEnabled>true</IsUIEnabled>
+    <IsEvlEnabled>true</IsEvlEnabled>
+    <IsQueueEnabled>true</IsQueueEnabled>
+  </PositionRepository33>
+
+  <PositionTotalRepository33 ns="GS.Trade.DataBase.Storage" as="GS.Trade.DataBase">
+    <Name>Total Repository</Name>
+    <Code>TotalRepository</Code>
+    <DataBaseName>DbTrade3</DataBaseName>
+    <TimeOut>180</TimeOut>
+    <IsEnabled>true</IsEnabled>
+    <IsUIEnabled>true</IsUIEnabled>
+    <IsEvlEnabled>true</IsEvlEnabled>
+    <IsQueueEnabled>true</IsQueueEnabled>
+  </PositionTotalRepository33>
+
+  <DealRepository33 ns="GS.Trade.DataBase.Storage" as="GS.Trade.DataBase">
+    <Name>Deal Repository</Name>
+    <Code>DealRepository</Code>
+    <DataBaseName>DbTrade3</DataBaseName>
+    <TimeOut>180</TimeOut>
+    <IsEnabled>true</IsEnabled>
+    <IsUIEnabled>false</IsUIEnabled>
+    <IsEvlEnabled>true</IsEvlEnabled>
+    <IsQueueEnabled>true</IsQueueEnabled>
+  </DealRepository33>
+
+</TradeRepositories>

@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<TradeStorages>
+  <TradeStorage enabled="true" ns="GS.Trade.Storage2" as="GS.Trade">
+    <IsEnabled>true</IsEnabled>
+    <Name>TradeStorage Store</Name>
+    <Code>TradeStorage</Code>
+    <XPath>TradeStorageList</XPath>
+  </TradeStorage>
+  <TradeStorageList>
+    <MemStorage enabled="false" ns="GS.Trade.Trades.Storage" as="GS.Trade.Trades">
+      <IsPrimary>false</IsPrimary>
+      <IsEnabled>false</IsEnabled>
+      <Name>Memory Trade Storage 01</Name>
+      <Code>MemTradeStorage01</Code>
+    </MemStorage>
+    <DbStorage enabled="false" ns="GS.Trade.DataBase.Storage" as="GS.Trade.DataBase">
+      <DataBaseName>DbTrade</DataBaseName>
+      <IsPrimary>true</IsPrimary>
+      <IsEnabled>true</IsEnabled>
+      <IsAsync>false</IsAsync>
+      <Name>DataBase Trade Storage 01</Name>
+      <Code>DbTradeStorage01</Code>
+    </DbStorage>
+    <DbStorage2 enabled="false" ns="GS.Trade.DataBase.Storage" as="GS.Trade.DataBase">
+      <DataBaseName>DbTrade2</DataBaseName>
+      <IsPrimary>false</IsPrimary>
+      <IsEnabled>true</IsEnabled>
+      <IsAsync>false</IsAsync>
+      <Name>DataBase TradeStorage 02</Name>
+      <Code>DbTradeStorage02</Code>
+    </DbStorage2>
+    <DbStorage3 enabled="true" ns="GS.Trade.DataBase.Storage" as="GS.Trade.DataBase">
+      <DataBaseName>DbTrade2</DataBaseName>
+      <IsPrimary>true</IsPrimary>
+      <IsEnabled>true</IsEnabled>
+      <IsAsync>false</IsAsync>
+      <Name>DataBase TradeStorage 03</Name>
+      <Code>DbTradeStorage03</Code>
+    </DbStorage3>
+  </TradeStorageList>
+</TradeStorages>

@@ -1,0 +1,10 @@
+﻿var = GS.Ajax = function(){
+};
+GS.Ajax.prototype = function() {
+var get = function (x, y) {
+var val = x + y;
+this.eqCtl.innerHTML = val;
+};
+return { add : add };
+}();
+

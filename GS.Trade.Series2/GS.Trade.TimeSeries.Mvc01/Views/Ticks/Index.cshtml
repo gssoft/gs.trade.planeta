@@ -1,0 +1,45 @@
+﻿@model IEnumerable<GS.Trade.TimeSeries.Model.Tick>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table>
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.TimeSeries.Code)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Last)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.DT)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.TimeSeries.Code)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Last)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.DT)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.Id }) |
+            @Html.ActionLink("Details", "Details", new { id=item.Id }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.Id })
+        </td>
+    </tr>
+}
+
+</table>

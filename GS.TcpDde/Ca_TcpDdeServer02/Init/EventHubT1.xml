@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+<EventHubOfListOfString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+-->
+<EventHubOfListOfString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" enabled="true" ns="GS.EventHubs.EventHubT1" as="GS.EventHubs">
+  <IsEnabled>false</IsEnabled>
+  <IsEvlEnabled>false</IsEvlEnabled>
+  <Capasity>0</Capasity>
+  <CapasityLimit>0</CapasityLimit>
+  <IsReversed>false</IsReversed>
+  <IsQueueEnabled>false</IsQueueEnabled>
+  <IsProcessTaskInUse>false</IsProcessTaskInUse>
+  <EventHubItems>
+    <EventHubItemOfListOfString>
+      <Code>QuikDdeServer.Quotes</Code>
+    </EventHubItemOfListOfString>
+    <EventHubItemOfListOfString>
+      <Code>QuikDdeServer.TickerInfo</Code>
+    </EventHubItemOfListOfString>
+    <EventHubItemOfListOfString>
+      <Code>QuikDdeServer.OptionDesk</Code>
+    </EventHubItemOfListOfString>
+  </EventHubItems>/>
+</EventHubOfListOfString>

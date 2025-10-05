@@ -1,0 +1,82 @@
+﻿@model GS.Trade.TimeSeries.Model.Bar
+
+@{
+    ViewBag.Title = "Delete";
+}
+
+<h2>Delete</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<fieldset>
+    <legend>Bar</legend>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.TimeSeries.Code)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.TimeSeries.Code)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Open)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Open)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.High)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.High)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Low)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Low)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Close)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Close)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Volume)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Volume)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.TypicalPrice)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.TypicalPrice)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.MedianPrice)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.MedianPrice)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.DT)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.DT)
+    </div>
+</fieldset>
+@using (Html.BeginForm()) {
+    @Html.AntiForgeryToken()
+    <p>
+        <input type="submit" value="Delete" /> |
+        @Html.ActionLink("Back to List", "Index")
+    </p>
+}

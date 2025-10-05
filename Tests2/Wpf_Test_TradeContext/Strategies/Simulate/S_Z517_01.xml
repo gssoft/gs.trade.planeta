@@ -1,0 +1,3108 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Strategies>
+
+  <!--Ri-->
+  <Z00517>
+    <Name>Z00517</Name>
+    <Code>Z00517.3.132</Code>
+    <TradeAccountKey>Quik.Open.Real</TradeAccountKey>
+    <TradeTerminalType>Simulator</TradeTerminalType>
+    <TradeTerminalKey>TrTerminal</TradeTerminalKey>
+    <TimePlanKey>Forts.Standard</TimePlanKey>
+    <TickerKey>RIZ3</TickerKey>
+    <TimeInt>3</TimeInt>
+    <TimeInt2>3</TimeInt2>
+
+    <Ma1Length>300</Ma1Length>
+    <Ma1AtrLength>100</Ma1AtrLength>
+    <Ma1KAtr>1.0</Ma1KAtr>
+    <Ma1Mode>1</Ma1Mode>
+
+    <MaAtrLength1>50</MaAtrLength1>
+    <MaAtrLength2>300</MaAtrLength2>
+
+    <Contract>1</Contract>
+    <Contracts>3</Contracts>
+    <SafeContracts2>1</SafeContracts2>
+
+    <KAtrStop>5</KAtrStop>
+    <KAtrStop1>5</KAtrStop1>
+    <KAtrStop2>2</KAtrStop2>
+
+    <Mode1>1</Mode1>
+    <Mode2>0</Mode2>
+
+    <RandMode>0</RandMode>
+
+    <SwingCountStartEntry>1</SwingCountStartEntry>
+    <SwingCountEntry>1</SwingCountEntry>
+    <SwingCountReverse>1</SwingCountReverse>
+    <SwingCountExit>2</SwingCountExit>
+
+    <CancelOrderMode>1</CancelOrderMode>
+    <FlatCount>0</FlatCount>
+
+    <StartEntryMode>1</StartEntryMode>
+    <EntryMode>1</EntryMode>
+
+    <EntrySignal11>19</EntrySignal11>
+    <EntrySignal12>25</EntrySignal12>
+    <EntrySignal13>0</EntrySignal13>
+
+    <EntrySignal1>19</EntrySignal1>
+    <ExitSignal1>25</ExitSignal1>
+    <ReverseSignal1>0</ReverseSignal1>
+
+    <ExitSignal12>0</ExitSignal12>
+    <ReverseSignal12>0</ReverseSignal12>
+
+    <EntrySignal2>0</EntrySignal2>
+    <ExitSignal2>0</ExitSignal2>
+    <ReverseSignal2>0</ReverseSignal2>
+
+    <ExitSignal3>0</ExitSignal3>
+    <ReverseSignal3>0</ReverseSignal3>
+
+    <ExitSignal51>0</ExitSignal51>
+    <ExitSignal52>0</ExitSignal52>
+
+    <ReverseLossSignal>0</ReverseLossSignal>
+
+    <ChangeMode1>0</ChangeMode1>
+    <ChangeMode2>0</ChangeMode2>
+    <ChangeMode3>0</ChangeMode3>
+
+    <ChangeModeCondSignal1>0</ChangeModeCondSignal1>
+    <ChangeModeCondSignal2>0</ChangeModeCondSignal2>
+    <ChangeModeCondSignal3>0</ChangeModeCondSignal3>
+    <ChangeModeCondSignal5>0</ChangeModeCondSignal5>
+
+    <EntryPriceId>8</EntryPriceId>
+    <ExitPriceId>8</ExitPriceId>
+    <ReversePriceId>8</ReversePriceId>
+
+    <StopExitSignal1>0</StopExitSignal1>
+    <StopPriceId>1</StopPriceId>
+
+    <ReverseLossCnt>1000</ReverseLossCnt>
+
+    <ReverseMode1>1</ReverseMode1>
+    <ReverseMode2>1</ReverseMode2>
+    <ReverseMode3>1</ReverseMode3>
+    <ReverseMode5>1</ReverseMode5>
+
+    <RichHL>2</RichHL>
+
+    <RichTargetMode11>0</RichTargetMode11>
+    <RichTargetMode12>0</RichTargetMode12>
+    <RichTargetMode13>0</RichTargetMode13>
+    <RichTargetMode15>0</RichTargetMode15>
+
+    <RichTargetMode21>0</RichTargetMode21>
+    <RichTargetMode22>0</RichTargetMode22>
+    <RichTargetMode23>0</RichTargetMode23>
+    <RichTargetMode25>0</RichTargetMode25>
+
+    <RichTargetMode31>8</RichTargetMode31>
+    <RichTargetMode32>5</RichTargetMode32>
+
+    <RichTargetMode41>2</RichTargetMode41>
+    <RichTargetMode42>0</RichTargetMode42>
+
+    <RichTargetMode51>0</RichTargetMode51>
+
+    <RiskLowMap>3</RiskLowMap>
+
+    <TakeExitMode>0</TakeExitMode>
+
+  </Z00517>
+  <!--5-->
+  <Z00517>
+    <Name>Z00517</Name>
+    <Code>Z00517.5.132</Code>
+    <TradeAccountKey>Quik.Open.Real</TradeAccountKey>
+    <TradeTerminalType>Simulator</TradeTerminalType>
+    <TradeTerminalKey>TrTerminal</TradeTerminalKey>
+    <TimePlanKey>Forts.Standard</TimePlanKey>
+    <TickerKey>RIZ3</TickerKey>
+    <TimeInt>5</TimeInt>
+    <TimeInt2>5</TimeInt2>
+
+    <Ma1Length>300</Ma1Length>
+    <Ma1AtrLength>100</Ma1AtrLength>
+    <Ma1KAtr>1.0</Ma1KAtr>
+    <Ma1Mode>1</Ma1Mode>
+
+    <MaAtrLength1>50</MaAtrLength1>
+    <MaAtrLength2>300</MaAtrLength2>
+
+    <Contract>1</Contract>
+    <Contracts>3</Contracts>
+    <SafeContracts2>1</SafeContracts2>
+
+    <KAtrStop>5</KAtrStop>
+    <KAtrStop1>5</KAtrStop1>
+    <KAtrStop2>2</KAtrStop2>
+
+    <Mode1>1</Mode1>
+    <Mode2>0</Mode2>
+
+    <RandMode>0</RandMode>
+
+    <SwingCountStartEntry>1</SwingCountStartEntry>
+    <SwingCountEntry>1</SwingCountEntry>
+    <SwingCountReverse>1</SwingCountReverse>
+    <SwingCountExit>2</SwingCountExit>
+
+    <CancelOrderMode>1</CancelOrderMode>
+    <FlatCount>0</FlatCount>
+
+    <StartEntryMode>1</StartEntryMode>
+    <EntryMode>1</EntryMode>
+
+    <EntrySignal11>19</EntrySignal11>
+    <EntrySignal12>25</EntrySignal12>
+    <EntrySignal13>0</EntrySignal13>
+
+    <EntrySignal1>19</EntrySignal1>
+    <ExitSignal1>25</ExitSignal1>
+    <ReverseSignal1>0</ReverseSignal1>
+
+    <ExitSignal12>0</ExitSignal12>
+    <ReverseSignal12>0</ReverseSignal12>
+
+    <EntrySignal2>0</EntrySignal2>
+    <ExitSignal2>0</ExitSignal2>
+    <ReverseSignal2>0</ReverseSignal2>
+
+    <ExitSignal3>0</ExitSignal3>
+    <ReverseSignal3>0</ReverseSignal3>
+
+    <ExitSignal51>0</ExitSignal51>
+    <ExitSignal52>0</ExitSignal52>
+
+    <ReverseLossSignal>0</ReverseLossSignal>
+
+    <ChangeMode1>0</ChangeMode1>
+    <ChangeMode2>0</ChangeMode2>
+    <ChangeMode3>0</ChangeMode3>
+
+    <ChangeModeCondSignal1>0</ChangeModeCondSignal1>
+    <ChangeModeCondSignal2>0</ChangeModeCondSignal2>
+    <ChangeModeCondSignal3>0</ChangeModeCondSignal3>
+    <ChangeModeCondSignal5>0</ChangeModeCondSignal5>
+
+    <EntryPriceId>8</EntryPriceId>
+    <ExitPriceId>8</ExitPriceId>
+    <ReversePriceId>8</ReversePriceId>
+
+    <StopExitSignal1>0</StopExitSignal1>
+    <StopPriceId>1</StopPriceId>
+
+    <ReverseLossCnt>1000</ReverseLossCnt>
+
+    <ReverseMode1>1</ReverseMode1>
+    <ReverseMode2>1</ReverseMode2>
+    <ReverseMode3>1</ReverseMode3>
+    <ReverseMode5>1</ReverseMode5>
+
+    <RichHL>2</RichHL>
+
+    <RichTargetMode11>0</RichTargetMode11>
+    <RichTargetMode12>0</RichTargetMode12>
+    <RichTargetMode13>0</RichTargetMode13>
+    <RichTargetMode15>0</RichTargetMode15>
+
+    <RichTargetMode21>0</RichTargetMode21>
+    <RichTargetMode22>0</RichTargetMode22>
+    <RichTargetMode23>0</RichTargetMode23>
+    <RichTargetMode25>0</RichTargetMode25>
+
+    <RichTargetMode31>8</RichTargetMode31>
+    <RichTargetMode32>5</RichTargetMode32>
+
+    <RichTargetMode41>2</RichTargetMode41>
+    <RichTargetMode42>0</RichTargetMode42>
+
+    <RichTargetMode51>0</RichTargetMode51>
+
+    <RiskLowMap>3</RiskLowMap>
+
+    <TakeExitMode>0</TakeExitMode>
+
+  </Z00517>
+  <!-- 15 -->
+  <Z00517>
+    <Name>Z00517</Name>
+    <Code>Z00517.15.132</Code>
+    <TradeAccountKey>Quik.Open.Real</TradeAccountKey>
+    <TradeTerminalType>Simulator</TradeTerminalType>
+    <TradeTerminalKey>TrTerminal</TradeTerminalKey>
+    <TimePlanKey>Forts.Standard</TimePlanKey>
+    <TickerKey>RIZ3</TickerKey>
+    <TimeInt>15</TimeInt>
+    <TimeInt2>15</TimeInt2>
+
+    <Ma1Length>300</Ma1Length>
+    <Ma1AtrLength>100</Ma1AtrLength>
+    <Ma1KAtr>1.0</Ma1KAtr>
+    <Ma1Mode>1</Ma1Mode>
+
+    <MaAtrLength1>50</MaAtrLength1>
+    <MaAtrLength2>300</MaAtrLength2>
+
+    <Contract>1</Contract>
+    <Contracts>3</Contracts>
+    <SafeContracts2>1</SafeContracts2>
+
+    <KAtrStop>5</KAtrStop>
+    <KAtrStop1>5</KAtrStop1>
+    <KAtrStop2>2</KAtrStop2>
+
+    <Mode1>1</Mode1>
+    <Mode2>0</Mode2>
+
+    <RandMode>0</RandMode>
+
+    <SwingCountStartEntry>1</SwingCountStartEntry>
+    <SwingCountEntry>1</SwingCountEntry>
+    <SwingCountReverse>1</SwingCountReverse>
+    <SwingCountExit>2</SwingCountExit>
+
+    <CancelOrderMode>1</CancelOrderMode>
+    <FlatCount>0</FlatCount>
+
+    <StartEntryMode>1</StartEntryMode>
+    <EntryMode>1</EntryMode>
+
+    <EntrySignal11>19</EntrySignal11>
+    <EntrySignal12>25</EntrySignal12>
+    <EntrySignal13>0</EntrySignal13>
+
+    <EntrySignal1>19</EntrySignal1>
+    <ExitSignal1>25</ExitSignal1>
+    <ReverseSignal1>0</ReverseSignal1>
+
+    <ExitSignal12>0</ExitSignal12>
+    <ReverseSignal12>0</ReverseSignal12>
+
+    <EntrySignal2>0</EntrySignal2>
+    <ExitSignal2>0</ExitSignal2>
+    <ReverseSignal2>0</ReverseSignal2>
+
+    <ExitSignal3>0</ExitSignal3>
+    <ReverseSignal3>0</ReverseSignal3>
+
+    <ExitSignal51>0</ExitSignal51>
+    <ExitSignal52>0</ExitSignal52>
+
+    <ReverseLossSignal>0</ReverseLossSignal>
+
+    <ChangeMode1>0</ChangeMode1>
+    <ChangeMode2>0</ChangeMode2>
+    <ChangeMode3>0</ChangeMode3>
+
+    <ChangeModeCondSignal1>0</ChangeModeCondSignal1>
+    <ChangeModeCondSignal2>0</ChangeModeCondSignal2>
+    <ChangeModeCondSignal3>0</ChangeModeCondSignal3>
+    <ChangeModeCondSignal5>0</ChangeModeCondSignal5>
+
+    <EntryPriceId>8</EntryPriceId>
+    <ExitPriceId>8</ExitPriceId>
+    <ReversePriceId>8</ReversePriceId>
+
+    <StopExitSignal1>0</StopExitSignal1>
+    <StopPriceId>1</StopPriceId>
+
+    <ReverseLossCnt>1000</ReverseLossCnt>
+
+    <ReverseMode1>1</ReverseMode1>
+    <ReverseMode2>1</ReverseMode2>
+    <ReverseMode3>1</ReverseMode3>
+    <ReverseMode5>1</ReverseMode5>
+
+    <RichHL>2</RichHL>
+
+    <RichTargetMode11>0</RichTargetMode11>
+    <RichTargetMode12>0</RichTargetMode12>
+    <RichTargetMode13>0</RichTargetMode13>
+    <RichTargetMode15>0</RichTargetMode15>
+
+    <RichTargetMode21>0</RichTargetMode21>
+    <RichTargetMode22>0</RichTargetMode22>
+    <RichTargetMode23>0</RichTargetMode23>
+    <RichTargetMode25>0</RichTargetMode25>
+
+    <RichTargetMode31>8</RichTargetMode31>
+    <RichTargetMode32>5</RichTargetMode32>
+
+    <RichTargetMode41>2</RichTargetMode41>
+    <RichTargetMode42>0</RichTargetMode42>
+
+    <RichTargetMode51>0</RichTargetMode51>
+
+    <RiskLowMap>3</RiskLowMap>
+
+    <TakeExitMode>0</TakeExitMode>
+
+  </Z00517>
+
+  <!-- 60 -->
+  <Z00517>
+    <Name>Z00517</Name>
+    <Code>Z00517.60.132</Code>
+    <TradeAccountKey>Quik.Open.Real</TradeAccountKey>
+    <TradeTerminalType>Simulator</TradeTerminalType>
+    <TradeTerminalKey>TrTerminal</TradeTerminalKey>
+    <TimePlanKey>Forts.Standard</TimePlanKey>
+    <TickerKey>RIZ3</TickerKey>
+    <TimeInt>60</TimeInt>
+    <TimeInt2>60</TimeInt2>
+
+    <Ma1Length>300</Ma1Length>
+    <Ma1AtrLength>100</Ma1AtrLength>
+    <Ma1KAtr>1.0</Ma1KAtr>
+    <Ma1Mode>1</Ma1Mode>
+
+    <MaAtrLength1>50</MaAtrLength1>
+    <MaAtrLength2>300</MaAtrLength2>
+
+    <Contract>1</Contract>
+    <Contracts>3</Contracts>
+    <SafeContracts2>1</SafeContracts2>
+
+    <KAtrStop>5</KAtrStop>
+    <KAtrStop1>5</KAtrStop1>
+    <KAtrStop2>2</KAtrStop2>
+
+    <Mode1>1</Mode1>
+    <Mode2>0</Mode2>
+
+    <RandMode>0</RandMode>
+
+    <SwingCountStartEntry>1</SwingCountStartEntry>
+    <SwingCountEntry>1</SwingCountEntry>
+    <SwingCountReverse>1</SwingCountReverse>
+    <SwingCountExit>2</SwingCountExit>
+
+    <CancelOrderMode>1</CancelOrderMode>
+    <FlatCount>0</FlatCount>
+
+    <StartEntryMode>1</StartEntryMode>
+    <EntryMode>1</EntryMode>
+
+    <EntrySignal11>19</EntrySignal11>
+    <EntrySignal12>25</EntrySignal12>
+    <EntrySignal13>0</EntrySignal13>
+
+    <EntrySignal1>19</EntrySignal1>
+    <ExitSignal1>25</ExitSignal1>
+    <ReverseSignal1>0</ReverseSignal1>
+
+    <ExitSignal12>0</ExitSignal12>
+    <ReverseSignal12>0</ReverseSignal12>
+
+    <EntrySignal2>0</EntrySignal2>
+    <ExitSignal2>0</ExitSignal2>
+    <ReverseSignal2>0</ReverseSignal2>
+
+    <ExitSignal3>0</ExitSignal3>
+    <ReverseSignal3>0</ReverseSignal3>
+
+    <ExitSignal51>0</ExitSignal51>
+    <ExitSignal52>0</ExitSignal52>
+
+    <ReverseLossSignal>0</ReverseLossSignal>
+
+    <ChangeMode1>0</ChangeMode1>
+    <ChangeMode2>0</ChangeMode2>
+    <ChangeMode3>0</ChangeMode3>
+
+    <ChangeModeCondSignal1>0</ChangeModeCondSignal1>
+    <ChangeModeCondSignal2>0</ChangeModeCondSignal2>
+    <ChangeModeCondSignal3>0</ChangeModeCondSignal3>
+    <ChangeModeCondSignal5>0</ChangeModeCondSignal5>
+
+    <EntryPriceId>8</EntryPriceId>
+    <ExitPriceId>8</ExitPriceId>
+    <ReversePriceId>8</ReversePriceId>
+
+    <StopExitSignal1>0</StopExitSignal1>
+    <StopPriceId>1</StopPriceId>
+
+    <ReverseLossCnt>1000</ReverseLossCnt>
+
+    <ReverseMode1>1</ReverseMode1>
+    <ReverseMode2>1</ReverseMode2>
+    <ReverseMode3>1</ReverseMode3>
+    <ReverseMode5>1</ReverseMode5>
+
+    <RichHL>2</RichHL>
+
+    <RichTargetMode11>0</RichTargetMode11>
+    <RichTargetMode12>0</RichTargetMode12>
+    <RichTargetMode13>0</RichTargetMode13>
+    <RichTargetMode15>0</RichTargetMode15>
+
+    <RichTargetMode21>0</RichTargetMode21>
+    <RichTargetMode22>0</RichTargetMode22>
+    <RichTargetMode23>0</RichTargetMode23>
+    <RichTargetMode25>0</RichTargetMode25>
+
+    <RichTargetMode31>8</RichTargetMode31>
+    <RichTargetMode32>5</RichTargetMode32>
+
+    <RichTargetMode41>2</RichTargetMode41>
+    <RichTargetMode42>0</RichTargetMode42>
+
+    <RichTargetMode51>0</RichTargetMode51>
+
+    <RiskLowMap>3</RiskLowMap>
+
+    <TakeExitMode>0</TakeExitMode>
+
+  </Z00517>
+
+  <!-- 300 -->
+  <Z00517>
+    <Name>Z00517</Name>
+    <Code>Z00517.300.132</Code>
+    <TradeAccountKey>Quik.Open.Real</TradeAccountKey>
+    <TradeTerminalType>Simulator</TradeTerminalType>
+    <TradeTerminalKey>TrTerminal</TradeTerminalKey>
+    <TimePlanKey>Forts.Standard</TimePlanKey>
+    <TickerKey>RIZ3</TickerKey>
+    <TimeInt>300</TimeInt>
+    <TimeInt2>300</TimeInt2>
+
+    <Ma1Length>300</Ma1Length>
+    <Ma1AtrLength>100</Ma1AtrLength>
+    <Ma1KAtr>1.0</Ma1KAtr>
+    <Ma1Mode>1</Ma1Mode>
+
+    <MaAtrLength1>50</MaAtrLength1>
+    <MaAtrLength2>300</MaAtrLength2>
+
+    <Contract>1</Contract>
+    <Contracts>3</Contracts>
+    <SafeContracts2>1</SafeContracts2>
+
+    <KAtrStop>5</KAtrStop>
+    <KAtrStop1>5</KAtrStop1>
+    <KAtrStop2>2</KAtrStop2>
+
+    <Mode1>1</Mode1>
+    <Mode2>0</Mode2>
+
+    <RandMode>0</RandMode>
+
+    <SwingCountStartEntry>1</SwingCountStartEntry>
+    <SwingCountEntry>1</SwingCountEntry>
+    <SwingCountReverse>1</SwingCountReverse>
+    <SwingCountExit>2</SwingCountExit>
+
+    <CancelOrderMode>1</CancelOrderMode>
+    <FlatCount>0</FlatCount>
+
+    <StartEntryMode>1</StartEntryMode>
+    <EntryMode>1</EntryMode>
+
+    <EntrySignal11>19</EntrySignal11>
+    <EntrySignal12>25</EntrySignal12>
+    <EntrySignal13>0</EntrySignal13>
+
+    <EntrySignal1>19</EntrySignal1>
+    <ExitSignal1>25</ExitSignal1>
+    <ReverseSignal1>0</ReverseSignal1>
+
+    <ExitSignal12>0</ExitSignal12>
+    <ReverseSignal12>0</ReverseSignal12>
+
+    <EntrySignal2>0</EntrySignal2>
+    <ExitSignal2>0</ExitSignal2>
+    <ReverseSignal2>0</ReverseSignal2>
+
+    <ExitSignal3>0</ExitSignal3>
+    <ReverseSignal3>0</ReverseSignal3>
+
+    <ExitSignal51>0</ExitSignal51>
+    <ExitSignal52>0</ExitSignal52>
+
+    <ReverseLossSignal>0</ReverseLossSignal>
+
+    <ChangeMode1>0</ChangeMode1>
+    <ChangeMode2>0</ChangeMode2>
+    <ChangeMode3>0</ChangeMode3>
+
+    <ChangeModeCondSignal1>0</ChangeModeCondSignal1>
+    <ChangeModeCondSignal2>0</ChangeModeCondSignal2>
+    <ChangeModeCondSignal3>0</ChangeModeCondSignal3>
+    <ChangeModeCondSignal5>0</ChangeModeCondSignal5>
+
+    <EntryPriceId>8</EntryPriceId>
+    <ExitPriceId>8</ExitPriceId>
+    <ReversePriceId>8</ReversePriceId>
+
+    <StopExitSignal1>0</StopExitSignal1>
+    <StopPriceId>1</StopPriceId>
+
+    <ReverseLossCnt>1000</ReverseLossCnt>
+
+    <ReverseMode1>1</ReverseMode1>
+    <ReverseMode2>1</ReverseMode2>
+    <ReverseMode3>1</ReverseMode3>
+    <ReverseMode5>1</ReverseMode5>
+
+    <RichHL>2</RichHL>
+
+    <RichTargetMode11>0</RichTargetMode11>
+    <RichTargetMode12>0</RichTargetMode12>
+    <RichTargetMode13>0</RichTargetMode13>
+    <RichTargetMode15>0</RichTargetMode15>
+
+    <RichTargetMode21>0</RichTargetMode21>
+    <RichTargetMode22>0</RichTargetMode22>
+    <RichTargetMode23>0</RichTargetMode23>
+    <RichTargetMode25>0</RichTargetMode25>
+
+    <RichTargetMode31>8</RichTargetMode31>
+    <RichTargetMode32>5</RichTargetMode32>
+
+    <RichTargetMode41>2</RichTargetMode41>
+    <RichTargetMode42>0</RichTargetMode42>
+
+    <RichTargetMode51>0</RichTargetMode51>
+
+    <RiskLowMap>3</RiskLowMap>
+
+    <TakeExitMode>0</TakeExitMode>
+
+  </Z00517>
+
+  <!--Si-->
+  <Z00517>
+    <Name>Z00517</Name>
+    <Code>Z00517.5.153</Code>
+    <TradeAccountKey>Quik.Open.Real</TradeAccountKey>
+    <TradeTerminalType>Simulator</TradeTerminalType>
+    <TradeTerminalKey>TrTerminal</TradeTerminalKey>
+    <TimePlanKey>Forts.Standard</TimePlanKey>
+    <TickerKey>SiZ3</TickerKey>
+    <TimeInt>5</TimeInt>
+    <TimeInt2>5</TimeInt2>
+
+    <Ma1Length>300</Ma1Length>
+    <Ma1AtrLength>100</Ma1AtrLength>
+    <Ma1KAtr>1.0</Ma1KAtr>
+    <Ma1Mode>1</Ma1Mode>
+
+    <MaAtrLength1>50</MaAtrLength1>
+    <MaAtrLength2>300</MaAtrLength2>
+
+    <Contract>1</Contract>
+    <Contracts>3</Contracts>
+    <SafeContracts2>1</SafeContracts2>
+
+    <KAtrStop>5</KAtrStop>
+    <KAtrStop1>5</KAtrStop1>
+    <KAtrStop2>2</KAtrStop2>
+
+    <Mode1>1</Mode1>
+    <Mode2>0</Mode2>
+
+    <RandMode>0</RandMode>
+
+    <SwingCountStartEntry>1</SwingCountStartEntry>
+    <SwingCountEntry>1</SwingCountEntry>
+    <SwingCountReverse>1</SwingCountReverse>
+    <SwingCountExit>2</SwingCountExit>
+
+    <CancelOrderMode>1</CancelOrderMode>
+    <FlatCount>0</FlatCount>
+
+    <StartEntryMode>1</StartEntryMode>
+    <EntryMode>1</EntryMode>
+
+    <EntrySignal11>19</EntrySignal11>
+    <EntrySignal12>25</EntrySignal12>
+    <EntrySignal13>0</EntrySignal13>
+
+    <EntrySignal1>19</EntrySignal1>
+    <ExitSignal1>25</ExitSignal1>
+    <ReverseSignal1>0</ReverseSignal1>
+
+    <ExitSignal12>0</ExitSignal12>
+    <ReverseSignal12>0</ReverseSignal12>
+
+    <EntrySignal2>0</EntrySignal2>
+    <ExitSignal2>0</ExitSignal2>
+    <ReverseSignal2>0</ReverseSignal2>
+
+    <ExitSignal3>0</ExitSignal3>
+    <ReverseSignal3>0</ReverseSignal3>
+
+    <ExitSignal51>0</ExitSignal51>
+    <ExitSignal52>0</ExitSignal52>
+
+    <ReverseLossSignal>0</ReverseLossSignal>
+
+    <ChangeMode1>0</ChangeMode1>
+    <ChangeMode2>0</ChangeMode2>
+    <ChangeMode3>0</ChangeMode3>
+
+    <ChangeModeCondSignal1>0</ChangeModeCondSignal1>
+    <ChangeModeCondSignal2>0</ChangeModeCondSignal2>
+    <ChangeModeCondSignal3>0</ChangeModeCondSignal3>
+    <ChangeModeCondSignal5>0</ChangeModeCondSignal5>
+
+    <EntryPriceId>8</EntryPriceId>
+    <ExitPriceId>8</ExitPriceId>
+    <ReversePriceId>8</ReversePriceId>
+
+    <StopExitSignal1>0</StopExitSignal1>
+    <StopPriceId>1</StopPriceId>
+
+    <ReverseLossCnt>1000</ReverseLossCnt>
+
+    <ReverseMode1>1</ReverseMode1>
+    <ReverseMode2>1</ReverseMode2>
+    <ReverseMode3>1</ReverseMode3>
+    <ReverseMode5>1</ReverseMode5>
+
+    <RichHL>2</RichHL>
+
+    <RichTargetMode11>0</RichTargetMode11>
+    <RichTargetMode12>0</RichTargetMode12>
+    <RichTargetMode13>0</RichTargetMode13>
+    <RichTargetMode15>0</RichTargetMode15>
+
+    <RichTargetMode21>0</RichTargetMode21>
+    <RichTargetMode22>0</RichTargetMode22>
+    <RichTargetMode23>0</RichTargetMode23>
+    <RichTargetMode25>0</RichTargetMode25>
+
+    <RichTargetMode31>8</RichTargetMode31>
+    <RichTargetMode32>5</RichTargetMode32>
+
+    <RichTargetMode41>2</RichTargetMode41>
+    <RichTargetMode42>0</RichTargetMode42>
+
+    <RichTargetMode51>0</RichTargetMode51>
+
+    <RiskLowMap>3</RiskLowMap>
+
+    <TakeExitMode>0</TakeExitMode>
+
+  </Z00517>
+  <Z00517>
+    <Name>Z00517</Name>
+    <Code>Z00517.15.153</Code>
+    <TradeAccountKey>Quik.Open.Real</TradeAccountKey>
+    <TradeTerminalType>Simulator</TradeTerminalType>
+    <TradeTerminalKey>TrTerminal</TradeTerminalKey>
+    <TimePlanKey>Forts.Standard</TimePlanKey>
+    <TickerKey>SiZ3</TickerKey>
+    <TimeInt>15</TimeInt>
+    <TimeInt2>15</TimeInt2>
+
+    <Ma1Length>300</Ma1Length>
+    <Ma1AtrLength>100</Ma1AtrLength>
+    <Ma1KAtr>1.0</Ma1KAtr>
+    <Ma1Mode>1</Ma1Mode>
+
+    <MaAtrLength1>50</MaAtrLength1>
+    <MaAtrLength2>300</MaAtrLength2>
+
+    <Contract>1</Contract>
+    <Contracts>3</Contracts>
+    <SafeContracts2>1</SafeContracts2>
+
+    <KAtrStop>5</KAtrStop>
+    <KAtrStop1>5</KAtrStop1>
+    <KAtrStop2>2</KAtrStop2>
+
+    <Mode1>1</Mode1>
+    <Mode2>0</Mode2>
+
+    <RandMode>0</RandMode>
+
+    <SwingCountStartEntry>1</SwingCountStartEntry>
+    <SwingCountEntry>1</SwingCountEntry>
+    <SwingCountReverse>1</SwingCountReverse>
+    <SwingCountExit>2</SwingCountExit>
+
+    <CancelOrderMode>1</CancelOrderMode>
+    <FlatCount>0</FlatCount>
+
+    <StartEntryMode>1</StartEntryMode>
+    <EntryMode>1</EntryMode>
+
+    <EntrySignal11>19</EntrySignal11>
+    <EntrySignal12>25</EntrySignal12>
+    <EntrySignal13>0</EntrySignal13>
+
+    <EntrySignal1>19</EntrySignal1>
+    <ExitSignal1>25</ExitSignal1>
+    <ReverseSignal1>0</ReverseSignal1>
+
+    <ExitSignal12>0</ExitSignal12>
+    <ReverseSignal12>0</ReverseSignal12>
+
+    <EntrySignal2>0</EntrySignal2>
+    <ExitSignal2>0</ExitSignal2>
+    <ReverseSignal2>0</ReverseSignal2>
+
+    <ExitSignal3>0</ExitSignal3>
+    <ReverseSignal3>0</ReverseSignal3>
+
+    <ExitSignal51>0</ExitSignal51>
+    <ExitSignal52>0</ExitSignal52>
+
+    <ReverseLossSignal>0</ReverseLossSignal>
+
+    <ChangeMode1>0</ChangeMode1>
+    <ChangeMode2>0</ChangeMode2>
+    <ChangeMode3>0</ChangeMode3>
+
+    <ChangeModeCondSignal1>0</ChangeModeCondSignal1>
+    <ChangeModeCondSignal2>0</ChangeModeCondSignal2>
+    <ChangeModeCondSignal3>0</ChangeModeCondSignal3>
+    <ChangeModeCondSignal5>0</ChangeModeCondSignal5>
+
+    <EntryPriceId>8</EntryPriceId>
+    <ExitPriceId>8</ExitPriceId>
+    <ReversePriceId>8</ReversePriceId>
+
+    <StopExitSignal1>0</StopExitSignal1>
+    <StopPriceId>1</StopPriceId>
+
+    <ReverseLossCnt>1000</ReverseLossCnt>
+
+    <ReverseMode1>1</ReverseMode1>
+    <ReverseMode2>1</ReverseMode2>
+    <ReverseMode3>1</ReverseMode3>
+    <ReverseMode5>1</ReverseMode5>
+
+    <RichHL>2</RichHL>
+
+    <RichTargetMode11>0</RichTargetMode11>
+    <RichTargetMode12>0</RichTargetMode12>
+    <RichTargetMode13>0</RichTargetMode13>
+    <RichTargetMode15>0</RichTargetMode15>
+
+    <RichTargetMode21>0</RichTargetMode21>
+    <RichTargetMode22>0</RichTargetMode22>
+    <RichTargetMode23>0</RichTargetMode23>
+    <RichTargetMode25>0</RichTargetMode25>
+
+    <RichTargetMode31>8</RichTargetMode31>
+    <RichTargetMode32>5</RichTargetMode32>
+
+    <RichTargetMode41>2</RichTargetMode41>
+    <RichTargetMode42>0</RichTargetMode42>
+
+    <RichTargetMode51>0</RichTargetMode51>
+
+    <RiskLowMap>3</RiskLowMap>
+
+    <TakeExitMode>0</TakeExitMode>
+
+  </Z00517>
+  <Z00517>
+    <Name>Z00517</Name>
+    <Code>Z00517.60.132</Code>
+    <TradeAccountKey>Quik.Open.Real</TradeAccountKey>
+    <TradeTerminalType>Simulator</TradeTerminalType>
+    <TradeTerminalKey>TrTerminal</TradeTerminalKey>
+    <TimePlanKey>Forts.Standard</TimePlanKey>
+    <TickerKey>SiZ3</TickerKey>
+    <TimeInt>60</TimeInt>
+    <TimeInt2>60</TimeInt2>
+
+    <Ma1Length>300</Ma1Length>
+    <Ma1AtrLength>100</Ma1AtrLength>
+    <Ma1KAtr>1.0</Ma1KAtr>
+    <Ma1Mode>1</Ma1Mode>
+
+    <MaAtrLength1>50</MaAtrLength1>
+    <MaAtrLength2>300</MaAtrLength2>
+
+    <Contract>1</Contract>
+    <Contracts>3</Contracts>
+    <SafeContracts2>1</SafeContracts2>
+
+    <KAtrStop>5</KAtrStop>
+    <KAtrStop1>5</KAtrStop1>
+    <KAtrStop2>2</KAtrStop2>
+
+    <Mode1>1</Mode1>
+    <Mode2>0</Mode2>
+
+    <RandMode>0</RandMode>
+
+    <SwingCountStartEntry>1</SwingCountStartEntry>
+    <SwingCountEntry>1</SwingCountEntry>
+    <SwingCountReverse>1</SwingCountReverse>
+    <SwingCountExit>2</SwingCountExit>
+
+    <CancelOrderMode>1</CancelOrderMode>
+    <FlatCount>0</FlatCount>
+
+    <StartEntryMode>1</StartEntryMode>
+    <EntryMode>1</EntryMode>
+
+    <EntrySignal11>19</EntrySignal11>
+    <EntrySignal12>25</EntrySignal12>
+    <EntrySignal13>0</EntrySignal13>
+
+    <EntrySignal1>19</EntrySignal1>
+    <ExitSignal1>25</ExitSignal1>
+    <ReverseSignal1>0</ReverseSignal1>
+
+    <ExitSignal12>0</ExitSignal12>
+    <ReverseSignal12>0</ReverseSignal12>
+
+    <EntrySignal2>0</EntrySignal2>
+    <ExitSignal2>0</ExitSignal2>
+    <ReverseSignal2>0</ReverseSignal2>
+
+    <ExitSignal3>0</ExitSignal3>
+    <ReverseSignal3>0</ReverseSignal3>
+
+    <ExitSignal51>0</ExitSignal51>
+    <ExitSignal52>0</ExitSignal52>
+
+    <ReverseLossSignal>0</ReverseLossSignal>
+
+    <ChangeMode1>0</ChangeMode1>
+    <ChangeMode2>0</ChangeMode2>
+    <ChangeMode3>0</ChangeMode3>
+
+    <ChangeModeCondSignal1>0</ChangeModeCondSignal1>
+    <ChangeModeCondSignal2>0</ChangeModeCondSignal2>
+    <ChangeModeCondSignal3>0</ChangeModeCondSignal3>
+    <ChangeModeCondSignal5>0</ChangeModeCondSignal5>
+
+    <EntryPriceId>8</EntryPriceId>
+    <ExitPriceId>8</ExitPriceId>
+    <ReversePriceId>8</ReversePriceId>
+
+    <StopExitSignal1>0</StopExitSignal1>
+    <StopPriceId>1</StopPriceId>
+
+    <ReverseLossCnt>1000</ReverseLossCnt>
+
+    <ReverseMode1>1</ReverseMode1>
+    <ReverseMode2>1</ReverseMode2>
+    <ReverseMode3>1</ReverseMode3>
+    <ReverseMode5>1</ReverseMode5>
+
+    <RichHL>2</RichHL>
+
+    <RichTargetMode11>0</RichTargetMode11>
+    <RichTargetMode12>0</RichTargetMode12>
+    <RichTargetMode13>0</RichTargetMode13>
+    <RichTargetMode15>0</RichTargetMode15>
+
+    <RichTargetMode21>0</RichTargetMode21>
+    <RichTargetMode22>0</RichTargetMode22>
+    <RichTargetMode23>0</RichTargetMode23>
+    <RichTargetMode25>0</RichTargetMode25>
+
+    <RichTargetMode31>8</RichTargetMode31>
+    <RichTargetMode32>5</RichTargetMode32>
+
+    <RichTargetMode41>2</RichTargetMode41>
+    <RichTargetMode42>0</RichTargetMode42>
+
+    <RichTargetMode51>0</RichTargetMode51>
+
+    <RiskLowMap>3</RiskLowMap>
+
+    <TakeExitMode>0</TakeExitMode>
+
+  </Z00517>
+  <Z00517>
+    <Name>Z00517</Name>
+    <Code>Z00517.300.132</Code>
+    <TradeAccountKey>Quik.Open.Real</TradeAccountKey>
+    <TradeTerminalType>Simulator</TradeTerminalType>
+    <TradeTerminalKey>TrTerminal</TradeTerminalKey>
+    <TimePlanKey>Forts.Standard</TimePlanKey>
+    <TickerKey>SiZ3</TickerKey>
+    <TimeInt>300</TimeInt>
+    <TimeInt2>300</TimeInt2>
+
+    <Ma1Length>300</Ma1Length>
+    <Ma1AtrLength>100</Ma1AtrLength>
+    <Ma1KAtr>1.0</Ma1KAtr>
+    <Ma1Mode>1</Ma1Mode>
+
+    <MaAtrLength1>50</MaAtrLength1>
+    <MaAtrLength2>300</MaAtrLength2>
+
+    <Contract>1</Contract>
+    <Contracts>3</Contracts>
+    <SafeContracts2>1</SafeContracts2>
+
+    <KAtrStop>5</KAtrStop>
+    <KAtrStop1>5</KAtrStop1>
+    <KAtrStop2>2</KAtrStop2>
+
+    <Mode1>1</Mode1>
+    <Mode2>0</Mode2>
+
+    <RandMode>0</RandMode>
+
+    <SwingCountStartEntry>1</SwingCountStartEntry>
+    <SwingCountEntry>1</SwingCountEntry>
+    <SwingCountReverse>1</SwingCountReverse>
+    <SwingCountExit>2</SwingCountExit>
+
+    <CancelOrderMode>1</CancelOrderMode>
+    <FlatCount>0</FlatCount>
+
+    <StartEntryMode>1</StartEntryMode>
+    <EntryMode>1</EntryMode>
+
+    <EntrySignal11>19</EntrySignal11>
+    <EntrySignal12>25</EntrySignal12>
+    <EntrySignal13>0</EntrySignal13>
+
+    <EntrySignal1>19</EntrySignal1>
+    <ExitSignal1>25</ExitSignal1>
+    <ReverseSignal1>0</ReverseSignal1>
+
+    <ExitSignal12>0</ExitSignal12>
+    <ReverseSignal12>0</ReverseSignal12>
+
+    <EntrySignal2>0</EntrySignal2>
+    <ExitSignal2>0</ExitSignal2>
+    <ReverseSignal2>0</ReverseSignal2>
+
+    <ExitSignal3>0</ExitSignal3>
+    <ReverseSignal3>0</ReverseSignal3>
+
+    <ExitSignal51>0</ExitSignal51>
+    <ExitSignal52>0</ExitSignal52>
+
+    <ReverseLossSignal>0</ReverseLossSignal>
+
+    <ChangeMode1>0</ChangeMode1>
+    <ChangeMode2>0</ChangeMode2>
+    <ChangeMode3>0</ChangeMode3>
+
+    <ChangeModeCondSignal1>0</ChangeModeCondSignal1>
+    <ChangeModeCondSignal2>0</ChangeModeCondSignal2>
+    <ChangeModeCondSignal3>0</ChangeModeCondSignal3>
+    <ChangeModeCondSignal5>0</ChangeModeCondSignal5>
+
+    <EntryPriceId>8</EntryPriceId>
+    <ExitPriceId>8</ExitPriceId>
+    <ReversePriceId>8</ReversePriceId>
+
+    <StopExitSignal1>0</StopExitSignal1>
+    <StopPriceId>1</StopPriceId>
+
+    <ReverseLossCnt>1000</ReverseLossCnt>
+
+    <ReverseMode1>1</ReverseMode1>
+    <ReverseMode2>1</ReverseMode2>
+    <ReverseMode3>1</ReverseMode3>
+    <ReverseMode5>1</ReverseMode5>
+
+    <RichHL>2</RichHL>
+
+    <RichTargetMode11>0</RichTargetMode11>
+    <RichTargetMode12>0</RichTargetMode12>
+    <RichTargetMode13>0</RichTargetMode13>
+    <RichTargetMode15>0</RichTargetMode15>
+
+    <RichTargetMode21>0</RichTargetMode21>
+    <RichTargetMode22>0</RichTargetMode22>
+    <RichTargetMode23>0</RichTargetMode23>
+    <RichTargetMode25>0</RichTargetMode25>
+
+    <RichTargetMode31>8</RichTargetMode31>
+    <RichTargetMode32>5</RichTargetMode32>
+
+    <RichTargetMode41>2</RichTargetMode41>
+    <RichTargetMode42>0</RichTargetMode42>
+
+    <RichTargetMode51>0</RichTargetMode51>
+
+    <RiskLowMap>3</RiskLowMap>
+
+    <TakeExitMode>0</TakeExitMode>
+
+  </Z00517>
+
+  <!--SR-->
+  <Z00517>
+    <Name>Z00517</Name>
+    <Code>Z00517.5.153</Code>
+    <TradeAccountKey>Quik.Open.Real</TradeAccountKey>
+    <TradeTerminalType>Simulator</TradeTerminalType>
+    <TradeTerminalKey>TrTerminal</TradeTerminalKey>
+    <TimePlanKey>Forts.Standard</TimePlanKey>
+    <TickerKey>SRZ3</TickerKey>
+    <TimeInt>5</TimeInt>
+    <TimeInt2>5</TimeInt2>
+
+    <Ma1Length>300</Ma1Length>
+    <Ma1AtrLength>100</Ma1AtrLength>
+    <Ma1KAtr>1.25</Ma1KAtr>
+    <Ma1Mode>1</Ma1Mode>
+
+    <MaAtrLength1>50</MaAtrLength1>
+    <MaAtrLength2>300</MaAtrLength2>
+
+    <Contract>1</Contract>
+    <Contracts>3</Contracts>
+    <SafeContracts2>1</SafeContracts2>
+
+    <KAtrStop>5</KAtrStop>
+    <KAtrStop1>5</KAtrStop1>
+    <KAtrStop2>2</KAtrStop2>
+
+    <Mode1>1</Mode1>
+    <Mode2>0</Mode2>
+
+    <RandMode>0</RandMode>
+
+    <SwingCountStartEntry>1</SwingCountStartEntry>
+    <SwingCountEntry>1</SwingCountEntry>
+    <SwingCountReverse>1</SwingCountReverse>
+    <SwingCountExit>2</SwingCountExit>
+
+    <CancelOrderMode>1</CancelOrderMode>
+    <FlatCount>0</FlatCount>
+
+    <StartEntryMode>1</StartEntryMode>
+    <EntryMode>1</EntryMode>
+
+    <EntrySignal11>19</EntrySignal11>
+    <EntrySignal12>25</EntrySignal12>
+    <EntrySignal13>0</EntrySignal13>
+
+    <EntrySignal1>19</EntrySignal1>
+    <ExitSignal1>25</ExitSignal1>
+    <ReverseSignal1>0</ReverseSignal1>
+
+    <ExitSignal12>0</ExitSignal12>
+    <ReverseSignal12>0</ReverseSignal12>
+
+    <EntrySignal2>0</EntrySignal2>
+    <ExitSignal2>0</ExitSignal2>
+    <ReverseSignal2>0</ReverseSignal2>
+
+    <ExitSignal3>0</ExitSignal3>
+    <ReverseSignal3>0</ReverseSignal3>
+
+    <ExitSignal51>0</ExitSignal51>
+    <ExitSignal52>0</ExitSignal52>
+
+    <ReverseLossSignal>0</ReverseLossSignal>
+
+    <ChangeMode1>0</ChangeMode1>
+    <ChangeMode2>0</ChangeMode2>
+    <ChangeMode3>0</ChangeMode3>
+
+    <ChangeModeCondSignal1>0</ChangeModeCondSignal1>
+    <ChangeModeCondSignal2>0</ChangeModeCondSignal2>
+    <ChangeModeCondSignal3>0</ChangeModeCondSignal3>
+    <ChangeModeCondSignal5>0</ChangeModeCondSignal5>
+
+    <EntryPriceId>8</EntryPriceId>
+    <ExitPriceId>8</ExitPriceId>
+    <ReversePriceId>8</ReversePriceId>
+
+    <StopExitSignal1>0</StopExitSignal1>
+    <StopPriceId>1</StopPriceId>
+
+    <ReverseLossCnt>1000</ReverseLossCnt>
+
+    <ReverseMode1>1</ReverseMode1>
+    <ReverseMode2>1</ReverseMode2>
+    <ReverseMode3>1</ReverseMode3>
+    <ReverseMode5>1</ReverseMode5>
+
+    <RichHL>2</RichHL>
+
+    <RichTargetMode11>0</RichTargetMode11>
+    <RichTargetMode12>0</RichTargetMode12>
+    <RichTargetMode13>0</RichTargetMode13>
+    <RichTargetMode15>0</RichTargetMode15>
+
+    <RichTargetMode21>0</RichTargetMode21>
+    <RichTargetMode22>0</RichTargetMode22>
+    <RichTargetMode23>0</RichTargetMode23>
+    <RichTargetMode25>0</RichTargetMode25>
+
+    <RichTargetMode31>8</RichTargetMode31>
+    <RichTargetMode32>5</RichTargetMode32>
+
+    <RichTargetMode41>2</RichTargetMode41>
+    <RichTargetMode42>0</RichTargetMode42>
+
+    <RichTargetMode51>0</RichTargetMode51>
+
+    <RiskLowMap>3</RiskLowMap>
+
+    <TakeExitMode>0</TakeExitMode>
+
+  </Z00517>
+  <Z00517>
+    <Name>Z00517</Name>
+    <Code>Z00517.15.153</Code>
+    <TradeAccountKey>Quik.Open.Real</TradeAccountKey>
+    <TradeTerminalType>Simulator</TradeTerminalType>
+    <TradeTerminalKey>TrTerminal</TradeTerminalKey>
+    <TimePlanKey>Forts.Standard</TimePlanKey>
+    <TickerKey>SRZ3</TickerKey>
+    <TimeInt>15</TimeInt>
+    <TimeInt2>15</TimeInt2>
+
+    <Ma1Length>300</Ma1Length>
+    <Ma1AtrLength>100</Ma1AtrLength>
+    <Ma1KAtr>1.25</Ma1KAtr>
+    <Ma1Mode>1</Ma1Mode>
+
+    <MaAtrLength1>50</MaAtrLength1>
+    <MaAtrLength2>300</MaAtrLength2>
+
+    <Contract>1</Contract>
+    <Contracts>3</Contracts>
+    <SafeContracts2>1</SafeContracts2>
+
+    <KAtrStop>5</KAtrStop>
+    <KAtrStop1>5</KAtrStop1>
+    <KAtrStop2>2</KAtrStop2>
+
+    <Mode1>1</Mode1>
+    <Mode2>0</Mode2>
+
+    <RandMode>0</RandMode>
+
+    <SwingCountStartEntry>1</SwingCountStartEntry>
+    <SwingCountEntry>1</SwingCountEntry>
+    <SwingCountReverse>1</SwingCountReverse>
+    <SwingCountExit>2</SwingCountExit>
+
+    <CancelOrderMode>1</CancelOrderMode>
+    <FlatCount>0</FlatCount>
+
+    <StartEntryMode>1</StartEntryMode>
+    <EntryMode>1</EntryMode>
+
+    <EntrySignal11>19</EntrySignal11>
+    <EntrySignal12>25</EntrySignal12>
+    <EntrySignal13>0</EntrySignal13>
+
+    <EntrySignal1>19</EntrySignal1>
+    <ExitSignal1>25</ExitSignal1>
+    <ReverseSignal1>0</ReverseSignal1>
+
+    <ExitSignal12>0</ExitSignal12>
+    <ReverseSignal12>0</ReverseSignal12>
+
+    <EntrySignal2>0</EntrySignal2>
+    <ExitSignal2>0</ExitSignal2>
+    <ReverseSignal2>0</ReverseSignal2>
+
+    <ExitSignal3>0</ExitSignal3>
+    <ReverseSignal3>0</ReverseSignal3>
+
+    <ExitSignal51>0</ExitSignal51>
+    <ExitSignal52>0</ExitSignal52>
+
+    <ReverseLossSignal>0</ReverseLossSignal>
+
+    <ChangeMode1>0</ChangeMode1>
+    <ChangeMode2>0</ChangeMode2>
+    <ChangeMode3>0</ChangeMode3>
+
+    <ChangeModeCondSignal1>0</ChangeModeCondSignal1>
+    <ChangeModeCondSignal2>0</ChangeModeCondSignal2>
+    <ChangeModeCondSignal3>0</ChangeModeCondSignal3>
+    <ChangeModeCondSignal5>0</ChangeModeCondSignal5>
+
+    <EntryPriceId>8</EntryPriceId>
+    <ExitPriceId>8</ExitPriceId>
+    <ReversePriceId>8</ReversePriceId>
+
+    <StopExitSignal1>0</StopExitSignal1>
+    <StopPriceId>1</StopPriceId>
+
+    <ReverseLossCnt>1000</ReverseLossCnt>
+
+    <ReverseMode1>1</ReverseMode1>
+    <ReverseMode2>1</ReverseMode2>
+    <ReverseMode3>1</ReverseMode3>
+    <ReverseMode5>1</ReverseMode5>
+
+    <RichHL>2</RichHL>
+
+    <RichTargetMode11>0</RichTargetMode11>
+    <RichTargetMode12>0</RichTargetMode12>
+    <RichTargetMode13>0</RichTargetMode13>
+    <RichTargetMode15>0</RichTargetMode15>
+
+    <RichTargetMode21>0</RichTargetMode21>
+    <RichTargetMode22>0</RichTargetMode22>
+    <RichTargetMode23>0</RichTargetMode23>
+    <RichTargetMode25>0</RichTargetMode25>
+
+    <RichTargetMode31>8</RichTargetMode31>
+    <RichTargetMode32>5</RichTargetMode32>
+
+    <RichTargetMode41>2</RichTargetMode41>
+    <RichTargetMode42>0</RichTargetMode42>
+
+    <RichTargetMode51>0</RichTargetMode51>
+
+    <RiskLowMap>3</RiskLowMap>
+
+    <TakeExitMode>0</TakeExitMode>
+
+  </Z00517>
+  <Z00517>
+    <Name>Z00517</Name>
+    <Code>Z00517.60.132</Code>
+    <TradeAccountKey>Quik.Open.Real</TradeAccountKey>
+    <TradeTerminalType>Simulator</TradeTerminalType>
+    <TradeTerminalKey>TrTerminal</TradeTerminalKey>
+    <TimePlanKey>Forts.Standard</TimePlanKey>
+    <TickerKey>SRZ3</TickerKey>
+    <TimeInt>60</TimeInt>
+    <TimeInt2>60</TimeInt2>
+
+    <Ma1Length>300</Ma1Length>
+    <Ma1AtrLength>100</Ma1AtrLength>
+    <Ma1KAtr>1.25</Ma1KAtr>
+    <Ma1Mode>1</Ma1Mode>
+
+    <MaAtrLength1>50</MaAtrLength1>
+    <MaAtrLength2>300</MaAtrLength2>
+
+    <Contract>1</Contract>
+    <Contracts>3</Contracts>
+    <SafeContracts2>1</SafeContracts2>
+
+    <KAtrStop>5</KAtrStop>
+    <KAtrStop1>5</KAtrStop1>
+    <KAtrStop2>2</KAtrStop2>
+
+    <Mode1>1</Mode1>
+    <Mode2>0</Mode2>
+
+    <RandMode>0</RandMode>
+
+    <SwingCountStartEntry>1</SwingCountStartEntry>
+    <SwingCountEntry>1</SwingCountEntry>
+    <SwingCountReverse>1</SwingCountReverse>
+    <SwingCountExit>2</SwingCountExit>
+
+    <CancelOrderMode>1</CancelOrderMode>
+    <FlatCount>0</FlatCount>
+
+    <StartEntryMode>1</StartEntryMode>
+    <EntryMode>1</EntryMode>
+
+    <EntrySignal11>19</EntrySignal11>
+    <EntrySignal12>25</EntrySignal12>
+    <EntrySignal13>0</EntrySignal13>
+
+    <EntrySignal1>19</EntrySignal1>
+    <ExitSignal1>25</ExitSignal1>
+    <ReverseSignal1>0</ReverseSignal1>
+
+    <ExitSignal12>0</ExitSignal12>
+    <ReverseSignal12>0</ReverseSignal12>
+
+    <EntrySignal2>0</EntrySignal2>
+    <ExitSignal2>0</ExitSignal2>
+    <ReverseSignal2>0</ReverseSignal2>
+
+    <ExitSignal3>0</ExitSignal3>
+    <ReverseSignal3>0</ReverseSignal3>
+
+    <ExitSignal51>0</ExitSignal51>
+    <ExitSignal52>0</ExitSignal52>
+
+    <ReverseLossSignal>0</ReverseLossSignal>
+
+    <ChangeMode1>0</ChangeMode1>
+    <ChangeMode2>0</ChangeMode2>
+    <ChangeMode3>0</ChangeMode3>
+
+    <ChangeModeCondSignal1>0</ChangeModeCondSignal1>
+    <ChangeModeCondSignal2>0</ChangeModeCondSignal2>
+    <ChangeModeCondSignal3>0</ChangeModeCondSignal3>
+    <ChangeModeCondSignal5>0</ChangeModeCondSignal5>
+
+    <EntryPriceId>8</EntryPriceId>
+    <ExitPriceId>8</ExitPriceId>
+    <ReversePriceId>8</ReversePriceId>
+
+    <StopExitSignal1>0</StopExitSignal1>
+    <StopPriceId>1</StopPriceId>
+
+    <ReverseLossCnt>1000</ReverseLossCnt>
+
+    <ReverseMode1>1</ReverseMode1>
+    <ReverseMode2>1</ReverseMode2>
+    <ReverseMode3>1</ReverseMode3>
+    <ReverseMode5>1</ReverseMode5>
+
+    <RichHL>2</RichHL>
+
+    <RichTargetMode11>0</RichTargetMode11>
+    <RichTargetMode12>0</RichTargetMode12>
+    <RichTargetMode13>0</RichTargetMode13>
+    <RichTargetMode15>0</RichTargetMode15>
+
+    <RichTargetMode21>0</RichTargetMode21>
+    <RichTargetMode22>0</RichTargetMode22>
+    <RichTargetMode23>0</RichTargetMode23>
+    <RichTargetMode25>0</RichTargetMode25>
+
+    <RichTargetMode31>8</RichTargetMode31>
+    <RichTargetMode32>5</RichTargetMode32>
+
+    <RichTargetMode41>2</RichTargetMode41>
+    <RichTargetMode42>0</RichTargetMode42>
+
+    <RichTargetMode51>0</RichTargetMode51>
+
+    <RiskLowMap>3</RiskLowMap>
+
+    <TakeExitMode>0</TakeExitMode>
+
+  </Z00517>
+  <Z00517>
+    <Name>Z00517</Name>
+    <Code>Z00517.300.132</Code>
+    <TradeAccountKey>Quik.Open.Real</TradeAccountKey>
+    <TradeTerminalType>Simulator</TradeTerminalType>
+    <TradeTerminalKey>TrTerminal</TradeTerminalKey>
+    <TimePlanKey>Forts.Standard</TimePlanKey>
+    <TickerKey>SRZ3</TickerKey>
+    <TimeInt>300</TimeInt>
+    <TimeInt2>300</TimeInt2>
+
+    <Ma1Length>300</Ma1Length>
+    <Ma1AtrLength>100</Ma1AtrLength>
+    <Ma1KAtr>1.25</Ma1KAtr>
+    <Ma1Mode>1</Ma1Mode>
+
+    <MaAtrLength1>50</MaAtrLength1>
+    <MaAtrLength2>300</MaAtrLength2>
+
+    <Contract>1</Contract>
+    <Contracts>3</Contracts>
+    <SafeContracts2>1</SafeContracts2>
+
+    <KAtrStop>5</KAtrStop>
+    <KAtrStop1>5</KAtrStop1>
+    <KAtrStop2>2</KAtrStop2>
+
+    <Mode1>1</Mode1>
+    <Mode2>0</Mode2>
+
+    <RandMode>0</RandMode>
+
+    <SwingCountStartEntry>1</SwingCountStartEntry>
+    <SwingCountEntry>1</SwingCountEntry>
+    <SwingCountReverse>1</SwingCountReverse>
+    <SwingCountExit>2</SwingCountExit>
+
+    <CancelOrderMode>1</CancelOrderMode>
+    <FlatCount>0</FlatCount>
+
+    <StartEntryMode>1</StartEntryMode>
+    <EntryMode>1</EntryMode>
+
+    <EntrySignal11>19</EntrySignal11>
+    <EntrySignal12>25</EntrySignal12>
+    <EntrySignal13>0</EntrySignal13>
+
+    <EntrySignal1>19</EntrySignal1>
+    <ExitSignal1>25</ExitSignal1>
+    <ReverseSignal1>0</ReverseSignal1>
+
+    <ExitSignal12>0</ExitSignal12>
+    <ReverseSignal12>0</ReverseSignal12>
+
+    <EntrySignal2>0</EntrySignal2>
+    <ExitSignal2>0</ExitSignal2>
+    <ReverseSignal2>0</ReverseSignal2>
+
+    <ExitSignal3>0</ExitSignal3>
+    <ReverseSignal3>0</ReverseSignal3>
+
+    <ExitSignal51>0</ExitSignal51>
+    <ExitSignal52>0</ExitSignal52>
+
+    <ReverseLossSignal>0</ReverseLossSignal>
+
+    <ChangeMode1>0</ChangeMode1>
+    <ChangeMode2>0</ChangeMode2>
+    <ChangeMode3>0</ChangeMode3>
+
+    <ChangeModeCondSignal1>0</ChangeModeCondSignal1>
+    <ChangeModeCondSignal2>0</ChangeModeCondSignal2>
+    <ChangeModeCondSignal3>0</ChangeModeCondSignal3>
+    <ChangeModeCondSignal5>0</ChangeModeCondSignal5>
+
+    <EntryPriceId>8</EntryPriceId>
+    <ExitPriceId>8</ExitPriceId>
+    <ReversePriceId>8</ReversePriceId>
+
+    <StopExitSignal1>0</StopExitSignal1>
+    <StopPriceId>1</StopPriceId>
+
+    <ReverseLossCnt>1000</ReverseLossCnt>
+
+    <ReverseMode1>1</ReverseMode1>
+    <ReverseMode2>1</ReverseMode2>
+    <ReverseMode3>1</ReverseMode3>
+    <ReverseMode5>1</ReverseMode5>
+
+    <RichHL>2</RichHL>
+
+    <RichTargetMode11>0</RichTargetMode11>
+    <RichTargetMode12>0</RichTargetMode12>
+    <RichTargetMode13>0</RichTargetMode13>
+    <RichTargetMode15>0</RichTargetMode15>
+
+    <RichTargetMode21>0</RichTargetMode21>
+    <RichTargetMode22>0</RichTargetMode22>
+    <RichTargetMode23>0</RichTargetMode23>
+    <RichTargetMode25>0</RichTargetMode25>
+
+    <RichTargetMode31>8</RichTargetMode31>
+    <RichTargetMode32>5</RichTargetMode32>
+
+    <RichTargetMode41>2</RichTargetMode41>
+    <RichTargetMode42>0</RichTargetMode42>
+
+    <RichTargetMode51>0</RichTargetMode51>
+
+    <RiskLowMap>3</RiskLowMap>
+
+    <TakeExitMode>0</TakeExitMode>
+
+  </Z00517>
+
+  <!--GZ-->
+  <Z00517>
+    <Name>Z00517</Name>
+    <Code>Z00517.5.132</Code>
+    <TradeAccountKey>Quik.Open.Real</TradeAccountKey>
+    <TradeTerminalType>Simulator</TradeTerminalType>
+    <TradeTerminalKey>TrTerminal</TradeTerminalKey>
+    <TimePlanKey>Forts.Standard</TimePlanKey>
+    <TickerKey>GZZ3</TickerKey>
+    <TimeInt>5</TimeInt>
+    <TimeInt2>5</TimeInt2>
+
+    <Ma1Length>300</Ma1Length>
+    <Ma1AtrLength>100</Ma1AtrLength>
+    <Ma1KAtr>1.25</Ma1KAtr>
+    <Ma1Mode>1</Ma1Mode>
+
+    <MaAtrLength1>50</MaAtrLength1>
+    <MaAtrLength2>300</MaAtrLength2>
+
+    <Contract>1</Contract>
+    <Contracts>3</Contracts>
+    <SafeContracts2>1</SafeContracts2>
+
+    <KAtrStop>5</KAtrStop>
+    <KAtrStop1>5</KAtrStop1>
+    <KAtrStop2>2</KAtrStop2>
+
+    <Mode1>1</Mode1>
+    <Mode2>0</Mode2>
+
+    <RandMode>0</RandMode>
+
+    <SwingCountStartEntry>1</SwingCountStartEntry>
+    <SwingCountEntry>1</SwingCountEntry>
+    <SwingCountReverse>1</SwingCountReverse>
+    <SwingCountExit>2</SwingCountExit>
+
+    <CancelOrderMode>1</CancelOrderMode>
+    <FlatCount>0</FlatCount>
+
+    <StartEntryMode>1</StartEntryMode>
+    <EntryMode>1</EntryMode>
+
+    <EntrySignal11>19</EntrySignal11>
+    <EntrySignal12>25</EntrySignal12>
+    <EntrySignal13>0</EntrySignal13>
+
+    <EntrySignal1>19</EntrySignal1>
+    <ExitSignal1>25</ExitSignal1>
+    <ReverseSignal1>0</ReverseSignal1>
+
+    <ExitSignal12>0</ExitSignal12>
+    <ReverseSignal12>0</ReverseSignal12>
+
+    <EntrySignal2>0</EntrySignal2>
+    <ExitSignal2>0</ExitSignal2>
+    <ReverseSignal2>0</ReverseSignal2>
+
+    <ExitSignal3>0</ExitSignal3>
+    <ReverseSignal3>0</ReverseSignal3>
+
+    <ExitSignal51>0</ExitSignal51>
+    <ExitSignal52>0</ExitSignal52>
+
+    <ReverseLossSignal>0</ReverseLossSignal>
+
+    <ChangeMode1>0</ChangeMode1>
+    <ChangeMode2>0</ChangeMode2>
+    <ChangeMode3>0</ChangeMode3>
+
+    <ChangeModeCondSignal1>0</ChangeModeCondSignal1>
+    <ChangeModeCondSignal2>0</ChangeModeCondSignal2>
+    <ChangeModeCondSignal3>0</ChangeModeCondSignal3>
+    <ChangeModeCondSignal5>0</ChangeModeCondSignal5>
+
+    <EntryPriceId>8</EntryPriceId>
+    <ExitPriceId>8</ExitPriceId>
+    <ReversePriceId>8</ReversePriceId>
+
+    <StopExitSignal1>0</StopExitSignal1>
+    <StopPriceId>1</StopPriceId>
+
+    <ReverseLossCnt>1000</ReverseLossCnt>
+
+    <ReverseMode1>1</ReverseMode1>
+    <ReverseMode2>1</ReverseMode2>
+    <ReverseMode3>1</ReverseMode3>
+    <ReverseMode5>1</ReverseMode5>
+
+    <RichHL>2</RichHL>
+
+    <RichTargetMode11>0</RichTargetMode11>
+    <RichTargetMode12>0</RichTargetMode12>
+    <RichTargetMode13>0</RichTargetMode13>
+    <RichTargetMode15>0</RichTargetMode15>
+
+    <RichTargetMode21>0</RichTargetMode21>
+    <RichTargetMode22>0</RichTargetMode22>
+    <RichTargetMode23>0</RichTargetMode23>
+    <RichTargetMode25>0</RichTargetMode25>
+
+    <RichTargetMode31>8</RichTargetMode31>
+    <RichTargetMode32>5</RichTargetMode32>
+
+    <RichTargetMode41>2</RichTargetMode41>
+    <RichTargetMode42>0</RichTargetMode42>
+
+    <RichTargetMode51>0</RichTargetMode51>
+
+    <RiskLowMap>3</RiskLowMap>
+
+    <TakeExitMode>0</TakeExitMode>
+
+  </Z00517>
+  <Z00517>
+    <Name>Z00517</Name>
+    <Code>Z00517.15.132</Code>
+    <TradeAccountKey>Quik.Open.Real</TradeAccountKey>
+    <TradeTerminalType>Simulator</TradeTerminalType>
+    <TradeTerminalKey>TrTerminal</TradeTerminalKey>
+    <TimePlanKey>Forts.Standard</TimePlanKey>
+    <TickerKey>GZZ3</TickerKey>
+    <TimeInt>15</TimeInt>
+    <TimeInt2>15</TimeInt2>
+
+    <Ma1Length>300</Ma1Length>
+    <Ma1AtrLength>100</Ma1AtrLength>
+    <Ma1KAtr>1.25</Ma1KAtr>
+    <Ma1Mode>1</Ma1Mode>
+
+    <MaAtrLength1>50</MaAtrLength1>
+    <MaAtrLength2>300</MaAtrLength2>
+
+    <Contract>1</Contract>
+    <Contracts>3</Contracts>
+    <SafeContracts2>1</SafeContracts2>
+
+    <KAtrStop>5</KAtrStop>
+    <KAtrStop1>5</KAtrStop1>
+    <KAtrStop2>2</KAtrStop2>
+
+    <Mode1>1</Mode1>
+    <Mode2>0</Mode2>
+
+    <RandMode>0</RandMode>
+
+    <SwingCountStartEntry>1</SwingCountStartEntry>
+    <SwingCountEntry>1</SwingCountEntry>
+    <SwingCountReverse>1</SwingCountReverse>
+    <SwingCountExit>2</SwingCountExit>
+
+    <CancelOrderMode>1</CancelOrderMode>
+    <FlatCount>0</FlatCount>
+
+    <StartEntryMode>1</StartEntryMode>
+    <EntryMode>1</EntryMode>
+
+    <EntrySignal11>19</EntrySignal11>
+    <EntrySignal12>25</EntrySignal12>
+    <EntrySignal13>0</EntrySignal13>
+
+    <EntrySignal1>19</EntrySignal1>
+    <ExitSignal1>25</ExitSignal1>
+    <ReverseSignal1>0</ReverseSignal1>
+
+    <ExitSignal12>0</ExitSignal12>
+    <ReverseSignal12>0</ReverseSignal12>
+
+    <EntrySignal2>0</EntrySignal2>
+    <ExitSignal2>0</ExitSignal2>
+    <ReverseSignal2>0</ReverseSignal2>
+
+    <ExitSignal3>0</ExitSignal3>
+    <ReverseSignal3>0</ReverseSignal3>
+
+    <ExitSignal51>0</ExitSignal51>
+    <ExitSignal52>0</ExitSignal52>
+
+    <ReverseLossSignal>0</ReverseLossSignal>
+
+    <ChangeMode1>0</ChangeMode1>
+    <ChangeMode2>0</ChangeMode2>
+    <ChangeMode3>0</ChangeMode3>
+
+    <ChangeModeCondSignal1>0</ChangeModeCondSignal1>
+    <ChangeModeCondSignal2>0</ChangeModeCondSignal2>
+    <ChangeModeCondSignal3>0</ChangeModeCondSignal3>
+    <ChangeModeCondSignal5>0</ChangeModeCondSignal5>
+
+    <EntryPriceId>8</EntryPriceId>
+    <ExitPriceId>8</ExitPriceId>
+    <ReversePriceId>8</ReversePriceId>
+
+    <StopExitSignal1>0</StopExitSignal1>
+    <StopPriceId>1</StopPriceId>
+
+    <ReverseLossCnt>1000</ReverseLossCnt>
+
+    <ReverseMode1>1</ReverseMode1>
+    <ReverseMode2>1</ReverseMode2>
+    <ReverseMode3>1</ReverseMode3>
+    <ReverseMode5>1</ReverseMode5>
+
+    <RichHL>2</RichHL>
+
+    <RichTargetMode11>0</RichTargetMode11>
+    <RichTargetMode12>0</RichTargetMode12>
+    <RichTargetMode13>0</RichTargetMode13>
+    <RichTargetMode15>0</RichTargetMode15>
+
+    <RichTargetMode21>0</RichTargetMode21>
+    <RichTargetMode22>0</RichTargetMode22>
+    <RichTargetMode23>0</RichTargetMode23>
+    <RichTargetMode25>0</RichTargetMode25>
+
+    <RichTargetMode31>8</RichTargetMode31>
+    <RichTargetMode32>5</RichTargetMode32>
+
+    <RichTargetMode41>2</RichTargetMode41>
+    <RichTargetMode42>0</RichTargetMode42>
+
+    <RichTargetMode51>0</RichTargetMode51>
+
+    <RiskLowMap>3</RiskLowMap>
+
+    <TakeExitMode>0</TakeExitMode>
+
+  </Z00517>
+  <Z00517>
+    <Name>Z00517</Name>
+    <Code>Z00517.60.132</Code>
+    <TradeAccountKey>Quik.Open.Real</TradeAccountKey>
+    <TradeTerminalType>Simulator</TradeTerminalType>
+    <TradeTerminalKey>TrTerminal</TradeTerminalKey>
+    <TimePlanKey>Forts.Standard</TimePlanKey>
+    <TickerKey>GZZ3</TickerKey>
+    <TimeInt>60</TimeInt>
+    <TimeInt2>60</TimeInt2>
+
+    <Ma1Length>300</Ma1Length>
+    <Ma1AtrLength>100</Ma1AtrLength>
+    <Ma1KAtr>1.25</Ma1KAtr>
+    <Ma1Mode>1</Ma1Mode>
+
+    <MaAtrLength1>50</MaAtrLength1>
+    <MaAtrLength2>300</MaAtrLength2>
+
+    <Contract>1</Contract>
+    <Contracts>3</Contracts>
+    <SafeContracts2>1</SafeContracts2>
+
+    <KAtrStop>5</KAtrStop>
+    <KAtrStop1>5</KAtrStop1>
+    <KAtrStop2>2</KAtrStop2>
+
+    <Mode1>1</Mode1>
+    <Mode2>0</Mode2>
+
+    <RandMode>0</RandMode>
+
+    <SwingCountStartEntry>1</SwingCountStartEntry>
+    <SwingCountEntry>1</SwingCountEntry>
+    <SwingCountReverse>1</SwingCountReverse>
+    <SwingCountExit>2</SwingCountExit>
+
+    <CancelOrderMode>1</CancelOrderMode>
+    <FlatCount>0</FlatCount>
+
+    <StartEntryMode>1</StartEntryMode>
+    <EntryMode>1</EntryMode>
+
+    <EntrySignal11>19</EntrySignal11>
+    <EntrySignal12>25</EntrySignal12>
+    <EntrySignal13>0</EntrySignal13>
+
+    <EntrySignal1>19</EntrySignal1>
+    <ExitSignal1>25</ExitSignal1>
+    <ReverseSignal1>0</ReverseSignal1>
+
+    <ExitSignal12>0</ExitSignal12>
+    <ReverseSignal12>0</ReverseSignal12>
+
+    <EntrySignal2>0</EntrySignal2>
+    <ExitSignal2>0</ExitSignal2>
+    <ReverseSignal2>0</ReverseSignal2>
+
+    <ExitSignal3>0</ExitSignal3>
+    <ReverseSignal3>0</ReverseSignal3>
+
+    <ExitSignal51>0</ExitSignal51>
+    <ExitSignal52>0</ExitSignal52>
+
+    <ReverseLossSignal>0</ReverseLossSignal>
+
+    <ChangeMode1>0</ChangeMode1>
+    <ChangeMode2>0</ChangeMode2>
+    <ChangeMode3>0</ChangeMode3>
+
+    <ChangeModeCondSignal1>0</ChangeModeCondSignal1>
+    <ChangeModeCondSignal2>0</ChangeModeCondSignal2>
+    <ChangeModeCondSignal3>0</ChangeModeCondSignal3>
+    <ChangeModeCondSignal5>0</ChangeModeCondSignal5>
+
+    <EntryPriceId>8</EntryPriceId>
+    <ExitPriceId>8</ExitPriceId>
+    <ReversePriceId>8</ReversePriceId>
+
+    <StopExitSignal1>0</StopExitSignal1>
+    <StopPriceId>1</StopPriceId>
+
+    <ReverseLossCnt>1000</ReverseLossCnt>
+
+    <ReverseMode1>1</ReverseMode1>
+    <ReverseMode2>1</ReverseMode2>
+    <ReverseMode3>1</ReverseMode3>
+    <ReverseMode5>1</ReverseMode5>
+
+    <RichHL>2</RichHL>
+
+    <RichTargetMode11>0</RichTargetMode11>
+    <RichTargetMode12>0</RichTargetMode12>
+    <RichTargetMode13>0</RichTargetMode13>
+    <RichTargetMode15>0</RichTargetMode15>
+
+    <RichTargetMode21>0</RichTargetMode21>
+    <RichTargetMode22>0</RichTargetMode22>
+    <RichTargetMode23>0</RichTargetMode23>
+    <RichTargetMode25>0</RichTargetMode25>
+
+    <RichTargetMode31>8</RichTargetMode31>
+    <RichTargetMode32>5</RichTargetMode32>
+
+    <RichTargetMode41>2</RichTargetMode41>
+    <RichTargetMode42>0</RichTargetMode42>
+
+    <RichTargetMode51>0</RichTargetMode51>
+
+    <RiskLowMap>3</RiskLowMap>
+
+    <TakeExitMode>0</TakeExitMode>
+
+  </Z00517>
+  <Z00517>
+    <Name>Z00517</Name>
+    <Code>Z00517.300.132</Code>
+    <TradeAccountKey>Quik.Open.Real</TradeAccountKey>
+    <TradeTerminalType>Simulator</TradeTerminalType>
+    <TradeTerminalKey>TrTerminal</TradeTerminalKey>
+    <TimePlanKey>Forts.Standard</TimePlanKey>
+    <TickerKey>GZZ3</TickerKey>
+    <TimeInt>300</TimeInt>
+    <TimeInt2>300</TimeInt2>
+
+    <Ma1Length>300</Ma1Length>
+    <Ma1AtrLength>100</Ma1AtrLength>
+    <Ma1KAtr>1.25</Ma1KAtr>
+    <Ma1Mode>1</Ma1Mode>
+
+    <MaAtrLength1>50</MaAtrLength1>
+    <MaAtrLength2>300</MaAtrLength2>
+
+    <Contract>1</Contract>
+    <Contracts>3</Contracts>
+    <SafeContracts2>1</SafeContracts2>
+
+    <KAtrStop>5</KAtrStop>
+    <KAtrStop1>5</KAtrStop1>
+    <KAtrStop2>2</KAtrStop2>
+
+    <Mode1>1</Mode1>
+    <Mode2>0</Mode2>
+
+    <RandMode>0</RandMode>
+
+    <SwingCountStartEntry>1</SwingCountStartEntry>
+    <SwingCountEntry>1</SwingCountEntry>
+    <SwingCountReverse>1</SwingCountReverse>
+    <SwingCountExit>2</SwingCountExit>
+
+    <CancelOrderMode>1</CancelOrderMode>
+    <FlatCount>0</FlatCount>
+
+    <StartEntryMode>1</StartEntryMode>
+    <EntryMode>1</EntryMode>
+
+    <EntrySignal11>19</EntrySignal11>
+    <EntrySignal12>25</EntrySignal12>
+    <EntrySignal13>0</EntrySignal13>
+
+    <EntrySignal1>19</EntrySignal1>
+    <ExitSignal1>25</ExitSignal1>
+    <ReverseSignal1>0</ReverseSignal1>
+
+    <ExitSignal12>0</ExitSignal12>
+    <ReverseSignal12>0</ReverseSignal12>
+
+    <EntrySignal2>0</EntrySignal2>
+    <ExitSignal2>0</ExitSignal2>
+    <ReverseSignal2>0</ReverseSignal2>
+
+    <ExitSignal3>0</ExitSignal3>
+    <ReverseSignal3>0</ReverseSignal3>
+
+    <ExitSignal51>0</ExitSignal51>
+    <ExitSignal52>0</ExitSignal52>
+
+    <ReverseLossSignal>0</ReverseLossSignal>
+
+    <ChangeMode1>0</ChangeMode1>
+    <ChangeMode2>0</ChangeMode2>
+    <ChangeMode3>0</ChangeMode3>
+
+    <ChangeModeCondSignal1>0</ChangeModeCondSignal1>
+    <ChangeModeCondSignal2>0</ChangeModeCondSignal2>
+    <ChangeModeCondSignal3>0</ChangeModeCondSignal3>
+    <ChangeModeCondSignal5>0</ChangeModeCondSignal5>
+
+    <EntryPriceId>8</EntryPriceId>
+    <ExitPriceId>8</ExitPriceId>
+    <ReversePriceId>8</ReversePriceId>
+
+    <StopExitSignal1>0</StopExitSignal1>
+    <StopPriceId>1</StopPriceId>
+
+    <ReverseLossCnt>1000</ReverseLossCnt>
+
+    <ReverseMode1>1</ReverseMode1>
+    <ReverseMode2>1</ReverseMode2>
+    <ReverseMode3>1</ReverseMode3>
+    <ReverseMode5>1</ReverseMode5>
+
+    <RichHL>2</RichHL>
+
+    <RichTargetMode11>0</RichTargetMode11>
+    <RichTargetMode12>0</RichTargetMode12>
+    <RichTargetMode13>0</RichTargetMode13>
+    <RichTargetMode15>0</RichTargetMode15>
+
+    <RichTargetMode21>0</RichTargetMode21>
+    <RichTargetMode22>0</RichTargetMode22>
+    <RichTargetMode23>0</RichTargetMode23>
+    <RichTargetMode25>0</RichTargetMode25>
+
+    <RichTargetMode31>8</RichTargetMode31>
+    <RichTargetMode32>5</RichTargetMode32>
+
+    <RichTargetMode41>2</RichTargetMode41>
+    <RichTargetMode42>0</RichTargetMode42>
+
+    <RichTargetMode51>0</RichTargetMode51>
+
+    <RiskLowMap>3</RiskLowMap>
+
+    <TakeExitMode>0</TakeExitMode>
+
+  </Z00517>
+
+  <!-- ED -->
+  <Z00517>
+    <Name>Z00517</Name>
+    <Code>Z00517.60.132</Code>
+    <TradeAccountKey>Quik.Open.Real</TradeAccountKey>
+    <TradeTerminalType>Simulator</TradeTerminalType>
+    <TradeTerminalKey>TrTerminal</TradeTerminalKey>
+    <TimePlanKey>Forts.Standard</TimePlanKey>
+    <TickerKey>EDZ3</TickerKey>
+    <TimeInt>60</TimeInt>
+    <TimeInt2>60</TimeInt2>
+
+    <Ma1Length>300</Ma1Length>
+    <Ma1AtrLength>100</Ma1AtrLength>
+    <Ma1KAtr>1.0</Ma1KAtr>
+    <Ma1Mode>1</Ma1Mode>
+
+    <MaAtrLength1>50</MaAtrLength1>
+    <MaAtrLength2>300</MaAtrLength2>
+
+    <Contract>1</Contract>
+    <Contracts>3</Contracts>
+    <SafeContracts2>1</SafeContracts2>
+
+    <KAtrStop>5</KAtrStop>
+    <KAtrStop1>5</KAtrStop1>
+    <KAtrStop2>2</KAtrStop2>
+
+    <Mode1>1</Mode1>
+    <Mode2>0</Mode2>
+
+    <RandMode>0</RandMode>
+
+    <SwingCountStartEntry>1</SwingCountStartEntry>
+    <SwingCountEntry>1</SwingCountEntry>
+    <SwingCountReverse>1</SwingCountReverse>
+    <SwingCountExit>2</SwingCountExit>
+
+    <CancelOrderMode>1</CancelOrderMode>
+    <FlatCount>0</FlatCount>
+
+    <StartEntryMode>1</StartEntryMode>
+    <EntryMode>1</EntryMode>
+
+    <EntrySignal11>19</EntrySignal11>
+    <EntrySignal12>25</EntrySignal12>
+    <EntrySignal13>0</EntrySignal13>
+
+    <EntrySignal1>19</EntrySignal1>
+    <ExitSignal1>25</ExitSignal1>
+    <ReverseSignal1>0</ReverseSignal1>
+
+    <ExitSignal12>0</ExitSignal12>
+    <ReverseSignal12>0</ReverseSignal12>
+
+    <EntrySignal2>0</EntrySignal2>
+    <ExitSignal2>0</ExitSignal2>
+    <ReverseSignal2>0</ReverseSignal2>
+
+    <ExitSignal3>0</ExitSignal3>
+    <ReverseSignal3>0</ReverseSignal3>
+
+    <ExitSignal51>0</ExitSignal51>
+    <ExitSignal52>0</ExitSignal52>
+
+    <ReverseLossSignal>0</ReverseLossSignal>
+
+    <ChangeMode1>0</ChangeMode1>
+    <ChangeMode2>0</ChangeMode2>
+    <ChangeMode3>0</ChangeMode3>
+
+    <ChangeModeCondSignal1>0</ChangeModeCondSignal1>
+    <ChangeModeCondSignal2>0</ChangeModeCondSignal2>
+    <ChangeModeCondSignal3>0</ChangeModeCondSignal3>
+    <ChangeModeCondSignal5>0</ChangeModeCondSignal5>
+
+    <EntryPriceId>8</EntryPriceId>
+    <ExitPriceId>8</ExitPriceId>
+    <ReversePriceId>8</ReversePriceId>
+
+    <StopExitSignal1>0</StopExitSignal1>
+    <StopPriceId>1</StopPriceId>
+
+    <ReverseLossCnt>1000</ReverseLossCnt>
+
+    <ReverseMode1>1</ReverseMode1>
+    <ReverseMode2>1</ReverseMode2>
+    <ReverseMode3>1</ReverseMode3>
+    <ReverseMode5>1</ReverseMode5>
+
+    <RichHL>2</RichHL>
+
+    <RichTargetMode11>0</RichTargetMode11>
+    <RichTargetMode12>0</RichTargetMode12>
+    <RichTargetMode13>0</RichTargetMode13>
+    <RichTargetMode15>0</RichTargetMode15>
+
+    <RichTargetMode21>0</RichTargetMode21>
+    <RichTargetMode22>0</RichTargetMode22>
+    <RichTargetMode23>0</RichTargetMode23>
+    <RichTargetMode25>0</RichTargetMode25>
+
+    <RichTargetMode31>8</RichTargetMode31>
+    <RichTargetMode32>5</RichTargetMode32>
+
+    <RichTargetMode41>2</RichTargetMode41>
+    <RichTargetMode42>0</RichTargetMode42>
+
+    <RichTargetMode51>0</RichTargetMode51>
+
+    <RiskLowMap>3</RiskLowMap>
+
+    <TakeExitMode>0</TakeExitMode>
+
+  </Z00517>
+  <Z00517>
+    <Name>Z00517</Name>
+    <Code>Z00517.300.132</Code>
+    <TradeAccountKey>Quik.Open.Real</TradeAccountKey>
+    <TradeTerminalType>Simulator</TradeTerminalType>
+    <TradeTerminalKey>TrTerminal</TradeTerminalKey>
+    <TimePlanKey>Forts.Standard</TimePlanKey>
+    <TickerKey>EDZ3</TickerKey>
+    <TimeInt>300</TimeInt>
+    <TimeInt2>300</TimeInt2>
+
+    <Ma1Length>300</Ma1Length>
+    <Ma1AtrLength>100</Ma1AtrLength>
+    <Ma1KAtr>1.0</Ma1KAtr>
+    <Ma1Mode>1</Ma1Mode>
+
+    <MaAtrLength1>50</MaAtrLength1>
+    <MaAtrLength2>300</MaAtrLength2>
+
+    <Contract>1</Contract>
+    <Contracts>3</Contracts>
+    <SafeContracts2>1</SafeContracts2>
+
+    <KAtrStop>5</KAtrStop>
+    <KAtrStop1>5</KAtrStop1>
+    <KAtrStop2>2</KAtrStop2>
+
+    <Mode1>1</Mode1>
+    <Mode2>0</Mode2>
+
+    <RandMode>0</RandMode>
+
+    <SwingCountStartEntry>1</SwingCountStartEntry>
+    <SwingCountEntry>1</SwingCountEntry>
+    <SwingCountReverse>1</SwingCountReverse>
+    <SwingCountExit>2</SwingCountExit>
+
+    <CancelOrderMode>1</CancelOrderMode>
+    <FlatCount>0</FlatCount>
+
+    <StartEntryMode>1</StartEntryMode>
+    <EntryMode>1</EntryMode>
+
+    <EntrySignal11>19</EntrySignal11>
+    <EntrySignal12>25</EntrySignal12>
+    <EntrySignal13>0</EntrySignal13>
+
+    <EntrySignal1>19</EntrySignal1>
+    <ExitSignal1>25</ExitSignal1>
+    <ReverseSignal1>0</ReverseSignal1>
+
+    <ExitSignal12>0</ExitSignal12>
+    <ReverseSignal12>0</ReverseSignal12>
+
+    <EntrySignal2>0</EntrySignal2>
+    <ExitSignal2>0</ExitSignal2>
+    <ReverseSignal2>0</ReverseSignal2>
+
+    <ExitSignal3>0</ExitSignal3>
+    <ReverseSignal3>0</ReverseSignal3>
+
+    <ExitSignal51>0</ExitSignal51>
+    <ExitSignal52>0</ExitSignal52>
+
+    <ReverseLossSignal>0</ReverseLossSignal>
+
+    <ChangeMode1>0</ChangeMode1>
+    <ChangeMode2>0</ChangeMode2>
+    <ChangeMode3>0</ChangeMode3>
+
+    <ChangeModeCondSignal1>0</ChangeModeCondSignal1>
+    <ChangeModeCondSignal2>0</ChangeModeCondSignal2>
+    <ChangeModeCondSignal3>0</ChangeModeCondSignal3>
+    <ChangeModeCondSignal5>0</ChangeModeCondSignal5>
+
+    <EntryPriceId>8</EntryPriceId>
+    <ExitPriceId>8</ExitPriceId>
+    <ReversePriceId>8</ReversePriceId>
+
+    <StopExitSignal1>0</StopExitSignal1>
+    <StopPriceId>1</StopPriceId>
+
+    <ReverseLossCnt>1000</ReverseLossCnt>
+
+    <ReverseMode1>1</ReverseMode1>
+    <ReverseMode2>1</ReverseMode2>
+    <ReverseMode3>1</ReverseMode3>
+    <ReverseMode5>1</ReverseMode5>
+
+    <RichHL>2</RichHL>
+
+    <RichTargetMode11>0</RichTargetMode11>
+    <RichTargetMode12>0</RichTargetMode12>
+    <RichTargetMode13>0</RichTargetMode13>
+    <RichTargetMode15>0</RichTargetMode15>
+
+    <RichTargetMode21>0</RichTargetMode21>
+    <RichTargetMode22>0</RichTargetMode22>
+    <RichTargetMode23>0</RichTargetMode23>
+    <RichTargetMode25>0</RichTargetMode25>
+
+    <RichTargetMode31>8</RichTargetMode31>
+    <RichTargetMode32>5</RichTargetMode32>
+
+    <RichTargetMode41>2</RichTargetMode41>
+    <RichTargetMode42>0</RichTargetMode42>
+
+    <RichTargetMode51>0</RichTargetMode51>
+
+    <RiskLowMap>3</RiskLowMap>
+
+    <TakeExitMode>0</TakeExitMode>
+
+  </Z00517>
+  <!-- BR -->
+  <Z00517>
+    <Name>Z00517</Name>
+    <Code>Z00517.60.132</Code>
+    <TradeAccountKey>Quik.Open.Real</TradeAccountKey>
+    <TradeTerminalType>Simulator</TradeTerminalType>
+    <TradeTerminalKey>TrTerminal</TradeTerminalKey>
+    <TimePlanKey>Forts.Standard</TimePlanKey>
+    <TickerKey>BRV3</TickerKey>
+    <TimeInt>60</TimeInt>
+    <TimeInt2>60</TimeInt2>
+
+    <Ma1Length>300</Ma1Length>
+    <Ma1AtrLength>100</Ma1AtrLength>
+    <Ma1KAtr>1.5</Ma1KAtr>
+    <Ma1Mode>1</Ma1Mode>
+
+    <MaAtrLength1>50</MaAtrLength1>
+    <MaAtrLength2>300</MaAtrLength2>
+
+    <Contract>1</Contract>
+    <Contracts>3</Contracts>
+    <SafeContracts2>1</SafeContracts2>
+
+    <KAtrStop>5</KAtrStop>
+    <KAtrStop1>5</KAtrStop1>
+    <KAtrStop2>2</KAtrStop2>
+
+    <Mode1>1</Mode1>
+    <Mode2>0</Mode2>
+
+    <RandMode>0</RandMode>
+
+    <SwingCountStartEntry>1</SwingCountStartEntry>
+    <SwingCountEntry>1</SwingCountEntry>
+    <SwingCountReverse>1</SwingCountReverse>
+    <SwingCountExit>2</SwingCountExit>
+
+    <CancelOrderMode>1</CancelOrderMode>
+    <FlatCount>0</FlatCount>
+
+    <StartEntryMode>1</StartEntryMode>
+    <EntryMode>1</EntryMode>
+
+    <EntrySignal11>19</EntrySignal11>
+    <EntrySignal12>25</EntrySignal12>
+    <EntrySignal13>0</EntrySignal13>
+
+    <EntrySignal1>19</EntrySignal1>
+    <ExitSignal1>25</ExitSignal1>
+    <ReverseSignal1>0</ReverseSignal1>
+
+    <ExitSignal12>0</ExitSignal12>
+    <ReverseSignal12>0</ReverseSignal12>
+
+    <EntrySignal2>0</EntrySignal2>
+    <ExitSignal2>0</ExitSignal2>
+    <ReverseSignal2>0</ReverseSignal2>
+
+    <ExitSignal3>0</ExitSignal3>
+    <ReverseSignal3>0</ReverseSignal3>
+
+    <ExitSignal51>0</ExitSignal51>
+    <ExitSignal52>0</ExitSignal52>
+
+    <ReverseLossSignal>0</ReverseLossSignal>
+
+    <ChangeMode1>0</ChangeMode1>
+    <ChangeMode2>0</ChangeMode2>
+    <ChangeMode3>0</ChangeMode3>
+
+    <ChangeModeCondSignal1>0</ChangeModeCondSignal1>
+    <ChangeModeCondSignal2>0</ChangeModeCondSignal2>
+    <ChangeModeCondSignal3>0</ChangeModeCondSignal3>
+    <ChangeModeCondSignal5>0</ChangeModeCondSignal5>
+
+    <EntryPriceId>8</EntryPriceId>
+    <ExitPriceId>8</ExitPriceId>
+    <ReversePriceId>8</ReversePriceId>
+
+    <StopExitSignal1>0</StopExitSignal1>
+    <StopPriceId>1</StopPriceId>
+
+    <ReverseLossCnt>1000</ReverseLossCnt>
+
+    <ReverseMode1>1</ReverseMode1>
+    <ReverseMode2>1</ReverseMode2>
+    <ReverseMode3>1</ReverseMode3>
+    <ReverseMode5>1</ReverseMode5>
+
+    <RichHL>2</RichHL>
+
+    <RichTargetMode11>0</RichTargetMode11>
+    <RichTargetMode12>0</RichTargetMode12>
+    <RichTargetMode13>0</RichTargetMode13>
+    <RichTargetMode15>0</RichTargetMode15>
+
+    <RichTargetMode21>0</RichTargetMode21>
+    <RichTargetMode22>0</RichTargetMode22>
+    <RichTargetMode23>0</RichTargetMode23>
+    <RichTargetMode25>0</RichTargetMode25>
+
+    <RichTargetMode31>8</RichTargetMode31>
+    <RichTargetMode32>5</RichTargetMode32>
+
+    <RichTargetMode41>2</RichTargetMode41>
+    <RichTargetMode42>0</RichTargetMode42>
+
+    <RichTargetMode51>0</RichTargetMode51>
+
+    <RiskLowMap>3</RiskLowMap>
+
+    <TakeExitMode>0</TakeExitMode>
+
+  </Z00517>
+  <Z00517>
+    <Name>Z00517</Name>
+    <Code>Z00517.300.132</Code>
+    <TradeAccountKey>Quik.Open.Real</TradeAccountKey>
+    <TradeTerminalType>Simulator</TradeTerminalType>
+    <TradeTerminalKey>TrTerminal</TradeTerminalKey>
+    <TimePlanKey>Forts.Standard</TimePlanKey>
+    <TickerKey>BRV3</TickerKey>
+    <TimeInt>300</TimeInt>
+    <TimeInt2>300</TimeInt2>
+
+    <Ma1Length>300</Ma1Length>
+    <Ma1AtrLength>100</Ma1AtrLength>
+    <Ma1KAtr>1.5</Ma1KAtr>
+    <Ma1Mode>1</Ma1Mode>
+
+    <MaAtrLength1>50</MaAtrLength1>
+    <MaAtrLength2>300</MaAtrLength2>
+
+    <Contract>1</Contract>
+    <Contracts>3</Contracts>
+    <SafeContracts2>1</SafeContracts2>
+
+    <KAtrStop>5</KAtrStop>
+    <KAtrStop1>5</KAtrStop1>
+    <KAtrStop2>2</KAtrStop2>
+
+    <Mode1>1</Mode1>
+    <Mode2>0</Mode2>
+
+    <RandMode>0</RandMode>
+
+    <SwingCountStartEntry>1</SwingCountStartEntry>
+    <SwingCountEntry>1</SwingCountEntry>
+    <SwingCountReverse>1</SwingCountReverse>
+    <SwingCountExit>2</SwingCountExit>
+
+    <CancelOrderMode>1</CancelOrderMode>
+    <FlatCount>0</FlatCount>
+
+    <StartEntryMode>1</StartEntryMode>
+    <EntryMode>1</EntryMode>
+
+    <EntrySignal11>19</EntrySignal11>
+    <EntrySignal12>25</EntrySignal12>
+    <EntrySignal13>0</EntrySignal13>
+
+    <EntrySignal1>19</EntrySignal1>
+    <ExitSignal1>25</ExitSignal1>
+    <ReverseSignal1>0</ReverseSignal1>
+
+    <ExitSignal12>0</ExitSignal12>
+    <ReverseSignal12>0</ReverseSignal12>
+
+    <EntrySignal2>0</EntrySignal2>
+    <ExitSignal2>0</ExitSignal2>
+    <ReverseSignal2>0</ReverseSignal2>
+
+    <ExitSignal3>0</ExitSignal3>
+    <ReverseSignal3>0</ReverseSignal3>
+
+    <ExitSignal51>0</ExitSignal51>
+    <ExitSignal52>0</ExitSignal52>
+
+    <ReverseLossSignal>0</ReverseLossSignal>
+
+    <ChangeMode1>0</ChangeMode1>
+    <ChangeMode2>0</ChangeMode2>
+    <ChangeMode3>0</ChangeMode3>
+
+    <ChangeModeCondSignal1>0</ChangeModeCondSignal1>
+    <ChangeModeCondSignal2>0</ChangeModeCondSignal2>
+    <ChangeModeCondSignal3>0</ChangeModeCondSignal3>
+    <ChangeModeCondSignal5>0</ChangeModeCondSignal5>
+
+    <EntryPriceId>8</EntryPriceId>
+    <ExitPriceId>8</ExitPriceId>
+    <ReversePriceId>8</ReversePriceId>
+
+    <StopExitSignal1>0</StopExitSignal1>
+    <StopPriceId>1</StopPriceId>
+
+    <ReverseLossCnt>1000</ReverseLossCnt>
+
+    <ReverseMode1>1</ReverseMode1>
+    <ReverseMode2>1</ReverseMode2>
+    <ReverseMode3>1</ReverseMode3>
+    <ReverseMode5>1</ReverseMode5>
+
+    <RichHL>2</RichHL>
+
+    <RichTargetMode11>0</RichTargetMode11>
+    <RichTargetMode12>0</RichTargetMode12>
+    <RichTargetMode13>0</RichTargetMode13>
+    <RichTargetMode15>0</RichTargetMode15>
+
+    <RichTargetMode21>0</RichTargetMode21>
+    <RichTargetMode22>0</RichTargetMode22>
+    <RichTargetMode23>0</RichTargetMode23>
+    <RichTargetMode25>0</RichTargetMode25>
+
+    <RichTargetMode31>8</RichTargetMode31>
+    <RichTargetMode32>5</RichTargetMode32>
+
+    <RichTargetMode41>2</RichTargetMode41>
+    <RichTargetMode42>0</RichTargetMode42>
+
+    <RichTargetMode51>0</RichTargetMode51>
+
+    <RiskLowMap>3</RiskLowMap>
+
+    <TakeExitMode>0</TakeExitMode>
+
+  </Z00517>
+
+  <!-- LK -->
+  <Z00517>
+    <Name>Z00517</Name>
+    <Code>Z00517.60.132</Code>
+    <TradeAccountKey>Quik.Open.Real</TradeAccountKey>
+    <TradeTerminalType>Simulator</TradeTerminalType>
+    <TradeTerminalKey>TrTerminal</TradeTerminalKey>
+    <TimePlanKey>Forts.Standard</TimePlanKey>
+    <TickerKey>LKZ3</TickerKey>
+    <TimeInt>60</TimeInt>
+    <TimeInt2>60</TimeInt2>
+
+    <Ma1Length>300</Ma1Length>
+    <Ma1AtrLength>100</Ma1AtrLength>
+    <Ma1KAtr>1.25</Ma1KAtr>
+    <Ma1Mode>1</Ma1Mode>
+
+    <MaAtrLength1>50</MaAtrLength1>
+    <MaAtrLength2>300</MaAtrLength2>
+
+    <Contract>1</Contract>
+    <Contracts>3</Contracts>
+    <SafeContracts2>1</SafeContracts2>
+
+    <KAtrStop>5</KAtrStop>
+    <KAtrStop1>5</KAtrStop1>
+    <KAtrStop2>2</KAtrStop2>
+
+    <Mode1>1</Mode1>
+    <Mode2>0</Mode2>
+
+    <RandMode>0</RandMode>
+
+    <SwingCountStartEntry>1</SwingCountStartEntry>
+    <SwingCountEntry>1</SwingCountEntry>
+    <SwingCountReverse>1</SwingCountReverse>
+    <SwingCountExit>2</SwingCountExit>
+
+    <CancelOrderMode>1</CancelOrderMode>
+    <FlatCount>0</FlatCount>
+
+    <StartEntryMode>1</StartEntryMode>
+    <EntryMode>1</EntryMode>
+
+    <EntrySignal11>19</EntrySignal11>
+    <EntrySignal12>25</EntrySignal12>
+    <EntrySignal13>0</EntrySignal13>
+
+    <EntrySignal1>19</EntrySignal1>
+    <ExitSignal1>25</ExitSignal1>
+    <ReverseSignal1>0</ReverseSignal1>
+
+    <ExitSignal12>0</ExitSignal12>
+    <ReverseSignal12>0</ReverseSignal12>
+
+    <EntrySignal2>0</EntrySignal2>
+    <ExitSignal2>0</ExitSignal2>
+    <ReverseSignal2>0</ReverseSignal2>
+
+    <ExitSignal3>0</ExitSignal3>
+    <ReverseSignal3>0</ReverseSignal3>
+
+    <ExitSignal51>0</ExitSignal51>
+    <ExitSignal52>0</ExitSignal52>
+
+    <ReverseLossSignal>0</ReverseLossSignal>
+
+    <ChangeMode1>0</ChangeMode1>
+    <ChangeMode2>0</ChangeMode2>
+    <ChangeMode3>0</ChangeMode3>
+
+    <ChangeModeCondSignal1>0</ChangeModeCondSignal1>
+    <ChangeModeCondSignal2>0</ChangeModeCondSignal2>
+    <ChangeModeCondSignal3>0</ChangeModeCondSignal3>
+    <ChangeModeCondSignal5>0</ChangeModeCondSignal5>
+
+    <EntryPriceId>8</EntryPriceId>
+    <ExitPriceId>8</ExitPriceId>
+    <ReversePriceId>8</ReversePriceId>
+
+    <StopExitSignal1>0</StopExitSignal1>
+    <StopPriceId>1</StopPriceId>
+
+    <ReverseLossCnt>1000</ReverseLossCnt>
+
+    <ReverseMode1>1</ReverseMode1>
+    <ReverseMode2>1</ReverseMode2>
+    <ReverseMode3>1</ReverseMode3>
+    <ReverseMode5>1</ReverseMode5>
+
+    <RichHL>2</RichHL>
+
+    <RichTargetMode11>0</RichTargetMode11>
+    <RichTargetMode12>0</RichTargetMode12>
+    <RichTargetMode13>0</RichTargetMode13>
+    <RichTargetMode15>0</RichTargetMode15>
+
+    <RichTargetMode21>0</RichTargetMode21>
+    <RichTargetMode22>0</RichTargetMode22>
+    <RichTargetMode23>0</RichTargetMode23>
+    <RichTargetMode25>0</RichTargetMode25>
+
+    <RichTargetMode31>8</RichTargetMode31>
+    <RichTargetMode32>5</RichTargetMode32>
+
+    <RichTargetMode41>2</RichTargetMode41>
+    <RichTargetMode42>0</RichTargetMode42>
+
+    <RichTargetMode51>0</RichTargetMode51>
+
+    <RiskLowMap>3</RiskLowMap>
+
+    <TakeExitMode>0</TakeExitMode>
+
+  </Z00517>
+  <Z00517>
+    <Name>Z00517</Name>
+    <Code>Z00517.300.132</Code>
+    <TradeAccountKey>Quik.Open.Real</TradeAccountKey>
+    <TradeTerminalType>Simulator</TradeTerminalType>
+    <TradeTerminalKey>TrTerminal</TradeTerminalKey>
+    <TimePlanKey>Forts.Standard</TimePlanKey>
+    <TickerKey>LKZ3</TickerKey>
+    <TimeInt>300</TimeInt>
+    <TimeInt2>300</TimeInt2>
+
+    <Ma1Length>300</Ma1Length>
+    <Ma1AtrLength>100</Ma1AtrLength>
+    <Ma1KAtr>1.25</Ma1KAtr>
+    <Ma1Mode>1</Ma1Mode>
+
+    <MaAtrLength1>50</MaAtrLength1>
+    <MaAtrLength2>300</MaAtrLength2>
+
+    <Contract>1</Contract>
+    <Contracts>3</Contracts>
+    <SafeContracts2>1</SafeContracts2>
+
+    <KAtrStop>5</KAtrStop>
+    <KAtrStop1>5</KAtrStop1>
+    <KAtrStop2>2</KAtrStop2>
+
+    <Mode1>1</Mode1>
+    <Mode2>0</Mode2>
+
+    <RandMode>0</RandMode>
+
+    <SwingCountStartEntry>1</SwingCountStartEntry>
+    <SwingCountEntry>1</SwingCountEntry>
+    <SwingCountReverse>1</SwingCountReverse>
+    <SwingCountExit>2</SwingCountExit>
+
+    <CancelOrderMode>1</CancelOrderMode>
+    <FlatCount>0</FlatCount>
+
+    <StartEntryMode>1</StartEntryMode>
+    <EntryMode>1</EntryMode>
+
+    <EntrySignal11>19</EntrySignal11>
+    <EntrySignal12>25</EntrySignal12>
+    <EntrySignal13>0</EntrySignal13>
+
+    <EntrySignal1>19</EntrySignal1>
+    <ExitSignal1>25</ExitSignal1>
+    <ReverseSignal1>0</ReverseSignal1>
+
+    <ExitSignal12>0</ExitSignal12>
+    <ReverseSignal12>0</ReverseSignal12>
+
+    <EntrySignal2>0</EntrySignal2>
+    <ExitSignal2>0</ExitSignal2>
+    <ReverseSignal2>0</ReverseSignal2>
+
+    <ExitSignal3>0</ExitSignal3>
+    <ReverseSignal3>0</ReverseSignal3>
+
+    <ExitSignal51>0</ExitSignal51>
+    <ExitSignal52>0</ExitSignal52>
+
+    <ReverseLossSignal>0</ReverseLossSignal>
+
+    <ChangeMode1>0</ChangeMode1>
+    <ChangeMode2>0</ChangeMode2>
+    <ChangeMode3>0</ChangeMode3>
+
+    <ChangeModeCondSignal1>0</ChangeModeCondSignal1>
+    <ChangeModeCondSignal2>0</ChangeModeCondSignal2>
+    <ChangeModeCondSignal3>0</ChangeModeCondSignal3>
+    <ChangeModeCondSignal5>0</ChangeModeCondSignal5>
+
+    <EntryPriceId>8</EntryPriceId>
+    <ExitPriceId>8</ExitPriceId>
+    <ReversePriceId>8</ReversePriceId>
+
+    <StopExitSignal1>0</StopExitSignal1>
+    <StopPriceId>1</StopPriceId>
+
+    <ReverseLossCnt>1000</ReverseLossCnt>
+
+    <ReverseMode1>1</ReverseMode1>
+    <ReverseMode2>1</ReverseMode2>
+    <ReverseMode3>1</ReverseMode3>
+    <ReverseMode5>1</ReverseMode5>
+
+    <RichHL>2</RichHL>
+
+    <RichTargetMode11>0</RichTargetMode11>
+    <RichTargetMode12>0</RichTargetMode12>
+    <RichTargetMode13>0</RichTargetMode13>
+    <RichTargetMode15>0</RichTargetMode15>
+
+    <RichTargetMode21>0</RichTargetMode21>
+    <RichTargetMode22>0</RichTargetMode22>
+    <RichTargetMode23>0</RichTargetMode23>
+    <RichTargetMode25>0</RichTargetMode25>
+
+    <RichTargetMode31>8</RichTargetMode31>
+    <RichTargetMode32>5</RichTargetMode32>
+
+    <RichTargetMode41>2</RichTargetMode41>
+    <RichTargetMode42>0</RichTargetMode42>
+
+    <RichTargetMode51>0</RichTargetMode51>
+
+    <RiskLowMap>3</RiskLowMap>
+
+    <TakeExitMode>0</TakeExitMode>
+
+  </Z00517>
+  <!-- VB -->
+  <Z00517>
+    <Name>Z00517</Name>
+    <Code>Z00517.60.132</Code>
+    <TradeAccountKey>Quik.Open.Real</TradeAccountKey>
+    <TradeTerminalType>Simulator</TradeTerminalType>
+    <TradeTerminalKey>TrTerminal</TradeTerminalKey>
+    <TimePlanKey>Forts.Standard</TimePlanKey>
+    <TickerKey>VBZ3</TickerKey>
+    <TimeInt>60</TimeInt>
+    <TimeInt2>60</TimeInt2>
+
+    <Ma1Length>300</Ma1Length>
+    <Ma1AtrLength>100</Ma1AtrLength>
+    <Ma1KAtr>1.25</Ma1KAtr>
+    <Ma1Mode>1</Ma1Mode>
+
+    <MaAtrLength1>50</MaAtrLength1>
+    <MaAtrLength2>300</MaAtrLength2>
+
+    <Contract>1</Contract>
+    <Contracts>3</Contracts>
+    <SafeContracts2>1</SafeContracts2>
+
+    <KAtrStop>5</KAtrStop>
+    <KAtrStop1>5</KAtrStop1>
+    <KAtrStop2>2</KAtrStop2>
+
+    <Mode1>1</Mode1>
+    <Mode2>0</Mode2>
+
+    <RandMode>0</RandMode>
+
+    <SwingCountStartEntry>1</SwingCountStartEntry>
+    <SwingCountEntry>1</SwingCountEntry>
+    <SwingCountReverse>1</SwingCountReverse>
+    <SwingCountExit>2</SwingCountExit>
+
+    <CancelOrderMode>1</CancelOrderMode>
+    <FlatCount>0</FlatCount>
+
+    <StartEntryMode>1</StartEntryMode>
+    <EntryMode>1</EntryMode>
+
+    <EntrySignal11>19</EntrySignal11>
+    <EntrySignal12>25</EntrySignal12>
+    <EntrySignal13>0</EntrySignal13>
+
+    <EntrySignal1>19</EntrySignal1>
+    <ExitSignal1>25</ExitSignal1>
+    <ReverseSignal1>0</ReverseSignal1>
+
+    <ExitSignal12>0</ExitSignal12>
+    <ReverseSignal12>0</ReverseSignal12>
+
+    <EntrySignal2>0</EntrySignal2>
+    <ExitSignal2>0</ExitSignal2>
+    <ReverseSignal2>0</ReverseSignal2>
+
+    <ExitSignal3>0</ExitSignal3>
+    <ReverseSignal3>0</ReverseSignal3>
+
+    <ExitSignal51>0</ExitSignal51>
+    <ExitSignal52>0</ExitSignal52>
+
+    <ReverseLossSignal>0</ReverseLossSignal>
+
+    <ChangeMode1>0</ChangeMode1>
+    <ChangeMode2>0</ChangeMode2>
+    <ChangeMode3>0</ChangeMode3>
+
+    <ChangeModeCondSignal1>0</ChangeModeCondSignal1>
+    <ChangeModeCondSignal2>0</ChangeModeCondSignal2>
+    <ChangeModeCondSignal3>0</ChangeModeCondSignal3>
+    <ChangeModeCondSignal5>0</ChangeModeCondSignal5>
+
+    <EntryPriceId>8</EntryPriceId>
+    <ExitPriceId>8</ExitPriceId>
+    <ReversePriceId>8</ReversePriceId>
+
+    <StopExitSignal1>0</StopExitSignal1>
+    <StopPriceId>1</StopPriceId>
+
+    <ReverseLossCnt>1000</ReverseLossCnt>
+
+    <ReverseMode1>1</ReverseMode1>
+    <ReverseMode2>1</ReverseMode2>
+    <ReverseMode3>1</ReverseMode3>
+    <ReverseMode5>1</ReverseMode5>
+
+    <RichHL>2</RichHL>
+
+    <RichTargetMode11>0</RichTargetMode11>
+    <RichTargetMode12>0</RichTargetMode12>
+    <RichTargetMode13>0</RichTargetMode13>
+    <RichTargetMode15>0</RichTargetMode15>
+
+    <RichTargetMode21>0</RichTargetMode21>
+    <RichTargetMode22>0</RichTargetMode22>
+    <RichTargetMode23>0</RichTargetMode23>
+    <RichTargetMode25>0</RichTargetMode25>
+
+    <RichTargetMode31>8</RichTargetMode31>
+    <RichTargetMode32>5</RichTargetMode32>
+
+    <RichTargetMode41>2</RichTargetMode41>
+    <RichTargetMode42>0</RichTargetMode42>
+
+    <RichTargetMode51>0</RichTargetMode51>
+
+    <RiskLowMap>3</RiskLowMap>
+
+    <TakeExitMode>0</TakeExitMode>
+
+  </Z00517>
+  <Z00517>
+    <Name>Z00517</Name>
+    <Code>Z00517.300.132</Code>
+    <TradeAccountKey>Quik.Open.Real</TradeAccountKey>
+    <TradeTerminalType>Simulator</TradeTerminalType>
+    <TradeTerminalKey>TrTerminal</TradeTerminalKey>
+    <TimePlanKey>Forts.Standard</TimePlanKey>
+    <TickerKey>VBZ3</TickerKey>
+    <TimeInt>300</TimeInt>
+    <TimeInt2>300</TimeInt2>
+
+    <Ma1Length>300</Ma1Length>
+    <Ma1AtrLength>100</Ma1AtrLength>
+    <Ma1KAtr>1.25</Ma1KAtr>
+    <Ma1Mode>1</Ma1Mode>
+
+    <MaAtrLength1>50</MaAtrLength1>
+    <MaAtrLength2>300</MaAtrLength2>
+
+    <Contract>1</Contract>
+    <Contracts>3</Contracts>
+    <SafeContracts2>1</SafeContracts2>
+
+    <KAtrStop>5</KAtrStop>
+    <KAtrStop1>5</KAtrStop1>
+    <KAtrStop2>2</KAtrStop2>
+
+    <Mode1>1</Mode1>
+    <Mode2>0</Mode2>
+
+    <RandMode>0</RandMode>
+
+    <SwingCountStartEntry>1</SwingCountStartEntry>
+    <SwingCountEntry>1</SwingCountEntry>
+    <SwingCountReverse>1</SwingCountReverse>
+    <SwingCountExit>2</SwingCountExit>
+
+    <CancelOrderMode>1</CancelOrderMode>
+    <FlatCount>0</FlatCount>
+
+    <StartEntryMode>1</StartEntryMode>
+    <EntryMode>1</EntryMode>
+
+    <EntrySignal11>19</EntrySignal11>
+    <EntrySignal12>25</EntrySignal12>
+    <EntrySignal13>0</EntrySignal13>
+
+    <EntrySignal1>19</EntrySignal1>
+    <ExitSignal1>25</ExitSignal1>
+    <ReverseSignal1>0</ReverseSignal1>
+
+    <ExitSignal12>0</ExitSignal12>
+    <ReverseSignal12>0</ReverseSignal12>
+
+    <EntrySignal2>0</EntrySignal2>
+    <ExitSignal2>0</ExitSignal2>
+    <ReverseSignal2>0</ReverseSignal2>
+
+    <ExitSignal3>0</ExitSignal3>
+    <ReverseSignal3>0</ReverseSignal3>
+
+    <ExitSignal51>0</ExitSignal51>
+    <ExitSignal52>0</ExitSignal52>
+
+    <ReverseLossSignal>0</ReverseLossSignal>
+
+    <ChangeMode1>0</ChangeMode1>
+    <ChangeMode2>0</ChangeMode2>
+    <ChangeMode3>0</ChangeMode3>
+
+    <ChangeModeCondSignal1>0</ChangeModeCondSignal1>
+    <ChangeModeCondSignal2>0</ChangeModeCondSignal2>
+    <ChangeModeCondSignal3>0</ChangeModeCondSignal3>
+    <ChangeModeCondSignal5>0</ChangeModeCondSignal5>
+
+    <EntryPriceId>8</EntryPriceId>
+    <ExitPriceId>8</ExitPriceId>
+    <ReversePriceId>8</ReversePriceId>
+
+    <StopExitSignal1>0</StopExitSignal1>
+    <StopPriceId>1</StopPriceId>
+
+    <ReverseLossCnt>1000</ReverseLossCnt>
+
+    <ReverseMode1>1</ReverseMode1>
+    <ReverseMode2>1</ReverseMode2>
+    <ReverseMode3>1</ReverseMode3>
+    <ReverseMode5>1</ReverseMode5>
+
+    <RichHL>2</RichHL>
+
+    <RichTargetMode11>0</RichTargetMode11>
+    <RichTargetMode12>0</RichTargetMode12>
+    <RichTargetMode13>0</RichTargetMode13>
+    <RichTargetMode15>0</RichTargetMode15>
+
+    <RichTargetMode21>0</RichTargetMode21>
+    <RichTargetMode22>0</RichTargetMode22>
+    <RichTargetMode23>0</RichTargetMode23>
+    <RichTargetMode25>0</RichTargetMode25>
+
+    <RichTargetMode31>8</RichTargetMode31>
+    <RichTargetMode32>5</RichTargetMode32>
+
+    <RichTargetMode41>2</RichTargetMode41>
+    <RichTargetMode42>0</RichTargetMode42>
+
+    <RichTargetMode51>0</RichTargetMode51>
+
+    <RiskLowMap>3</RiskLowMap>
+
+    <TakeExitMode>0</TakeExitMode>
+
+  </Z00517>
+
+  <!-- RN -->
+  <Z00517>
+    <Name>Z00517</Name>
+    <Code>Z00517.60.132</Code>
+    <TradeAccountKey>Quik.Open.Real</TradeAccountKey>
+    <TradeTerminalType>Simulator</TradeTerminalType>
+    <TradeTerminalKey>TrTerminal</TradeTerminalKey>
+    <TimePlanKey>Forts.Standard</TimePlanKey>
+    <TickerKey>RNZ3</TickerKey>
+    <TimeInt>60</TimeInt>
+    <TimeInt2>60</TimeInt2>
+
+    <Ma1Length>300</Ma1Length>
+    <Ma1AtrLength>100</Ma1AtrLength>
+    <Ma1KAtr>1.5</Ma1KAtr>
+    <Ma1Mode>1</Ma1Mode>
+
+    <MaAtrLength1>50</MaAtrLength1>
+    <MaAtrLength2>300</MaAtrLength2>
+
+    <Contract>1</Contract>
+    <Contracts>3</Contracts>
+    <SafeContracts2>1</SafeContracts2>
+
+    <KAtrStop>5</KAtrStop>
+    <KAtrStop1>5</KAtrStop1>
+    <KAtrStop2>2</KAtrStop2>
+
+    <Mode1>1</Mode1>
+    <Mode2>0</Mode2>
+
+    <RandMode>0</RandMode>
+
+    <SwingCountStartEntry>1</SwingCountStartEntry>
+    <SwingCountEntry>1</SwingCountEntry>
+    <SwingCountReverse>1</SwingCountReverse>
+    <SwingCountExit>2</SwingCountExit>
+
+    <CancelOrderMode>1</CancelOrderMode>
+    <FlatCount>0</FlatCount>
+
+    <StartEntryMode>1</StartEntryMode>
+    <EntryMode>1</EntryMode>
+
+    <EntrySignal11>19</EntrySignal11>
+    <EntrySignal12>25</EntrySignal12>
+    <EntrySignal13>0</EntrySignal13>
+
+    <EntrySignal1>19</EntrySignal1>
+    <ExitSignal1>25</ExitSignal1>
+    <ReverseSignal1>0</ReverseSignal1>
+
+    <ExitSignal12>0</ExitSignal12>
+    <ReverseSignal12>0</ReverseSignal12>
+
+    <EntrySignal2>0</EntrySignal2>
+    <ExitSignal2>0</ExitSignal2>
+    <ReverseSignal2>0</ReverseSignal2>
+
+    <ExitSignal3>0</ExitSignal3>
+    <ReverseSignal3>0</ReverseSignal3>
+
+    <ExitSignal51>0</ExitSignal51>
+    <ExitSignal52>0</ExitSignal52>
+
+    <ReverseLossSignal>0</ReverseLossSignal>
+
+    <ChangeMode1>0</ChangeMode1>
+    <ChangeMode2>0</ChangeMode2>
+    <ChangeMode3>0</ChangeMode3>
+
+    <ChangeModeCondSignal1>0</ChangeModeCondSignal1>
+    <ChangeModeCondSignal2>0</ChangeModeCondSignal2>
+    <ChangeModeCondSignal3>0</ChangeModeCondSignal3>
+    <ChangeModeCondSignal5>0</ChangeModeCondSignal5>
+
+    <EntryPriceId>8</EntryPriceId>
+    <ExitPriceId>8</ExitPriceId>
+    <ReversePriceId>8</ReversePriceId>
+
+    <StopExitSignal1>0</StopExitSignal1>
+    <StopPriceId>1</StopPriceId>
+
+    <ReverseLossCnt>1000</ReverseLossCnt>
+
+    <ReverseMode1>1</ReverseMode1>
+    <ReverseMode2>1</ReverseMode2>
+    <ReverseMode3>1</ReverseMode3>
+    <ReverseMode5>1</ReverseMode5>
+
+    <RichHL>2</RichHL>
+
+    <RichTargetMode11>0</RichTargetMode11>
+    <RichTargetMode12>0</RichTargetMode12>
+    <RichTargetMode13>0</RichTargetMode13>
+    <RichTargetMode15>0</RichTargetMode15>
+
+    <RichTargetMode21>0</RichTargetMode21>
+    <RichTargetMode22>0</RichTargetMode22>
+    <RichTargetMode23>0</RichTargetMode23>
+    <RichTargetMode25>0</RichTargetMode25>
+
+    <RichTargetMode31>8</RichTargetMode31>
+    <RichTargetMode32>5</RichTargetMode32>
+
+    <RichTargetMode41>2</RichTargetMode41>
+    <RichTargetMode42>0</RichTargetMode42>
+
+    <RichTargetMode51>0</RichTargetMode51>
+
+    <RiskLowMap>3</RiskLowMap>
+
+    <TakeExitMode>0</TakeExitMode>
+
+  </Z00517>
+  <Z00517>
+    <Name>Z00517</Name>
+    <Code>Z00517.300.132</Code>
+    <TradeAccountKey>Quik.Open.Real</TradeAccountKey>
+    <TradeTerminalType>Simulator</TradeTerminalType>
+    <TradeTerminalKey>TrTerminal</TradeTerminalKey>
+    <TimePlanKey>Forts.Standard</TimePlanKey>
+    <TickerKey>RNZ3</TickerKey>
+    <TimeInt>300</TimeInt>
+    <TimeInt2>300</TimeInt2>
+
+    <Ma1Length>300</Ma1Length>
+    <Ma1AtrLength>100</Ma1AtrLength>
+    <Ma1KAtr>1.5</Ma1KAtr>
+    <Ma1Mode>1</Ma1Mode>
+
+    <MaAtrLength1>50</MaAtrLength1>
+    <MaAtrLength2>300</MaAtrLength2>
+
+    <Contract>1</Contract>
+    <Contracts>3</Contracts>
+    <SafeContracts2>1</SafeContracts2>
+
+    <KAtrStop>5</KAtrStop>
+    <KAtrStop1>5</KAtrStop1>
+    <KAtrStop2>2</KAtrStop2>
+
+    <Mode1>1</Mode1>
+    <Mode2>0</Mode2>
+
+    <RandMode>0</RandMode>
+
+    <SwingCountStartEntry>1</SwingCountStartEntry>
+    <SwingCountEntry>1</SwingCountEntry>
+    <SwingCountReverse>1</SwingCountReverse>
+    <SwingCountExit>2</SwingCountExit>
+
+    <CancelOrderMode>1</CancelOrderMode>
+    <FlatCount>0</FlatCount>
+
+    <StartEntryMode>1</StartEntryMode>
+    <EntryMode>1</EntryMode>
+
+    <EntrySignal11>19</EntrySignal11>
+    <EntrySignal12>25</EntrySignal12>
+    <EntrySignal13>0</EntrySignal13>
+
+    <EntrySignal1>19</EntrySignal1>
+    <ExitSignal1>25</ExitSignal1>
+    <ReverseSignal1>0</ReverseSignal1>
+
+    <ExitSignal12>0</ExitSignal12>
+    <ReverseSignal12>0</ReverseSignal12>
+
+    <EntrySignal2>0</EntrySignal2>
+    <ExitSignal2>0</ExitSignal2>
+    <ReverseSignal2>0</ReverseSignal2>
+
+    <ExitSignal3>0</ExitSignal3>
+    <ReverseSignal3>0</ReverseSignal3>
+
+    <ExitSignal51>0</ExitSignal51>
+    <ExitSignal52>0</ExitSignal52>
+
+    <ReverseLossSignal>0</ReverseLossSignal>
+
+    <ChangeMode1>0</ChangeMode1>
+    <ChangeMode2>0</ChangeMode2>
+    <ChangeMode3>0</ChangeMode3>
+
+    <ChangeModeCondSignal1>0</ChangeModeCondSignal1>
+    <ChangeModeCondSignal2>0</ChangeModeCondSignal2>
+    <ChangeModeCondSignal3>0</ChangeModeCondSignal3>
+    <ChangeModeCondSignal5>0</ChangeModeCondSignal5>
+
+    <EntryPriceId>8</EntryPriceId>
+    <ExitPriceId>8</ExitPriceId>
+    <ReversePriceId>8</ReversePriceId>
+
+    <StopExitSignal1>0</StopExitSignal1>
+    <StopPriceId>1</StopPriceId>
+
+    <ReverseLossCnt>1000</ReverseLossCnt>
+
+    <ReverseMode1>1</ReverseMode1>
+    <ReverseMode2>1</ReverseMode2>
+    <ReverseMode3>1</ReverseMode3>
+    <ReverseMode5>1</ReverseMode5>
+
+    <RichHL>2</RichHL>
+
+    <RichTargetMode11>0</RichTargetMode11>
+    <RichTargetMode12>0</RichTargetMode12>
+    <RichTargetMode13>0</RichTargetMode13>
+    <RichTargetMode15>0</RichTargetMode15>
+
+    <RichTargetMode21>0</RichTargetMode21>
+    <RichTargetMode22>0</RichTargetMode22>
+    <RichTargetMode23>0</RichTargetMode23>
+    <RichTargetMode25>0</RichTargetMode25>
+
+    <RichTargetMode31>8</RichTargetMode31>
+    <RichTargetMode32>5</RichTargetMode32>
+
+    <RichTargetMode41>2</RichTargetMode41>
+    <RichTargetMode42>0</RichTargetMode42>
+
+    <RichTargetMode51>0</RichTargetMode51>
+
+    <RiskLowMap>3</RiskLowMap>
+
+    <TakeExitMode>0</TakeExitMode>
+
+  </Z00517>
+
+</Strategies>
+
+
+

@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<EventHub enabled="true" ns="GS.Events" as="GS">
+  <Name>Event Hub</Name>
+  <Code>EventHub</Code>
+  <IsEnabled>true</IsEnabled>
+  <IsEvlEnabled>false</IsEvlEnabled>
+  <IsQueueEnabled>true</IsQueueEnabled>
+  <IsProcessTaskInUse>true</IsProcessTaskInUse>
+  <Description>Event Hub with Queue</Description>
+  <EventHubItems>
+    <EventHubItem>
+      <Entity>TcpClientHandler</Entity>
+      <Category>Socket</Category>
+    </EventHubItem>
+    <EventHubItem>
+      <Entity>Transaction</Entity>
+      <Category>Transactions</Category>
+    </EventHubItem>
+    <EventHubItem>
+      <Entity>Order</Entity>
+      <Category>Orders</Category>
+    </EventHubItem>
+  </EventHubItems>
+</EventHub>

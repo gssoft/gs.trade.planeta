@@ -1,0 +1,143 @@
+﻿@*@model IEnumerable<GS.Trade.DataBase.Model.Trade>*@
+
+@model PagedList.IPagedList<GS.Trade.DataBase.Model.Trade>
+@using PagedList.Mvc;
+<link href="~/Content/PagedList.css" rel="stylesheet" type="text/css" />
+<link href="~/Content/bootstrap.min.css" rel="stylesheet" type="text/css" />
+
+
+    <h5><b>@ViewBag.FullTitle</b></h5>
+    @Html.PagedListPager(Model, page => Url.Action("Index",
+        new { 
+            accountList = ViewBag.Account, 
+            tickerList = ViewBag.Ticker, 
+            strategyList = ViewBag.Strategy,
+            timeIntList = ViewBag.TimeInt,
+            searchString = ViewBag.SearchString,
+            lastDayChecked = ViewBag.LastDayChecked, 
+            page }))
+
+
+    @using (Html.BeginForm("Index", "TradesAsync", FormMethod.Get))
+    {
+        <p>
+            Account: @Html.DropDownList("accountList", "All")
+            Ticker: @Html.DropDownList("tickerList", "All")
+            Strategy: @Html.DropDownList("strategyList", "All")
+            TimeInt: @Html.DropDownList("timeIntList", "All")
+            Search: @Html.TextBox("searchString")
+            LastDay: @Html.CheckBox("lastDayChecked", true)
+            <input class ="bg-primary" type="submit" value="Filter" />
+        </p>
+    }
+   
+
+<table class="table">
+    <tr>
+        <th>
+            DateTime
+        </th>
+        
+        <th>
+            Account
+        </th>
+        <th>
+            Ticker
+        </th>
+        <th>
+            @*@Html.DisplayNameFor(model => model.Strategy.Key)*@
+            Strategy
+        </th>
+        <th>
+            TimeInt
+        </th>
+        @*<th>
+                @Html.DisplayNameFor(model => model.Key)
+            </th>*@
+        <th>
+            @*@Html.DisplayNameFor(model => model.Operation)*@
+            Side
+        </th>
+        <th>
+            @* @Html.DisplayNameFor(model => model.Quantity)*@
+            Qty
+        </th>
+        
+        <th>
+            Price
+        </th>
+        <th>
+            Number
+        </th>
+        <th>
+            OrderNumber
+        </th>
+       
+           
+        
+        
+        <th></th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.DT)
+            </td>
+            
+            <td>
+                @Html.DisplayFor(modelItem => item.Strategy.Account.Code)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Strategy.Ticker.Code)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Strategy.Code)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Strategy.TimeInt)
+            </td>
+           
+            <td>
+                @Html.DisplayFor(modelItem => item.Operation)
+
+            </td>
+           
+            <td>
+                @Html.DisplayFor(modelItem => item.Quantity)
+            </td>
+            
+            
+            <td>
+                @Html.DisplayFor(modelItem => item.Price)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Number)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.OrderNumber)
+            </td>
+            
+           
+            <td>
+                @Html.ActionLink("Edit", "Edit", new { id = item.Id })
+                @Html.ActionLink("Details", "Details", new { id = item.Id })
+                @Html.ActionLink("Delete", "Delete", new { id = item.Id })
+            </td>
+        </tr>
+    }
+
+</table>
+
+Page @(Model.PageCount < Model.PageNumber ? 0 : Model.PageNumber) of @Model.PageCount
+
+@Html.PagedListPager(Model, page => Url.Action("Index", 
+    new { 
+        accountList = ViewBag.Account,
+        tickerList = ViewBag.Ticker,
+        strategyList = ViewBag.Strategy,
+        timeIntList = ViewBag.TimeInt,
+        lastDayChecked = ViewBag.LastDayChecked,
+        page}))
+

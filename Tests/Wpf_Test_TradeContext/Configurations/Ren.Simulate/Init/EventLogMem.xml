@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<EventLogTypes>
+  <EventLogs>
+    <Name>EventLogs</Name>
+    <IsEnabled>true</IsEnabled>
+    <XPath>EventLogList</XPath>
+    <IsQueueEnabled>false</IsQueueEnabled>
+  </EventLogs>
+  <EventLogList>
+    <EventLog>
+      <Name>Memory EventLog</Name>
+      <IsEnabled>true</IsEnabled>
+      <IsAsync>false</IsAsync>
+      <IsPrimary>true</IsPrimary>
+      <IsSaveEnabled>false</IsSaveEnabled>
+      <IsUIEnabled>true</IsUIEnabled>
+      <Capasity>512</Capasity>
+      <CapasityLimit>512</CapasityLimit>
+    </EventLog>
+  </EventLogList>
+</EventLogTypes>

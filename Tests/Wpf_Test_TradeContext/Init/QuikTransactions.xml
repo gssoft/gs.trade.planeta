@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<QuikTransactions>
+  <Name>Quik Transactions</Name>
+  <Code>Quik Transactions</Code>
+  <IsEnabled>true</IsEnabled>
+  <IsEvlEnabled>true</IsEvlEnabled>
+  <Category>Transactions</Category>
+  <Entity>Transaction</Entity>
+  <!-- Need for QuikTerminal -->
+  <IsProcessTaskInUse>true</IsProcessTaskInUse>
+</QuikTransactions>

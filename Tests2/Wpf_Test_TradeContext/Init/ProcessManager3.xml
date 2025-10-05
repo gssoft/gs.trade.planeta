@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ProcessManager3 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <TimeInterval>1000</TimeInterval>
+  <TimeIntervalOffset>0</TimeIntervalOffset>
+  <ProcessSlots>
+    <ProcessSlot3>
+      <Name>TimeSeries</Name>
+    </ProcessSlot3>
+    <ProcessSlot3>
+      <Name>Prefix</Name>
+    </ProcessSlot3>
+    <ProcessSlot3>
+      <Name>Strategies</Name>
+    </ProcessSlot3>
+    <ProcessSlot3>
+      <Name>Portfolio</Name>
+    </ProcessSlot3>
+    <ProcessSlot3>
+      <Name>Diagnostic</Name>
+    </ProcessSlot3>
+  </ProcessSlots>
+</ProcessManager3>

@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<WebConfigurator enabled="true" ns="WebClients" as="WebClients">
+  <Code>WebConfigurator</Code>
+  <XmlWebClient>
+    <BaseAddress>http://localhost/GS.Trade.Web.Mvc.Cfg_01/</BaseAddress>
+    <ApiPrefix>api/x</ApiPrefix>
+    <MediaTypeHeader>application/xml</MediaTypeHeader>
+    <ErrorCountToStop>30</ErrorCountToStop>
+    <WorkTask>
+      <Code>XmlWebClient.WorkTask</Code>
+      <TimeInterval>60</TimeInterval>
+      <ErrorCountToStop>30</ErrorCountToStop>
+    </WorkTask>
+  </XmlWebClient>
+</WebConfigurator>

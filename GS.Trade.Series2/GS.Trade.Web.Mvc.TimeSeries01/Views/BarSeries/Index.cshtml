@@ -1,0 +1,94 @@
+﻿@using GS.Trade.TimeSeries.Model
+@model IEnumerable<GS.Trade.TimeSeries.Model.TimeSeries>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_LayoutBarsOnLine.cshtml";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>ID</th>
+        <th>
+            QuoteProvider
+        </th>
+        <th>
+            Ticker
+        </th>
+        <th>
+            TimeInt
+        </th>
+        <th>
+            Code
+        </th>
+        <th>
+            Name
+        </th>
+        <th>
+            Description
+        </th>
+        <th>Key</th>
+        <th>
+            CreatedDT
+        </th>
+        <th>
+            ModifiedDT
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Id)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.QuoteProvider.Code)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Ticker.Code)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.TimeInt.Code)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Code)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Name)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Description)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Key)
+        </td>
+        <td>
+            
+            @{
+                TimeSeries item1 = item;
+            }
+            @Html.DisplayFor(modelItem => item1.CreatedDT)
+        </td>
+        <td>
+            
+            @{
+                TimeSeries item2 = item;
+            }
+            @Html.DisplayFor(modelItem => item2.ModifiedDT)
+        </td>
+        <td>
+            @Html.ActionLink("Items", "Index", "Bars", new { barSeriesId = item.Id }, null) |
+            @Html.ActionLink("Edit", "Edit", new { id=item.Id }) |
+            @Html.ActionLink("Details", "Details", new { id=item.Id }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.Id })
+        </td>
+    </tr>
+}
+
+</table>

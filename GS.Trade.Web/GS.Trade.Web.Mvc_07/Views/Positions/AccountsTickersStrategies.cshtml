@@ -1,0 +1,79 @@
+﻿@model IEnumerable<GS.Trade.Trades.Position2>
+<p>
+    @Html.ActionLink("Positions", "Index", "Positions") |
+    @Html.ActionLink("Accounts", "AccountsTickers", "Positions") |
+    @Html.ActionLink("Accounts & Strategies", "AccountsTickersStrategies", "Positions")
+</p>
+<h5><strong>@ViewBag.FullTitle</strong></h5>
+<table class="table">
+    <tr>
+        <th>
+            @*@Html.DisplayNameFor(model => model.AccountCode)*@
+            Account
+        </th>     
+        <th>
+            @*@Html.DisplayNameFor(model => model.TickerCode)*@
+            Ticker
+        </th>
+        <th>
+            Strategy
+        </th>
+        <th>
+            Side
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Quantity)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.PnL)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.PnL2)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.FirstTradeDT)
+        </th>
+        
+        <th>
+            @Html.DisplayNameFor(model => model.LastTradeDT)
+        </th>
+        <th>
+            Count
+        </th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr><td>
+            @Html.DisplayFor(modelItem => item.AccountCode)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.TickerKey)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.StrategyCodeEx)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Operation)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Quantity)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.PnL)
+        </td>
+       
+        <td>
+            @Html.DisplayFor(modelItem => item.PnL2)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.FirstTradeDT)
+        </td>     
+        <td>
+            @Html.DisplayFor(modelItem => item.LastTradeDT)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Count)
+        </td>
+    </tr>
+}
+</table>

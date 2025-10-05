@@ -1,0 +1,113 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{627C9411-39B3-4ED1-82D4-A3BA7FEBC1F9}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>GS.Trade.TradeTerminals64</RootNamespace>
+    <AssemblyName>GS.Trade.TradeTerminals64</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+    <PlatformTarget>x64</PlatformTarget>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="GS, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\GS\GS\bin\Debug\GS.dll</HintPath>
+    </Reference>
+    <Reference Include="GS.Trade.Trades, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\GS.Trade.Trades\bin\Debug\GS.Trade.Trades.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="64\Trans2QuikDllName01.cs" />
+    <Compile Include="IOrders.cs" />
+    <Compile Include="OrderLockedCount.cs" />
+    <Compile Include="Quik\Handlers\ResolveProcess.cs" />
+    <Compile Include="Quik\Handlers\TradeReply.cs" />
+    <Compile Include="Quik\Handlers\TransactionReply.cs" />
+    <Compile Include="Quik\OrderQueue2.cs" />
+    <Compile Include="Quik\IQuik.cs" />
+    <Compile Include="Quik\ITrans2Quik.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Quik\ITrans2QuikReceiver.cs" />
+    <Compile Include="Quik\OrderQueue.cs" />
+    <Compile Include="Quik\Handlers\OrderStatusChangedReply.cs" />
+    <Compile Include="Quik\QuikOrders.cs" />
+    <Compile Include="Quik\QuikTradeTerminal.cs" />
+    <Compile Include="Quik\QuikTradeTerminalCreator.cs" />
+    <Compile Include="Quik\QuikTradeTerminalTracking.cs" />
+    <Compile Include="Quik\QuikTransactionQueue.cs" />
+    <Compile Include="Quik\Results.cs" />
+    <Compile Include="Quik\QuikTradeTerminalProcessTask.cs" />
+    <Compile Include="Quik\Trans2QuikDescriptor.cs" />
+    <Compile Include="Quik\Trans2QuikImpl01.cs" />
+    <Compile Include="Quik\Trans2QuikList.cs" />
+    <Compile Include="Simulate\SimulateTerminal.cs" />
+    <Compile Include="Quik\Trans2Quik.cs" />
+    <Compile Include="TradeTerminals64.cs" />
+    <Compile Include="Transactions.cs" />
+    <Compile Include="TransID.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Function.txt" />
+    <Content Include="trans2quik.dll" />
+    <Content Include="TRANS2QUIK_1.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\GS.Trade\GS.Trade\GS.Trade.csproj">
+      <Project>{0d8e2d20-24cc-4c80-9f52-815f76dc0522}</Project>
+      <Name>GS.Trade</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+  <PropertyGroup>
+    <PreBuildEvent>
+    </PreBuildEvent>
+  </PropertyGroup>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

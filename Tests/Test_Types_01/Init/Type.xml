@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<!--<EmptyStorage ns="GS.Trade.Trades.Storage" as="GS.Trade.Trades">
+  
+</EmptyStorage>-->
+
+
+<Types>
+  <TradeStorage enabled="true" ns="GS.Trade.Storage2" as="GS.Trade">
+    <Code>TradeStorage</Code>
+    <XPath>Items</XPath>
+  </TradeStorage>
+<Items>
+<!--<TestItem enabled="true" ns="GS.Elements" as="GS">
+  <Code>MyKey 1</Code>
+</TestItem>
+<TestItem ns="GS.Elements" as="GS">
+  <Code>MyKey 2</Code>
+</TestItem>-->
+
+  <MemStorage enabled="true" ns="GS.Trade.Trades.Storage" as="GS.Trade.Trades">
+    <IsPrimary>false</IsPrimary>
+    <IsEnabled>true</IsEnabled>
+    <Name>Memory Trade Storage 01</Name>
+    <Code>MemTradeStorage01</Code>
+  </MemStorage>
+  <DbStorage enabled="true" ns="GS.Trade.DataBase.Storage" as="GS.Trade.DataBase">
+    <IsPrimary>true</IsPrimary>
+    <IsEnabled>true</IsEnabled>
+    <Name>DataBase Trade Storage 01</Name>
+    <Code>DbTradeStorage01</Code>
+  </DbStorage>
+</Items>
+</Types>

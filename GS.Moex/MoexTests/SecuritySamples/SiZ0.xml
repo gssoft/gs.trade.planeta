@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document>
+<data id="securities">
+<metadata>
+<columns>
+<column name="SECID" type="string" bytes="36" max_size="0"/>
+<column name="BOARDID" type="string" bytes="12" max_size="0"/>
+<column name="SHORTNAME" type="string" bytes="75" max_size="0"/>
+<column name="SECNAME" type="string" bytes="225" max_size="0"/>
+<column name="PREVSETTLEPRICE" type="double"/>
+<column name="STATUS" type="string" bytes="3" max_size="0"/>
+<column name="DECIMALS" type="int32"/>
+<column name="MINSTEP" type="double"/>
+<column name="LASTTRADEDATE" type="date" bytes="10" max_size="0"/>
+<column name="LASTDELDATE" type="date" bytes="10" max_size="0"/>
+<column name="SECTYPE" type="string" bytes="6" max_size="0"/>
+<column name="LATNAME" type="string" bytes="90" max_size="0"/>
+<column name="ASSETCODE" type="string" bytes="75" max_size="0"/>
+<column name="PREVOPENPOSITION" type="int64"/>
+<column name="LOTVOLUME" type="int32"/>
+<column name="INITIALMARGIN" type="double"/>
+<column name="HIGHLIMIT" type="double"/>
+<column name="LOWLIMIT" type="double"/>
+<column name="STEPPRICE" type="double"/>
+<column name="LASTSETTLEPRICE" type="double"/>
+<column name="PREVPRICE" type="double"/>
+<column name="FIRSTTRADEDATE" type="date" bytes="10" max_size="0"/>
+</columns>
+</metadata>
+<rows>
+</rows>
+</data>
+<data id="marketdata">
+<metadata>
+<columns>
+<column name="SECID" type="string" bytes="36" max_size="0"/>
+<column name="BOARDID" type="string" bytes="12" max_size="0"/>
+<column name="BID" type="undefined" bytes="0" max_size="0"/>
+<column name="OFFER" type="undefined" bytes="0" max_size="0"/>
+<column name="SPREAD" type="double"/>
+<column name="OPEN" type="double"/>
+<column name="HIGH" type="double"/>
+<column name="LOW" type="double"/>
+<column name="LAST" type="double"/>
+<column name="QUANTITY" type="int32"/>
+<column name="LASTCHANGE" type="double"/>
+<column name="SETTLEPRICE" type="double"/>
+<column name="SETTLETOPREVSETTLE" type="double"/>
+<column name="OPENPOSITION" type="double"/>
+<column name="NUMTRADES" type="int32"/>
+<column name="VOLTODAY" type="int64"/>
+<column name="VALTODAY" type="int64"/>
+<column name="VALTODAY_USD" type="int64"/>
+<column name="UPDATETIME" type="time" bytes="10" max_size="0"/>
+<column name="LASTCHANGEPRCNT" type="double"/>
+<column name="BIDDEPTH" type="undefined" bytes="0" max_size="0"/>
+<column name="BIDDEPTHT" type="undefined" bytes="0" max_size="0"/>
+<column name="NUMBIDS" type="undefined" bytes="0" max_size="0"/>
+<column name="OFFERDEPTH" type="undefined" bytes="0" max_size="0"/>
+<column name="OFFERDEPTHT" type="undefined" bytes="0" max_size="0"/>
+<column name="NUMOFFERS" type="undefined" bytes="0" max_size="0"/>
+<column name="TIME" type="time" bytes="10" max_size="0"/>
+<column name="SETTLETOPREVSETTLEPRC" type="double"/>
+<column name="SEQNUM" type="int64"/>
+<column name="SYSTIME" type="datetime" bytes="19" max_size="0"/>
+<column name="TRADEDATE" type="date" bytes="10" max_size="0"/>
+<column name="LASTTOPREVPRICE" type="double"/>
+<column name="OICHANGE" type="int64"/>
+</columns>
+</metadata>
+<rows>
+</rows>
+</data>
+<data id="dataversion">
+<metadata>
+<columns>
+<column name="data_version" type="int64"/>
+<column name="seqnum" type="int64"/>
+</columns>
+</metadata>
+<rows>
+<row data_version="5884" seqnum=""/>
+</rows>
+</data>
+</document>

@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Root>
+  <TradesRequester enabled="true" ns="Moex.TradesRequester" as="Moex">
+    <TickerBoard>RFUD</TickerBoard>
+    <TickerCode>SiZ9</TickerCode>
+    <TradesRequestStartValue>0</TradesRequestStartValue>
+    <TradesRequestLimitValue>1000</TradesRequestLimitValue>
+    <GetTradesDelayTimeInterval>60</GetTradesDelayTimeInterval>
+    <Verbose>true</Verbose>
+    <MoexTest enabled="true" ns="Moex" as="Moex">
+    <!-- Moex Tickers-->
+    <TickersFuturesApiPrefix>futures/markets/forts/securities</TickersFuturesApiPrefix>
+    <TickersOptionsApiPrefix>futures/markets/options/securities</TickersOptionsApiPrefix>
+    <TickersApiPostfix>.xml</TickersApiPostfix>
+    <TickersRowsXPath>/document/data[@id='securities']/rows</TickersRowsXPath>
+    <!-- Moex Ticker -->
+    <FuturesIssWebApiPrefix>futures/markets/forts/securities/</FuturesIssWebApiPrefix>
+    <OptionsIssWebApiPrefix>futures/markets/options/securities/</OptionsIssWebApiPrefix>
+    <ApiPostfix>.xml</ApiPostfix>
+    <SecurityRowXPath>/document/data[@id='securities']/rows/row</SecurityRowXPath>
+    <SecMarketDataRowXPath>/document/data[@id='marketdata']/rows/row</SecMarketDataRowXPath>
+    <!-- Moex Trades-->
+    <TradeRowsXPath>/document/data[@id='trades']/rows</TradeRowsXPath>
+    <TradeApiPostfix>/trades.xml</TradeApiPostfix>
+    <TradeApiParams>?start=StartValue&amp;limit=LimitValue</TradeApiParams>
+    <TradesLimitForWebRequest>1000</TradesLimitForWebRequest>
+    <Verbose>true</Verbose>
+    <WebClient02 enabled="true" ns="WebClients" as="WebClients">
+      <BaseAddress>https://iss.moex.com/</BaseAddress>
+      <!--<ApiPrefix>iss/engines/futures/markets/</ApiPrefix>-->
+      <ApiPrefix>iss/engines/</ApiPrefix>
+      <MediaTypeHeader>application/xml</MediaTypeHeader>
+      <ErrorCountToStop>30</ErrorCountToStop>
+      <IsUserPost>true</IsUserPost>
+      <WorkTask>
+        <Code>WebClient.WorkTask</Code>
+        <TimeInterval>60</TimeInterval>
+        <ErrorCountToStop>30</ErrorCountToStop>
+      </WorkTask>
+    </WebClient02>
+  </MoexTest>
+  </TradesRequester>
+</Root>
+

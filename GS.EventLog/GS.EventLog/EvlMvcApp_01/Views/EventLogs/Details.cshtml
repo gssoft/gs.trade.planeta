@@ -1,0 +1,50 @@
+﻿@model GS.EventLog.DataBase.Model.DbEventLog
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<fieldset>
+    <legend>DbEventLog</legend>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Alias)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Alias)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Code)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Code)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Name)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Name)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Description)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Description)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.LongCode)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.LongCode)
+    </div>
+</fieldset>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id=Model.EventLogID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Works>
+  <!--<HttpGetFortsZipFiles ns="GS.Trade.TimeSeries.BatchWorks" as="GS.Trade.TimeSeries">
+    <IsEnabled>true</IsEnabled>
+    <Name>FTP DownLoading FTYYMMDD.ZIP Files</Name>
+    <RemoteUri>http://ftp.micex.com/pub/info/stats/history/F/2016/</RemoteUri>
+    <RemoteUri>http://ftp.micex.com</RemoteUri>
+  <Login>anonymous</Login>
+  <Password />
+  <RemotePath>/pub/info/stats/history/F/2016/</RemotePath>
+  <RemoteFileFilter>FT</RemoteFileFilter>
+  <LocalPath>F:\Forts\2016\Zip\FT\</LocalPath>
+  <LocalFileFilter>FT*.Zip</LocalFileFilter>
+</HttpGetFortsZipFiles>
+  
+  <HttpGetFortsZipFiles ns="GS.Trade.TimeSeries.BatchWorks" as="GS.Trade.TimeSeries">
+    <IsEnabled>true</IsEnabled>
+    <Name>FTP DownLoading TEYYMMDD.ZIP Files</Name>
+    <RemoteUri>http://ftp.micex.com/pub/info/stats/history/F/2016/</RemoteUri>
+    <RemoteUri>http://ftp.micex.com</RemoteUri>
+    <Login>anonymous</Login>
+    <Password />
+    <RemotePath>/pub/info/stats/history/F/2016/</RemotePath>
+    <RemoteFileFilter>TE</RemoteFileFilter>
+    <LocalPath>F:\Forts\2016\Zip\TE\</LocalPath>
+    <LocalFileFilter>TE*.Zip</LocalFileFilter>
+  </HttpGetFortsZipFiles>-->
+
+
+  
+<!--161015-->
+  <!--<ZipWork ns="GS.Trade.TimeSeries.BatchWorks" as="GS.Trade.TimeSeries">
+    <IsEnabled>true</IsEnabled>
+    <Name>UnZIP FTYYMMDD.ZIP Files to FTYYMMDD.f.csv </Name>
+    <SourcePath>F:\Forts\2016\Zip\FT\</SourcePath>
+    <SourceFileFilter>FT*.Zip</SourceFileFilter>
+    <TargetPath>F:\Forts\2016\Txt\FT\</TargetPath>
+    <TargetFileFilter>FT*.f.csv</TargetFileFilter>
+    <TargetFileFilter2>ft.csv</TargetFileFilter2>
+    <AddExtension>.f</AddExtension>
+  </ZipWork>
+
+
+  <ZipWork ns="GS.Trade.TimeSeries.BatchWorks" as="GS.Trade.TimeSeries">
+    <IsEnabled>true</IsEnabled>
+    <Name>UnZip TEYYMMDD.ZIP Files to TEYYMMDD.f.csv </Name>
+    <SourcePath>F:\Forts\2016\Zip\TE\</SourcePath>
+    <SourceFileFilter>TE*.Zip</SourceFileFilter>
+    <TargetPath>F:\Forts\2016\Txt\TE\</TargetPath>
+    <TargetFileFilter>TE*.f.csv</TargetFileFilter>
+    <TargetFileFilter2>fe.csv</TargetFileFilter2>
+    <AddExtension>.f</AddExtension>
+  </ZipWork>-->
+
+  <!-- 16.10.22 --> 
+  <TicksFromTxtToDb3 ns="GS.Trade.TimeSeries.BatchWorks" as="GS.Trade.TimeSeries">
+    <IsEnabled>true</IsEnabled>
+    <SourcePath>F:\Forts\2016\Txt\FT</SourcePath>
+    <SourceFileFilter>FT*.CSV</SourceFileFilter>
+    <ConnectionString>Data Source=.\MSSQL12;Initial Catalog=FortsTicks03;Integrated Security=True</ConnectionString>
+    <Name>LoadTicksToDb</Name>
+    <Description>Load Ticks from Forts.Ftp.Pub files.txt to FortsTickContext DataBase</Description>
+  </TicksFromTxtToDb3>
+
+  <!--<EvlContextWorks ns="GS.EventLog.DataBase1.Dal.BatchWorks" as="GS.Eventlog">
+    <IsEnabled>true</IsEnabled>
+    <Code>EvlContextWorks</Code>
+    <Name>EvlContextWorks</Name>
+    <Description>Clear EventLogItems exept 2 days</Description>
+  </EvlContextWorks>-->
+</Works>

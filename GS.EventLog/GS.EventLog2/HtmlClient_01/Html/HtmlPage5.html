@@ -1,0 +1,153 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>EventLogItems with Bootstrap</title>
+    
+    <link href="Content/bootstrap.css" rel="stylesheet" />
+    <link href="Content/bootstrap-responsive.css" rel="stylesheet" />
+    <link href="Css/mybody.css" rel="stylesheet" />
+    
+
+    <script src="Scripts/jquery-1.9.1.min.js"></script>
+    <script src="Scripts/bootstrap.js"></script>
+    <script src="Scr/jsrender.js"></script>
+    
+    <script src="Scripts/knockout.js"></script>
+    <script src="Scripts/knockout.mapping-latest.js"></script>
+
+    
+    <script  type="text/javascript">
+        $(function () {
+            $.ajax({
+                type: 'GET',
+                url: "http://localhost/ODataEventLog/odata/EventLogItems?$skip=0&$top=25",
+                dataType: 'json',
+                success: function (data) {
+                    var arr = data.value;
+                    $("#eventLogItemList").html($.render.detailEvlItemTemplate(arr));
+                },
+                error: function () {
+                    alert("Error in Ajax Data Receving");
+                }
+            });
+        });
+    </script>
+
+</head>
+    <body>
+        <div>
+            <p>Page Size: <input data-bind="value: pageSize" /></p>
+            <p>Page Current: <input data-bind="value: pageCurrent" /></p>
+
+            <p>Page Size: <strong data-bind="text: pageSize"></strong></p>
+            <p>Page Current: <strong data-bind="text: pageCurrent"></strong></p>
+            <p>Request: <strong data-bind="text: requestStr"></strong></p>
+
+            <p>Page Count: <strong data-bind="text: pageCount"></strong></p>
+
+            <button onclick="fnOnClickGo()">Go Caps</button>
+        </div>
+
+        <div class="row-fluid ">
+            <table class="table table-bordered table-condensed">
+                <thead>
+                    <tr class="label-info"><th>ID</th>
+                        <th>DateTime</th>
+                        <th>Result</th>
+                        <th>Subject</th>
+                        <th>Source</th>
+                        <th>Entity</th>
+                        <th>Operation</th>
+                        <th>Description</th>
+                        <th>Object</th>
+                        <th>EventLogID</th>
+                    </tr>
+                </thead>
+
+                <tbody id="eventLogItemList"></tbody>
+
+            </table>
+        </div>
+
+        <script type="text/javascript">
+
+            $.templates({
+                titleTemplate: "<tr><td colspan=3>{{>Name}}</td></tr>",
+                detailTemplate: "<tr><td>{{>EventLogItemID}}</td><td>{{>Name}}</td><td>Alias: {{>Alias}}</td><td>Description: {{>Description}}</td></tr>",
+                detailEvlItemTemplate:
+                    /*
+                    "{{if ResultCode === 'FATAL'}}" + 
+                    "<tr class='label-warning'>" +
+                     "{{else}}" +
+                    "<tr class='label-info'>" +
+                     "{{/if}}"   +
+                     */
+                    "<tr>" +
+                        "<td>{{:EventLogItemID}}</td>" +
+                        "<td>{{:DT}}</td>" +
+                        "{{if ResultCode === 'FATAL'}}" +
+                        "<td class='label-warning'>{{:ResultCode}}</td>" +
+                        "{{else}}" +
+                        "<td class='label-info'>{{:ResultCode}}</td>" +
+                        "{{/if}}" +
+                        //  "<td>{{:ResultCode}}</td>" +
+                        "<td>{{:Subject}}</td>" +
+                        "<td>{{:Source}}</td>" +
+                        "<td>{{:Entity}}</td>" +
+                        "<td>{{:Operation}}</td>" +
+                        "<td>{{:Description}}</td>" +
+                        "<td>{{:Object}}</td>" +
+                        "<td>{{:EventLogID}}</td>" +
+                        "</tr>"
+            });
+        </script>
+        
+        <script type="text/javascript">
+            function ViewModelPage() {
+                this.pageSize = ko.observable(50);
+                this.pageCurrent = ko.observable(1);
+                this.pageCount = ko.observable(0);
+
+                this.recordCount = ko.observable(0);
+                
+                this.requestStr = ko.computed(function () {
+                    var rskip = (this.pageCurrent() - 1) * this.pageSize();
+                    var rtop = this.pageSize();
+                    return "http://localhost/ODataEventLog/odata/EventLogItems" +
+                        "?$skip=" + rskip + "&$top=" + rtop;
+                }, this);
+            }
+
+            var vm = new ViewModelPage();
+            ko.applyBindings(vm);
+
+        </script>
+        
+        <script type="text/javascript">
+
+            function fnOnClickGo() {
+                var str = vm.requestStr();
+                fnGetAjax(str);
+            }
+
+            function fnGetAjax(request) {
+              //  alert(request);
+                $.ajax({
+                    type: 'GET',
+                    url: request,
+                    dataType: 'json',
+                    success: function (data) {
+                        var arr = data.value;
+                        $("#eventLogItemList").html($.render.detailEvlItemTemplate(arr));
+                    },
+                    error: function () {
+                        alert("Error in Ajax Data Receving");
+                    }
+                });
+            }
+        </script>
+
+    </body>
+</html>
+

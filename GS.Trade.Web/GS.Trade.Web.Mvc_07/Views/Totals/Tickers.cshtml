@@ -1,0 +1,111 @@
+﻿@model IEnumerable<GS.Trade.Trades.Position2>
+@{
+    ViewBag.Title = "Tickers Totals";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<p>
+    @Html.ActionLink("Totals", "Index") |
+    @Html.ActionLink("Accounts", "Accounts") |
+    @Html.ActionLink("Tickers", "Tickers") |
+    @Html.ActionLink("Strategies", "Strategies") |
+    @Html.ActionLink("TimeIntervals", "TimeIntervals")
+</p>
+<p>
+    @Html.ActionLink("Accounts & Tickers", "AccountsTickers") |
+    @Html.ActionLink("Accounts & Tickers & Strategies", "AccountsTickersStrategies") |
+    @Html.ActionLink("Accounts & TimeIntervals", "AccountsTimeInts") |
+    @Html.ActionLink("Accounts & Tickers & TimeIntervals", "AccountsTickersTimeInts")
+</p>
+<p>
+    @Html.ActionLink("Tickers & Strategies", "TickersStrategies") |
+    @Html.ActionLink("Tickers & TimeIntervals", "TickersTimeInts") |
+    @Html.ActionLink("Tickers & Strategies & TimeIntervals", "TickersStrategiesTimeIntervals")
+</p>
+<p>
+    @Html.ActionLink("Eq Accounts & Tickers & Strategies", "AccountsTickersStrategiesEq") |
+    @Html.ActionLink("LastDay Accounts & Tickers & Strategies", "AccountsTickersStrategiesLastDay") |
+    @Html.ActionLink("LastDay Accounts & Tickers & Strategies & TimeInt", "AccountsTickersStrategiesTimeIntLastDay")
+</p>
+<h5><strong>@ViewBag.Title</strong></h5>
+
+<table class="table">
+     <tr>
+        <th>
+            Ticker
+        </th>
+        <th>
+            Quantity
+        </th>
+         <th>
+             PnL
+         </th>
+         <th>TradeAvg</th>
+         <th>DailyPnL</th>
+         <th>Days</th>
+        @*<th>
+           Money
+        </th>*@      
+       
+    <th>
+        FirstTradeDT
+    </th>
+         <th>
+             LastTradeDT
+         </th>
+         <th>
+             Count
+         </th>
+         <th></th>    
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.TickerKey)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Quantity)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.PnLFormated)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.TradeAvg1Formated)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.DailyPnLAvgFormated)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.TotalDays)
+            </td>
+            @*<td>
+                @Html.DisplayFor(modelItem => item.PnL3)
+            </td>*@
+           @* <td>
+                @Html.DisplayFor(modelItem => item.FirstTradeNumber)
+            </td>*@
+            <td>
+                @Html.DisplayFor(modelItem => item.FirstTradeDT)
+            </td>
+            @*<td>
+                @Html.DisplayFor(modelItem => item.LastTradeNumber)
+            </td>*@
+            <td>
+                @Html.DisplayFor(modelItem => item.LastTradeDT)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Count)
+            </td>
+            <td>
+                @Html.ActionLink("Chart", "Chart", "Deals", routeValues: new
+            {
+                ticker = item.TickerKey,
+                charttype = 2
+            }, htmlAttributes: null)
+            </td>
+        </tr>
+    }
+</table>
+
+

@@ -1,0 +1,43 @@
+﻿@model GS.Trade.TimeSeries.FortsTicks.Model.Ticker
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_LayoutFortsTicks.cshtml";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Ticker</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Code)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Code)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Contract)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Contract)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Decimals)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Decimals)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.ID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

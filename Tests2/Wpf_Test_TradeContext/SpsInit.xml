@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SyncPositionsInit>
+  <SyncPositions_XmlFileName>D:\Mts\Mts1\Sps.xml</SyncPositions_XmlFileName>
+  <TradeContextInit_XmlFileName>Init\TradeContextInit.xml</TradeContextInit_XmlFileName> 
+  <Quotes_XmlFileName>D:\Mts\Mts1\Quotes.xml</Quotes_XmlFileName>
+  <Tickers_XmlFileName>Repozitary\Xml\Tickers.xml</Tickers_XmlFileName>
+  <TimePlans_XmlFileName>Repozitary\Xml\TimePlans15.xml</TimePlans_XmlFileName>
+  <Accounts_XmlFileName>Repozitary\Xml\Accounts.xml</Accounts_XmlFileName>
+  <Positions_XmlFileName>D:\Mts\Mts1\Positions.xml</Positions_XmlFileName>
+  <EventLogs_XmlFileName>Init\EventLog.xml</EventLogs_XmlFileName>
+  <!--
+  <Strategies_XmlFileName>Strategies\Simulate\S_Z603_01.xml</Strategies_XmlFileName>
+  
+  <Strategies_XmlFileName>Strategies\Debug\Dbg_Z603_01.xml</Strategies_XmlFileName>
+ <Strategies_XmlFileName>Strategies\Train\Tr_Z603_01.xml</Strategies_XmlFileName>
+  <Strategies_XmlFileName>Strategies\Train\TrSpot_Z101.xml</Strategies_XmlFileName>
+  
+  <Strategies_XmlFileName>Strategies\Debug\Dbg_Z603_01.xml</Strategies_XmlFileName>
+  
+  <Strategies_XmlFileName>Strategies\Train\Tr_Z705_02Op1.xml</Strategies_XmlFileName>
+
+  <Strategies_XmlFileName>Strategies\Simulate\S_Z705_02FR.xml</Strategies_XmlFileName>
+ -->
+  <!--<Strategies_XmlFileName>Strategies\Train\Z706\StratFiles_55227_F_01.xml</Strategies_XmlFileName>-->
+  <!--<Strategies_XmlFileName>Strategies\Train\Z706\StratFiles_55226_F_01.xml</Strategies_XmlFileName>-->
+  <!--<Strategies_XmlFileName>Strategies\Train\Z706\StratFiles_55227_Op_01.xml</Strategies_XmlFileName>-->
+  <!--<Strategies_XmlFileName>Strategies\Real\Z706\RFin_StratFiles01.xml</Strategies_XmlFileName>-->
+  <!--<Strategies_XmlFileName>Strategies\Train\Z706\StratFiles_OpTr_01.xml</Strategies_XmlFileName>-->
+  <!--<Strategies_XmlFileName>Strategies\Simulate\Z706\Strat_VTB.Real_01.xml</Strategies_XmlFileName>-->
+  <!--<Strategies_XmlFileName>Strategies\Real\Z706\Strat_VTB.Real_150226.xml</Strategies_XmlFileName>-->
+  <!--<Strategies_XmlFileName>Strategies\Real\Z706\Strat_VTB.Real_150303.xml</Strategies_XmlFileName>-->
+  <!--<Strategies_XmlFileName>Strategies\Real\Z706\Strat_Open.Sim_150303.xml</Strategies_XmlFileName>-->
+  <!--<Strategies_XmlFileName>Strategies\Real\Z706\Strat_VTB.Real_150325.xml</Strategies_XmlFileName>-->
+  <!--<Strategies_XmlFileName>Strategies\Real\Z706\Strat_VTB.Real_150330.xml</Strategies_XmlFileName>-->
+  <!--<Strategies_XmlFileName>Strategies\Real\Z706\Strat_VTB.Real_150414.xml</Strategies_XmlFileName>-->
+  <!--<Strategies_XmlFileName>Strategies\Real\Z706\Strat_Open.Sim_150414.xml</Strategies_XmlFileName>-->
+  <!--<Strategies_XmlFileName>Strategies\Real\Z706\Strat_VTB.Real_150423.xml</Strategies_XmlFileName>-->
+  <!--<Strategies_XmlFileName>Strategies\Real\Z706\Strat_VTB.Real_150506.xml</Strategies_XmlFileName>-->
+   <!--<Strategies_XmlFileName>Strategies\Real\Z706\Strat_Open.Sim_150606.xml</Strategies_XmlFileName>-->
+  <!--<Strategies_XmlFileName>Strategies\Real\Z706\Strat_Fin.Real_150609.xml</Strategies_XmlFileName>-->
+  <!--<Strategies_XmlFileName>Strategies\Real\Z706\Strat_Open.Real_150622.xml</Strategies_XmlFileName>-->
+  <!--<Strategies_XmlFileName>Strategies\Real\Z706\Strat_BkStandard_Fin.Real_150903.xml</Strategies_XmlFileName>-->
+  <!--<Strategies_XmlFileName>Strategies\Real\Z706\Strat_Open.Sim_150910.xml</Strategies_XmlFileName>-->
+  <!--<Strategies_XmlFileName>Strategies\Init\Strat_Fin.Real_150609.xml</Strategies_XmlFileName>-->
+  <!--<Strategies_XmlFileName>Strategies\Init\Strat_Open.Real_150622.xml</Strategies_XmlFileName>-->
+  <!--<Strategies_XmlFileName>Strategies\Init\Strat_BkStandard_Fin.Real_150903.xml</Strategies_XmlFileName>-->
+  <Strategies_XmlFileName>Strategies\Init\Strat_Open.Sim_150910.xml</Strategies_XmlFileName>
+</SyncPositionsInit>

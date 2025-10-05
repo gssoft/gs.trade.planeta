@@ -1,0 +1,53 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.31101.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebClients", "WebClients\WebClients.csproj", "{760E7C8B-67DA-44C7-804D-A6D568F138CC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "caTestWebClient01", "caTestWebClient01\caTestWebClient01.csproj", "{8A58C510-EEA2-4D74-AB3C-CB2C81F01A32}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "caTestWebClient02", "caTestWebClient02\caTestWebClient02.csproj", "{87054EDD-2897-4B99-9737-6A317893563F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "caTest_TaskResult01", "caTest_TaskResult01\caTest_TaskResult01.csproj", "{BBEB0966-A6D0-48EE-BDAE-364C19E9A1B0}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{67AA0BCB-B5D6-416B-B8EB-6CF6564E9E46}"
+	ProjectSection(SolutionItems) = preProject
+		.nuget\NuGet.Config = .nuget\NuGet.Config
+		.nuget\NuGet.exe = .nuget\NuGet.exe
+		.nuget\NuGet.targets = .nuget\NuGet.targets
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "caTestXDocWebClient01", "caTestXDocWebClient01\caTestXDocWebClient01.csproj", "{2FBF700B-D1FD-430D-A519-E6B9F9991360}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{760E7C8B-67DA-44C7-804D-A6D568F138CC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{760E7C8B-67DA-44C7-804D-A6D568F138CC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{760E7C8B-67DA-44C7-804D-A6D568F138CC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{760E7C8B-67DA-44C7-804D-A6D568F138CC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8A58C510-EEA2-4D74-AB3C-CB2C81F01A32}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8A58C510-EEA2-4D74-AB3C-CB2C81F01A32}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8A58C510-EEA2-4D74-AB3C-CB2C81F01A32}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8A58C510-EEA2-4D74-AB3C-CB2C81F01A32}.Release|Any CPU.Build.0 = Release|Any CPU
+		{87054EDD-2897-4B99-9737-6A317893563F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{87054EDD-2897-4B99-9737-6A317893563F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{87054EDD-2897-4B99-9737-6A317893563F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{87054EDD-2897-4B99-9737-6A317893563F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BBEB0966-A6D0-48EE-BDAE-364C19E9A1B0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BBEB0966-A6D0-48EE-BDAE-364C19E9A1B0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BBEB0966-A6D0-48EE-BDAE-364C19E9A1B0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BBEB0966-A6D0-48EE-BDAE-364C19E9A1B0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2FBF700B-D1FD-430D-A519-E6B9F9991360}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2FBF700B-D1FD-430D-A519-E6B9F9991360}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2FBF700B-D1FD-430D-A519-E6B9F9991360}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2FBF700B-D1FD-430D-A519-E6B9F9991360}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

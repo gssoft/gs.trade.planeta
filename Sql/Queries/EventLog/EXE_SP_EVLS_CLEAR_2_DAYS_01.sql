@@ -1,0 +1,11 @@
+USE EventLog1
+EXECUTE [dbo].[SP_EVLS_CLEAR_2_DAYS]
+GO
+
+USE EventLog
+EXECUTE [dbo].[SP_EVLS_CLEAR_2_DAYS]
+GO
+
+USE EvlContext
+EXECUTE [dbo].[SP_EVLS_CLEAR_2_DAYS]
+GO

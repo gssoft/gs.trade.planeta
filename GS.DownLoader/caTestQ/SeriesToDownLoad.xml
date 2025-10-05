@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<SeriesToDownLoad>
+  <Series Ticker="GAZP" TimeInt="1_D" FirstDate="2001-01-01T00:00:00"/>
+  <Series Ticker="SBER" TimeInt="1_D" FirstDate="2001-01-01T00:00:00"/>
+  <Series Ticker="SBERP" TimeInt="1_D" FirstDate="2001-01-01T00:00:00"/>
+  <Series Ticker="VTBR" TimeInt="1_D" FirstDate="2001-01-01T00:00:00"/>
+  <Series Ticker="ROSN" TimeInt="1_D" FirstDate="2001-01-01T00:00:00"/>
+  <Series Ticker="LKOH" TimeInt="1_D" FirstDate="2001-01-01T00:00:00"/>
+  <Series Ticker="GMKN" TimeInt="1_D" FirstDate="2001-01-01T00:00:00"/>
+  <Series Ticker="CHMF" TimeInt="1_D" FirstDate="2001-01-01T00:00:00"/>
+  <Series Ticker="URKA" TimeInt="1_D" FirstDate="2001-01-01T00:00:00"/>
+  <Series Ticker="HYDR" TimeInt="1_D" FirstDate="2001-01-01T00:00:00"/>
+  <Series Ticker="F_RTSI" TimeInt="1_Min" FirstDate="2011-09-26T00:00:00"/>
+  <Series Ticker="F_GAZR" TimeInt="1_Min" FirstDate="2011-09-26T00:00:00"/>
+  <Series Ticker="F_SBER" TimeInt="1_Min" FirstDate="2011-09-26T00:00:00"/>
+</SeriesToDownLoad>

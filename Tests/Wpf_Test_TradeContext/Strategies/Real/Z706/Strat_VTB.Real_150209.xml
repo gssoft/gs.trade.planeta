@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ArrayOfString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <!--<string>Strategies\Real\Z706\RFin_Z708_06.xml</string>-->
+  <string>Strategies\Real\Z706\RFin_Z709_02.xml</string>
+  <string>Strategies\Real\Z706\SFin_Z708_01.xml</string>
+  <string>Strategies\Real\Z706\SFin_Z708_02.xml</string>
+  <string>Strategies\Real\Z706\SFin_Z708_03.xml</string>
+  <string>Strategies\Real\Z706\SFin_Z709_01.xml</string>
+  <!--<string>Strategies\Real\Z706\SFin_Z708_02.xml</string>-->
+</ArrayOfString>

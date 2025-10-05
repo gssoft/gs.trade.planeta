@@ -1,0 +1,87 @@
+﻿<Window x:Class="GS.Trade.Windows.PositionsClosedWindow2"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:windows="clr-namespace:GS.Trade.Windows"
+        Title="Positions Closed" Height="300" Width="600" Loaded="WindowLoaded" Closed="WindowClosed">
+    <Window.Resources>
+        <Style x:Key ="theDefaultStyle" TargetType="ListViewItem">
+            <Setter Property="HorizontalContentAlignment" Value="Stretch" />
+        </Style>
+        <Style x:Key="AlternateStyle">
+            <Setter Property="ListViewItem.HorizontalContentAlignment" Value="Stretch" />
+            <Setter Property="ListViewItem.Background" Value="#e1dfdc" />
+        </Style>
+    </Window.Resources>
+    <Grid>
+        <ListView Margin="0" Name="LstPositionsClosed">
+            <ListView.View>
+                <GridView>
+                    <GridView.Columns>
+                        <GridViewColumn Header="CloseTradeDT" DisplayMemberBinding="{Binding Path=LastTimeDateString}" />
+                        <!--
+                        <GridViewColumn Header="CloseTradeNumber" DisplayMemberBinding="{Binding Path=LastTradeNumber}" />                     
+                        <GridViewColumn Header="Key" DisplayMemberBinding="{Binding Path=StrategyKey}" />
+                        -->
+                        <GridViewColumn Header="Account" DisplayMemberBinding="{Binding Path=Account}" />
+                        <GridViewColumn Header="Strategy" DisplayMemberBinding="{Binding Path=Strategy}" />
+                        <GridViewColumn Header="Ticker" DisplayMemberBinding="{Binding Path=TickerCode}" />
+                        <!--
+                        <GridViewColumn Header="Status" DisplayMemberBinding="{Binding Path=StatusString}" />
+                        -->
+                        <GridViewColumn Header="Position" DisplayMemberBinding="{Binding Path=OperationString}" />
+                        <!--
+                        <GridViewColumn Header="Quantity"  DisplayMemberBinding="{Binding Path=PositionString}" />
+                       -->
+                        <GridViewColumn Header="Quantity">
+                            <GridViewColumn.CellTemplate>
+                                <DataTemplate>
+                                    <TextBlock Text="{Binding Path=PositionString}" HorizontalAlignment="Right" />
+                                </DataTemplate>
+                            </GridViewColumn.CellTemplate>
+                        </GridViewColumn>
+                        <!--
+                        <GridViewColumn Header="Profit&amp;Loss" DisplayMemberBinding="{Binding Path=PnLString}" />
+                        -->
+                        <GridViewColumn Header="Profit &amp; Loss">
+                            <GridViewColumn.CellTemplate>
+                                <DataTemplate>
+                                    <TextBlock Text="{Binding Path=PnLString}" HorizontalAlignment="Right" />
+                                </DataTemplate>
+                            </GridViewColumn.CellTemplate>
+                        </GridViewColumn>
+                        <GridViewColumn Header="OpenPrice">
+                            <GridViewColumn.CellTemplate>
+                                <DataTemplate>
+                                    <TextBlock Text="{Binding Path=AvgPriceString}" HorizontalAlignment="Right" />
+                                </DataTemplate>
+                            </GridViewColumn.CellTemplate>
+                        </GridViewColumn>
+                        <GridViewColumn Header="ClosePrice">
+                            <GridViewColumn.CellTemplate>
+                                <DataTemplate>
+                                    <TextBlock Text="{Binding Path=LastTradePriceString}" HorizontalAlignment="Right" />
+                                </DataTemplate>
+                            </GridViewColumn.CellTemplate>
+                        </GridViewColumn>
+                        <GridViewColumn Header="Amount">
+                            <GridViewColumn.CellTemplate>
+                                <DataTemplate>
+                                    <TextBlock Text="{Binding Path=AmountString}" HorizontalAlignment="Right" />
+                                </DataTemplate>
+                            </GridViewColumn.CellTemplate>
+                        </GridViewColumn>
+                        <!--
+                        <GridViewColumn Header="OpenPrice" DisplayMemberBinding="{Binding Path=AvgPriceString}" />
+                        <GridViewColumn Header="CLosePrice" DisplayMemberBinding="{Binding Path=LastTradePriceString}" />
+                        <GridViewColumn Header="Amount" DisplayMemberBinding="{Binding Path=AmountString}" />
+                        -->
+                    </GridView.Columns>
+                </GridView>
+            </ListView.View>
+
+            <ListView.ItemContainerStyleSelector>
+                <windows:AlternatingRowStyleSelector AlternateStyle="{StaticResource AlternateStyle}" DefaultStyle="{StaticResource theDefaultStyle}"/>
+            </ListView.ItemContainerStyleSelector>
+        </ListView>
+    </Grid>
+</Window>

@@ -1,0 +1,84 @@
+﻿@model IEnumerable<GS.Trade.TimeSeries.Model.View.TimeSeriesStat>
+
+@{
+    ViewBag.Title = "Stats";
+    Layout = "~/Views/Shared/_LayoutBarsOnLine.cshtml";
+}
+
+<h3>Series Stats</h3>
+
+<table class="table">
+    <tr>
+        <th>
+            ID
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Provider)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Ticker)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.TimeInt)
+        </th>
+        <th>Count</th>
+        <th>Days</th>
+        @*<th>Min</th>
+        <th>Max</th>*@
+        <th>
+            @Html.DisplayNameFor(model => model.FirstDate)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.LastDate)
+        </th>
+        <th>Key</th>
+        
+       
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Id)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Provider)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Ticker)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.TimeInt)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Count)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Days)
+        </td>
+        @*<td>
+            @Html.DisplayFor(modelItem => item.MinValue)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.MaxValue)
+        </td>*@
+        <td>
+            @Html.DisplayFor(modelItem => item.FirstDate)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.LastDate)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Key)
+        </td>
+       
+        
+        <td>
+            @Html.ActionLink("Series", "Index" , "BarSeries", new { timeSeriesId=item.Id }, null)
+
+        </td>
+    </tr>
+}
+
+</table>

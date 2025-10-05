@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Root>
+<ConfigurationResourse1 enabled="true" ns="GS.Configurations" as="GS.Configurations">
+  <Code>Configuration</Code>
+  <ConfigurationKey>Ren.Sim</ConfigurationKey>
+  <!--<ConfigurationKey>GS.Trade.Finam</ConfigurationKey>-->
+  <!--<ConfigurationKey>GS.Trade.Open</ConfigurationKey>-->
+  <!--<ConfigurationKey>GS.Trade.Simulate</ConfigurationKey>-->
+  <!--<ConfigurationKey>BC.Standard</ConfigurationKey>-->
+  <Token>1592738071</Token>
+  <RequesterInitPath>Init\ConfigurationResourse.xml</RequesterInitPath>
+  <RequesterInitName>XmlWebRequester</RequesterInitName>
+</ConfigurationResourse1>
+  <XmlWebRequester enabled="true" ns="WebClients" as="WebClients">
+    <Code>XmlWebRequester</Code>
+    <XmlWebClient>
+      <!--<BaseAddress>http://185.31.162.98/GS.Trade.Web.Mvc.Cfg_01/</BaseAddress>-->
+      <BaseAddress>http://localhost/GS.Trade.Web.Mvc.Cfg_01/</BaseAddress>
+      <ApiPrefix>api/</ApiPrefix>
+      <MediaTypeHeader>application/xml</MediaTypeHeader>
+      <ErrorCountToStop>30</ErrorCountToStop>
+      <IsUserPost>true</IsUserPost>
+      <WorkTask>
+        <Code>XmlWebClient.WorkTask</Code>
+        <TimeInterval>60</TimeInterval>
+        <ErrorCountToStop>30</ErrorCountToStop>
+      </WorkTask>
+    </XmlWebClient>
+  </XmlWebRequester>
+</Root>
+

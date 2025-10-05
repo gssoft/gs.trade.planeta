@@ -1,0 +1,83 @@
+﻿@model IEnumerable<GS.EventLog.ViewModel.EventLogView>
+@{
+    Layout = "~/Views/Shared/_LayoutEventLog.cshtml";
+}
+<h4><b>@ViewBag.Title</b></h4>
+
+<table class="table">
+    <tr>
+        <th>
+            ID
+        </th>
+        <th>
+            EventLog
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Result)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Subject)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Count)
+        </th>
+        <th>
+            Days
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.FirstDate)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.LastDate)
+        </th>
+        
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Id)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Code)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Result)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Subject)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Count)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Days)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.FirstDate)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.LastDate)
+        </td>
+        
+        <td>
+            @Html.ActionLink("Items", "Index", "EventLogItemsAsync", 
+                new
+                {
+                    eventLogId = item.Id,
+                    evlCodeList = item.Code == "All" ? null : item.Code,
+                    resultCodeList = item.Result == "All" ? null : item.Result,
+                    subCodeList = item.Subject == "All" ? null : item.Subject,
+                    lastDayChecked = false,
+                    page = 1
+                }, null)
+            @*|*@
+            @*@Html.ActionLink("Edit", "Edit", new { id=item.Id }) |*@
+            @*@Html.ActionLink("Details", "Details", new { id=item.Id })*@
+            @*@Html.ActionLink("Delete", "Delete", new { id=item.Id })*@
+        </td>
+    </tr>
+}
+
+</table>

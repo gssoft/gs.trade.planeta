@@ -1,0 +1,151 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Strategies>
+  <Test01>
+    <Name>Test01</Name>
+    <Code>Test01.1.100</Code>
+    <TradeAccountKey>SPBFUT00S98</TradeAccountKey>
+    <TradeTerminalType>Simulator</TradeTerminalType>
+    <TradeTerminalKey>MyTerminal</TradeTerminalKey>
+    <TickerKey>RIU1</TickerKey>
+    <TimeInt>1</TimeInt>
+
+    <MaLength>5</MaLength>
+    <MaAtrLength>150</MaAtrLength>
+    <MaKAtr>1.0</MaKAtr>
+    <MaMode>1</MaMode>
+
+    <XMaLength>100</XMaLength>
+
+    <CciMaLength>15</CciMaLength>
+    <CciMaSmoothLength>150</CciMaSmoothLength>
+    <CciKDeviation>1.5</CciKDeviation>
+
+  </Test01>
+  <Test01>
+    <Name>Test01</Name>
+    <Code>Test01.1.150</Code>
+    <TradeAccountKey>SPBFUT00S98</TradeAccountKey>
+    <TradeTerminalType>Simulator</TradeTerminalType>
+    <TradeTerminalKey>MyTerminal</TradeTerminalKey>
+    <TickerKey>RIU1</TickerKey>
+    <TimeInt>1</TimeInt>
+
+    <MaLength>5</MaLength>
+    <MaAtrLength>150</MaAtrLength>
+    <MaKAtr>1.0</MaKAtr>
+    <MaMode>1</MaMode>
+
+    <XMaLength>150</XMaLength>
+
+    <CciMaLength>15</CciMaLength>
+    <CciMaSmoothLength>150</CciMaSmoothLength>
+    <CciKDeviation>2.0</CciKDeviation>
+    
+  </Test01>
+  <Test01>
+    <Name>Test01</Name>
+    <Code>Test01.1.150</Code>
+    <TradeAccountKey>SPBFUT00S98</TradeAccountKey>
+    <TradeTerminalType>Simulator</TradeTerminalType>
+    <TradeTerminalKey>MyTerminal</TradeTerminalKey>
+    <TickerKey>RIM2</TickerKey>
+    <TimeInt>1</TimeInt>
+
+    <MaLength>5</MaLength>
+    <MaAtrLength>150</MaAtrLength>
+    <MaKAtr>1.0</MaKAtr>
+    <MaMode>1</MaMode>
+
+    <XMaLength>25</XMaLength>
+
+    <CciMaLength>15</CciMaLength>
+    <CciMaSmoothLength>150</CciMaSmoothLength>
+    <CciKDeviation>1.0</CciKDeviation>
+
+  </Test01>
+  <Test01>
+    <Name>Test01</Name>
+    <Code>Test01.1.150</Code>
+    <TradeAccountKey>SPBFUT00S98</TradeAccountKey>
+    <TradeTerminalType>Simulator</TradeTerminalType>
+    <TradeTerminalKey>MyTerminal</TradeTerminalKey>
+    <TickerKey>SRM2</TickerKey>
+    <TimeInt>1</TimeInt>
+
+    <MaLength>5</MaLength>
+    <MaAtrLength>150</MaAtrLength>
+    <MaKAtr>1.0</MaKAtr>
+    <MaMode>1</MaMode>
+
+    <XMaLength>25</XMaLength>
+
+    <CciMaLength>15</CciMaLength>
+    <CciMaSmoothLength>150</CciMaSmoothLength>
+    <CciKDeviation>1.0</CciKDeviation>
+  </Test01>
+  <Test01>
+    <Name>Test01</Name>
+    <Code>Test01.1.150</Code>
+    <TradeAccountKey>SPBFUT00S98</TradeAccountKey>
+    <TradeTerminalType>Simulator</TradeTerminalType>
+    <TradeTerminalKey>MyTerminal</TradeTerminalKey>
+    <TickerKey>GZM2</TickerKey>
+    <TimeInt>1</TimeInt>
+
+    <MaLength>5</MaLength>
+    <MaAtrLength>150</MaAtrLength>
+    <MaKAtr>1.0</MaKAtr>
+    <MaMode>1</MaMode>
+
+    <XMaLength>25</XMaLength>
+
+    <CciMaLength>15</CciMaLength>
+    <CciMaSmoothLength>150</CciMaSmoothLength>
+    <CciKDeviation>1.0</CciKDeviation>
+
+  </Test01>
+  <Test01>
+    <Name>Test01</Name>
+    <Code>Test01.1.150</Code>
+    <TradeAccountKey>SPBFUT00S98</TradeAccountKey>
+    <TradeTerminalType>Simulator</TradeTerminalType>
+    <TradeTerminalKey>MyTerminal</TradeTerminalKey>
+    <TickerKey>SIM2</TickerKey>
+    <TimeInt>1</TimeInt>
+
+    <MaLength>5</MaLength>
+    <MaAtrLength>150</MaAtrLength>
+    <MaKAtr>1.0</MaKAtr>
+    <MaMode>1</MaMode>
+
+    <XMaLength>25</XMaLength>
+
+    <CciMaLength>15</CciMaLength>
+    <CciMaSmoothLength>150</CciMaSmoothLength>
+    <CciKDeviation>1.0</CciKDeviation>
+
+  </Test01>
+  <Test01>
+    <Name>Test01</Name>
+    <Code>Test01.1.150</Code>
+    <TradeAccountKey>SPBFUT00S98</TradeAccountKey>
+    <TradeTerminalType>Simulator</TradeTerminalType>
+    <TradeTerminalKey>MyTerminal</TradeTerminalKey>
+    <TickerKey>EDM2</TickerKey>
+    <TimeInt>1</TimeInt>
+
+    <MaLength>5</MaLength>
+    <MaAtrLength>150</MaAtrLength>
+    <MaKAtr>1.0</MaKAtr>
+    <MaMode>1</MaMode>
+
+    <XMaLength>25</XMaLength>
+
+    <CciMaLength>15</CciMaLength>
+    <CciMaSmoothLength>150</CciMaSmoothLength>
+    <CciKDeviation>1.0</CciKDeviation>
+
+  </Test01>
+  
+ 
+  </Strategies>

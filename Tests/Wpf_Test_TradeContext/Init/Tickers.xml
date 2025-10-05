@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Tickers ns="GS.Trade.Data" as="GS.Trade.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null">
+    <Code>Tickers</Code>
+    <Name>Tickers</Name>
+    <Alias>Tickers</Alias>
+  <IsProcessTaskInUse>true</IsProcessTaskInUse>
+</Tickers>
+  

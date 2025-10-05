@@ -1,0 +1,98 @@
+﻿@model GS.EventLog.DataBase1.Model.DbEventLogItem
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>DbEventLogItem</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.DbEventLog.Alias)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DbEventLog.Alias)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DT)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DT)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ResultCode)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ResultCode)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Subject)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Subject)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Source)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Source)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Entity)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Entity)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Operation)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Operation)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Description)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Description)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Object)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Object)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Index)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Index)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.EventLogItemID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

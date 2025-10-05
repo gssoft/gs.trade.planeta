@@ -1,0 +1,52 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.30723.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GS.Trade.TimeSeries.Model", "GS.Trade.TimeSeries.Model\GS.Trade.TimeSeries.Model.csproj", "{6FC9D9E8-F011-407C-8C2C-D429737F9411}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GS.Trade.TimeSeries.Mvc02", "GS.Trade.TimeSeries.Mvc02\GS.Trade.TimeSeries.Mvc02.csproj", "{04ACE5C0-D454-4F98-BDD3-9C65A278765E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Creator01", "Creator01\Creator01.csproj", "{B5036282-1212-41A6-948A-CFE9F76D91D7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TimeSeriesCa01", "TimeSeriesCa01\TimeSeriesCa01.csproj", "{DC21E404-25B0-41F1-A944-67A6FBCD255A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GS.Trade.TimeSeries.Model01", "GS.Trade.TimeSeries.Model01\GS.Trade.TimeSeries.Model01.csproj", "{D8CB4EBC-CA01-461B-86EB-46CB76D4AB57}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WinFormTimeSeriesServ01", "WinFormTimeSeriesServ01\WinFormTimeSeriesServ01.csproj", "{9D957154-8E9E-4451-83EA-4CDFED1B1788}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6FC9D9E8-F011-407C-8C2C-D429737F9411}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6FC9D9E8-F011-407C-8C2C-D429737F9411}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6FC9D9E8-F011-407C-8C2C-D429737F9411}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6FC9D9E8-F011-407C-8C2C-D429737F9411}.Release|Any CPU.Build.0 = Release|Any CPU
+		{04ACE5C0-D454-4F98-BDD3-9C65A278765E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{04ACE5C0-D454-4F98-BDD3-9C65A278765E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{04ACE5C0-D454-4F98-BDD3-9C65A278765E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{04ACE5C0-D454-4F98-BDD3-9C65A278765E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B5036282-1212-41A6-948A-CFE9F76D91D7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B5036282-1212-41A6-948A-CFE9F76D91D7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B5036282-1212-41A6-948A-CFE9F76D91D7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B5036282-1212-41A6-948A-CFE9F76D91D7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DC21E404-25B0-41F1-A944-67A6FBCD255A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DC21E404-25B0-41F1-A944-67A6FBCD255A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DC21E404-25B0-41F1-A944-67A6FBCD255A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DC21E404-25B0-41F1-A944-67A6FBCD255A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D8CB4EBC-CA01-461B-86EB-46CB76D4AB57}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D8CB4EBC-CA01-461B-86EB-46CB76D4AB57}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D8CB4EBC-CA01-461B-86EB-46CB76D4AB57}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D8CB4EBC-CA01-461B-86EB-46CB76D4AB57}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9D957154-8E9E-4451-83EA-4CDFED1B1788}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9D957154-8E9E-4451-83EA-4CDFED1B1788}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9D957154-8E9E-4451-83EA-4CDFED1B1788}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9D957154-8E9E-4451-83EA-4CDFED1B1788}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

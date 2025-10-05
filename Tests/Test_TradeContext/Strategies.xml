@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Strategies>
+  <Strategy>
+    <!--
+    <Account>SPBFUT00892</Account>
+    -->
+    <Account>SPBFUT00S98</Account>
+    <Name>135</Name>
+    <Tickers>
+      <Ticker>RIZ1</Ticker>
+      <Ticker>GZZ1</Ticker>
+      <Ticker>SRZ1</Ticker>
+      <Ticker>RIU1</Ticker>
+    </Tickers>
+<!--    
+      <TradeTerminal Type="Quik" Name="Quik_Vtb24" Path="D:\TradeSoft\QUIK_VTB24\">
+-->
+    <TradeTerminal Type="Quik" Name="Quik_Vtb24" Path="D:\TradeSoft\QUIK_GUTA\">
+        <Type>Quik</Type>
+        <Name>Quik_Open</Name>
+        <Path>D:\TradeSoft\QUik_GUTa\</Path>
+      </TradeTerminal>
+    <Quantity>1</Quantity>
+  </Strategy>
+</Strategies>

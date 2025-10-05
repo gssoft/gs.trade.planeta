@@ -1,0 +1,162 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{48F7F179-CDE6-493A-A83D-9BBFE891A11E}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>GS.Trade.TradeContext</RootNamespace>
+    <AssemblyName>GS.Trade.TradeContext</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+    <SolutionDir Condition="$(SolutionDir) == '' Or $(SolutionDir) == '*Undefined*'">..\GS.Trade\</SolutionDir>
+    <RestorePackages>true</RestorePackages>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+    <PlatformTarget>x64</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="GS, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\GS\GS\bin\Debug\GS.dll</HintPath>
+    </Reference>
+    <Reference Include="GS.Configurations">
+      <HintPath>..\GS.Configurations\bin\Debug\GS.Configurations.dll</HintPath>
+    </Reference>
+    <Reference Include="GS.EventLog, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\GS.EventLog\GS.EventLog2\GS.EventLog\bin\Debug\GS.EventLog.dll</HintPath>
+    </Reference>
+    <Reference Include="GS.Moex.Interfaces">
+      <HintPath>..\GS.Moex\GS.Moex.Interfaces\bin\Debug\GS.Moex.Interfaces.dll</HintPath>
+    </Reference>
+    <Reference Include="GS.Time, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\GS.Time\bin\Debug\GS.Time.dll</HintPath>
+    </Reference>
+    <Reference Include="GS.Trade, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\GS.Trade\GS.Trade\bin\Debug\GS.Trade.dll</HintPath>
+    </Reference>
+    <Reference Include="GS.Trade.DataBase, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\GS.Trade.DataBase\bin\Debug\GS.Trade.DataBase.dll</HintPath>
+    </Reference>
+    <Reference Include="GS.Trade.Strategies">
+      <HintPath>..\GS.Trade.Strategies\bin\Debug\GS.Trade.Strategies.dll</HintPath>
+    </Reference>
+    <Reference Include="GS.Trade.TradeTerminals64">
+      <HintPath>..\GS.TradeTerminal64\bin\Debug\GS.Trade.TradeTerminals64.dll</HintPath>
+    </Reference>
+    <Reference Include="Moex, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\GS.Moex\Moex\bin\Debug\Moex.dll</HintPath>
+    </Reference>
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Net.Http.Extensions, Version=2.2.29.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\GS.Trade\packages\Microsoft.Net.Http.2.2.29\lib\net45\System.Net.Http.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http.Primitives, Version=4.2.29.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\GS.Trade\packages\Microsoft.Net.Http.2.2.29\lib\net45\System.Net.Http.Primitives.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http.WebRequest" />
+    <Reference Include="System.Xaml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WebClients, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\GS.Web.Clients\WebClients\bin\Debug\WebClients.dll</HintPath>
+    </Reference>
+    <Reference Include="WindowsBase" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="TradeContext.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TradeContext2.cs" />
+    <Compile Include="TradeContext3.cs" />
+    <Compile Include="TradeContext5.cs" />
+    <Compile Include="TradeContext51.cs" />
+    <Compile Include="TradeContext52.cs" />
+    <Compile Include="TradeContext53.cs" />
+    <Compile Include="TradeContextInit.cs" />
+    <Compile Include="Trades.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\GS.Accounts\GS.Accounts\GS.Accounts.csproj">
+      <Project>{ABD116D0-851F-4B0E-B25D-9F5848E6C532}</Project>
+      <Name>GS.Accounts</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\GS.Trade.EntityWebClient\GS.Trade.EntityWebClient.csproj">
+      <Project>{6a1307b0-a0c5-4a2f-9e88-67926e49d83c}</Project>
+      <Name>GS.Trade.EntityWebClient</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\GS.Trade.Quotes\GS.Trade.Quotes.csproj">
+      <Project>{4269C478-E371-49BF-9092-F1EFD2C105F4}</Project>
+      <Name>GS.Trade.Quotes</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\GS.Trade.Trades\GS.Trade.Trades.csproj">
+      <Project>{323CD232-D99D-411D-B7D3-B8752E2BAD58}</Project>
+      <Name>GS.Trade.Trades</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\GS.Trade.WebClients\GS.Trade.WebClients.csproj">
+      <Project>{8f009806-27c2-4a80-b090-aea91c07d892}</Project>
+      <Name>GS.Trade.WebClients</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\GS.Trade.Windows\GS.Trade.TradeWindows.csproj">
+      <Project>{1E8D6D71-6910-42F2-8871-F7C65BD53B1D}</Project>
+      <Name>GS.Trade.TradeWindows</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="Bcl21\buld\Microsoft.Bcl.Build.targets" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Bcl21\buld\Microsoft.Bcl.Build.Tasks.dll" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="..\GS.Trade\packages\Microsoft.Bcl.Build.1.0.21\build\Microsoft.Bcl.Build.targets" Condition="Exists('..\GS.Trade\packages\Microsoft.Bcl.Build.1.0.21\build\Microsoft.Bcl.Build.targets')" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>Данный проект ссылается на пакеты NuGet, отсутствующие на этом компьютере. Включите восстановление пакетов NuGet, чтобы загрузить их. Дополнительные сведения см. по адресу: http://go.microsoft.com/fwlink/?LinkID=322105. Отсутствует следующий файл: {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\GS.Trade\packages\Microsoft.Bcl.Build.1.0.21\build\Microsoft.Bcl.Build.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\GS.Trade\packages\Microsoft.Bcl.Build.1.0.21\build\Microsoft.Bcl.Build.targets'))" />
+    <Error Condition="!Exists('$(SolutionDir)\.nuget\NuGet.targets')" Text="$([System.String]::Format('$(ErrorText)', '$(SolutionDir)\.nuget\NuGet.targets'))" />
+  </Target>
+  <Import Project="$(SolutionDir)\.nuget\NuGet.targets" Condition="Exists('$(SolutionDir)\.nuget\NuGet.targets')" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

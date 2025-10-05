@@ -1,0 +1,46 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GS.Trade.TimeSeriesImage01", "GS.Trade.TimeSeriesImage01\GS.Trade.TimeSeriesImage01.csproj", "{2415B037-AC53-450C-B331-D06E1338FB07}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CaCreatorTimeSeriesDataBase01", "CaCreatorTimeSeriesDataBase01\CaCreatorTimeSeriesDataBase01.csproj", "{BCDA3DDB-3462-4C97-8BCC-4933FCF4BC89}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CaTest01", "CaTest01\CaTest01.csproj", "{CDF6B3B8-17C3-45B5-955D-34B55C4288A8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TimeSeriesUnitTest01", "TimeSeriesUnitTest01\TimeSeriesUnitTest01.csproj", "{CD92E8A5-ED23-40BA-AFF5-3C2645757BEF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GS.Trade.TimeSeries02", "GS.Trade.TimeSeries02\GS.Trade.TimeSeries02.csproj", "{C8557EBA-EC0C-4FB4-8A8E-4AE4B3E44FE2}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2415B037-AC53-450C-B331-D06E1338FB07}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2415B037-AC53-450C-B331-D06E1338FB07}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2415B037-AC53-450C-B331-D06E1338FB07}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2415B037-AC53-450C-B331-D06E1338FB07}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BCDA3DDB-3462-4C97-8BCC-4933FCF4BC89}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BCDA3DDB-3462-4C97-8BCC-4933FCF4BC89}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BCDA3DDB-3462-4C97-8BCC-4933FCF4BC89}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BCDA3DDB-3462-4C97-8BCC-4933FCF4BC89}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CDF6B3B8-17C3-45B5-955D-34B55C4288A8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CDF6B3B8-17C3-45B5-955D-34B55C4288A8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CDF6B3B8-17C3-45B5-955D-34B55C4288A8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CDF6B3B8-17C3-45B5-955D-34B55C4288A8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CD92E8A5-ED23-40BA-AFF5-3C2645757BEF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CD92E8A5-ED23-40BA-AFF5-3C2645757BEF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CD92E8A5-ED23-40BA-AFF5-3C2645757BEF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CD92E8A5-ED23-40BA-AFF5-3C2645757BEF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C8557EBA-EC0C-4FB4-8A8E-4AE4B3E44FE2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C8557EBA-EC0C-4FB4-8A8E-4AE4B3E44FE2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C8557EBA-EC0C-4FB4-8A8E-4AE4B3E44FE2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C8557EBA-EC0C-4FB4-8A8E-4AE4B3E44FE2}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

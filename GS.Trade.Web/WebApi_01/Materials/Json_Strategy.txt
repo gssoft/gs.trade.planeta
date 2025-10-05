@@ -1,0 +1,8 @@
+﻿[
+{"Account":
+{"Id":1,"Name":"Acc_02","Alias":"Vtb24-001","Code":"54321","Balance":0.00,"StrKey":"54321","Strategies":[]},
+"Ticker":
+{"Id":1,"Name":"RIZ3","Alias":"RI1","Code":"RTS-12.13","StrKey":"RTS-12.13","Strategies"[]},
+"Id":1,"Name":"MyStratName","Alias":"MyAtrat","Code":"MyCode","StrKey":"MyCode","AccountId":1,"TickerId":1
+}
+]

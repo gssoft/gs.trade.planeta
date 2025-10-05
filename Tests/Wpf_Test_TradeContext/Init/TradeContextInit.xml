@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<TradeContextInit>
+  <PositionLastPriceRefreshTimeSec>0</PositionLastPriceRefreshTimeSec>
+  <DdeInit>
+    <ServerName>QUIKInfo</ServerName>
+  </DdeInit>
+  <OrderInit>
+    <ClassCodeToRemoveLogin>QJSIM</ClassCodeToRemoveLogin>
+    <LoginToRemove>OPEN646/</LoginToRemove>
+  </OrderInit>
+</TradeContextInit>

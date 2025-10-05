@@ -1,0 +1,27 @@
+﻿<Window x:Class="GS.Trade.Windows.Charts.ChartWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Chart" Height="300" Width="525"
+        Loaded="WindowLoaded" SizeChanged="WindowSizeChanged">
+    <Grid>
+        <StackPanel HorizontalAlignment="Stretch" Name="stackPanel1" VerticalAlignment="Stretch" Orientation="Horizontal">
+            <Expander Name="Settings" ExpandDirection="Right" FontSize="12" BorderThickness="0" SizeChanged="ExpSizeChanged">
+                <StackPanel Margin ="1" MinWidth="100">
+                    <ComboBox Margin="1" Name="ComboBoxTickersCollection" DisplayMemberPath="Code"  SelectedIndex="0"
+                      SelectionChanged="TickerCollectionSelectChanged"/>
+                    <!--
+                    <ComboBox Margin="1" Name="ComboBoxBarSeriesCollection" DisplayMemberPath="TimeIntSeconds" SelectedIndex="0"
+                      SelectionChanged="BarSeriesCollectionSelectionChanged"  />
+                    -->
+                    <ComboBox Margin="1" Name="ComboBoxSyncSeriesCollection" DisplayMemberPath="TimeIntSeconds" SelectedIndex="0"
+                      SelectionChanged="SyncSeriesCollectionSelectionChanged"  />
+                    <ComboBox Margin="1" Name="ComboBoxStrategyCollection" DisplayMemberPath="Code" SelectedIndex="0"
+                      SelectionChanged="StrategyCollectionSelectionChanged"   />
+                </StackPanel>
+            </Expander>            
+            <WindowsFormsHost Name="windowsFormsHost1" />
+        </StackPanel>
+
+
+    </Grid>
+</Window>

@@ -1,0 +1,78 @@
+﻿@model GS.Trade.TimeSeries.Model.Bar
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<fieldset>
+    <legend>Bar</legend>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.TimeSeries.Code)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.TimeSeries.Code)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Open)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Open)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.High)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.High)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Low)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Low)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Close)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Close)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Volume)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Volume)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.TypicalPrice)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.TypicalPrice)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.MedianPrice)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.MedianPrice)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.DT)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.DT)
+    </div>
+</fieldset>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id=Model.Id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

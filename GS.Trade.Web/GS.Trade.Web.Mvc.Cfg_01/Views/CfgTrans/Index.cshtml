@@ -1,0 +1,108 @@
+﻿@using System.Web.Mvc.Html
+@using GS.DataBase.Configuration.Model
+@model IEnumerable<GS.DataBase.Configuration.Model.Transaction>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h4>Configuration Item Transactions</h4>
+<p>
+    <b>
+        @Html.ActionLink("Delete All", "DeleteAll")
+    </b>
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.DT)
+        </th>
+        <th>
+            Configuration
+        </th>
+        <th>
+            Item
+            @*@Html.DisplayNameFor(model => model.Item.Code)*@
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Result)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Operation)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.IpAddress)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Domain)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.User)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Request)
+        </th>
+        
+        <th>
+            @Html.DisplayNameFor(model => model.Object)
+        </th>
+        <th></th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.DT)
+        </td>
+        @*<td>
+            @Html.DisplayFor(modelItem => item.Item.Configuration.Code)
+        </td>*@
+        <td>
+            @{
+                string cnfCode = item.Item.Configuration.Code;
+            }
+            @Html.ActionLink(cnfCode, "Details", "Configurations", new { id = item.Item.ConfigurationId }, null)
+            @Html.ActionLink("Items", "Index", "CfgItems", new { cnfId = item.Item.ConfigurationId }, null)
+        </td>
+        <td>
+            @{
+                string cnfItemCode = item.Item.Code;
+            }
+            @Html.ActionLink(cnfItemCode, "Details", "CfgItems", new {cnfId = item.Item.ConfigurationId, itemId = item.ItemId }, null)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Result)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Operation)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.IpAddress)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Domain)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.User)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Request)
+        </td>
+       
+        <td>
+            @Html.DisplayFor(modelItem => item.Object)
+        </td>
+        <td>
+            @Html.ActionLink("Items", "Index", "CfgItems", new { cnfId = item.Item.ConfigurationId }, null)
+        </td>
+       
+        <td>
+            @*@Html.ActionLink("Edit", "Edit", new { id=item.Id }) |*@
+            @Html.ActionLink("Details", "Details", new { id=item.Id })
+            @Html.ActionLink("Delete", "Delete", new { id=item.Id })
+        </td>
+    </tr>
+}
+
+</table>

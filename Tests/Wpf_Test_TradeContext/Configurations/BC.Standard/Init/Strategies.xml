@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Strategies ns="GS.Trade.Strategies" as="GS.Trade.Strategies">
+    <Code>Strategies</Code>
+    <Name>Strategies</Name>
+    <Alias>Strategies</Alias>
+</Strategies>
+  

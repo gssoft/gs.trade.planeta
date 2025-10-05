@@ -1,0 +1,146 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{0D8E2D20-24CC-4C80-9F52-815F76DC0522}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>GS.Trade</RootNamespace>
+    <AssemblyName>GS.Trade</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+    <PlatformTarget>x64</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="GS, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\GS\GS\bin\Debug\GS.dll</HintPath>
+    </Reference>
+    <Reference Include="GS.Moex.Interfaces">
+      <HintPath>..\..\GS.Moex\GS.Moex.Interfaces\bin\Debug\GS.Moex.Interfaces.dll</HintPath>
+    </Reference>
+    <Reference Include="GS.Time, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\GS.Time\bin\Debug\GS.Time.dll</HintPath>
+    </Reference>
+    <Reference Include="Moex">
+      <HintPath>..\..\GS.Moex\Moex\bin\Debug\Moex.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Net.Http.Extensions, Version=2.2.29.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Net.Http.2.2.29\lib\net45\System.Net.Http.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http.Primitives, Version=4.2.29.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Net.Http.2.2.29\lib\net45\System.Net.Http.Primitives.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http.WebRequest" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BarParseFieldsEnum.cs" />
+    <Compile Include="Dto\Bar.cs" />
+    <Compile Include="Dto\TimeSeriesStatDto.cs" />
+    <Compile Include="Extensions\BarBaseExt.cs" />
+    <Compile Include="Extensions\BarSimple.cs" />
+    <Compile Include="HedgeStatusEnum.cs" />
+    <Compile Include="IAccount.cs" />
+    <Compile Include="IBars.cs" />
+    <Compile Include="IDeals.cs" />
+    <Compile Include="ITradeTerminal64.cs" />
+    <Compile Include="Moex\IMoexTicker.cs" />
+    <Compile Include="IndicatorDef.cs" />
+    <Compile Include="INeedOrderResolve.cs" />
+    <Compile Include="IOrder.cs" />
+    <Compile Include="IPortfolio.cs" />
+    <Compile Include="IPortfolioRisk.cs" />
+    <Compile Include="IPosition2.cs" />
+    <Compile Include="IPositions.cs" />
+    <Compile Include="IQuikTransactions.cs" />
+    <Compile Include="IReceiver.cs" />
+    <Compile Include="IReportITem2.cs" />
+    <Compile Include="IStorage.cs" />
+    <Compile Include="IStrategies.cs" />
+    <Compile Include="IStrategy.cs" />
+    <Compile Include="IStrategyManager.cs" />
+    <Compile Include="ITick.cs" />
+    <Compile Include="ITicker.cs" />
+    <Compile Include="ITimeSeries.cs" />
+    <Compile Include="ITradeContext.cs" />
+    <Compile Include="ITrades.cs" />
+    <Compile Include="ITradeStrategy.cs" />
+    <Compile Include="ITradeTerminal.cs" />
+    <Compile Include="ITradeTerminals.cs" />
+    <Compile Include="ITradeWebClient.cs" />
+    <Compile Include="PositionEnum.cs" />
+    <Compile Include="IPosition.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Queues\Queues.cs" />
+    <Compile Include="Storage2\IEntityRepository.cs" />
+    <Compile Include="Storage2\ITradeBaseRepository.cs" />
+    <Compile Include="Storage2\TradeBaseStorage.cs" />
+    <Compile Include="Storage2\TradeStorage21.cs" />
+    <Compile Include="Storage2\TradeStorage.cs" />
+    <Compile Include="Storage\TradeStorage.cs" />
+    <Compile Include="Storage\TradeStore.cs" />
+    <Compile Include="Studies\IAtr.cs" />
+    <Compile Include="TickerTypeEnum.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="ITradeTerminal\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Bcl21\build\Microsoft.Bcl.Build.targets" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Bcl21\build\Microsoft.Bcl.Build.Tasks.dll" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>copy $(TargetPath) D:\VC\1305\Asmbls\</PostBuildEvent>
+  </PropertyGroup>
+  <PropertyGroup>
+    <PreBuildEvent>del  "D:\VC\1305\Asmbls\$(TargetFileName)"</PreBuildEvent>
+  </PropertyGroup>
+  <Import Project="..\packages\Microsoft.Bcl.Build.1.0.14\tools\Microsoft.Bcl.Build.targets" Condition="Exists('..\packages\Microsoft.Bcl.Build.1.0.14\tools\Microsoft.Bcl.Build.targets')" />
+  <Target Name="EnsureBclBuildImported" BeforeTargets="BeforeBuild" Condition="'$(BclBuildImported)' == ''">
+    <Error Condition="!Exists('..\packages\Microsoft.Bcl.Build.1.0.14\tools\Microsoft.Bcl.Build.targets')" Text="This project references NuGet package(s) that are missing on this computer. Enable NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=317567." HelpKeyword="BCLBUILD2001" />
+    <Error Condition="Exists('..\packages\Microsoft.Bcl.Build.1.0.14\tools\Microsoft.Bcl.Build.targets')" Text="The build restored NuGet packages. Build the project again to include these packages in the build. For more information, see http://go.microsoft.com/fwlink/?LinkID=317568." HelpKeyword="BCLBUILD2002" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

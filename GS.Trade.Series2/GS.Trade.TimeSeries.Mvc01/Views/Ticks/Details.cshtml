@@ -1,0 +1,36 @@
+﻿@model GS.Trade.TimeSeries.Model.Tick
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<fieldset>
+    <legend>Tick</legend>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.TimeSeries.Code)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.TimeSeries.Code)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Last)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Last)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.DT)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.DT)
+    </div>
+</fieldset>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id=Model.Id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

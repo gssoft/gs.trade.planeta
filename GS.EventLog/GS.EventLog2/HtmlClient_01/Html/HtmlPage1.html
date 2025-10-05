@@ -1,0 +1,100 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+
+    <title>EventLog Http Client</title>
+    
+    <script src="http://code.jquery.com/jquery.js" type="text/javascript"></script>
+    <script src="Scr/jsrender.js"></script>
+    <link href="Css/demos.css" rel="stylesheet" />
+    <link href="Css/movielist.css" rel="stylesheet" />
+
+
+    <script  type="text/javascript">
+        $(function () {
+            $.ajax({
+                type: 'GET',
+                url: "http://localhost/ODataEventLog/odata/EventLogs",
+                dataType: 'json',
+                success: function(data) {
+                    //  alert('ghghg');
+                    console.log(JSON.stringify(data.value));
+                    /* --- 1 ____
+                    $("#eventLogList").html(
+                        $("#eventLogTemplate").render(eventLogs)
+                            );
+                    */
+                    var arr = data.value;
+                     $("#eventLogList").html($.render.detailTemplate(arr));
+                    //$("#eventLogList").html($.render.detailTemplate(eventLogs));
+                },
+                error: function() {
+                    alert("Kukareku");
+                }
+            });
+        });
+    </script>
+
+</head>
+    <body>
+        
+    <script id="eventLogTemplate" type="text/x-jsrender" data-jsv-tmpl="_0">
+	<div>
+		{{:#index+1}}: {{>EventLogID}} <b> {{>Alias}} </b> {{>Name}} {{>Description}}
+	</div>
+    </script>
+
+        <div id="eventLogList2"></div>
+        
+        <br />
+<table>
+	<tbody id="eventLogList"></tbody>
+</table>
+
+        <script type="text/javascript">
+
+        var movies = [
+            { EventLogID: 1, Alias: "AliasData1",  Name: "NameData1", Description: "The Red Violin"},
+            { EventLogID: 2, Alias: "AliasData2",  Name: "NameData2", Description: "The Blue Violin" },
+            { EventLogID: 3, Alias: "AliasData3",  Name: "NameData3", Description: "The Green Violin" }
+        ];
+
+        var eventLogs = [
+            { EventLogID: 1, Alias: "MyLog",        Code: "TradeLog",       Name: "Frosya",         Description: "EventLog fo my Trading",  LongCode: "Relfdfdfdjkjkjkjlk" },
+            { EventLogID: 2, Alias: "EventLog_02",  Code: "TestEventLog_02", Name: "EventLogName",  Description: "EventLog for Testing",    LongCode: "jhjjhjhjhjhjhjhjhjhjh" },
+            { EventLogID: 3, Alias: "Gizmos",       Code: "MyNewCode",      Name: "Gizmo",          Description: "Descript",                LongCode: "5tyghbnbn" },
+            { EventLogID: 4, Alias: "Gizmos",       Code: "MyNewCode",      Name: "Gizmo",          Description: "Descript",                LongCode: "tetetetet" },
+            { EventLogID: 8, Alias: "Gizmos 1 +765",Code: "MyNewCode ghgh", Name: "Gizmo",          Description: "Descript",                LongCode: "12345" },
+            { EventLogID: 16, Alias: "Alias new",   Code: "Code new",       Name: "Name new",       Description: "Name new",                LongCode: "eetetetet" },
+            { EventLogID: 17, Alias: "Alias new 2", Code: "Code new 2",     Name: "Name new2",      Description: "Name new2",               LongCode: "kuhkhkhkh" },
+            { EventLogID: 21, Alias: "Trend",       Code: "Kuku",           Name: "DFDFDF",         Description: "LJLLJL",                  LongCode: "rtrttrt" },
+            { EventLogID: 26, Alias: "jhjhjh",      Code: ".,.,.,.,.",      Name: "ljljljljlj",     Description: "ljkljljlj",               LongCode: "fgfgfggdfg" },
+            { EventLogID: 27, Alias: "hghfhhf",     Code: "ghhghghghg",     Name: "hhjhjhjh",       Description: "fssfgsgsg",               LongCode: "sgsgsgsgsg" },
+            { EventLogID: 28, Alias: "1 qwerty",    Code: "2 asdfg",        Name: "3 asdfg",        Description: "4 sdfsfsf",               LongCode: "5 dgdgdgdgdg" },
+            { EventLogID: 33, Alias: "GS.Trade.EventLog", Code: "GS.Trade.EventLog", Name: "GS.Trade.EventLog", Description: "Descript",    LongCode: null },
+            { EventLogID: 34, Alias: "GS.Trade.EventLog2", Code: "GS.Trade.EventLog2", Name: "GS.Trade.EventLog2", Description: "Descript", LongCode: null },
+            { EventLogID: 35, Alias: "GS.Trade.EventLog3", Code: "GS.Trade.EventLog3", Name: "GS.Trade.EventLog3", Description: "Descript", LongCode: null },
+            { EventLogID: 36, Alias: "GS.Trade.EventLog5", Code: "GS.Trade.EventLog5", Name: "GS.Trade.EventLog5", Description: "Description", LongCode: null }
+        ];
+        
+        $.templates({
+            titleTemplate: "<tr><td colspan=3>{{>Name}}</td></tr>",
+            detailTemplate: "<tr><td>{{>EventLogID}}</td><td>{{>Name}}</td><td>Alias: {{>Alias}}</td><td>Description: {{>Description}}</td></tr>"
+        });
+
+        // Render the template with the movies data and insert
+        // the rendered HTML under the "movieList" element
+      //  $("#eventLogList").html(
+      //      $("#eventLogTemplate").render(movies)
+      //  );
+
+     /*   $("#eventLogList").html(
+                  $("#eventLogTemplate").render(eventLogs)
+                      );
+                      */
+    </script>    
+    </body>
+   
+    
+</html>

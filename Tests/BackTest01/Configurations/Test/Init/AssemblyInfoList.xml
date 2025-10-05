@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--<AssemblyInfoList xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">-->
+<AssemblyInfoList ns="GS.Assemblies" as="GS">
+  <Assemblies>
+    <AssemblyInfo>
+      <Name>GS</Name>
+      <FullName>GS, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</FullName>
+      <Path>D:\VC\1305\gs.trade\GS\GS\bin\Debug\GS.dll</Path>
+      <Enabled>false</Enabled>
+      <Dependencies />
+    </AssemblyInfo>
+    <AssemblyInfo>
+      <Name>GS.EventLog</Name>
+      <FullName>GS.EventLog, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</FullName>
+      <Path>D:\VC\1305\gs.trade\GS.EventLog\GS.EventLog2\GS.EventLog\bin\Debug\GS.EventLog.dll</Path>
+      <Enabled>false</Enabled>
+      <Dependencies>
+        <string>GS</string>
+      </Dependencies>
+    </AssemblyInfo>
+    <AssemblyInfo>
+      <Name>GS.Time</Name>
+      <FullName>GS.Time, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</FullName>
+      <Path>D:\VC\1305\gs.trade\GS.Time\bin\Debug\GS.Time.dll</Path>
+      <Enabled>false</Enabled>
+      <Dependencies>
+        <string>GS</string>
+      </Dependencies>
+    </AssemblyInfo>
+    <AssemblyInfo>
+      <Name>GS.Trade</Name>
+      <FullName>GS.Trade, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</FullName>
+      <Path>D:\VC\1305\gs.trade\GS.Trade\GS.Trade\bin\Debug\GS.Trade.dll</Path>
+      <Enabled>false</Enabled>
+      <Dependencies>
+        <string>GS</string>
+        <string>GS.Time</string>
+      </Dependencies>
+    </AssemblyInfo>
+    <AssemblyInfo>
+      <Name>GS.Trade.Trades</Name>
+      <FullName>GS.Trade.Trades, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</FullName>
+      <Path>D:\VC\1305\gs.trade\GS.Trade.Trades\bin\Debug\GS.Trade.Trades.dll</Path>
+      <Enabled>false</Enabled>
+      <Dependencies>
+        <string>GS</string>
+        <string>GS.Trade</string>
+      </Dependencies>
+    </AssemblyInfo>
+    <AssemblyInfo>
+      <Name>GS.Trade.Data</Name>
+      <FullName>GS.Trade.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</FullName>
+      <Path>D:\VC\1305\gs.trade\GS.Trade.Data\bin\Debug\GS.Trade.Data.dll</Path>
+      <Enabled>false</Enabled>
+      <Dependencies>
+        <string>GS</string>
+        <string>GS.Trade</string>
+        <string>WebClients</string>
+      </Dependencies>
+    </AssemblyInfo>
+    <AssemblyInfo>
+      <Name>GS.Trade.TradeTerminals</Name>
+      <FullName>GS.Trade.TradeTerminals, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</FullName>
+      <Path>D:\VC\1305\gs.trade\GS.TradeTerminal\bin\Debug\GS.Trade.TradeTerminals.dll</Path>
+      <Enabled>false</Enabled>
+      <Dependencies>
+        <string>GS</string>
+        <string>GS.Trade.Data</string>
+        <string>GS.Trade.Trades</string>
+      </Dependencies>
+    </AssemblyInfo>
+    <AssemblyInfo>
+      <Name>GS.Trade.Strategies</Name>
+      <FullName>GS.Trade.Strategies, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</FullName>
+      <Path>D:\VC\1305\gs.trade\GS.Trade.Strategies\bin\Debug\GS.Trade.Strategies.dll</Path>
+      <Enabled>true</Enabled>
+      <Dependencies>
+        <string>GS</string>
+        <!--<string>GS.Time</string>-->
+        <string>GS.Trade</string>
+        <!--<string>GS.Trade.Data</string>-->
+        <string>GS.Trade.Trades</string>
+        <string>GS.Trade.TradeTerminals</string>
+        <string>WebClients</string>
+      </Dependencies>
+    </AssemblyInfo>
+    <AssemblyInfo>
+      <Name>WebClients</Name>
+      <FullName>WebClients, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</FullName>
+      <Path>D:\VC\1305\gs.trade\GS.Web.Clients\WebClients\bin\Debug\WebClients.dll</Path>
+      <Enabled>false</Enabled>
+      <Dependencies>
+        <string>GS</string>
+        <string>GS.Time</string>
+        <string>GS.Trade</string>
+      </Dependencies>
+    </AssemblyInfo>    
+  </Assemblies>
+</AssemblyInfoList>

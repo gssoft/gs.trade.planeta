@@ -1,0 +1,71 @@
+﻿@model GS.Trade.TimeSeries.Model.TimeInt
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<fieldset>
+    <legend>TimeInt</legend>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.TimeInterval)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.TimeInterval)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.TimeShift)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.TimeShift)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.TimeIntKey)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.TimeIntKey)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Code)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Code)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Name)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Name)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Description)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Description)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.CreatedDT)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.CreatedDT)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.ModifiedDT)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.ModifiedDT)
+    </div>
+</fieldset>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id=Model.Id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

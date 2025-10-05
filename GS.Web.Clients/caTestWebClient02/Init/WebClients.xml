@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<WebClients>
+  <StringWebClient>
+    <!--<Code>StringWebClient</Code>-->
+    <BaseAddress>http://localhost/WebApiEventLog_01/</BaseAddress>
+    <ApiPrefix>api/values</ApiPrefix>
+    <MediaTypeHeader>application/xml</MediaTypeHeader>
+    <ErrorCountToStop>30</ErrorCountToStop>
+    <WorkTask>
+      <Code>StringWebClient.WorkTask</Code>
+      <TimeInterval>60</TimeInterval>
+      <ErrorCountToStop>30</ErrorCountToStop>
+    </WorkTask>
+  </StringWebClient>
+</WebClients>

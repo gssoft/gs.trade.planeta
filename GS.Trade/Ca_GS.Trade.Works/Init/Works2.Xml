@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Works>
+<FtpWork>
+  <IsEnabled>false</IsEnabled>
+  <Name>FTP DownLoading FTYYMMDD.ZIP Files</Name>
+  <RemoteUri>ftp.rts.ru</RemoteUri>
+  <Login>anonymous</Login>
+  <Password />
+  <RemotePath>/pub/info/stats/history/F/2010/</RemotePath>
+  <RemoteFileFilter>FT</RemoteFileFilter>
+  <LocalPath>T:\Forts\2010\Zip\</LocalPath>
+  <LocalFileFilter>FT*.Zip</LocalFileFilter>
+</FtpWork>
+
+<FtpWork>
+  <IsEnabled>false</IsEnabled>
+  <Name>FTP DownLoading TEYYMMDD.ZIP Files</Name>
+  <RemoteUri>ftp.rts.ru</RemoteUri>
+  <Login>anonymous</Login>
+  <Password />
+  <RemotePath>/pub/info/stats/history/F/2010/</RemotePath>
+  <RemoteFileFilter>TE</RemoteFileFilter>
+  <LocalPath>T:\Forts\2010\Zip\</LocalPath>
+  <LocalFileFilter>TE*.Zip</LocalFileFilter>
+</FtpWork>
+
+<FtpWork>
+  <IsEnabled>true</IsEnabled>
+  <Name>FTP DownLoading FTYYMMDD.ZIP Files</Name>
+  <RemoteUri>ftp.rts.ru</RemoteUri>
+  <Login>anonymous</Login>
+  <Password />
+  <RemotePath>/pub/info/stats/history/F/2012/</RemotePath>
+  <RemoteFileFilter>FT</RemoteFileFilter>
+  <LocalPath>T:\Forts\2012\Zip\</LocalPath>
+  <LocalFileFilter>FT*.Zip</LocalFileFilter>
+</FtpWork>
+
+<FtpWork>
+  <IsEnabled>true</IsEnabled>
+  <Name>FTP DownLoading TEYYMMDD.ZIP Files</Name>
+  <RemoteUri>ftp.rts.ru</RemoteUri>
+  <Login>anonymous</Login>
+  <Password />
+  <RemotePath>/pub/info/stats/history/F/2012/</RemotePath>
+  <RemoteFileFilter>TE</RemoteFileFilter>
+  <LocalPath>T:\Forts\2012\Zip\</LocalPath>
+  <LocalFileFilter>TE*.Zip</LocalFileFilter>
+</FtpWork>
+
+<ZipWork>
+  <IsEnabled>false</IsEnabled>
+  <Name>UnZIP FTYYMMDD.ZIP Files to FTYYMMDD.f.csv </Name>
+  <SourcePath>T:\Forts\2010\Zip\</SourcePath>
+  <SourceFileFilter>FT*.Zip</SourceFileFilter>
+  <TargetPath>T:\Forts\2010\Txt\</TargetPath>
+  <TargetFileFilter>FT*.f.csv</TargetFileFilter>
+  <TargetFileFilter2>ft.csv</TargetFileFilter2>
+  <AddExtension>.f</AddExtension>
+</ZipWork>
+
+<ZipWork>
+  <IsEnabled>false</IsEnabled>
+  <Name>UnZip TEYYMMDD.ZIP Files to TEYYMMDD.f.csv </Name>
+  <SourcePath>T:\Forts\2010\Zip\</SourcePath>
+  <SourceFileFilter>TE*.Zip</SourceFileFilter>
+  <TargetPath>T:\Forts\2010\Txt\</TargetPath>
+  <TargetFileFilter>TE*.f.csv</TargetFileFilter>
+  <TargetFileFilter2>fe.csv</TargetFileFilter2>
+  <AddExtension>.f</AddExtension>
+</ZipWork>
+
+<ZipWork>
+  <IsEnabled>true</IsEnabled>
+  <Name>UnZIP FTYYMMDD.ZIP Files to FTYYMMDD.f.csv </Name>
+  <SourcePath>T:\Forts\2012\Zip\</SourcePath>
+  <SourceFileFilter>FT*.Zip</SourceFileFilter>
+  <TargetPath>T:\Forts\2012\Txt\</TargetPath>
+  <TargetFileFilter>FT*.f.csv</TargetFileFilter>
+  <TargetFileFilter2>ft.csv</TargetFileFilter2>
+  <AddExtension>.f</AddExtension>
+</ZipWork>
+
+<ZipWork>
+  <IsEnabled>true</IsEnabled>
+  <Name>UnZip TEYYMMDD.ZIP Files to TEYYMMDD.f.csv </Name>
+  <SourcePath>T:\Forts\2012\Zip\</SourcePath>
+  <SourceFileFilter>TE*.Zip</SourceFileFilter>
+  <TargetPath>T:\Forts\2012\Txt\</TargetPath>
+  <TargetFileFilter>TE*.f.csv</TargetFileFilter>
+  <TargetFileFilter2>fe.csv</TargetFileFilter2>
+  <AddExtension>.f</AddExtension>
+</ZipWork>
+</Works>

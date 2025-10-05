@@ -1,0 +1,47 @@
+﻿<Window x:Class="GS.Trade.Windows.TransactionsWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:windows="clr-namespace:GS.Trade.Windows"
+        Title="TransactionsWindow" Height="300" Width="800"  Loaded="WindowLoaded" Closed="WindowClosed">
+    <Window.Resources>
+        <Style x:Key ="theDefaultStyle" TargetType="ListViewItem">
+            <Setter Property="HorizontalContentAlignment" Value="Stretch" />
+        </Style>
+        <Style x:Key="AlternateStyle">
+            <Setter Property="ListViewItem.HorizontalContentAlignment" Value="Stretch" />
+            <Setter Property="ListViewItem.Background" Value="#e1dfdc" />
+        </Style>
+    </Window.Resources>
+    <Grid>
+        <ListView Margin="0" Name="TransactionListView">
+            <ListView.View>
+                <GridView>
+                    <GridView.Columns>
+                        <GridViewColumn Header="DT" DisplayMemberBinding="{Binding Path=DateTimeTimeStr}" />
+                        <GridViewColumn Header="Strategy" DisplayMemberBinding="{Binding Path=StrategyStr}" />
+                        <GridViewColumn Header="TransID" DisplayMemberBinding="{Binding Path=TransID}" />
+                        <GridViewColumn Header="Action" DisplayMemberBinding="{Binding Path=Action}" />
+                        <GridViewColumn Header="OrderNumber" DisplayMemberBinding="{Binding Path=OrderNumber}" />
+                        <GridViewColumn Header="Status" DisplayMemberBinding="{Binding Path=StatusStr}" />
+                        <GridViewColumn Header="Result" DisplayMemberBinding="{Binding Path=ResultStr}" />
+                        <GridViewColumn Header="QuikResult" DisplayMemberBinding="{Binding Path=QuikResultStr}" />
+                        <GridViewColumn Header="Message" DisplayMemberBinding="{Binding Path=Message}" />
+                        <GridViewColumn Header="OrderNumber" DisplayMemberBinding="{Binding Path=OrderNumber}" />
+                        <GridViewColumn Header="Error" DisplayMemberBinding="{Binding Path=ExtendedErrorCode}" />
+                        <GridViewColumn Header="Reply" DisplayMemberBinding="{Binding Path=ReplyCode}" />
+                        <GridViewColumn Header="Registered" DisplayMemberBinding="{Binding Path=RegisteredTimeStr}" />
+                        <GridViewColumn Header="Sended" DisplayMemberBinding="{Binding Path=SendedTimeStr}" />
+                        <GridViewColumn Header="Completed" DisplayMemberBinding="{Binding Path=CompletedTimeStr}" />
+                        <GridViewColumn Header="Elapsed" DisplayMemberBinding="{Binding Path=ElapsedTimeStr}" />
+                        <GridViewColumn Header="Transaction" DisplayMemberBinding="{Binding Path=TransactionString}"/>
+                        <GridViewColumn Header="Terminal" DisplayMemberBinding="{Binding Path=TradeTerminalKey}" />
+                        <GridViewColumn Header="Comment" DisplayMemberBinding="{Binding Path=Comment}" />
+                    </GridView.Columns>
+                </GridView>
+            </ListView.View>
+            <ListView.ItemContainerStyleSelector>
+                <windows:AlternatingRowStyleSelector AlternateStyle="{StaticResource AlternateStyle}" DefaultStyle="{StaticResource theDefaultStyle}"/>
+            </ListView.ItemContainerStyleSelector>
+        </ListView>
+    </Grid>
+</Window>

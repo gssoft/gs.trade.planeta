@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<EventHub xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Name>Event Hub</Name>
+  <Code>StrategyEventHub</Code>
+  <IsEnabled>true</IsEnabled>
+  <IsEvlEnabled>false</IsEvlEnabled>
+  <IsQueueEnabled>true</IsQueueEnabled>
+  <IsProcessTaskInUse>false</IsProcessTaskInUse>
+  <Description>Event Hub with Queue without ProcTask</Description>
+  <EventHubItems>
+    <!-- TransactionReply OrdersStatusChanged -->
+    <!--<EventHubItem>
+      <Entity>ORDER.TRANSREPLY</Entity>
+      <Category>Orders</Category>
+    </EventHubItem>
+    <EventHubItem>
+      <Entity>ORDER.STATUSCHAHGED</Entity>
+      <Category>Orders</Category>
+    </EventHubItem>
+    <EventHubItem>
+      <Entity>Order.Canceled</Entity>
+      <Category>Orders.TrReply</Category>
+    </EventHubItem>
+    <EventHubItem>
+      <Entity>Order.CannotCancel</Entity>
+      <Category>Orders.TrReply</Category>
+    </EventHubItem>
+    <EventHubItem>
+      <Entity>Order.Test</Entity>
+      <Category>Orders.TrReply</Category>
+    </EventHubItem>-->
+    
+    <!-- ChangeOrderStatusReplica OrdersStatusChanged -->
+     <!--<EventHubItem>
+      <Entity>Order.Activated</Entity>
+      <Category>Orders.ChangeStatus</Category>
+    </EventHubItem>
+    <EventHubItem>
+      <Entity>Order.Rejected</Entity>
+      <Category>Orders.ChangeStatus</Category>
+    </EventHubItem>
+    <EventHubItem>
+      <Entity>Order.Canceled</Entity>
+      <Category>Orders.ChangeStatus</Category>
+    </EventHubItem>
+    <EventHubItem>
+      <Entity>Order.CannotCancel</Entity>
+      <Category>Orders.ChangeStatus</Category>
+    </EventHubItem>
+    <EventHubItem>
+      <Entity>Order.Test</Entity>
+      <Category>Orders.ChangeStatus</Category>
+    </EventHubItem>-->
+    
+    <!-- ********** EventHub.xml  ************** -->
+   
+  </EventHubItems>
+</EventHub>

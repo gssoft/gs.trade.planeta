@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ArrayOfString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <string>Strategies\Real\Z706\SOpen_Z710_02_25_M5.xml</string>
+  <string>Strategies\Real\Z706\SOpen_Z710_02_25_M5_2.xml</string>
+  <!--<string>Strategies\Real\Z706\SOpen_Z710_01_2506_M5.xml</string>-->
+  <string>Strategies\Real\Z706\SOpen_Z714_03.xml</string>
+  <string>Strategies\Real\Z706\SOpen_Z714_032.xml</string>
+  <string>Strategies\Real\Z706\SOpen_Z716_01.xml</string>
+  <string>Strategies\Real\Z706\SOpen_Z717_01.xml</string>
+  <string>Strategies\Real\Z706\SOpen_Z718_01.xml</string>
+</ArrayOfString>

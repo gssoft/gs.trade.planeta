@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Info>
+<CompareFiles>
+  <!-- <EtalonDir>F:\Web\StellaMaris\171128\All_Image\stellamaris.su.test</EtalonDir> -->
+  <EtalonDir>F:\Web\StellaMaris\171128\All_Image\stellamaris.su</EtalonDir>
+  <ProductionDir>lol</ProductionDir>
+  <IsExtraDirectoryToDelete>false</IsExtraDirectoryToDelete>
+  <TextFileExtensions>
+    <string>.txt</string>
+    <string>.php</string>
+    <string>.htaccess</string>
+    <string>.md</string>
+    <string>.dist</string>
+  </TextFileExtensions>
+  <BinFileExtensions>
+    <string>.jpg</string>
+    <string>.png</string>
+    <string>.gif</string>
+    <string>.bin</string>
+  </BinFileExtensions>
+  <DirExceptionList>
+    <string>F:\Web\StellaMaris\171128\All_Image\stellamaris.su\cache</string>
+    <string>F:\Web\StellaMaris\171128\All_Image\stellamaris.su\administrator\cache</string>
+    <string>F:\Web\StellaMaris\171128\All_Image\stellamaris.su\logs</string>
+    <string>F:\Web\StellaMaris\171128\All_Image\stellamaris.su\administrator\components\com_akeeba\backup</string>   
+  </DirExceptionList>
+</CompareFiles>
+ </Info>

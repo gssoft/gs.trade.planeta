@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<TradeContexts>
+  <TradeContext51>
+    <Code>TradeContext51</Code>
+    <Name>TradeContext51</Name>
+    <Alias>TradeContext51</Alias>
+    <NeedToReCreateDb>false</NeedToReCreateDb>
+    <GetFromDbMode>0</GetFromDbMode>
+  </TradeContext51>
+  <TradeContext52>
+    <Code>TradeContext52</Code>
+    <Name>TradeContext52</Name>
+    <Alias>TradeContext52</Alias>
+    <NeedToReCreateDb>true</NeedToReCreateDb>
+    <GetFromDbMode>0</GetFromDbMode>
+  </TradeContext52>
+</TradeContexts>

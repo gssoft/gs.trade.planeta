@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<DdeServer>
+  <Dde enabled="true" ns="GS.Trade.Dde.TpSbscr" as="GS.Trade.Dde">
+    <!--<Mode>Mixed</Mode>-->
+    <Mode>Table</Mode>
+    <IsEnabled>true</IsEnabled>
+    <IsProcessTaskInUse>true</IsProcessTaskInUse>
+    <IsEventHubInUse>true</IsEventHubInUse>
+    <IsNeedTopicName>false</IsNeedTopicName>
+    <IsNeedTopicNameInTable>true</IsNeedTopicNameInTable>
+    <Name>DdeServer</Name>
+    <Code>QuikDdeServer</Code>
+    <!--<Code>QuikVtbSim</Code>-->
+    <!--<Code>QuikOpenReal</Code>-->
+    <!--<Code>QuikBkStandard</Code>-->
+    <XPath>DdeTopicList</XPath>
+  </Dde>
+  <DdeTopicList>
+    <TopicItem ns="GS.Trade.Dde.TpSbscr" as="GS.Trade.Dde">
+      <TopicItemKey>QuikDdeServer.Quotes</TopicItemKey>
+    </TopicItem>
+    <TopicItem ns="GS.Trade.Dde.TpSbscr" as="GS.Trade.Dde">
+      <TopicItemKey>QuikDdeServer.TickerInfo</TopicItemKey>
+    </TopicItem>
+    <TopicItem ns="GS.Trade.Dde.TpSbscr" as="GS.Trade.Dde">
+      <TopicItemKey>QuikDdeServer.OptionDesk</TopicItemKey>
+    </TopicItem>
+  </DdeTopicList>
+</DdeServer>

@@ -1,0 +1,65 @@
+﻿@*@model GS.Asp.Net.Users.Admin.ViewModels.ViewRole*@
+@using System.Web.UI.WebControls
+@model Microsoft.AspNet.Identity.EntityFramework.IdentityRole
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>ViewRole</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Id)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Id)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Name)
+        </dd>
+        <dt>
+            User Count
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Users.Count)
+        </dd>
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.Id}) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
+<div>
+    <table class="table">
+    <tr>
+        <th>
+            Role
+        </th>
+        <th>
+            User
+        </th>
+    </tr>
+
+    @foreach (var item in Model.Users)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.RoleId)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.UserId)
+            </td>
+        </tr>
+    }
+    </table>
+</div>
+        

@@ -1,0 +1,139 @@
+﻿@*@model IEnumerable<GS.EventLog.DataBase.Model.DbEventLogItem>*@
+@model PagedList.IPagedList<GS.EventLog.DataBase.Model.DbEventLogItem>
+@using PagedList.Mvc;
+<link href="~/Content/PagedList.css" rel="stylesheet" type="text/css" />
+
+<h5><b>@ViewBag.FullTitle</b></h5>
+@Html.PagedListPager(Model, page => Url.Action("Index", 
+    new
+    {
+        eventLogId = ViewBag.EventLogId,
+        resultCodeList = ViewBag.ResultCode,
+        subCodeList = ViewBag.SubjectCode,
+        searchString = ViewBag.SearchString,
+        lastDayChecked = ViewBag.LastDayChecked,
+        page
+    }))
+
+
+    @using (Html.BeginForm("Index", "EventLogItems", FormMethod.Get))
+    {
+        <p>
+            EventLogs: @Html.DropDownList("evlCodeList", "All")
+            Results: @Html.DropDownList("resultCodeList", "All")
+            Subjects: @Html.DropDownList("subCodeList", "All")
+            Search: @Html.TextBox("searchString")
+            LastDay: @Html.CheckBox("lastDayChecked", true)
+            <input type="submit" value="Filter" class ="btn-primary"/>
+        </p>
+    }
+
+<table class="table">
+    <tr>
+        <th>
+            @*@Html.DisplayNameFor(model => model.DT)*@
+            DateTime
+        </th>
+        <th>
+            @*@Html.DisplayNameFor(model => model.ResultCode)*@
+            Result
+        </th>
+        <th>
+            @*@Html.DisplayNameFor(model => model.Subject)*@
+            Subject
+        </th>
+        <th>
+            @* @Html.DisplayNameFor(model => model.Source)*@
+            Source
+        </th>
+        <th>
+            @*@Html.DisplayNameFor(model => model.Entity)*@
+            Entity
+        </th>
+        <th>
+            @*@Html.DisplayNameFor(model => model.Operation)*@
+            Operation
+        </th>
+        <th>
+            @* @Html.DisplayNameFor(model => model.Description)*@
+            Description
+        </th>
+        <th>
+            @* @Html.DisplayNameFor(model => model.Object)*@
+            Object
+        </th>
+        @*<th>
+            @Html.DisplayNameFor(model => model.Index)
+        </th>*@
+        @*<th>
+            @Html.DisplayNameFor(model => model.EventLogID)
+        </th>*@
+        <th></th>
+    </tr>
+
+    @foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.DT)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ResultCode)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Subject)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Source)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Entity)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Operation)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Description)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Object)
+            </td>
+            @*<td>
+            @Html.DisplayFor(modelItem => item.Index)
+        </td>*@
+            @*<td>
+            @Html.DisplayFor(modelItem => item.EventLogID)
+        </td>*@
+            <td>
+                @Html.ActionLink("Details", "Details", new { id=item.EventLogItemID }) @*|*@
+                @*@Html.ActionLink("Delete", "Delete", new { id=item.EventLogItemID })*@
+            </td>
+        </tr>
+    }
+
+</table>
+Page @(Model.PageCount < Model.PageNumber ? 0 : Model.PageNumber) of @Model.PageCount
+
+@Html.PagedListPager(Model, page => Url.Action("Index", 
+    new
+    {
+        eventLogId = ViewBag.EventLogId,
+        resultCodeList = ViewBag.ResultCode,
+        subCodeList = ViewBag.SubjectCode,
+        searchString = ViewBag.SearchString,
+        lastDayChecked = ViewBag.LastDayChecked,
+        page
+    }))
+<script src="~/Scripts/jquery-2.1.1.min.js"></script>
+<script>
+    $(document).ready(function () {
+
+        setTimeout(alertFunc, 60000);
+
+        function alertFunc() {
+            //alert("Hello Again");
+            //console.debug("Hello from Chart Ready");
+            window.location.reload();
+            // setTimeout(alertFunc, 15000);
+        }
+    });
+</script>

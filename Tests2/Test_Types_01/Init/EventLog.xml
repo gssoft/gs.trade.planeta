@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<EventLogTypes>
+  <EventLogs>
+    <Name>EventLogs</Name>
+    <IsEnabled>true</IsEnabled>
+    <XPath>EventLogList</XPath>
+  </EventLogs>
+  <EventLogList>
+    <EventLog enabled = "false">
+      <Name>Memory EventLog</Name>
+      <IsEnabled>true</IsEnabled>
+      <IsAsync>false</IsAsync>
+      <IsPrimary>true</IsPrimary>
+      <IsSaveEnabled>false</IsSaveEnabled>
+      <IsUIEnabled>true</IsUIEnabled>
+    </EventLog>
+    <ConsoleEventLog enabled = "true">
+      <Name>Console EventLog</Name>
+      <IsEnabled>true</IsEnabled>
+      <IsAsync>false</IsAsync>
+      <IsPrimary>false</IsPrimary>
+      <IsSaveEnabled>false</IsSaveEnabled>
+      <IsUIEnabled>false</IsUIEnabled>
+    </ConsoleEventLog>
+    <FileEventLog enabled = "false">
+      <Name>File EventLog</Name>
+      <FileName>FileEventLog.txt</FileName>
+      <IsEnabled>false</IsEnabled>
+      <IsAsync>false</IsAsync>
+      <IsPrimary>false</IsPrimary>
+      <IsSaveEnabled>false</IsSaveEnabled>
+      <IsUIEnabled>false</IsUIEnabled>
+    </FileEventLog>
+    <WebEventLog enabled = "false">
+      <Name>Web EventLog</Name>
+      <EventLogKey>GS.Trade.EventLog</EventLogKey>
+      <BaseAddress>http://gonchar.net/ApiEventLog/</BaseAddress>
+      <RequestHeader>application/xml</RequestHeader>
+      <ApiEventLogs>api/eventlogs/</ApiEventLogs>
+      <ApiEventLogItems>api/eventlogitems/</ApiEventLogItems>
+      <IsEnabled>false</IsEnabled>
+      <IsAsync>true</IsAsync>
+      <IsPrimary>false</IsPrimary>
+      <IsSaveEnabled>false</IsSaveEnabled>
+      <IsUIEnabled>false</IsUIEnabled>
+    </WebEventLog>
+    <DbEventLog enabled = "false">
+      <Name>DataBase.EventLog</Name>
+      <DataBaseName>EventLog</DataBaseName>
+      <EventLogKey>GS.Trade.EventLog</EventLogKey>
+      <Code>GS.Trade.EventLog</Code>
+      <IsEnabled>true</IsEnabled>
+      <IsPrimary>false</IsPrimary>
+      <IsAsync>true</IsAsync>
+      <IsSaveEnabled>true</IsSaveEnabled>
+      <IsUIEnabled>false</IsUIEnabled>
+    </DbEventLog>
+  </EventLogList>
+</EventLogTypes>

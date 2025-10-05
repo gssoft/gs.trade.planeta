@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<EventLogTypes>
+  <EventLogs enabled="true" ns="GS.EventLog" as="GS.EventLog">
+    <Name>EventLogs</Name>
+    <IsEnabled>true</IsEnabled>
+    <IsUIEnabled>true</IsUIEnabled>
+    <XPath>EventLogList</XPath>
+    <IsQueueEnabled>true</IsQueueEnabled>
+    <IsProcessTaskInUse>true</IsProcessTaskInUse>
+  </EventLogs>
+  <EventLogList enabled = "false">
+    <EventLog>
+      <Name>Memory EventLog</Name>
+      <IsEnabled>true</IsEnabled>
+      <IsAsync>false</IsAsync>
+      <IsPrimary>false</IsPrimary>
+      <IsSaveEnabled>false</IsSaveEnabled>
+      <IsUIEnabled>false</IsUIEnabled>
+      <Capasity>512</Capasity>
+      <CapasityLimit>512</CapasityLimit>
+    </EventLog>
+    <ConsoleEventLog enabled = "false">
+      <Name>Console EventLog</Name>
+      <IsEnabled>false</IsEnabled>
+      <IsAsync>false</IsAsync>
+      <IsPrimary>false</IsPrimary>
+      <IsSaveEnabled>false</IsSaveEnabled>
+      <IsUIEnabled>false</IsUIEnabled>
+    </ConsoleEventLog>
+    <FileEventLog enabled = "false">
+      <Name>File EventLog</Name>
+      <FileName>FileEventLog.txt</FileName>
+      <IsEnabled>false</IsEnabled>
+      <IsAsync>false</IsAsync>
+      <IsPrimary>false</IsPrimary>
+      <IsSaveEnabled>false</IsSaveEnabled>
+      <IsUIEnabled>false</IsUIEnabled>
+    </FileEventLog>
+    <WebEventLog enabled = "false">
+      <Name>Web EventLog</Name>
+      <EventLogKey>GS.Trade.EventLog</EventLogKey>
+      <BaseAddress>http://gonchar.net/ApiEventLog/</BaseAddress>
+      <RequestHeader>application/xml</RequestHeader>
+      <ApiEventLogs>api/eventlogs/</ApiEventLogs>
+      <ApiEventLogItems>api/eventlogitems/</ApiEventLogItems>
+      <IsEnabled>false</IsEnabled>
+      <IsAsync>true</IsAsync>
+      <IsPrimary>false</IsPrimary>
+      <IsSaveEnabled>true</IsSaveEnabled>
+      <IsUIEnabled>false</IsUIEnabled>
+    </WebEventLog>
+    <DbEventLog enabled = "false">
+      <Name>DataBase.EventLog</Name>
+      <DataBaseName>EventLog</DataBaseName>
+      <EventLogKey>GS.Trade.EventLog</EventLogKey>
+      <Code>GS.Trade.EventLog</Code>
+      <IsEnabled>true</IsEnabled>
+      <IsPrimary>false</IsPrimary>
+      <IsAsync>false</IsAsync>
+      <IsSaveEnabled>true</IsSaveEnabled>
+      <IsUIEnabled>false</IsUIEnabled>
+    </DbEventLog>
+  </EventLogList>
+</EventLogTypes>

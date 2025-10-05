@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<EventHub enabled="true" ns="GS.EventHubs" as="GS.EventHubs">
+  <Name>EventHub</Name>
+  <Code>TcpDdeServer</Code>
+  <IsEnabled>true</IsEnabled>
+  <IsEvlEnabled>false</IsEvlEnabled>
+  <IsQueueEnabled>true</IsQueueEnabled>
+  <IsProcessTaskInUse>true</IsProcessTaskInUse>
+  <Description>EventHubProcessTask</Description>
+  <EventHubItems>
+    <EventHubItem>
+      <Code>QuikDde.OptionDesk</Code>
+    </EventHubItem>
+    <EventHubItem>
+      <Code>QuikDde.MarketQuotes</Code>
+    </EventHubItem>
+    <EventHubItem>
+      <Code>QuikDde.SymbolGo</Code>
+    </EventHubItem>
+    <EventHubItem>
+      <Code>QuikDdeServer.Quotes</Code>
+    </EventHubItem>
+    <EventHubItem>
+      <Code>QuikDdeServer.TickerInfo</Code>
+    </EventHubItem>
+    <EventHubItem>
+      <Code>QuikDdeServer.OptionDesk</Code>
+    </EventHubItem>
+  </EventHubItems>
+</EventHub>

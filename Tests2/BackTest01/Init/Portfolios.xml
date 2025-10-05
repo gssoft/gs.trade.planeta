@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Portfolioses>
+  <Portfolios ns="GS.Trade.Strategies.Portfolio" as="GS.Trade.Strategies, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null">
+    <Code>Portfolios</Code>
+    <Name>Portfolios</Name>
+    <Alias>Portfolios</Alias>
+  </Portfolios>
+  <Portfolio ns="GS.Trade.Strategies.Portfolio" as="GS.Trade.Strategies, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null">
+    <MaxSideInitValue>1</MaxSideInitValue>
+  </Portfolio>
+</Portfolioses>

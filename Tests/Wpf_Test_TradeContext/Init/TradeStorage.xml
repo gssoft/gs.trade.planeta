@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<TradeStorageTypes>
+<TradeStore>
+  <Name>TradeStorage</Name>
+  <Code>TradeStorage</Code>
+  <XPath>TradeStorageList</XPath>
+</TradeStore>
+<TradeStorageList>
+  <!--<NullStorage>
+    <Name>MemStorage</Name>
+  </NullStorage>-->
+  <MemStorage>
+    <Name>MemStorage</Name>
+    <Code>MemStorage</Code>
+  </MemStorage>
+  <DbStorage>
+    <Name>MemStorage</Name>
+    <Code>MemStorage</Code>
+  </DbStorage>
+</TradeStorageList>
+</TradeStorageTypes>

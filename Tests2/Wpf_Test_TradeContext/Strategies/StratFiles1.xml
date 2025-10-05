@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ArrayOfString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <string>Strategies\Train\Tr_Z705_02F1.xml</string>
+  <string>Strategies\Test\Test_Z707_002.xml</string>
+  <string>Strategies\Simulate\S_Z705_02FR.xml</string>
+</ArrayOfString>

@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Root>
+<FtpWebClient>
+  <BaseAddress>ftp://62.173.145.180/www/stellamaris.su</BaseAddress>
+  <User>user41381</User>
+  <Password>kPywCImxAZ2z</Password>
+  
+  <IsUnixFtpServer>true</IsUnixFtpServer>
+</FtpWebClient>
+</Root>

@@ -1,0 +1,299 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{E71FE541-9FE1-4EDA-87CC-2BAF01BEA26A}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>GS.Trade.Strategies</RootNamespace>
+    <AssemblyName>GS.Trade.Strategies</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+    <PlatformTarget>x64</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="GS, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\GS\GS\bin\Debug\GS.dll</HintPath>
+    </Reference>
+    <Reference Include="GS.Trade, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\GS.Trade\GS.Trade\bin\Debug\GS.Trade.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WebClients, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\GS.Web.Clients\WebClients\bin\Debug\WebClients.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="A118.cs" />
+    <Compile Include="DefaultStrategy1.cs" />
+    <Compile Include="Managers\EntryManager.cs" />
+    <Compile Include="Managers\TradeStrategyManager.cs" />
+    <Compile Include="Portfolio\Portfolio1.cs" />
+    <Compile Include="Portfolio\Portfolio.cs" />
+    <Compile Include="Portfolio\Portfolios.cs" />
+    <Compile Include="PositionMM\PositionMinMax.cs" />
+    <Compile Include="Signals\Signal.cs" />
+    <Compile Include="StartegyPortfolio.cs" />
+    <Compile Include="Strategies1.cs" />
+    <Compile Include="StrategyEventsProc.cs" />
+    <Compile Include="StrategyHedger.cs" />
+    <Compile Include="StrategyManager\StrategyManager.cs" />
+    <Compile Include="StrategyManager\TradeStrategyManager.cs" />
+    <Compile Include="TradeMode\TradeMode.cs" />
+    <Compile Include="TradeStrategy.cs" />
+    <Compile Include="DefaultStrategy.cs" />
+    <Compile Include="X11830.cs" />
+    <Compile Include="StrategyChart.cs" />
+    <Compile Include="Test01.cs" />
+    <Compile Include="X112.cs" />
+    <Compile Include="X102.cs" />
+    <Compile Include="x105.cs" />
+    <Compile Include="X113.cs" />
+    <Compile Include="Strategies.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Strategy.cs" />
+    <Compile Include="x001.cs" />
+    <Compile Include="x002.cs" />
+    <Compile Include="x003.cs" />
+    <Compile Include="x100.cs" />
+    <Compile Include="x101.cs" />
+    <Compile Include="X103.cs" />
+    <Compile Include="x115.cs" />
+    <Compile Include="x116.cs" />
+    <Compile Include="X116Chart.cs" />
+    <Compile Include="X1171.cs" />
+    <Compile Include="X117.cs" />
+    <Compile Include="X117Chart.cs" />
+    <Compile Include="X1172.cs" />
+    <Compile Include="X118.cs" />
+    <Compile Include="X11802.cs" />
+    <Compile Include="X11805.cs" />
+    <Compile Include="x11807.cs" />
+    <Compile Include="X11809.cs" />
+    <Compile Include="X11810.cs" />
+    <Compile Include="X118106.cs" />
+    <Compile Include="X11811.cs" />
+    <Compile Include="X11812.cs" />
+    <Compile Include="X11815.cs" />
+    <Compile Include="X11819.cs" />
+    <Compile Include="X11821.cs" />
+    <Compile Include="X11823.cs" />
+    <Compile Include="X11825.cs" />
+    <Compile Include="X11820.cs" />
+    <Compile Include="X11828.cs" />
+    <Compile Include="X11831.cs" />
+    <Compile Include="X11832.cs" />
+    <Compile Include="X11833.cs" />
+    <Compile Include="X11835.cs" />
+    <Compile Include="X11836.cs" />
+    <Compile Include="X11837.cs" />
+    <Compile Include="X11838.cs" />
+    <Compile Include="X11839.cs" />
+    <Compile Include="X11850.cs" />
+    <Compile Include="X118Chart.cs" />
+    <Compile Include="X119.cs" />
+    <Compile Include="x300.cs" />
+    <Compile Include="x301.cs" />
+    <Compile Include="x302.cs" />
+    <Compile Include="Z001.cs" />
+    <Compile Include="Z00101.cs" />
+    <Compile Include="Z00102.cs" />
+    <Compile Include="Z00103.cs" />
+    <Compile Include="Z00105.cs" />
+    <Compile Include="Z001Chart.cs" />
+    <Compile Include="Z002.cs" />
+    <Compile Include="Z002Charts.cs" />
+    <Compile Include="Z003.cs" />
+    <Compile Include="Z00104.cs" />
+    <Compile Include="Z005.cs" />
+    <Compile Include="z00506.cs" />
+    <Compile Include="Z00507.cs" />
+    <Compile Include="Z00508.cs" />
+    <Compile Include="Z00509.cs" />
+    <Compile Include="Z00510.cs" />
+    <Compile Include="Z00511.cs" />
+    <Compile Include="Z00512.cs" />
+    <Compile Include="Z00513.cs" />
+    <Compile Include="Z00514.cs" />
+    <Compile Include="Z00515.cs" />
+    <Compile Include="Z00516.cs" />
+    <Compile Include="Z00517.cs" />
+    <Compile Include="Z00518.cs" />
+    <Compile Include="Z00519.cs" />
+    <Compile Include="Z005Chart.cs" />
+    <Compile Include="Z006.cs" />
+    <Compile Include="Z00601.cs" />
+    <Compile Include="Z00602.cs" />
+    <Compile Include="Z00603.cs" />
+    <Compile Include="Z00604.cs" />
+    <Compile Include="Z00605.cs" />
+    <Compile Include="Z006Chart.cs" />
+    <Compile Include="Z0073523A1.cs" />
+    <Compile Include="Z0073523A81.cs" />
+    <Compile Include="Z0073523A90.cs" />
+    <Compile Include="Z0073523A80.cs" />
+    <Compile Include="Z0073523A78.cs" />
+    <Compile Include="Z0073523A76.cs" />
+    <Compile Include="Z0073523A77.cs" />
+    <Compile Include="Z0073523A75.cs" />
+    <Compile Include="Z0073523A74.cs" />
+    <Compile Include="Z0073523A73.cs" />
+    <Compile Include="Z0073523A72.cs" />
+    <Compile Include="Z0073523A52L.cs" />
+    <Compile Include="Z0073523A52S.cs" />
+    <Compile Include="Z0073523A54.cs" />
+    <Compile Include="Z0073523A55.cs" />
+    <Compile Include="Z0073523A53.cs" />
+    <Compile Include="Z0073523A52.cs" />
+    <Compile Include="Z0073523A51.cs" />
+    <Compile Include="Z0073523A6.cs" />
+    <Compile Include="Z0073523A5.cs" />
+    <Compile Include="Z0073524A2.cs" />
+    <Compile Include="Z0073523A2.cs" />
+    <Compile Include="Z0073523A3.cs" />
+    <Compile Include="Z0073523A4.cs" />
+    <Compile Include="Z0073523.cs" />
+    <Compile Include="Z00735M .cs" />
+    <Compile Include="Z00736G.cs" />
+    <Compile Include="Z00736T14.cs" />
+    <Compile Include="Z00736T13.cs" />
+    <Compile Include="Z00736T11.cs" />
+    <Compile Include="Z00736Ti21.cs" />
+    <Compile Include="Z00736Ti23.cs" />
+    <Compile Include="Z00736Ti22.cs" />
+    <Compile Include="Z00736T2.cs" />
+    <Compile Include="Z00736T1.cs" />
+    <Compile Include="Z00736Z1.cs" />
+    <Compile Include="Z00736Z.cs" />
+    <Compile Include="Z00736CT.cs" />
+    <Compile Include="Z00736D.cs" />
+    <Compile Include="Z00736C.cs" />
+    <Compile Include="Z00736B.cs" />
+    <Compile Include="Z00736F.cs" />
+    <Compile Include="Z00736A.cs" />
+    <Compile Include="Z00738B.cs" />
+    <Compile Include="Z00738A.cs" />
+    <Compile Include="Z00738E.cs" />
+    <Compile Include="Z00738D.cs" />
+    <Compile Include="Z00738C.cs" />
+    <Compile Include="Z00738H.cs" />
+    <Compile Include="Z00738G.cs" />
+    <Compile Include="Z00738F.cs" />
+    <Compile Include="Z00738T.cs" />
+    <Compile Include="Z00736T.cs" />
+    <Compile Include="Z00736S.cs" />
+    <Compile Include="Z007_EventHandler.cs" />
+    <Compile Include="Z00836.cs" />
+    <Compile Include="Z008Chart.cs" />
+    <Compile Include="Z008.cs" />
+    <Compile Include="Z007.cs" />
+    <Compile Include="Z00701.cs" />
+    <Compile Include="Z00702.cs" />
+    <Compile Include="Z00703.cs" />
+    <Compile Include="Z00704.cs" />
+    <Compile Include="Z00705.cs" />
+    <Compile Include="Z0073521.cs" />
+    <Compile Include="Z0073501.cs" />
+    <Compile Include="Z007358.cs" />
+    <Compile Include="Z007357.cs" />
+    <Compile Include="Z00736M.cs" />
+    <Compile Include="Z007361.cs" />
+    <Compile Include="Z007373.cs" />
+    <Compile Include="Z007371.cs" />
+    <Compile Include="Z007372.cs" />
+    <Compile Include="Z00738.cs" />
+    <Compile Include="Z00737.cs" />
+    <Compile Include="Z00736.cs" />
+    <Compile Include="Z007356.cs" />
+    <Compile Include="Z007355.cs" />
+    <Compile Include="Z007354.cs" />
+    <Compile Include="Z007353.cs" />
+    <Compile Include="Z007352.cs" />
+    <Compile Include="Z007351.cs" />
+    <Compile Include="Z007350.cs" />
+    <Compile Include="Z00730.cs" />
+    <Compile Include="Z00735.cs" />
+    <Compile Include="Z00733.cs" />
+    <Compile Include="Z00732.cs" />
+    <Compile Include="Z00721.cs" />
+    <Compile Include="Z00720.cs" />
+    <Compile Include="Z00719.cs" />
+    <Compile Include="Z007121.cs" />
+    <Compile Include="Z00718.cs" />
+    <Compile Include="Z00717.cs" />
+    <Compile Include="Z00716.cs" />
+    <Compile Include="Z00715.cs" />
+    <Compile Include="Z00714.cs" />
+    <Compile Include="Z00713.cs" />
+    <Compile Include="Z00712.cs" />
+    <Compile Include="Z00711.cs" />
+    <Compile Include="Z00710.cs" />
+    <Compile Include="Z00709.cs" />
+    <Compile Include="Z00708.cs" />
+    <Compile Include="Z00706.cs" />
+    <Compile Include="Z00707.cs" />
+    <Compile Include="Z00739.cs" />
+    <Compile Include="Z007Chart.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\GS.Trade.Data\GS.Trade.Data.csproj">
+      <Project>{758D4D02-B35B-482F-84A7-D68847155030}</Project>
+      <Name>GS.Trade.Data</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\GS.Trade.Trades\GS.Trade.Trades.csproj">
+      <Project>{323CD232-D99D-411D-B7D3-B8752E2BAD58}</Project>
+      <Name>GS.Trade.Trades</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="GS\Strategies\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>copy $(TargetPath) D:\VC\1305\Asmbls\</PostBuildEvent>
+  </PropertyGroup>
+  <PropertyGroup>
+    <PreBuildEvent>del  "D:\VC\1305\Asmbls\$(TargetFileName)"</PreBuildEvent>
+  </PropertyGroup>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

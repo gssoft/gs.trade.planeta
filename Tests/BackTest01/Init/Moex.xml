@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Root>
+  <MoexTest enabled="true" ns="Moex" as="Moex">
+    <FuturesIssWebApiPrefix>futures/markets/forts/securities/</FuturesIssWebApiPrefix>
+    <OptionsIssWebApiPrefix>futures/markets/options/securities/</OptionsIssWebApiPrefix>
+    <ApiPostfix>.xml</ApiPostfix>
+    <SecurityRowXPath>/document/data[@id='securities']/rows/row</SecurityRowXPath>
+    <MarketDataRowXPath>/document/data[@id='marketdata']/rows/row</MarketDataRowXPath>
+    <WebClient02 enabled="true" ns="WebClients" as="WebClients">
+      <BaseAddress>https://iss.moex.com/</BaseAddress>
+      <!--<ApiPrefix>iss/engines/futures/markets/</ApiPrefix>-->
+      <ApiPrefix>iss/engines/</ApiPrefix>
+      <MediaTypeHeader>application/xml</MediaTypeHeader>
+      <ErrorCountToStop>30</ErrorCountToStop>
+      <IsUserPost>true</IsUserPost>
+      <WorkTask>
+        <Code>WebClient.WorkTask</Code>
+        <TimeInterval>60</TimeInterval>
+        <ErrorCountToStop>30</ErrorCountToStop>
+      </WorkTask>
+    </WebClient02>
+  </MoexTest>
+</Root>
+

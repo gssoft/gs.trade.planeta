@@ -1,0 +1,78 @@
+﻿
+Classic:
+
+Input: Length(5), KAdjust(3),  DAdjust(3), OverBought(80), OverSold(20);
+Variables: KAdjusted(0), DAdjusted(0);
+
+KAdjusted = SlowKClassic(KAdjust, Length);
+DAdjusted = SlowDClassic(DAdjust, Length);
+
+IF CurrentBar > Length Then Begin
+	Plot1(KAdjusted, "%K");
+	Plot2(DAdjusted, "%D");
+End;
+
+
+Inputs : KLength(NumericSimple);
+FastDClassic = Average(FastK(KLength), 3);
+
+Inputs: FastKLen(NumericSimple), Length(NumericSimple);
+SlowKClassic = Average(FastK(FastKLen), Length);
+
+Inputs: FastKLen(NumericSimple), Length(NumericSimple);
+SlowDClassic = Average(FastDClassic(FastKLen), Length);
+
+Slow:
+
+Inputs: HighValue(High), LowValue(Low), CloseValue(Close), Length(14), OverSold(20), OverBought(80);
+
+Plot1(SlowKCustom(HighValue, LowValue, CloseValue, Length), "SlowK");
+Plot2(SlowDCustom(HighValue, LowValue, CloseValue, Length), "SlowD");
+Plot3(OverBought, "OverBought");
+Plot4(OverSold, "OverSold");
+
+Inputs: HighVal(NumericSeries), LowVal(NumericSeries), CloseVal(NumericSeries), Length(NumericSimple);
+SlowKCustom = FastDCustom(HighVal, LowVal, CloseVal, Length);
+
+Inputs: HighVal(NumericSeries), LowVal(NumericSeries), CloseVal(NumericSeries), Length(NumericSimple);
+Variables: Factor(.5);
+If CurrentBar <= 1 Then
+	FastDCustom = FastKCustom(HighVal, LowVal, CloseVal, Length)
+Else
+	FastDCustom = FastDCustom[1] + (Factor * (FastKCustom(HighVal, LowVal, CloseVal, Length) -  FastDCustom[1]));
+
+Inputs: HighVal(NumericSeries), LowVal(NumericSeries), CloseVal(NumericSeries), Length(NumericSimple);
+
+If CurrentBar <= 1 Then 
+	SlowDCustom = FastDCustom(HighVal, LowVal, CloseVal, Length)
+Else 
+	SlowDCustom = ((SlowDCustom[1] * 2) + FastDCustom(HighVal, LowVal, CloseVal, Length)) / 3;
+
+
+Fast:
+
+Inputs: HighValue(High), LowValue(Low), CloseValue(Close), Length(14), OverSold(20), OverBought(80); 
+ 
+Plot1(FastKCustom(HighValue, LowValue, CloseValue, Length), "FastK");
+Plot2(FastDCustom(HighValue, LowValue, CloseValue, Length), "FastD");
+Plot3(OverBought, "OverBought");
+Plot4(OverSold, "OverSold");
+
+
+Inputs: HighVal(NumericSeries), LowVal(NumericSeries), CloseVal(NumericSeries), Length(NumericSimple);
+Variables: Factor(.5);
+
+Value1 = Lowest(LowVal,Length);
+Value2 = Highest(HighVal,Length) - Value1;
+Value3 = CloseVal;
+
+If Value2 > 0 Then
+	FastKCustom = (Value3 - Value1) / Value2 * 100
+Else
+	FastKCustom = 0;
+
+
+If CurrentBar <= 1 Then
+	FastDCustom = FastKCustom(HighVal, LowVal, CloseVal, Length)
+Else
+	FastDCustom = FastDCustom[1] + (Factor * (FastKCustom(HighVal, LowVal, CloseVal, Length) -  FastDCustom[1]));

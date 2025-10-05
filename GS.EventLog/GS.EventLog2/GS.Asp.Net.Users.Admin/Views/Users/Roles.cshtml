@@ -1,0 +1,78 @@
+﻿@model GS.Asp.Net.Users.Admin.ViewModels.UserRoles
+
+<h4>@ViewBag.Title</h4>
+<hr />
+<div>
+    <h4>User</h4>
+
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.User.Id)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.User.Id)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.User.Email)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.User.Email)
+        </dd>
+        @*<dt>
+            @Html.DisplayNameFor(model => model.User.PasswordHash)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.User.PasswordHash)
+        </dd>*@
+        <dt>
+            @Html.DisplayNameFor(model => model.User.UserName)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.User.UserName)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.User.Id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
+<hr>
+<p>
+    @using (Html.BeginForm("AddUserToRole", "Users", FormMethod.Post))
+    {
+        @Html.AntiForgeryToken()
+        @Html.Hidden("userId", Model.User.Id )
+        <h4>Role To Add: @Html.DropDownList("roleName",(SelectList)(ViewBag.RolesSelectList)) 
+            <input type="submit" value="Add this Role to User" class="btn-primary" />
+        </h4>
+    }
+</p>
+<hr>
+<div>
+    <h4>Roles</h4>
+    <table class="table">
+        <tr>
+            <th>
+                ID
+            </th>
+            <th>
+                Name
+            </th>
+        </tr>
+
+        @foreach (var item in Model.Roles)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Id)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Name)
+                </td>
+            </tr>
+        }
+    </table>
+</div>

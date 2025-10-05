@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Root>
+  <ServerDef>
+    <Code>EventLog.WebServer</Code>
+    <Name>EventLog.WebServer</Name>
+    <!--<Url>http://localhost:8081</Url>-->
+    <Url>http://gssft-002:8081</Url>
+  </ServerDef>
+</Root>

@@ -1,0 +1,57 @@
+﻿@model GS.Trade.DataBase.Series.Model.QuoteProvider
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<fieldset>
+    <legend>QuoteProvider</legend>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.QuoteProviderKey)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.QuoteProviderKey)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Code)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Code)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Name)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Name)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Description)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Description)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.CreatedDT)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.CreatedDT)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.ModifiedDT)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.ModifiedDT)
+    </div>
+</fieldset>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id=Model.Id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

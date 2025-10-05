@@ -1,0 +1,273 @@
+﻿@model GS.Trade.Trades.Equity.OmegaReport
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h4>Performance Report</h4>
+<div>
+    <strong>@ViewBag.FullTitle</strong>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            Start DateTime
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.StartDate)
+        </dd>
+        <dt>
+            End DateTime
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.EndDate)
+        </dd>
+        <dt>
+            Days
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Days)
+        </dd>
+        <dt>
+            AvgDailyProfit
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.AvgDailyProfit)
+        </dd>
+    </dl>
+        <dl class="dl-horizontal">
+
+            <dt>
+                @Html.DisplayNameFor(model => model.TotalNetProfit)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.TotalNetProfitStr)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.GrossProfit)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.GrossProfitStr)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.GrossLoss)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.GrossLossStr)
+            </dd>
+
+        </dl>
+        <dl class="dl-horizontal">
+            <dt>
+                @Html.DisplayNameFor(model => model.TotalTrades)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.TotalTradesStr)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.NumberWinTrades)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.NumberWinTradesStr)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.NumberLosingTrades)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.NumberLosingTradesStr)
+            </dd>
+            <dt>
+                @Html.DisplayNameFor(model => model.PercentProfitable)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.PercentProfitableStr)
+            </dd>
+        </dl>
+        <dl class="dl-horizontal">
+            <dt>
+                @Html.DisplayNameFor(model => model.LargestWinTrade)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.LargestWinTradeStr)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.LargestLosingTrade)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.LargestLosingTradeStr)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.AverageWinTrade)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.AverageWinTradeStr)
+            </dd>
+            <dt>
+                @Html.DisplayNameFor(model => model.AverageLosingTrade)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.AverageLosingTradeStr)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.AverageTrade)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.AverageTradeStr)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.RatioAvgWinToAvgLoss)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.RatioAvgWinToAvgLossStr)
+            </dd>
+        </dl>
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.StdDevWinTrade)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.StdDevWinTradeStr)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.StdDevLosingTrade)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.StdDevLosingTradeStr)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.StdDevTrade)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.StdDevTradeStr)
+        </dd>
+
+    </dl>
+    <dl class="dl-horizontal">
+        <dt>
+            CoefOfVar (%)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CoefOfVar)
+        </dd>
+
+        <dt>
+            CoefOfVarWin (%)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.WinCoefOfVar)
+        </dd>
+
+        <dt>
+            CoefOfVarLoss (%)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.LossCoefOfVar)
+        </dd>
+
+    </dl>
+        <dl class="dl-horizontal">
+            <dt>
+                @Html.DisplayNameFor(model => model.MaxDrawDown)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.MaxDrawDownStr)
+            </dd>
+        </dl>
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.NetPrtfToLrgLossRatio)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.NetPrtfToLrgLossRatioStr)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.NetPrtfToMaxDDRatio)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.NetPrtfToMaxDDRatioStr)
+        </dd>
+    </dl>
+    <dl class="dl-horizontal">
+        <dt>
+            Expectancy
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Expectancy)
+        </dd>
+        <dt>
+            ExpectancyPerAvgLoss
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.ExpectancyPerAvgLoss)
+        </dd>
+
+    </dl>
+
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.ProfitFactor)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ProfitFactorStr)
+        </dd>
+    </dl>
+    <p>
+       @Html.ActionLink("Back To Chart", "Chart", "Deals", new
+       {
+           account = ViewBag.Account,
+           symbol = ViewBag.Symbol,
+           ticker = ViewBag.Ticker,
+           strategy = ViewBag.Strategy,
+           timeInt = ViewBag.TimeInt,
+           searchString = ViewBag.SearchString,
+           lastDayChecked = ViewBag.LastDayChecked,
+           //charttype = ViewBag.LastDayChecked ? 10 : 1
+           charttype = ViewBag.ChartType
+       }, null)
+        @Html.ActionLink("Back To Deals", "Index", "Deals", new
+       {
+           accountList = ViewBag.Account,
+           symbolList = ViewBag.Symbol,
+           tickerList = ViewBag.Ticker,
+           strategyList = ViewBag.Strategy,
+           timeIntList = ViewBag.TimeInt,
+           searchString = ViewBag.SearchString,
+           lastDayChecked = ViewBag.LastDayChecked,
+           //charttype = ViewBag.LastDayChecked ? 10 : 1
+           charttype = ViewBag.ChartType
+       }, null)
+    </p>
+</div>
+
+
+
+

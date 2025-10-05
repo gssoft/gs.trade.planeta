@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ArrayOfString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <!--<string>D:\VC\1303\GS.Trade.Dde\bin\Debug\GS.Trade.Dde.dll</string>--> 
+  <!--<string>D:\VC\1303\GS.Trade.Data\bin\Debug\GS.Trade.Data.dll</string>-->
+  <string>D:\VC\1305\gs.trade\GS.Trade.Strategies\bin\Debug\GS.Trade.Strategies.dll</string>
+</ArrayOfString>

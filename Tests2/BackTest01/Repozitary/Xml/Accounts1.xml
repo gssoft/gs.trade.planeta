@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ArrayOfAccount xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Account>
+    <Key>Quik.Open.Real</Key>
+    <Name>Quik.Open.Real</Name>
+    <Code>SPBFUT00S98</Code>
+  </Account>
+  <Account>
+    <Key>QuikJunior.Open</Key>
+    <Name>QuikJunior.Open</Name>
+    <Code>SPBFUT00082</Code>
+  </Account>
+  <Account>
+    <Key>Quik.Vtb24.Real</Key>
+    <Name>Quik.Vtb24.Real</Name>
+    <Code>SPBFUT00S98</Code>
+  </Account>
+</ArrayOfAccount>

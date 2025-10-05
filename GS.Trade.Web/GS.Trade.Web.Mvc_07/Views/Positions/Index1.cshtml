@@ -1,0 +1,147 @@
+﻿@*@using GS.Trade.Trades*@
+@model IEnumerable<GS.Trade.DataBase.Model.Position>
+
+
+@*<p>
+    @Html.ActionLink("Totals", "Index", "Totals")
+</p>*@
+<p>
+    @Html.ActionLink("Positions", "Index", "Positions") |
+    @Html.ActionLink("Accounts", "AccountsTickers", "Positions") |
+    @Html.ActionLink("Accounts & Strategies", "AccountsTickersStrategies", "Positions")
+</p>
+<p>
+    <h5><b>@ViewBag.FullTitle</b></h5>
+</p>
+@*<p>
+        @Html.ActionLink("Create New", "Create")
+    </p>*@
+<table class="table">
+    <tr>
+        <th>
+            Account
+        </th>
+        <th>
+            Ticker
+        </th>
+        <th>
+            @*@Html.DisplayNameFor(model => model.Strategy.Key)*@
+            Strategy
+        </th>
+        <th>
+            TimeInt
+        </th>
+        @*<th>
+                @Html.DisplayNameFor(model => model.Key)
+            </th>*@
+        <th>
+            @*@Html.DisplayNameFor(model => model.Operation)*@
+            Side
+        </th>
+        @*<th>
+            @Html.DisplayNameFor(model => model.Status)
+        </th>*@
+        <th>
+            @* @Html.DisplayNameFor(model => model.Quantity)*@
+            Qty
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Price1)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Price2)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.PnL)
+        </th>
+        @*<th>
+                @Html.DisplayNameFor(model => model.PnL3)
+            </th>*@
+        <th>
+            @Html.DisplayNameFor(model => model.FirstTradeDT)
+        </th>
+        @*<th>
+                @Html.DisplayNameFor(model => model.FirstTradeNumber)
+            </th>*@
+        <th>
+            @Html.DisplayNameFor(model => model.LastTradeDT)
+        </th>
+        @*<th>
+                @Html.DisplayNameFor(model => model.LastTradeNumber)
+            </th>*@
+        @*<th>
+                @Html.DisplayNameFor(model => model.Created)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Modified)
+            </th>*@
+        <th></th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Strategy.Account.Code)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Strategy.Ticker.Code)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Strategy.Code)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Strategy.TimeInt)
+            </td>
+            @*<td>
+                    @Html.DisplayFor(modelItem => item.Key)
+                </td>*@
+            <td>
+                @Html.DisplayFor(modelItem => item.Operation)
+
+            </td>
+            @*<td>
+                @Html.DisplayFor(modelItem => item.Status)
+            </td>*@
+            <td>
+                @Html.DisplayFor(modelItem => item.Quantity)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Price1)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Price2)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.PnL)
+            </td>
+            @*<td>
+                    @Html.DisplayFor(modelItem => item.PnL3)
+                </td>*@
+            <td>
+                @Html.DisplayFor(modelItem => item.FirstTradeDT)
+            </td>
+            @*<td>
+                    @Html.DisplayFor(modelItem => item.FirstTradeNumber)
+                </td>*@
+            <td>
+                @Html.DisplayFor(modelItem => item.LastTradeDT)
+            </td>
+            @*<td>
+                    @Html.DisplayFor(modelItem => item.LastTradeNumber)
+                </td>*@
+            @*<td>
+                    @Html.DisplayFor(modelItem => item.Created)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Modified)
+                </td>*@
+            <td>
+                @Html.ActionLink("Edit", "Edit", new { id = item.Id }) 
+                @Html.ActionLink("Details", "Details", new { id = item.Id }) 
+                @Html.ActionLink("Delete", "Delete", new { id = item.Id })
+            </td>
+        </tr>
+    }
+
+</table>

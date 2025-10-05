@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ArrayOfString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+ <!--<string>738T_01.xml</string>--> 
+ <!--<string>738T_180213.xml</string>-->
+  <!-- 03.04.2018 --> 
+ <!--<string>Z736_RIM8_PE_403_1_5-60_01.xml</string>
+ <string>Z736_RIM8_PE_401_1_5-60_01.xml</string>-->
+  
+  <!-- 06.04.2018 -->
+  <!--<string>Z738F_RIM8_PE_401_1_05.xml</string>
+  <string>Z738F_RIM8_PE_401_1_10.xml</string>
+  <string>Z738F_RIM8_PE_401_1_15.xml</string>-->
+
+  <!--<string>Z738F_SRM8_PE_401_1_05.xml</string>
+  <string>Z738F_SRM8_PE_401_1_10.xml</string>
+  <string>Z738F_SRM8_PE_401_1_15.xml</string>-->
+
+  <!-- 2018.05.16 -->
+  <string>Z73523_M5_RIM8_150_5-15_180510.xml</string>
+  <string>Z73523_M5_RIU8_150_5-15_180510.xml</string>
+  <!-- 12.04.2018 -->
+  <string>Z73521_RIM8_5_60_01.xml</string>
+  <string>Z73521_RIU8_5_60_01.xml</string>
+
+</ArrayOfString>
+

@@ -1,0 +1,81 @@
+﻿@model GS.DataBase.Configuration.Model.Configuration
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Configuration</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            ID
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Id)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Code)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Code)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Enabled)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Enabled)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Token)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Token)
+        </dd>
+        <dt>
+            ExpireDate
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.ExpireDate)
+        </dd>
+        <dt>
+            IncExpireDays
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.IncDaysExpire)
+        <dt>
+            @Html.DisplayNameFor(model => model.Catalog)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Catalog)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CreatedDT)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CreatedDT)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ModifiedDT)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ModifiedDT)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.Id }) |
+    @Html.ActionLink("Configurations", "Index") |
+    @Html.ActionLink("Items", "Index", "CfgItems", new { cnfId = Model.Id },null)
+
+</p>

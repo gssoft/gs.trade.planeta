@@ -1,0 +1,52 @@
+﻿<Window x:Class="GS.Trade.Windows.OrdersFilledWindow2"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:windows="clr-namespace:GS.Trade.Windows"
+        Title="OrdersFilled.Canceled.Rejected" Height="300" Width="800"  Loaded="WindowLoaded" Closed="WindowClosed">
+    <Window.Resources>
+        <Style x:Key="AlternateStyle">
+            <Setter Property="ListViewItem.Background" Value="#e1dfdc" />
+        </Style>
+    </Window.Resources>
+    <Grid>
+        <ListView Margin="0" Name="LstOrdersCompleted">
+            <ListView.View>
+                <GridView>
+                    <GridView.Columns>
+                        <GridViewColumn Header="DateTime" DisplayMemberBinding="{Binding Path=TimeDateString}" />
+                        <GridViewColumn Header="Status" DisplayMemberBinding="{Binding Path=StatusString}" />
+                        <GridViewColumn Header="Error" DisplayMemberBinding="{Binding Path=ErrorMsg}" />
+                        <GridViewColumn Header="Number" DisplayMemberBinding="{Binding Path=Number}" />
+                        <GridViewColumn Header="TransID" DisplayMemberBinding="{Binding Path=TransId}" />
+                        <GridViewColumn Header="Account" DisplayMemberBinding="{Binding Path=AccountCode}" />
+                        <GridViewColumn Header="Strategy" DisplayMemberBinding="{Binding Path=Strategy.StrategyTimeIntTickerString}" />
+                        <GridViewColumn Header="Ticker" DisplayMemberBinding="{Binding Path=TickerCode}" />
+                        <GridViewColumn Header="Operation" DisplayMemberBinding="{Binding Path=OperationString}" />
+                        <GridViewColumn Header="OrderType" DisplayMemberBinding="{Binding Path=OrderType}" />
+                        <GridViewColumn Header="Quantity" DisplayMemberBinding="{Binding Path=PositionQuantityString}" />
+                        <GridViewColumn Header="Rest" DisplayMemberBinding="{Binding Path=PositionRestString}" />
+                        <GridViewColumn Header="StopPrice" DisplayMemberBinding="{Binding Path=StopPriceString}" />
+                        <GridViewColumn Header="LimitPrice" DisplayMemberBinding="{Binding Path=LimitPriceString}" />
+                        <GridViewColumn Header="Amount" DisplayMemberBinding="{Binding Path=AmountString}" />
+                        <GridViewColumn Header="Status" DisplayMemberBinding="{Binding Path=StatusString}" />
+                        <GridViewColumn Header="TransMessage" DisplayMemberBinding="{Binding Path=TrMessage}" />
+                        <GridViewColumn Header="Error" DisplayMemberBinding="{Binding Path=ErrorMsg}" />
+                        <GridViewColumn Header="Activate" DisplayMemberBinding="{Binding Path=ActivateTimeString}" />
+                        <GridViewColumn Header="Expire" DisplayMemberBinding="{Binding Path=ExpireDateString}" />
+                        <!--
+                        <GridViewColumn Header="CancelTime" DisplayMemberBinding="{Binding Path=CancelTimeString}" />
+                        -->
+                        <GridViewColumn Header="Comment" DisplayMemberBinding="{Binding Path=Comment}" />
+                        <GridViewColumn Header="Mode" DisplayMemberBinding="{Binding Path=ModeString}" />
+
+
+                    </GridView.Columns>
+                </GridView>
+            </ListView.View>
+
+            <ListView.ItemContainerStyleSelector>
+                <windows:AlternatingRowStyleSelector AlternateStyle="{StaticResource AlternateStyle}" />
+            </ListView.ItemContainerStyleSelector>
+        </ListView>
+    </Grid>
+</Window>

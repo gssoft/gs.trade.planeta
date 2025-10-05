@@ -1,0 +1,147 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Collections.ObjectModel;
+using System.Linq;
+using System.Text;
+using System.Threading;
+using System.Threading.Tasks;
+using System.Windows;
+using System.Windows.Controls;
+using System.Windows.Data;
+using System.Windows.Documents;
+using System.Windows.Input;
+using System.Windows.Media;
+using System.Windows.Media.Imaging;
+using System.Windows.Shapes;
+using GS.Collections;
+using GS.Events;
+using GS.Interfaces;
+using GS.Process;
+using GS.Trade.Interfaces;
+using GS.Trade.TradeTerminals64;
+using EventArgs = System.EventArgs;
+
+namespace GS.Trade.Windows
+{
+    /// <summary>
+    /// Логика взаимодействия для Transactions_Window.xaml
+    /// </summary>
+    public partial class TransactionsWindow2 : Window
+    {
+        //private const int CapasityVal = 1024;
+        //private const int CapasityLimitVal = 256;
+
+        private const int CapasityVal = 256;
+        private const int CapasityLimitVal = 64;
+
+        //Window The_MainWindow = null;
+        private IEventLog _evl;
+        private ITradeContext _trContext;
+
+        public ObservableCollection<IQuikTransaction> Transactions;
+        protected ObservableListCollection<ulong, IQuikTransaction> Items { get; set; }
+
+        private List<IQuikTransaction> ItemList;
+
+        private SimpleProcess _observeProcess;
+        public TransactionsWindow2()
+        {
+            InitializeComponent();
+        }
+           private void CheckNullReference()
+        {
+            if (_evl == null || _trContext == null)
+            {
+                throw new NullReferenceException("TransactionsWindow(EventLog = null or Positions == null)");
+            }
+        }
+        public void Init(IEventLog eventlog, ITradeContext tx)
+        {
+            _evl = eventlog;
+            _trContext = tx;
+
+            Transactions = new ObservableCollection<IQuikTransaction>();
+            ItemList = new List<IQuikTransaction>();
+
+            Items = new ObservableListCollection<ulong, IQuikTransaction>
+            {
+                Code = "TransactionWindowCollection",
+                Name = "TransactionWindowCollection",
+                Category = "Transactions",
+                Entity = "Transaction",
+                Capasity = CapasityVal,
+                CapasityLimit = CapasityLimitVal,
+                IsReversed = true,
+                EventLog = _trContext.EventLog,
+                IsEvlEnabled = false
+            };
+
+            CheckNullReference();
+
+            _evl.AddItem(EvlResult.SUCCESS, EvlSubject.TRADING, "UI Windows", "Transactions Window", "Initialization", "", "");
+            //_observeProcess = new SimpleProcess("PositionsClosed Observer Process", 5, 3, CallbackGetPositionsClosedToObserve, _evl);
+            
+            Refresh();
+        }
+        public void Clear()
+        {
+            lock (Transactions)
+            {
+                Transactions.Clear();
+            }
+        }
+        public void Refresh()
+        {
+            ItemList.Clear();
+            //_trContext.GetPositionClosed(0, ItemList);
+            lock (Transactions)
+            {
+                foreach (var t in ItemList)
+                {
+                    Transactions.Insert(0, t);
+                }
+            }
+        }
+        private void CallbackNewTransaction(object sender, IEventArgs args)
+        {
+            if (args.Object == null)
+                return;
+            if (args.OperationKey != "TRANSACTIONS.TRANSACTION.ADD")
+                return;
+            var t = args.Object as IQuikTransaction;
+            if (t == null)
+                return;
+            Dispatcher.BeginInvoke((ThreadStart)(() =>
+            {
+                //lock (Transactions)
+                //{
+                //    Transactions.Insert(0, t);
+                //}
+                Items.Add(t);
+            }
+                ));
+        }
+        private void WindowLoaded(object sender, RoutedEventArgs e)
+        {
+            CheckNullReference();
+
+            //TransactionListView.ItemsSource = Transactions;
+            TransactionListView.ItemsSource = Items.Collection;
+            //_observeProcess.Start();
+            // _positions.NeedToObserverEvent += CallbackGetPositionsClosedToObserve;
+            if (_trContext != null)
+                _trContext.EventHub.Subscribe("Transactions", "Transaction", CallbackNewTransaction );
+        }
+        private void WindowClosed(object sender, EventArgs e)
+        {
+            //_observeProcess.Stop();
+            if (_trContext != null)
+                _trContext.EventHub.UnSubscribe("Transactions", "Transaction", CallbackNewTransaction );
+        }
+        //private void CallbackTransactionsClosedToObserve()
+        //{
+        //    Dispatcher.BeginInvoke((ThreadStart)(() => _trContext.GetTransactions()));
+        //}
+    }
+    
+}

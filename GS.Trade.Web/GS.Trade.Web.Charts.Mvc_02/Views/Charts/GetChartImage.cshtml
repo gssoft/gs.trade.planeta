@@ -1,0 +1,33 @@
+﻿
+@{
+    ViewBag.Title = "GetChartImage";
+}
+<script src="~/Scripts/jquery-1.10.2.min.js"></script>
+<script>
+    $(document).ready(function () {
+
+        setTimeout(loadImage, 1000);
+
+        function alertFunc() {
+            //alert("Hello Again");
+            //console.debug("Hello from Ready");
+            window.location.reload();
+            // setTimeout(alertFunc, 15000);
+        }
+        function loadImage() {
+            //$("#divChartImage").load('@(Url.Action("GetChartImage","Charts",null))');
+            //$("#divChartImage").load('@(Url.Action("GetChartImagePartial","Charts",null))');
+            //console.debug("load image");
+            $("#divChartImage").load('@( Url.Action("ChartImage3", "Charts", null))');
+            setTimeout(loadImage, 1000);
+        }
+    });
+</script>
+
+<h2>GetChartImage</h2>
+
+<div id="divChartImage">
+    @{Html.RenderAction("ChartImage3", "Charts");}
+    @*@{Html.RenderPartial("GetChartImagePartial");}*@
+</div>
+

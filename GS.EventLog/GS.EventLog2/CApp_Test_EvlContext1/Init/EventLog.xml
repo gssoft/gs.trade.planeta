@@ -1,0 +1,147 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<EventLogTypes>
+  <EventLogs enabled="true" ns="GS.EventLog" as="GS.EventLog">
+    <Code>EventLogs</Code>
+    <Name>EventLogs</Name>
+    <IsEnabled>true</IsEnabled>
+    <XPath>EventLogList</XPath>
+    <IsQueueEnabled>false</IsQueueEnabled>
+  </EventLogs>
+  <EventLogList>
+    <EventLog  enabled = "false">
+      <Name>Memory EventLog</Name>
+      <IsEnabled>false</IsEnabled>
+      <IsAsync>false</IsAsync>
+      <IsPrimary>false</IsPrimary>
+      <IsSaveEnabled>false</IsSaveEnabled>
+      <IsUIEnabled>false</IsUIEnabled>
+      <Capasity>1024</Capasity>
+      <CapasityLimit>2048</CapasityLimit>
+    </EventLog>
+    <ConsoleEventLog enabled = "true">
+      <Name>Console EventLog</Name>
+      <IsEnabled>true</IsEnabled>
+      <IsAsync>false</IsAsync>
+      <IsPrimary>true</IsPrimary>
+      <IsSaveEnabled>false</IsSaveEnabled>
+      <IsUIEnabled>false</IsUIEnabled>
+    </ConsoleEventLog>
+    <SpeakerEventLog enabled = "true">
+      <Name>Speaker EventLog</Name>
+      <IsEnabled>true</IsEnabled>
+      <IsAsync>false</IsAsync>
+      <IsPrimary>false</IsPrimary>
+      <IsSaveEnabled>false</IsSaveEnabled>
+      <IsUIEnabled>false</IsUIEnabled>
+      <Rate>-2</Rate>
+    </SpeakerEventLog>
+    <FileEventLog enabled = "false">
+      <Name>File EventLog</Name>
+      <FileName>FileEventLog.txt</FileName>
+      <IsEnabled>false</IsEnabled>
+      <IsAsync>false</IsAsync>
+      <IsPrimary>false</IsPrimary>
+      <IsSaveEnabled>false</IsSaveEnabled>
+      <IsUIEnabled>false</IsUIEnabled>
+    </FileEventLog>
+    <WebEventLog enabled = "false">
+      <Name>Web EventLog</Name>
+      <EventLogKey>GS.Trade.EventLog</EventLogKey>
+      <BaseAddress>http://localhost/WebEventLog_02/</BaseAddress>
+      <RequestHeader>application/xml</RequestHeader>
+      <ApiEventLogs>api/eventlogs/</ApiEventLogs>
+      <ApiEventLogItems>api/eventlogitems/</ApiEventLogItems>
+      <IsEnabled>false</IsEnabled>
+      <IsAsync>true</IsAsync>
+      <IsPrimary>false</IsPrimary>
+      <IsSaveEnabled>true</IsSaveEnabled>
+      <IsUIEnabled>false</IsUIEnabled>
+    </WebEventLog>
+    <WebEventLog1 enabled = "false">
+      <Code>WebEventLog</Code>
+      <Name>Web EventLog</Name>
+      <EventLogKey>GS.Trade.EventLog</EventLogKey>
+      <BaseAddress>http://localhost:8082/</BaseAddress>
+      <RequestHeader>application/xml</RequestHeader>
+      <ApiEventLogs>api/eventlogs/</ApiEventLogs>
+      <!--<ApiEventLogItems>api/eventlogitems/</ApiEventLogItems>-->
+      <ApiEventLogItems>api/eventlogitemsasync/</ApiEventLogItems>
+      <IsEnabled>true</IsEnabled>
+      <IsAsync>false</IsAsync>
+      <IsPrimary>false</IsPrimary>
+      <IsSaveEnabled>true</IsSaveEnabled>
+      <IsUIEnabled>false</IsUIEnabled>
+    </WebEventLog1>
+    <WebEventLog2 enabled = "true">
+      <Code>WebEventLog</Code>
+      <Name>Web EventLog</Name>
+      <EventLogKey>GS.Trade.EventLog</EventLogKey>
+      <BaseAddress>http://localhost:8082/</BaseAddress>
+      <RequestHeader>application/xml</RequestHeader>
+      <ApiEventLogs>api/eventlogs/</ApiEventLogs>
+      <!--<ApiEventLogItems>api/eventlogitems/</ApiEventLogItems>-->
+      <ApiEventLogItems>api/eventlogitemsasync/</ApiEventLogItems>
+      <ErrorPostTimeOut>15</ErrorPostTimeOut>
+      <IsEnabled>true</IsEnabled>
+      <IsAsync>false</IsAsync>
+      <IsPrimary>false</IsPrimary>
+      <IsSaveEnabled>true</IsSaveEnabled>
+      <IsUIEnabled>false</IsUIEnabled>
+    </WebEventLog2>
+    
+    <DbEventLog enabled = "false">
+      <Name>DataBase.EventLog</Name>
+      <DataBaseName>EventLog</DataBaseName>
+      <EventLogKey>GS.Trade.EventLog</EventLogKey>
+      <Code>GS.Trade.EventLog</Code>
+      <!--<EventLogKey>QuikFinamReal</EventLogKey>
+      <Code>QuikFinamReal</Code>-->
+      <!--
+      <EventLogKey>QuikOpenReal</EventLogKey>
+      <Code>QuikOpenReal</Code>
+      -->
+      <!--
+      <EventLogKey>Quik.Open.Sim</EventLogKey>
+      <Code>Quik.Vtb.Sim</Code>
+      -->
+       <!--
+      <EventLogKey>Quik.Fin.BkStandard</EventLogKey>
+      <Code>Quik.Fin.BkStandard</Code>
+      -->
+      <TimeOut>300</TimeOut>
+      <IsEnabled>true</IsEnabled>
+      <IsPrimary>false</IsPrimary>
+      <IsAsync>false</IsAsync>
+      <IsSaveEnabled>true</IsSaveEnabled>
+      <IsUIEnabled>false</IsUIEnabled>
+    </DbEventLog>
+    <DbEventLog1 enabled = "false">
+      <Code>GS.Trade.EventLog</Code>
+      <Name>DataBase.EventLog</Name>
+      <Description>GS.Trade.EventLog in DataBase.EventLog</Description>
+      <DataBaseName>EventLog1</DataBaseName>
+      <EventLogKey>GS.Trade.EventLog</EventLogKey>
+      <TimeOut>300</TimeOut>
+      <IsEnabled>true</IsEnabled>
+      <IsQueueEnabled>false</IsQueueEnabled>
+      <IsPrimary>false</IsPrimary>
+      <IsAsync>false</IsAsync>
+      <IsSaveEnabled>true</IsSaveEnabled>
+      <IsUIEnabled>false</IsUIEnabled>
+    </DbEventLog1>
+    <DbEventLog2 enabled = "false">
+      <Code>GS.Trade.EventLog</Code>
+      <Name>DataBase.EventLog</Name>
+      <Description>GS.Trade.EventLog in DataBase.EventLog</Description>
+      <DataBaseName>EventLog1</DataBaseName>
+      <EventLogKey>GS.Trade.EventLog</EventLogKey>
+      <TimeOut>300</TimeOut>
+      <IsEnabled>true</IsEnabled>
+      <IsQueueEnabled>true</IsQueueEnabled>
+      <IsPrimary>false</IsPrimary>
+      <IsAsync>false</IsAsync>
+      <IsSaveEnabled>true</IsSaveEnabled>
+      <IsUIEnabled>false</IsUIEnabled>
+    </DbEventLog2>
+  </EventLogList>
+</EventLogTypes>

@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ArrayOfString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <string>Z735\120\220\Test_Z735_PE_SIU5_01.xml</string>
+  <string>Z735\120\220\Test_Z735_PE.M5_SIU5_01.xml</string>
+  <string>Z735\120\220\Test_Z735_FE_SIU5_01.xml</string>
+  <string>Z735\120\220\Test_Z735_FE.M5_SIU5_01.xml</string>
+  <string>Z735\120\220\Test_Z735_PE_SIZ5_01.xml</string>
+  <string>Z735\120\220\Test_Z735_PE.M5_SIZ5_01.xml</string>
+  <string>Z735\120\220\Test_Z735_FE_SIZ5_01.xml</string>
+  <string>Z735\120\220\Test_Z735_FE.M5_SIZ5_01.xml</string>
+</ArrayOfString>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<EventHubOfArrayOfString>
+  <IsEnabled>false</IsEnabled>
+  <IsEvlEnabled>false</IsEvlEnabled>
+  <Capasity>0</Capasity>
+  <CapasityLimit>0</CapasityLimit>
+  <IsReversed>false</IsReversed>
+  <IsQueueEnabled>false</IsQueueEnabled>
+  <IsProcessTaskInUse>false</IsProcessTaskInUse>
+  <EventHubItems>
+    <EventHubItemOfArrayOfString>
+      <Code>QuikDdeServer.Quotes</Code>
+    </EventHubItemOfArrayOfString>
+    <EventHubItemOfArrayOfString>
+      <Code>QuikDdeServer.TickerInfo</Code>
+    </EventHubItemOfArrayOfString>
+    <EventHubItemOfArrayOfString>
+      <Code>QuikDdeServer.OptionDesk</Code>
+    </EventHubItemOfArrayOfString>
+  </EventHubItems>/>
+</EventHubOfArrayOfString>

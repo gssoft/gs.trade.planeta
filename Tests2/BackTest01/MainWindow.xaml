@@ -1,0 +1,60 @@
+﻿<Window x:Class="BackTest01.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Back Test Window" Height="390" Width="387.207" Loaded="WindowLoaded" Closed="WindowClosed" Closing="WindowClosing">
+    <Grid Name="MyGrid" Margin="1">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="173*"/>
+            <RowDefinition Height="148*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition MinWidth="100"></ColumnDefinition>
+            <ColumnDefinition MinWidth="100"></ColumnDefinition>
+            <ColumnDefinition MinWidth="100"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <StackPanel Name="StackPanelTicker" Grid.Column="0" Margin="1" Grid.RowSpan="2">
+            <Label Name="Tickers" Margin="1" HorizontalAlignment="Center">Strategy Chart</Label>
+            <ComboBox Name="ComboBoxTickersCollection" Margin="1" DisplayMemberPath="Code"  SelectedIndex="0"
+                      SelectionChanged="TickerCollectionSelectChanged">
+            </ComboBox>
+            <ComboBox Name="ComboBoxBarSeriesCollection" Margin="1" DisplayMemberPath="TimeIntSeconds" SelectedIndex="1"
+                      SelectionChanged="BarSeriesCollectionSelectionChanged"></ComboBox>
+            <ComboBox Name="ComboBoxStrategyCollection" Margin="1" DisplayMemberPath="Code" SelectedIndex="0"
+                      SelectionChanged="StrategyCollectionSelectionChanged"></ComboBox>
+            <ComboBox Name="ComboBoxTestModes" Margin="1" DisplayMemberPath="Value" SelectedIndex="0"
+                      SelectionChanged="TestModeSelectionChanged"></ComboBox>
+            <ComboBox Name="ComboBoxExecutionBarModes" Margin="1" DisplayMemberPath="Value" SelectedIndex="0"
+                      SelectionChanged="ExecutionBarModeSelectionChanged"></ComboBox>
+        </StackPanel>
+        <StackPanel Name="StackPanelLastQuote" Grid.Column="1" Margin="1" Grid.RowSpan="2">
+            <Label Name="Quote" Margin="1" HorizontalAlignment="Center">Back Testing</Label>
+            <Button Margin="1" Click="BtClearAllClick">Clear All</Button>
+            <ToggleButton Name ="BtExecMode" Margin="1" Click="BtExecModeClick" ClickMode="Press">Optimistic Now</ToggleButton>
+            <ToggleButton Name ="BtBarTick" Margin="1" Click="BtBarClick" ClickMode="Press">Every Bar</ToggleButton>
+            <ToggleButton Name ="BtStartStop" Margin="1" Click="ToggleButtonClick" ClickMode="Press">Start Tests</ToggleButton>
+            <TextBox Name="TradesToTest" Margin="1" Text="{Binding Path=TradesNumber, Mode=TwoWay}"></TextBox>
+            <TextBox Name="RandomStartValue" Margin="1" Text="{Binding Path=StartValue, Mode=TwoWay}"></TextBox>
+            <Label Name="TestLoopDelay" Margin="1" HorizontalAlignment="Center">Test Loop Delay</Label>
+            <TextBox Name="LoopDelayCtrl" Margin="1" Text="{Binding Path=LoopDelay, Mode=TwoWay}"></TextBox>
+            <!--
+            <TextBox Name="ChartObserverInt" Margin="1" Text="{Binding Path=ChartObserverInterval, Mode=TwoWay}" TextChanged="ChartObserverInt_OnTextChanged"></TextBox>
+            -->
+            <Label Name="ChartObserverDelay" Margin="1" HorizontalAlignment="Center">Chart Observer Delay</Label>
+            <TextBox Name="ChartObserverInt" Margin="1" Text="{Binding Path=TempChartObserverInterval, Mode=TwoWay}"></TextBox>
+
+            <Label Name="SpreadInMinMovesLabel" Margin="1" HorizontalAlignment="Center">Spread In MinMoves</Label>
+            <TextBox Name="SpreadInMinMovesTextBox" Margin="1" Text="{Binding Path=SpreadInMinMoves, Mode=TwoWay}"></TextBox>
+
+            <Button  Name="BtApply"  Margin="1" Click="BtAppLyClick">Apply</Button>
+            <Button  Name="BtSetDefault"  Margin="1" Click="BtSetDefaultClick">Restore Default</Button>
+            <Button  Name="BtClear"  Margin="1" Click="BtClearClick">Clear To Max Speed</Button>
+            <CheckBox
+	            Content="Same TradesNumber"
+	            HorizontalAlignment="Left"
+	            Margin="3,10,0,0"
+	            VerticalAlignment="Top"
+	            Checked="CheckBox_Checked"
+	            Unchecked="CheckBox_Unchecked"/>
+        </StackPanel>
+    </Grid>
+</Window>

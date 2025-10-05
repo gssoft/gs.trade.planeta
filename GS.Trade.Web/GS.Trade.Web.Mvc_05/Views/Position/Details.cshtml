@@ -1,0 +1,162 @@
+﻿@model GS.Trade.DataBase.Model.Position
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<fieldset>
+    <legend>Position</legend>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Strategy.Name)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Strategy.Name)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.FirstTradeDT)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.FirstTradeDT)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.FirstTradeNumber)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.FirstTradeNumber)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.LastTradeDT)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.LastTradeDT)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.LastTradeNumber)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.LastTradeNumber)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Quantity)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Quantity)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Price1)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Price1)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Price2)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Price2)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Price3)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Price3)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.PnL3)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.PnL3)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Key)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Key)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Created)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Created)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Modified)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Modified)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Pos)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Pos)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.PnL1)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.PnL1)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.PnL2)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.PnL2)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.IsOpened)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.IsOpened)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.IsClosed)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.IsClosed)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.IsLong)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.IsLong)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.IsShort)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.IsShort)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.IsNeutral)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.IsNeutral)
+    </div>
+</fieldset>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id=Model.Id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

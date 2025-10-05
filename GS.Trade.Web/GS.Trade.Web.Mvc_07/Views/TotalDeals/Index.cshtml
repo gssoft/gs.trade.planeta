@@ -1,0 +1,184 @@
+﻿@model IEnumerable<GS.Trade.Trades.PositionDb2>
+
+<h5><strong>@ViewBag.FullTitle</strong></h5>
+
+@using (Html.BeginForm("Index", "TotalDeals", FormMethod.Get))
+{
+    <table class="table">
+        <tr>
+            <th>Account</th>
+            <th>Symbol</th>
+            <th>Ticker</th>
+            <th>Strategy</th>
+            <th>TimeInt</th>
+            <th>Search</th>
+            <th>LastDay</th>
+            <th></th>
+        </tr>
+        <tr>
+            <td>@Html.DropDownList("accountList", "All")</td>
+            <td>@Html.DropDownList("symbolList", "All")</td>
+            <td>@Html.DropDownList("tickerList", "All")</td>
+            <td>@Html.DropDownList("strategyList", "All")</td>
+            <td>@Html.DropDownList("timeIntList", "All")</td>
+            <td>@Html.TextBox("searchString")</td>
+            <td>@Html.CheckBox("lastDayChecked", true)</td>
+            <td><input class="btn-primary" type="submit" value="Filter" /></td>
+        </tr>
+        <tr>
+            <td>@Html.CheckBox("accountGroup", true)</td>
+            <td>@Html.CheckBox("symbolGroup", true)</td>
+            <td>@Html.CheckBox("tickerGroup", true)</td>
+            <td>@Html.CheckBox("strategyGroup", true)</td>
+            <td>@Html.CheckBox("timeIntGroup", false)</td>
+            <td></td>
+            <td></td>
+            <td><input class="btn-warning" type="submit" value="Clear" /></td>
+        </tr>
+    </table>
+}
+
+<table class="table">
+    <tr>
+        <th>
+            Account
+        </th>
+        <th>Symbol</th>
+        <th>
+            Ticker
+        </th>
+        <th>
+            Strategy
+        </th>
+        <th>
+            TimeInt
+        </th>
+        <th>
+            Qty
+        </th>
+        <th>
+            @*P&amp;L*@
+            @Html.ActionLink("P&L", "Index", new
+            {
+                accountList = ViewBag.Account,
+                symbolList = ViewBag.Symbol,
+                tickerList = ViewBag.Ticker,
+                strategyList = ViewBag.Strategy,
+                timeIntList = ViewBag.TimeInt,
+                searchString = ViewBag.SearchString,
+                lastDayChecked = ViewBag.LastDayChecked,
+                charttype = ViewBag.LastDayChecked != null && ViewBag.LastDayChecked == true ? 10 : 1,
+                
+                accountGroup = ViewBag.AccountGr,
+                symbolGroup = ViewBag.SymbolGr,
+                tickerGroup = ViewBag.TickerGr,
+                strategyGroup = ViewBag.StrategyGr,
+                timeIntGroup = ViewBag.TimeIntGr,
+
+                sortOrder = ViewBag.SortPnL
+            },null)
+        </th>
+        <th>TradeAvg</th>
+        <th>DailyPnL</th>
+        <th>Days</th>
+        <th>
+            FirstTradeDT
+        </th>
+        <th>
+            LastTradeDT
+        </th>
+        @*<th>
+            Count
+        </th>*@
+        <th>Action</th>
+    </tr>
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.AccountCodeEx)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Symbol)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.TickerKey)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.StrategyCodeEx)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.TimeInt)
+            </td>
+            <td>
+                @*@Html.DisplayFor(modelItem => item.Quantity)*@
+                @Html.DisplayFor(modelItem => item.Count)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.PnLFormated)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.TradeAvg1Formated)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.DailyPnLAvgFormated)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.TotalDays)
+            </td>
+            @*<td>
+                    @Html.DisplayFor(modelItem => item.PnL2)
+                </td>*@
+            <td>
+                @Html.DisplayFor(modelItem => item.FirstTradeDT)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.LastTradeDT)
+            </td>
+            @*<td>
+                @Html.DisplayFor(modelItem => item.Count)
+            </td>*@
+            <td>
+                @{
+        ViewBag.Account = item.AccountCodeEx;
+        ViewBag.Ticker = item.TickerKey;
+        ViewBag.Strategy = item.StrategyCodeEx;
+        ViewBag.TimeInt = item.TimeInt;
+                }
+                @Html.ActionLink("Chart", "Chart", "Deals", routeValues: new
+            {
+                account = item.AccountCodeEx != "All" ? item.AccountCodeEx : null,
+                symbol = item.Symbol != "All" ? item.Symbol : null, 
+                ticker = item.TickerKey != "All" ? item.TickerKey : null,
+                strategy = item.StrategyCodeEx != "All" ? item.StrategyCodeEx : null,
+                timeInt = item.TimeInt,
+                searchString = ViewBag.SearchString,
+                lastDayChecked = ViewBag.LastDayChecked,
+                charttype = ViewBag.LastDayChecked != null && ViewBag.LastDayChecked == true ? 10 : 1
+            }, htmlAttributes: null)
+                @Html.ActionLink("Report", "Report", "Deals", routeValues: new
+            {
+                account = item.AccountCodeEx != "All" ? item.AccountCodeEx : null,
+                symbol = item.Symbol != "All" ? item.Symbol : null,
+                ticker = item.TickerKey != "All" ? item.TickerKey : null,
+                strategy = item.StrategyCodeEx != "All" ? item.StrategyCodeEx : null,
+                timeInt = item.TimeInt,
+                searchString = ViewBag.SearchString,
+                lastDayChecked = ViewBag.LastDayChecked,
+                charttype = ViewBag.LastDayChecked != null && ViewBag.LastDayChecked == true ? 10 : 1
+            }, htmlAttributes: null)
+                @Html.ActionLink("Deals", "Index", "Deals", routeValues: new
+            {
+                accountList = item.AccountCodeEx != "All" ? item.AccountCodeEx : null,
+                symbolList = item.Symbol != "All" ? item.Symbol : null,
+                tickerList = item.TickerKey != "All" ? item.TickerKey : null,
+                strategyList = item.StrategyCodeEx != "All" ? item.StrategyCodeEx : null,
+                timeIntList = item.TimeInt,
+                searchString = ViewBag.SearchString,
+                lastDayChecked = ViewBag.LastDayChecked,
+                charttype = ViewBag.LastDayChecked != null && ViewBag.LastDayChecked == true ? 10 : 1
+            }, htmlAttributes: null)
+            </td>
+        </tr>
+    }
+</table>

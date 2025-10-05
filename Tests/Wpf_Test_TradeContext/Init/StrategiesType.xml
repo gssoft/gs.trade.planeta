@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Strategies xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Code>Strategies</Code>
+  <Name>Strategies</Name>
+  <Alias>Strategies</Alias>
+  <!--<IsEnabled>true</IsEnabled>-->
+  <!--<IsEvlEnabled>true</IsEvlEnabled>-->
+  <StrategiesInitXmlFile>Init\736Z_M5_210921.xml</StrategiesInitXmlFile>
+  <StrategiesXmlElementPath>Strategies</StrategiesXmlElementPath>
+</Strategies>

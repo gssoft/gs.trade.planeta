@@ -1,0 +1,398 @@
+﻿<Window x:Class="GS.Trade.Windows.PositionTotalsWindow4"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:windows="clr-namespace:GS.Trade.Windows"
+        Title="PositionTotalsWindow" Height="300" Width="1000" Loaded="WindowLoaded" Closed="WindowClosed">
+    <Window.Resources>
+        <Style x:Key ="TheDefaultStyle" TargetType="ListViewItem">
+            <Setter Property="HorizontalContentAlignment" Value="Stretch" />
+        </Style>
+        <Style x:Key="AlternateStyle">
+            <Setter Property="ListViewItem.HorizontalContentAlignment" Value="Stretch" />
+            <Setter Property="ListViewItem.Background" Value="#e1dfdc" />
+    </Style>
+    </Window.Resources>
+    <Grid>
+        <TabControl SelectionChanged="OnTabControlSelectionChanged">
+            <TabControl.Resources>
+                <Style TargetType="{x:Type Grid}">
+                    <Setter Property="Background" Value="LightGray"/>
+                </Style>
+                <!--<Style TargetType="{x:Type TabPanel}">
+                    <Setter Property="HorizontalAlignment" Value="Center"/>
+                </Style>-->
+            </TabControl.Resources>
+            <TabItem Name ="Total" Header="Total">
+                <ListView Margin="0" Name="lstPositionTotals">
+                    <ListView.View>
+                        <GridView>
+                            <GridView.Columns>
+                                <GridViewColumn Header="LastTradeDT" DisplayMemberBinding="{Binding Path=LastTimeDateString}" />
+                                <!--
+                        <GridViewColumn Header="CloseTradeNumber" DisplayMemberBinding="{Binding Path=LastTradeNumber}" />                                               
+                        <GridViewColumn Header="Key" DisplayMemberBinding="{Binding Path=StrategyKey}" />
+                        -->
+                                <GridViewColumn Header="Account" DisplayMemberBinding="{Binding Path=AccountCode}" />
+                                <GridViewColumn Header="Strategy" DisplayMemberBinding="{Binding Path=StrategyCode}" />
+                                <GridViewColumn Header="TimeInt" DisplayMemberBinding="{Binding Path=StratTimeInt}" />
+                                <GridViewColumn Header="Ticker" DisplayMemberBinding="{Binding Path=TickerCode}" />
+                                <!--
+                        <GridViewColumn Header="Status" DisplayMemberBinding="{Binding Path=StatusString}" />
+                        <GridViewColumn Header="Position" DisplayMemberBinding="{Binding Path=OperationString}" />
+                        -->
+                                <GridViewColumn Header="Quantity">
+                                    <GridViewColumn.CellTemplate>
+                                        <DataTemplate>
+                                            <TextBlock Text="{Binding Path=Quantity}" HorizontalAlignment="Right" />
+                                        </DataTemplate>
+                                    </GridViewColumn.CellTemplate>
+                                </GridViewColumn>
+
+                                <GridViewColumn Header="Profit &amp; Loss">
+                                    <GridViewColumn.CellTemplate>
+                                        <DataTemplate>
+                                            <!--<TextBlock Text="{Binding Path=PnL1String}" HorizontalAlignment="Right" />-->
+                                            <TextBlock Text="{Binding Path=PnL2String}" HorizontalAlignment="Right" />
+                                        </DataTemplate>
+                                    </GridViewColumn.CellTemplate>
+                                </GridViewColumn>
+                                <GridViewColumn Header="TradeAvg">
+                                    <GridViewColumn.CellTemplate>
+                                        <DataTemplate>
+                                            <TextBlock Text="{Binding Path=TradeAvg1Formated}" HorizontalAlignment="Right" />
+                                        </DataTemplate>
+                                    </GridViewColumn.CellTemplate>
+                                </GridViewColumn>
+                                <GridViewColumn Header="Daily P&amp;L Avg">
+                                    <GridViewColumn.CellTemplate>
+                                        <DataTemplate>
+                                            <TextBlock Text="{Binding Path=DailyPnLAvgStr}" HorizontalAlignment="Right" />
+                                        </DataTemplate>
+                                    </GridViewColumn.CellTemplate>
+                                </GridViewColumn>
+                                <GridViewColumn Header="TotalDays">
+                                    <GridViewColumn.CellTemplate>
+                                        <DataTemplate>
+                                            <TextBlock Text="{Binding Path=TotalDays}" HorizontalAlignment="Right" />
+                                        </DataTemplate>
+                                    </GridViewColumn.CellTemplate>
+                                </GridViewColumn>
+                                <GridViewColumn Header="DailyMaxProfit">
+                                    <GridViewColumn.CellTemplate>
+                                        <DataTemplate>
+                                            <TextBlock Text="{Binding Path=TotalDailyMaxProfitStr}" HorizontalAlignment="Right" />
+                                        </DataTemplate>
+                                    </GridViewColumn.CellTemplate>
+                                </GridViewColumn>
+                                <GridViewColumn Header="DailyMaxLoss">
+                                    <GridViewColumn.CellTemplate>
+                                        <DataTemplate>
+                                            <TextBlock Text="{Binding Path=TotalDailyMaxLossStr}" HorizontalAlignment="Right" />
+                                        </DataTemplate>
+                                    </GridViewColumn.CellTemplate>
+                                </GridViewColumn>
+                                <GridViewColumn Header="DailyMaxProfitDT" DisplayMemberBinding="{Binding Path=TotalDailyMaxProfitDTStr}" />
+                                <GridViewColumn Header="DailyMaxLossDT" DisplayMemberBinding="{Binding Path=TotalDailyMaxLossDTStr}" />
+                                <GridViewColumn Header="FirstTradeDT" DisplayMemberBinding="{Binding Path=FirstTradeDTString}" />
+                                <GridViewColumn Header="LastTradeDT" DisplayMemberBinding="{Binding Path=LastTradeDTString}" />
+                                <GridViewColumn Header="FirstTradeNumber" DisplayMemberBinding="{Binding Path=FirstTradeNumber}" />
+                                <GridViewColumn Header="LastTradeNumber" DisplayMemberBinding="{Binding Path=LastTradeNumber}" />
+
+                                <GridViewColumn Header="Comment" DisplayMemberBinding="{Binding Path=Comment}" />
+                                <GridViewColumn Header="Key" DisplayMemberBinding="{Binding Path=Key}" />
+                            </GridView.Columns>
+                        </GridView>
+                    </ListView.View>
+                    <ListView.ItemContainerStyleSelector>
+                        <windows:AlternatingRowStyleSelector AlternateStyle="{StaticResource AlternateStyle}" DefaultStyle="{StaticResource TheDefaultStyle}"/>
+                    </ListView.ItemContainerStyleSelector>
+                </ListView>
+            </TabItem>
+            <TabItem Name="Strategies" Header="Strategies" Loaded="CreateTotalStrategiesReport">
+                <ListView Margin="0" Name="LstPositionTotalSystem">
+                    <ListView.View>
+                        <GridView>
+                            <GridView.Columns>
+                                <GridViewColumn Header="Account" DisplayMemberBinding="{Binding Path=Account}" />
+                                <GridViewColumn Header="Strategy" DisplayMemberBinding="{Binding Path=Strategy}" />
+                                <GridViewColumn Header="Ticker" DisplayMemberBinding="{Binding Path=Ticker}" />
+                                <GridViewColumn Header="TimeInt">
+                                    <GridViewColumn.CellTemplate>
+                                        <DataTemplate>
+                                            <TextBlock Text="{Binding Path=TimeInt}" HorizontalAlignment="Right" />
+                                        </DataTemplate>
+                                    </GridViewColumn.CellTemplate>
+                                </GridViewColumn>
+                                <GridViewColumn Header="Quantity">
+                                    <GridViewColumn.CellTemplate>
+                                        <DataTemplate>
+                                            <TextBlock Text="{Binding Path=Quantity}" HorizontalAlignment="Right" />
+                                        </DataTemplate>
+                                    </GridViewColumn.CellTemplate>
+                                </GridViewColumn>
+                                <GridViewColumn Header="Profit &amp; Loss">
+                                    <GridViewColumn.CellTemplate>
+                                        <DataTemplate>
+                                            <TextBlock Text="{Binding Path=ProfitLossStr}" HorizontalAlignment="Right" />
+                                        </DataTemplate>
+                                    </GridViewColumn.CellTemplate>
+                                </GridViewColumn>
+                                <GridViewColumn Header="TradeAvg">
+                                    <GridViewColumn.CellTemplate>
+                                        <DataTemplate>
+                                            <TextBlock Text="{Binding Path=TradeAvgStr}" HorizontalAlignment="Right" />
+                                        </DataTemplate>
+                                    </GridViewColumn.CellTemplate>
+                                </GridViewColumn>
+                                <GridViewColumn Header="Count">
+                                    <GridViewColumn.CellTemplate>
+                                        <DataTemplate>
+                                            <TextBlock Text="{Binding Path=Count}" HorizontalAlignment="Right" />
+                                        </DataTemplate>
+                                    </GridViewColumn.CellTemplate>
+                                </GridViewColumn>
+                                <GridViewColumn Header="ProfitMax">
+                                    <GridViewColumn.CellTemplate>
+                                        <DataTemplate>
+                                            <TextBlock Text="{Binding Path=ProfitMaxStr}" HorizontalAlignment="Right" />
+                                        </DataTemplate>
+                                    </GridViewColumn.CellTemplate>
+                                </GridViewColumn>
+                                <GridViewColumn Header="ProfitMin">
+                                    <GridViewColumn.CellTemplate>
+                                        <DataTemplate>
+                                            <TextBlock Text="{Binding Path=ProfitMinStr}" HorizontalAlignment="Right" />
+                                        </DataTemplate>
+                                    </GridViewColumn.CellTemplate>
+                                </GridViewColumn>
+                                <GridViewColumn Header="ProfitAvg">
+                                    <GridViewColumn.CellTemplate>
+                                        <DataTemplate>
+                                            <TextBlock Text="{Binding Path=ProfitAvgStr}" HorizontalAlignment="Right" />
+                                        </DataTemplate>
+                                    </GridViewColumn.CellTemplate>
+                                </GridViewColumn>
+                                <GridViewColumn Header="ProfitStDev">
+                                    <GridViewColumn.CellTemplate>
+                                        <DataTemplate>
+                                            <TextBlock Text="{Binding Path=ProfitStdStr}" HorizontalAlignment="Right" />
+                                        </DataTemplate>
+                                    </GridViewColumn.CellTemplate>
+                                </GridViewColumn>
+                                <GridViewColumn Header="DailyMaxProfit">
+                                    <GridViewColumn.CellTemplate>
+                                        <DataTemplate>
+                                            <TextBlock Text="{Binding Path=DailyMaxProfitStr}" HorizontalAlignment="Right" />
+                                        </DataTemplate>
+                                    </GridViewColumn.CellTemplate>
+                                </GridViewColumn>
+                                <GridViewColumn Header="DailyMaxLoss">
+                                    <GridViewColumn.CellTemplate>
+                                        <DataTemplate>
+                                            <TextBlock Text="{Binding Path=DailyMaxLossStr}" HorizontalAlignment="Right" />
+                                        </DataTemplate>
+                                    </GridViewColumn.CellTemplate>
+                                </GridViewColumn>
+                                <GridViewColumn Header="FirstTradeDT" DisplayMemberBinding="{Binding Path=FirstTradeDTStr}" />
+                                <GridViewColumn Header="LastTradeDT" DisplayMemberBinding="{Binding Path=LastTradeDTStr}" />
+                                </GridView.Columns>
+                            </GridView>
+                        </ListView.View>
+                    <ListView.ItemContainerStyleSelector>
+                        <windows:AlternatingRowStyleSelector AlternateStyle="{StaticResource AlternateStyle}" DefaultStyle="{StaticResource TheDefaultStyle}"/>
+                    </ListView.ItemContainerStyleSelector>
+                </ListView>
+            </TabItem>
+            <TabItem Name="Tickers" Header="Tickers" Loaded="CreateTotalTickersReport">
+                <ListView Margin="0" Name="LstTotalTickers">
+                    <ListView.View>
+                        <GridView>
+                            <GridView.Columns>
+                                <GridViewColumn Header="Account" DisplayMemberBinding="{Binding Path=Account}" />
+                                <GridViewColumn Header="Ticker" DisplayMemberBinding="{Binding Path=Ticker}" />
+                                <GridViewColumn Header="Strategy" DisplayMemberBinding="{Binding Path=Strategy}" />
+                                <GridViewColumn Header="TimeInt">
+                                    <GridViewColumn.CellTemplate>
+                                        <DataTemplate>
+                                            <TextBlock Text="{Binding Path=TimeInt}" HorizontalAlignment="Right" />
+                                        </DataTemplate>
+                                    </GridViewColumn.CellTemplate>
+                                </GridViewColumn>
+                                <GridViewColumn Header="Quantity">
+                                    <GridViewColumn.CellTemplate>
+                                        <DataTemplate>
+                                            <TextBlock Text="{Binding Path=Quantity}" HorizontalAlignment="Right" />
+                                        </DataTemplate>
+                                    </GridViewColumn.CellTemplate>
+                                </GridViewColumn>
+                                <GridViewColumn Header="Profit &amp; Loss">
+                                    <GridViewColumn.CellTemplate>
+                                        <DataTemplate>
+                                            <TextBlock Text="{Binding Path=ProfitLossStr}" HorizontalAlignment="Right" />
+                                        </DataTemplate>
+                                    </GridViewColumn.CellTemplate>
+                                </GridViewColumn>
+                                <GridViewColumn Header="TradeAvg">
+                                    <GridViewColumn.CellTemplate>
+                                        <DataTemplate>
+                                            <TextBlock Text="{Binding Path=TradeAvgStr}" HorizontalAlignment="Right" />
+                                        </DataTemplate>
+                                    </GridViewColumn.CellTemplate>
+                                </GridViewColumn>
+                                <GridViewColumn Header="Count">
+                                    <GridViewColumn.CellTemplate>
+                                        <DataTemplate>
+                                            <TextBlock Text="{Binding Path=Count}" HorizontalAlignment="Right" />
+                                        </DataTemplate>
+                                    </GridViewColumn.CellTemplate>
+                                </GridViewColumn>
+                                <GridViewColumn Header="ProfitMax">
+                                    <GridViewColumn.CellTemplate>
+                                        <DataTemplate>
+                                            <TextBlock Text="{Binding Path=ProfitMaxStr}" HorizontalAlignment="Right" />
+                                        </DataTemplate>
+                                    </GridViewColumn.CellTemplate>
+                                </GridViewColumn>
+                                <GridViewColumn Header="ProfitMin">
+                                    <GridViewColumn.CellTemplate>
+                                        <DataTemplate>
+                                            <TextBlock Text="{Binding Path=ProfitMinStr}" HorizontalAlignment="Right" />
+                                        </DataTemplate>
+                                    </GridViewColumn.CellTemplate>
+                                </GridViewColumn>
+                                <GridViewColumn Header="ProfitAvg">
+                                    <GridViewColumn.CellTemplate>
+                                        <DataTemplate>
+                                            <TextBlock Text="{Binding Path=ProfitAvgStr}" HorizontalAlignment="Right" />
+                                        </DataTemplate>
+                                    </GridViewColumn.CellTemplate>
+                                </GridViewColumn>
+                                <GridViewColumn Header="ProfitStDev">
+                                    <GridViewColumn.CellTemplate>
+                                        <DataTemplate>
+                                            <TextBlock Text="{Binding Path=ProfitStdStr}" HorizontalAlignment="Right" />
+                                        </DataTemplate>
+                                    </GridViewColumn.CellTemplate>
+                                </GridViewColumn>
+                                <GridViewColumn Header="DailyMaxProfit">
+                                    <GridViewColumn.CellTemplate>
+                                        <DataTemplate>
+                                            <TextBlock Text="{Binding Path=DailyMaxProfitStr}" HorizontalAlignment="Right" />
+                                        </DataTemplate>
+                                    </GridViewColumn.CellTemplate>
+                                </GridViewColumn>
+                                <GridViewColumn Header="DailyMaxLoss">
+                                    <GridViewColumn.CellTemplate>
+                                        <DataTemplate>
+                                            <TextBlock Text="{Binding Path=DailyMaxLossStr}" HorizontalAlignment="Right" />
+                                        </DataTemplate>
+                                    </GridViewColumn.CellTemplate>
+                                </GridViewColumn>
+                                <GridViewColumn Header="FirstTradeDT" DisplayMemberBinding="{Binding Path=FirstTradeDTStr}" />
+                                <GridViewColumn Header="LastTradeDT" DisplayMemberBinding="{Binding Path=LastTradeDTStr}" />
+                            </GridView.Columns>
+                        </GridView>
+                    </ListView.View>
+                    <ListView.ItemContainerStyleSelector>
+                        <windows:AlternatingRowStyleSelector AlternateStyle="{StaticResource AlternateStyle}" DefaultStyle="{StaticResource TheDefaultStyle}"/>
+                    </ListView.ItemContainerStyleSelector>
+                </ListView>
+            </TabItem>
+            <TabItem Name="TimeInt" Header="TimeInt">
+                <ListView Margin="0" Name="LstTotalTimeInts">
+                    <ListView.View>
+                        <GridView>
+                            <GridView.Columns>
+                                <GridViewColumn Header="Account" DisplayMemberBinding="{Binding Path=Account}" />
+                                <GridViewColumn Header="Ticker" DisplayMemberBinding="{Binding Path=Ticker}" />
+                                <GridViewColumn Header="Strategy" DisplayMemberBinding="{Binding Path=Strategy}" />
+                                <GridViewColumn Header="TimeInt">
+                                    <GridViewColumn.CellTemplate>
+                                        <DataTemplate>
+                                            <TextBlock Text="{Binding Path=TimeInt}" HorizontalAlignment="Right" />
+                                        </DataTemplate>
+                                    </GridViewColumn.CellTemplate>
+                                </GridViewColumn>
+                                <GridViewColumn Header="Quantity">
+                                    <GridViewColumn.CellTemplate>
+                                        <DataTemplate>
+                                            <TextBlock Text="{Binding Path=Quantity}" HorizontalAlignment="Right" />
+                                        </DataTemplate>
+                                    </GridViewColumn.CellTemplate>
+                                </GridViewColumn>
+                                <GridViewColumn Header="Profit &amp; Loss">
+                                    <GridViewColumn.CellTemplate>
+                                        <DataTemplate>
+                                            <TextBlock Text="{Binding Path=ProfitLossStr}" HorizontalAlignment="Right" />
+                                        </DataTemplate>
+                                    </GridViewColumn.CellTemplate>
+                                </GridViewColumn>
+                                <GridViewColumn Header="TradeAvg">
+                                    <GridViewColumn.CellTemplate>
+                                        <DataTemplate>
+                                            <TextBlock Text="{Binding Path=TradeAvgStr}" HorizontalAlignment="Right" />
+                                        </DataTemplate>
+                                    </GridViewColumn.CellTemplate>
+                                </GridViewColumn>
+                                <GridViewColumn Header="Count">
+                                    <GridViewColumn.CellTemplate>
+                                        <DataTemplate>
+                                            <TextBlock Text="{Binding Path=Count}" HorizontalAlignment="Right" />
+                                        </DataTemplate>
+                                    </GridViewColumn.CellTemplate>
+                                </GridViewColumn>
+                                <GridViewColumn Header="ProfitMax">
+                                    <GridViewColumn.CellTemplate>
+                                        <DataTemplate>
+                                            <TextBlock Text="{Binding Path=ProfitMaxStr}" HorizontalAlignment="Right" />
+                                        </DataTemplate>
+                                    </GridViewColumn.CellTemplate>
+                                </GridViewColumn>
+                                <GridViewColumn Header="ProfitMin">
+                                    <GridViewColumn.CellTemplate>
+                                        <DataTemplate>
+                                            <TextBlock Text="{Binding Path=ProfitMinStr}" HorizontalAlignment="Right" />
+                                        </DataTemplate>
+                                    </GridViewColumn.CellTemplate>
+                                </GridViewColumn>
+                                <GridViewColumn Header="ProfitAvg">
+                                    <GridViewColumn.CellTemplate>
+                                        <DataTemplate>
+                                            <TextBlock Text="{Binding Path=ProfitAvgStr}" HorizontalAlignment="Right" />
+                                        </DataTemplate>
+                                    </GridViewColumn.CellTemplate>
+                                </GridViewColumn>
+                                <GridViewColumn Header="ProfitStDev">
+                                    <GridViewColumn.CellTemplate>
+                                        <DataTemplate>
+                                            <TextBlock Text="{Binding Path=ProfitStdStr}" HorizontalAlignment="Right" />
+                                        </DataTemplate>
+                                    </GridViewColumn.CellTemplate>
+                                </GridViewColumn>
+                                <GridViewColumn Header="DailyMaxProfit">
+                                    <GridViewColumn.CellTemplate>
+                                        <DataTemplate>
+                                            <TextBlock Text="{Binding Path=DailyMaxProfitStr}" HorizontalAlignment="Right" />
+                                        </DataTemplate>
+                                    </GridViewColumn.CellTemplate>
+                                </GridViewColumn>
+                                <GridViewColumn Header="DailyMaxLoss">
+                                    <GridViewColumn.CellTemplate>
+                                        <DataTemplate>
+                                            <TextBlock Text="{Binding Path=DailyMaxLossStr}" HorizontalAlignment="Right" />
+                                        </DataTemplate>
+                                    </GridViewColumn.CellTemplate>
+                                </GridViewColumn>
+                                <GridViewColumn Header="FirstTradeDT" DisplayMemberBinding="{Binding Path=FirstTradeDTStr}" />
+                                <GridViewColumn Header="LastTradeDT" DisplayMemberBinding="{Binding Path=LastTradeDTStr}" />
+                            </GridView.Columns>
+                        </GridView>
+                    </ListView.View>
+                    <ListView.ItemContainerStyleSelector>
+                        <windows:AlternatingRowStyleSelector AlternateStyle="{StaticResource AlternateStyle}" DefaultStyle="{StaticResource TheDefaultStyle}"/>
+                    </ListView.ItemContainerStyleSelector>
+                </ListView>
+            </TabItem>
+        </TabControl>
+    </Grid>
+</Window>

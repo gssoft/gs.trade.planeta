@@ -1,0 +1,119 @@
+﻿@model IEnumerable<GS.DataBase.Configuration.Model.Configuration>
+
+@{
+    ViewBag.Title = "Configurations";
+}
+
+<h4>@ViewBag.Title</h4>
+
+<p>
+    <b>
+        @Html.ActionLink("Create New", "Create") |
+        @Html.ActionLink("Enable All", "ToEnable") |
+        @Html.ActionLink("Disable All", "ToDisable") |
+        @Html.ActionLink("Update Tokens", "UpdateToken") |
+        @Html.ActionLink("Update Expire", "UpdateExpireDate")
+    </b>
+    @*@using (Html.BeginForm("Index", "Configurations", FormMethod.Get))
+        {
+                <input class="btn-primary" type="submit" value="Enable All" />
+        }*@
+</p>
+<table class="table">
+    <tr>
+       <th>ID</th>
+        <th>
+            @Html.DisplayNameFor(model => model.Code)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Catalog)
+        </th>
+        @*<th>
+            @Html.DisplayNameFor(model => model.Description)
+        </th>*@
+        <th>
+            @Html.DisplayNameFor(model => model.Enabled)
+        </th>
+        <th>
+            Token
+        </th>
+        <th>
+            Expire
+        </th>    
+        <th>
+            ExpireDate
+        </th>
+        <th>
+            IncDays
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ModifiedDT)
+        </th>
+        <th></th>
+        <th></th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Id)
+        </td>
+       
+        <td>
+            @{
+                string cnfCode = item.Code;
+            }
+            @Html.ActionLink(cnfCode, "Details", "Configurations", new { id = item.Id }, null)
+            @Html.ActionLink("Items", "Index", "CfgItems", new { cnfId = item.Id }, null)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Catalog)
+        </td>
+        @*<td>
+            @Html.DisplayFor(modelItem => item.Description)
+        </td>*@
+        <td>
+            @Html.DisplayFor(modelItem => item.Enabled)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Token)
+        </td>
+        <td>
+            @{
+                var bo = DateTime.Now.Date > item.ExpireDate;
+                string exp = bo ? "Expired" : "Active";
+            }
+            @exp
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ExpireDate)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.IncDaysExpire)
+        </td>
+        @*<td>
+            @Html.DisplayFor(modelItem => item.CreatedDT)
+        </td>*@
+        <td>
+            @Html.DisplayFor(modelItem => item.ModifiedDT)
+        </td>
+    <td>
+        @Html.ActionLink("Items", "Index", "CfgItems", new { cnfId = item.Id }, null) 
+        @Html.ActionLink("Trans", "Index2", "CfgTrans", new { cnfId = item.Id }, null)
+    </td>
+    <td>
+        @Html.ActionLink("Enable", "ToEnable", "Configurations", new { cnfId = item.Id }, null)
+        @Html.ActionLink("Disable", "ToDisable", "Configurations", new { cnfId = item.Id }, null)
+        @Html.ActionLink("Token", "UpdateToken", "Configurations", new { cnfId = item.Id }, null)
+        @Html.ActionLink("Expire", "UpdateExpireDate", "Configurations", new { cnfId = item.Id }, null)
+    </td>
+    <td>
+        @Html.ActionLink("Edit", "Edit", new { id=item.Id })
+        @Html.ActionLink("Details", "Details", new { id=item.Id })
+        @Html.ActionLink("Delete", "Delete", new { id=item.Id })
+    </td>
+    </tr>
+}
+
+</table>

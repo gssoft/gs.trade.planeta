@@ -1,0 +1,142 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{758D4D02-B35B-482F-84A7-D68847155030}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>GS.Trade.Data</RootNamespace>
+    <AssemblyName>GS.Trade.Data</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+    <PlatformTarget>x64</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="GS, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\GS\GS\bin\Debug\GS.dll</HintPath>
+    </Reference>
+    <Reference Include="GS.Moex.Interfaces">
+      <HintPath>..\GS.Moex\GS.Moex.Interfaces\bin\Debug\GS.Moex.Interfaces.dll</HintPath>
+    </Reference>
+    <Reference Include="Moex">
+      <HintPath>..\GS.Moex\Moex\bin\Debug\Moex.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WebClients">
+      <HintPath>..\GS.Web.Clients\WebClients\bin\Debug\WebClients.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Bars\Bar.cs" />
+    <Compile Include="Bars\BarSeries.cs" />
+    <Compile Include="Bars\Bars.cs" />
+    <Compile Include="Bars\Bars001.cs" />
+    <Compile Include="Bars\Extensions.cs" />
+    <Compile Include="Chart\ChartBand.cs" />
+    <Compile Include="Chart\ChartBarSeries.cs" />
+    <Compile Include="Chart\ChartData.cs" />
+    <Compile Include="Chart\ChartLine.cs" />
+    <Compile Include="Chart\ChartLineXY.cs" />
+    <Compile Include="Chart\ChartText.cs" />
+    <Compile Include="Options\OptionDeskItem.cs" />
+    <Compile Include="Studies\Averages\Average.cs" />
+    <Compile Include="Studies\Averages\SAverage.cs" />
+    <Compile Include="Studies\Averages\XAverage.cs" />
+    <Compile Include="Studies\Bands\Band.cs" />
+    <Compile Include="Studies\Bands\Band1.cs" />
+    <Compile Include="Studies\Bands\Band2.cs" />
+    <Compile Include="Studies\Bands\BollingerBand2.cs" />
+    <Compile Include="Studies\Bands\BollingerBand.cs" />
+    <Compile Include="Studies\Bands\StdDevBand.cs" />
+    <Compile Include="Studies\Bands\BollingerBandOld.cs" />
+    <Compile Include="Studies\StdDev.cs" />
+    <Compile Include="Studies\Stochastic\Old\Stochastic.cs" />
+    <Compile Include="Studies\Stochastic\Stochastic.cs" />
+    <Compile Include="Studies\Stochastic\StochasticClassic.cs" />
+    <Compile Include="Studies\Stochastic\StochasticFast.cs" />
+    <Compile Include="Studies\Stochastic\StochasticSlow.cs" />
+    <Compile Include="Tick.cs" />
+    <Compile Include="Studies\Atr.cs" />
+    <Compile Include="Studies\GS\Atr2.cs" />
+    <Compile Include="Studies\GS\CCI.cs" />
+    <Compile Include="Studies\GS\xMa018\Xma018.cs" />
+    <Compile Include="Studies\GS\xMa018\xMa018_Charts.cs" />
+    <Compile Include="Studies\GS\xMa018\xMa018_Signal.cs" />
+    <Compile Include="Studies\Level.cs" />
+    <Compile Include="Studies\SeriesInterface.cs" />
+    <Compile Include="Studies\StudyInterface.cs" />
+    <Compile Include="Studies\Averages\Old\XAverage0.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Random.cs" />
+    <Compile Include="Options\OptionTicker.cs" />
+    <Compile Include="Ticker.cs" />
+    <Compile Include="Tickers3.cs" />
+    <Compile Include="Tickers.cs" />
+    <Compile Include="TickersProcessTask.cs" />
+    <Compile Include="TimeSeries.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\GS.Trade\GS.Trade\GS.Trade.csproj">
+      <Project>{0D8E2D20-24CC-4C80-9F52-815F76DC0522}</Project>
+      <Name>GS.Trade</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Lib\GS.Trade.DB.Q.dll" />
+    <Content Include="Studies\Stochastic\StochasticDef.txt" />
+    <Content Include="Tickers.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tickers2.xml">
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>copy $(TargetPath) D:\VC\1305\Asmbls\</PostBuildEvent>
+  </PropertyGroup>
+  <PropertyGroup>
+    <PreBuildEvent>del  "D:\VC\1305\Asmbls\$(TargetFileName)"</PreBuildEvent>
+  </PropertyGroup>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
